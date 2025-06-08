@@ -1,0 +1,2108 @@
+{
+    "Dick Allen": {
+        "name": "Dick Allen",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/a/allendi01.shtml"
+    },
+    "Dave Parker": {
+        "name": "Dave Parker",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/p/parkeda01.shtml"
+    },
+    "CC Sabathia": {
+        "name": "CC Sabathia",
+        "inducted_as": "Player",
+        "% of Ballots": 86.8,
+        "link": "https://www.baseball-reference.com/players/s/sabatc.01.shtml"
+    },
+    "Ichiro Suzuki": {
+        "name": "Ichiro Suzuki",
+        "inducted_as": "Player",
+        "% of Ballots": 99.7,
+        "link": "https://www.baseball-reference.com/players/s/suzukic01.shtml"
+    },
+    "Billy Wagner": {
+        "name": "Billy Wagner",
+        "inducted_as": "Player",
+        "% of Ballots": 82.5,
+        "link": "https://www.baseball-reference.com/players/w/wagnebi02.shtml"
+    },
+    "Adrian Beltré": {
+        "name": "Adrian Beltré",
+        "inducted_as": "Player",
+        "% of Ballots": 95.1,
+        "link": "https://www.baseball-reference.com/players/b/beltrad01.shtml"
+    },
+    "Todd Helton": {
+        "name": "Todd Helton",
+        "inducted_as": "Player",
+        "% of Ballots": 79.7,
+        "link": "https://www.baseball-reference.com/players/h/heltoto01.shtml"
+    },
+    "Jim Leyland": {
+        "name": "Jim Leyland",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/leylaji99.shtml"
+    },
+    "Joe Mauer": {
+        "name": "Joe Mauer",
+        "inducted_as": "Player",
+        "% of Ballots": 76.1,
+        "link": "https://www.baseball-reference.com/players/m/mauerjo01.shtml"
+    },
+    "Fred McGriff": {
+        "name": "Fred McGriff",
+        "inducted_as": "Player",
+        "% of Ballots": 100.0,
+        "link": "https://www.baseball-reference.com/players/m/mcgrifr01.shtml"
+    },
+    "Scott Rolen": {
+        "name": "Scott Rolen",
+        "inducted_as": "Player",
+        "% of Ballots": 76.3,
+        "link": "https://www.baseball-reference.com/players/r/rolensc01.shtml"
+    },
+    "Bud Fowler": {
+        "name": "Bud Fowler",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/fowlebu99.shtml"
+    },
+    "Gil Hodges": {
+        "name": "Gil Hodges",
+        "inducted_as": "Player",
+        "% of Ballots": 75.0,
+        "link": "https://www.baseball-reference.com/players/h/hodgegi01.shtml"
+    },
+    "Jim Kaat": {
+        "name": "Jim Kaat",
+        "inducted_as": "Player",
+        "% of Ballots": 75.0,
+        "link": "https://www.baseball-reference.com/players/k/kaatji01.shtml"
+    },
+    "Minnie Miñoso": {
+        "name": "Minnie Miñoso",
+        "inducted_as": "Player",
+        "% of Ballots": 87.5,
+        "link": "https://www.baseball-reference.com/players/m/minosmi01.shtml"
+    },
+    "Buck O'Neil": {
+        "name": "Buck O'Neil",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": 81.3,
+        "link": "https://www.baseball-reference.com/players/o/oneilbu01.shtml"
+    },
+    "Tony Oliva": {
+        "name": "Tony Oliva",
+        "inducted_as": "Player",
+        "% of Ballots": 75.0,
+        "link": "https://www.baseball-reference.com/players/o/olivato01.shtml"
+    },
+    "David Ortiz": {
+        "name": "David Ortiz",
+        "inducted_as": "Player",
+        "% of Ballots": 77.9,
+        "link": "https://www.baseball-reference.com/players/o/ortizda01.shtml"
+    },
+    "Derek Jeter": {
+        "name": "Derek Jeter",
+        "inducted_as": "Player",
+        "% of Ballots": 99.7,
+        "link": "https://www.baseball-reference.com/players/j/jeterde01.shtml"
+    },
+    "Marvin Miller": {
+        "name": "Marvin Miller",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": 81.3,
+        "link": "https://www.baseball-reference.com/nonmlbpa/millema99.shtml"
+    },
+    "Ted Simmons": {
+        "name": "Ted Simmons",
+        "inducted_as": "Player",
+        "% of Ballots": 81.3,
+        "link": "https://www.baseball-reference.com/players/s/simmote01.shtml"
+    },
+    "Larry Walker": {
+        "name": "Larry Walker",
+        "inducted_as": "Player",
+        "% of Ballots": 76.6,
+        "link": "https://www.baseball-reference.com/players/w/walkela01.shtml"
+    },
+    "Harold Baines": {
+        "name": "Harold Baines",
+        "inducted_as": "Player",
+        "% of Ballots": 75.0,
+        "link": "https://www.baseball-reference.com/players/b/baineha01.shtml"
+    },
+    "Roy Halladay": {
+        "name": "Roy Halladay",
+        "inducted_as": "Player",
+        "% of Ballots": 85.4,
+        "link": "https://www.baseball-reference.com/players/h/hallaro01.shtml"
+    },
+    "Edgar Martínez": {
+        "name": "Edgar Martínez",
+        "inducted_as": "Player",
+        "% of Ballots": 85.4,
+        "link": "https://www.baseball-reference.com/players/m/martied01.shtml"
+    },
+    "Mike Mussina": {
+        "name": "Mike Mussina",
+        "inducted_as": "Player",
+        "% of Ballots": 76.7,
+        "link": "https://www.baseball-reference.com/players/m/mussimi01.shtml"
+    },
+    "Mariano Rivera": {
+        "name": "Mariano Rivera",
+        "inducted_as": "Player",
+        "% of Ballots": 100.0,
+        "link": "https://www.baseball-reference.com/players/r/riverma01.shtml"
+    },
+    "Lee Smith": {
+        "name": "Lee Smith",
+        "inducted_as": "Player",
+        "% of Ballots": 100.0,
+        "link": "https://www.baseball-reference.com/players/s/smithle02.shtml"
+    },
+    "Vladimir Guerrero": {
+        "name": "Vladimir Guerrero",
+        "inducted_as": "Player",
+        "% of Ballots": 92.9,
+        "link": "https://www.baseball-reference.com/players/g/guerrvl01.shtml"
+    },
+    "Trevor Hoffman": {
+        "name": "Trevor Hoffman",
+        "inducted_as": "Player",
+        "% of Ballots": 79.9,
+        "link": "https://www.baseball-reference.com/players/h/hoffmtr01.shtml"
+    },
+    "Chipper Jones": {
+        "name": "Chipper Jones",
+        "inducted_as": "Player",
+        "% of Ballots": 97.2,
+        "link": "https://www.baseball-reference.com/players/j/jonesch06.shtml"
+    },
+    "Jack Morris": {
+        "name": "Jack Morris",
+        "inducted_as": "Player",
+        "% of Ballots": 87.5,
+        "link": "https://www.baseball-reference.com/players/m/morrija02.shtml"
+    },
+    "Jim Thome": {
+        "name": "Jim Thome",
+        "inducted_as": "Player",
+        "% of Ballots": 89.8,
+        "link": "https://www.baseball-reference.com/players/t/thomeji01.shtml"
+    },
+    "Alan Trammell": {
+        "name": "Alan Trammell",
+        "inducted_as": "Player",
+        "% of Ballots": 81.3,
+        "link": "https://www.baseball-reference.com/players/t/trammal01.shtml"
+    },
+    "Jeff Bagwell": {
+        "name": "Jeff Bagwell",
+        "inducted_as": "Player",
+        "% of Ballots": 86.2,
+        "link": "https://www.baseball-reference.com/players/b/bagweje01.shtml"
+    },
+    "Tim Raines": {
+        "name": "Tim Raines",
+        "inducted_as": "Player",
+        "% of Ballots": 86.0,
+        "link": "https://www.baseball-reference.com/players/r/raineti01.shtml"
+    },
+    "Iván Rodríguez": {
+        "name": "Iván Rodríguez",
+        "inducted_as": "Player",
+        "% of Ballots": 76.0,
+        "link": "https://www.baseball-reference.com/players/r/rodriiv01.shtml"
+    },
+    "John Schuerholz": {
+        "name": "John Schuerholz",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": 100.0,
+        "link": "https://www.baseball-reference.com/nonmlbpa/schurjo99.shtml"
+    },
+    "Bud Selig": {
+        "name": "Bud Selig",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/seligbu99.shtml"
+    },
+    "Ken Griffey Jr.": {
+        "name": "Ken Griffey Jr.",
+        "inducted_as": "Player",
+        "% of Ballots": 99.3,
+        "link": "https://www.baseball-reference.com/players/g/griffke02.shtml"
+    },
+    "Mike Piazza": {
+        "name": "Mike Piazza",
+        "inducted_as": "Player",
+        "% of Ballots": 83.0,
+        "link": "https://www.baseball-reference.com/players/p/piazzmi01.shtml"
+    },
+    "Craig Biggio": {
+        "name": "Craig Biggio",
+        "inducted_as": "Player",
+        "% of Ballots": 82.7,
+        "link": "https://www.baseball-reference.com/players/b/biggicr01.shtml"
+    },
+    "Randy Johnson": {
+        "name": "Randy Johnson",
+        "inducted_as": "Player",
+        "% of Ballots": 97.3,
+        "link": "https://www.baseball-reference.com/players/j/johnsra05.shtml"
+    },
+    "Pedro Martinez": {
+        "name": "Pedro Martinez",
+        "inducted_as": "Player",
+        "% of Ballots": 91.1,
+        "link": "https://www.baseball-reference.com/players/m/martipe02.shtml"
+    },
+    "John Smoltz": {
+        "name": "John Smoltz",
+        "inducted_as": "Player",
+        "% of Ballots": 82.9,
+        "link": "https://www.baseball-reference.com/players/s/smoltjo01.shtml"
+    },
+    "Bobby Cox": {
+        "name": "Bobby Cox",
+        "inducted_as": "Manager",
+        "% of Ballots": 100.0,
+        "link": "https://www.baseball-reference.com/managers/coxbo01.shtml"
+    },
+    "Tom Glavine": {
+        "name": "Tom Glavine",
+        "inducted_as": "Player",
+        "% of Ballots": 91.9,
+        "link": "https://www.baseball-reference.com/players/g/glavito02.shtml"
+    },
+    "Tony La Russa": {
+        "name": "Tony La Russa",
+        "inducted_as": "Manager",
+        "% of Ballots": 100.0,
+        "link": "https://www.baseball-reference.com/managers/larusto01.shtml"
+    },
+    "Greg Maddux": {
+        "name": "Greg Maddux",
+        "inducted_as": "Player",
+        "% of Ballots": 97.2,
+        "link": "https://www.baseball-reference.com/players/m/maddugr01.shtml"
+    },
+    "Frank Thomas": {
+        "name": "Frank Thomas",
+        "inducted_as": "Player",
+        "% of Ballots": 83.7,
+        "link": "https://www.baseball-reference.com/players/t/thomafr04.shtml"
+    },
+    "Joe Torre": {
+        "name": "Joe Torre",
+        "inducted_as": "Manager",
+        "% of Ballots": 100.0,
+        "link": "https://www.baseball-reference.com/players/t/torrejo01.shtml"
+    },
+    "Hank O'Day": {
+        "name": "Hank O'Day",
+        "inducted_as": "Umpire",
+        "% of Ballots": 93.8,
+        "link": "https://www.baseball-reference.com/players/o/o'dayha01.shtml"
+    },
+    "Jacob Ruppert": {
+        "name": "Jacob Ruppert",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": 93.8,
+        "link": "https://www.baseball-reference.com/nonmlbpa/ruppeja99.shtml"
+    },
+    "Deacon White": {
+        "name": "Deacon White",
+        "inducted_as": "Player",
+        "% of Ballots": 87.5,
+        "link": "https://www.baseball-reference.com/players/w/whitede01.shtml"
+    },
+    "Barry Larkin": {
+        "name": "Barry Larkin",
+        "inducted_as": "Player",
+        "% of Ballots": 86.4,
+        "link": "https://www.baseball-reference.com/players/l/larkiba01.shtml"
+    },
+    "Ron Santo": {
+        "name": "Ron Santo",
+        "inducted_as": "Player",
+        "% of Ballots": 93.8,
+        "link": "https://www.baseball-reference.com/players/s/santoro01.shtml"
+    },
+    "Roberto Alomar": {
+        "name": "Roberto Alomar",
+        "inducted_as": "Player",
+        "% of Ballots": 90.0,
+        "link": "https://www.baseball-reference.com/players/a/alomaro01.shtml"
+    },
+    "Bert Blyleven": {
+        "name": "Bert Blyleven",
+        "inducted_as": "Player",
+        "% of Ballots": 79.7,
+        "link": "https://www.baseball-reference.com/players/b/blylebe01.shtml"
+    },
+    "Pat Gillick": {
+        "name": "Pat Gillick",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/gillipa99.shtml"
+    },
+    "Andre Dawson": {
+        "name": "Andre Dawson",
+        "inducted_as": "Player",
+        "% of Ballots": 77.9,
+        "link": "https://www.baseball-reference.com/players/d/dawsoan01.shtml"
+    },
+    "Doug Harvey": {
+        "name": "Doug Harvey",
+        "inducted_as": "Umpire",
+        "% of Ballots": 93.8,
+        "link": "https://www.baseball-reference.com/nonmlbpa/harvedo99.shtml"
+    },
+    "Whitey Herzog": {
+        "name": "Whitey Herzog",
+        "inducted_as": "Manager",
+        "% of Ballots": 87.5,
+        "link": "https://www.baseball-reference.com/managers/herzowh01.shtml"
+    },
+    "Joe Gordon": {
+        "name": "Joe Gordon",
+        "inducted_as": "Player",
+        "% of Ballots": 83.3,
+        "link": "https://www.baseball-reference.com/players/g/gordojo01.shtml"
+    },
+    "Rickey Henderson": {
+        "name": "Rickey Henderson",
+        "inducted_as": "Player",
+        "% of Ballots": 94.8,
+        "link": "https://www.baseball-reference.com/players/h/henderi01.shtml"
+    },
+    "Jim Rice": {
+        "name": "Jim Rice",
+        "inducted_as": "Player",
+        "% of Ballots": 76.4,
+        "link": "https://www.baseball-reference.com/players/r/riceji01.shtml"
+    },
+    "Barney Dreyfuss": {
+        "name": "Barney Dreyfuss",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": 83.3,
+        "link": "https://www.baseball-reference.com/nonmlbpa/dreyfba99.shtml"
+    },
+    "Rich Gossage": {
+        "name": "Rich Gossage",
+        "inducted_as": "Player",
+        "% of Ballots": 85.8,
+        "link": "https://www.baseball-reference.com/players/g/gossari01.shtml"
+    },
+    "Bowie Kuhn": {
+        "name": "Bowie Kuhn",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/kuhnbo99.shtml"
+    },
+    "Walter O'Malley": {
+        "name": "Walter O'Malley",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": 75.0,
+        "link": "https://www.baseball-reference.com/nonmlbpa/o'malwa99.shtml"
+    },
+    "Billy Southworth": {
+        "name": "Billy Southworth",
+        "inducted_as": "Manager",
+        "% of Ballots": 81.3,
+        "link": "https://www.baseball-reference.com/players/s/southbi01.shtml"
+    },
+    "Dick Williams": {
+        "name": "Dick Williams",
+        "inducted_as": "Manager",
+        "% of Ballots": 81.3,
+        "link": "https://www.baseball-reference.com/managers/willidi02.shtml"
+    },
+    "Tony Gwynn": {
+        "name": "Tony Gwynn",
+        "inducted_as": "Player",
+        "% of Ballots": 97.6,
+        "link": "https://www.baseball-reference.com/players/g/gwynnto01.shtml"
+    },
+    "Cal Ripken Jr.": {
+        "name": "Cal Ripken Jr.",
+        "inducted_as": "Player",
+        "% of Ballots": 98.5,
+        "link": "https://www.baseball-reference.com/players/r/ripkeca01.shtml"
+    },
+    "Ray Brown": {
+        "name": "Ray Brown",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/brownra99.shtml"
+    },
+    "Willard Brown": {
+        "name": "Willard Brown",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/brownwi02.shtml"
+    },
+    "Andy Cooper": {
+        "name": "Andy Cooper",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/coopean99.shtml"
+    },
+    "Frank Grant": {
+        "name": "Frank Grant",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/grantfr99.shtml"
+    },
+    "Pete Hill": {
+        "name": "Pete Hill",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/hillpe99.shtml"
+    },
+    "Biz Mackey": {
+        "name": "Biz Mackey",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/mackebi99.shtml"
+    },
+    "Effa Manley": {
+        "name": "Effa Manley",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/manleef99.shtml"
+    },
+    "José Méndez": {
+        "name": "José Méndez",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/mendejo99.shtml"
+    },
+    "Alex Pompez": {
+        "name": "Alex Pompez",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/pompeal99.shtml"
+    },
+    "Cum Posey": {
+        "name": "Cum Posey",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/poseycu99.shtml"
+    },
+    "Louis Santop": {
+        "name": "Louis Santop",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/santolo99.shtml"
+    },
+    "Bruce Sutter": {
+        "name": "Bruce Sutter",
+        "inducted_as": "Player",
+        "% of Ballots": 76.9,
+        "link": "https://www.baseball-reference.com/players/s/suttebr01.shtml"
+    },
+    "Mule Suttles": {
+        "name": "Mule Suttles",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/suttlmu99.shtml"
+    },
+    "Ben Taylor": {
+        "name": "Ben Taylor",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/t/taylobe99.shtml"
+    },
+    "Cristóbal Torriente": {
+        "name": "Cristóbal Torriente",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/t/torricr99.shtml"
+    },
+    "Sol White": {
+        "name": "Sol White",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/whiteso99.shtml"
+    },
+    "J.L. Wilkinson": {
+        "name": "J.L. Wilkinson",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/wilkijl99.shtml"
+    },
+    "Jud Wilson": {
+        "name": "Jud Wilson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wilsoju99.shtml"
+    },
+    "Wade Boggs": {
+        "name": "Wade Boggs",
+        "inducted_as": "Player",
+        "% of Ballots": 91.9,
+        "link": "https://www.baseball-reference.com/players/b/boggswa01.shtml"
+    },
+    "Ryne Sandberg": {
+        "name": "Ryne Sandberg",
+        "inducted_as": "Player",
+        "% of Ballots": 76.2,
+        "link": "https://www.baseball-reference.com/players/s/sandbry01.shtml"
+    },
+    "Dennis Eckersley": {
+        "name": "Dennis Eckersley",
+        "inducted_as": "Player",
+        "% of Ballots": 83.2,
+        "link": "https://www.baseball-reference.com/players/e/eckerde01.shtml"
+    },
+    "Paul Molitor": {
+        "name": "Paul Molitor",
+        "inducted_as": "Player",
+        "% of Ballots": 85.2,
+        "link": "https://www.baseball-reference.com/players/m/molitpa01.shtml"
+    },
+    "Gary Carter": {
+        "name": "Gary Carter",
+        "inducted_as": "Player",
+        "% of Ballots": 78.0,
+        "link": "https://www.baseball-reference.com/players/c/cartega01.shtml"
+    },
+    "Eddie Murray": {
+        "name": "Eddie Murray",
+        "inducted_as": "Player",
+        "% of Ballots": 85.3,
+        "link": "https://www.baseball-reference.com/players/m/murraed02.shtml"
+    },
+    "Ozzie Smith": {
+        "name": "Ozzie Smith",
+        "inducted_as": "Player",
+        "% of Ballots": 91.7,
+        "link": "https://www.baseball-reference.com/players/s/smithoz01.shtml"
+    },
+    "Bill Mazeroski": {
+        "name": "Bill Mazeroski",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/mazerbi01.shtml"
+    },
+    "Kirby Puckett": {
+        "name": "Kirby Puckett",
+        "inducted_as": "Player",
+        "% of Ballots": 82.1,
+        "link": "https://www.baseball-reference.com/players/p/puckeki01.shtml"
+    },
+    "Hilton Smith": {
+        "name": "Hilton Smith",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/smithhi99.shtml"
+    },
+    "Dave Winfield": {
+        "name": "Dave Winfield",
+        "inducted_as": "Player",
+        "% of Ballots": 84.5,
+        "link": "https://www.baseball-reference.com/players/w/winfida01.shtml"
+    },
+    "Sparky Anderson": {
+        "name": "Sparky Anderson",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/andersp01.shtml"
+    },
+    "Carlton Fisk": {
+        "name": "Carlton Fisk",
+        "inducted_as": "Player",
+        "% of Ballots": 79.6,
+        "link": "https://www.baseball-reference.com/players/f/fiskca01.shtml"
+    },
+    "Bid McPhee": {
+        "name": "Bid McPhee",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/mcphebi01.shtml"
+    },
+    "Tony Pérez": {
+        "name": "Tony Pérez",
+        "inducted_as": "Player",
+        "% of Ballots": 77.2,
+        "link": "https://www.baseball-reference.com/players/p/perezto01.shtml"
+    },
+    "Turkey Stearnes": {
+        "name": "Turkey Stearnes",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/steartu99.shtml"
+    },
+    "George Brett": {
+        "name": "George Brett",
+        "inducted_as": "Player",
+        "% of Ballots": 98.2,
+        "link": "https://www.baseball-reference.com/players/b/brettge01.shtml"
+    },
+    "Orlando Cepeda": {
+        "name": "Orlando Cepeda",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/cepedor01.shtml"
+    },
+    "Nestor Chylak": {
+        "name": "Nestor Chylak",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/chylane99.shtml"
+    },
+    "Nolan Ryan": {
+        "name": "Nolan Ryan",
+        "inducted_as": "Player",
+        "% of Ballots": 98.8,
+        "link": "https://www.baseball-reference.com/players/r/ryanno01.shtml"
+    },
+    "Frank Selee": {
+        "name": "Frank Selee",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/seleefr99.shtml"
+    },
+    "Joe Williams": {
+        "name": "Joe Williams",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/willijo99.shtml"
+    },
+    "Robin Yount": {
+        "name": "Robin Yount",
+        "inducted_as": "Player",
+        "% of Ballots": 77.5,
+        "link": "https://www.baseball-reference.com/players/y/yountro01.shtml"
+    },
+    "George Davis": {
+        "name": "George Davis",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/davisge01.shtml"
+    },
+    "Larry Doby": {
+        "name": "Larry Doby",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/dobyla01.shtml"
+    },
+    "Lee MacPhail": {
+        "name": "Lee MacPhail",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/macphle99.shtml"
+    },
+    "Bullet Rogan": {
+        "name": "Bullet Rogan",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/roganbu99.shtml"
+    },
+    "Don Sutton": {
+        "name": "Don Sutton",
+        "inducted_as": "Player",
+        "% of Ballots": 81.6,
+        "link": "https://www.baseball-reference.com/players/s/suttodo01.shtml"
+    },
+    "Nellie Fox": {
+        "name": "Nellie Fox",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/f/foxne01.shtml"
+    },
+    "Tommy Lasorda": {
+        "name": "Tommy Lasorda",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/lasorto01.shtml"
+    },
+    "Phil Niekro": {
+        "name": "Phil Niekro",
+        "inducted_as": "Player",
+        "% of Ballots": 80.3,
+        "link": "https://www.baseball-reference.com/players/n/niekrph01.shtml"
+    },
+    "Willie Wells": {
+        "name": "Willie Wells",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wellswi99.shtml"
+    },
+    "Jim Bunning": {
+        "name": "Jim Bunning",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/bunniji01.shtml"
+    },
+    "Bill Foster": {
+        "name": "Bill Foster",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/f/fostebi99.shtml"
+    },
+    "Ned Hanlon": {
+        "name": "Ned Hanlon",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/hanlone01.shtml"
+    },
+    "Earl Weaver": {
+        "name": "Earl Weaver",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/weaveea99.shtml"
+    },
+    "Richie Ashburn": {
+        "name": "Richie Ashburn",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/a/ashburi01.shtml"
+    },
+    "Leon Day": {
+        "name": "Leon Day",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/dayle99.shtml"
+    },
+    "William Hulbert": {
+        "name": "William Hulbert",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/hulbewi99.shtml"
+    },
+    "Mike Schmidt": {
+        "name": "Mike Schmidt",
+        "inducted_as": "Player",
+        "% of Ballots": 96.5,
+        "link": "https://www.baseball-reference.com/players/s/schmimi01.shtml"
+    },
+    "Vic Willis": {
+        "name": "Vic Willis",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/willivi01.shtml"
+    },
+    "Steve Carlton": {
+        "name": "Steve Carlton",
+        "inducted_as": "Player",
+        "% of Ballots": 95.6,
+        "link": "https://www.baseball-reference.com/players/c/carltst01.shtml"
+    },
+    "Leo Durocher": {
+        "name": "Leo Durocher",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/durocle01.shtml"
+    },
+    "Phil Rizzuto": {
+        "name": "Phil Rizzuto",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/rizzuph01.shtml"
+    },
+    "Reggie Jackson": {
+        "name": "Reggie Jackson",
+        "inducted_as": "Player",
+        "% of Ballots": 93.6,
+        "link": "https://www.baseball-reference.com/players/j/jacksre01.shtml"
+    },
+    "Rollie Fingers": {
+        "name": "Rollie Fingers",
+        "inducted_as": "Player",
+        "% of Ballots": 81.2,
+        "link": "https://www.baseball-reference.com/players/f/fingero01.shtml"
+    },
+    "Bill McGowan": {
+        "name": "Bill McGowan",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/mcgowbi99.shtml"
+    },
+    "Hal Newhouser": {
+        "name": "Hal Newhouser",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/n/newhoha01.shtml"
+    },
+    "Tom Seaver": {
+        "name": "Tom Seaver",
+        "inducted_as": "Player",
+        "% of Ballots": 98.8,
+        "link": "https://www.baseball-reference.com/players/s/seaveto01.shtml"
+    },
+    "Rod Carew": {
+        "name": "Rod Carew",
+        "inducted_as": "Player",
+        "% of Ballots": 90.5,
+        "link": "https://www.baseball-reference.com/players/c/carewro01.shtml"
+    },
+    "Fergie Jenkins": {
+        "name": "Fergie Jenkins",
+        "inducted_as": "Player",
+        "% of Ballots": 75.4,
+        "link": "https://www.baseball-reference.com/players/j/jenkife01.shtml"
+    },
+    "Tony Lazzeri": {
+        "name": "Tony Lazzeri",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/l/lazzeto01.shtml"
+    },
+    "Gaylord Perry": {
+        "name": "Gaylord Perry",
+        "inducted_as": "Player",
+        "% of Ballots": 77.2,
+        "link": "https://www.baseball-reference.com/players/p/perryga01.shtml"
+    },
+    "Bill Veeck": {
+        "name": "Bill Veeck",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/veeckbi99.shtml"
+    },
+    "Joe Morgan": {
+        "name": "Joe Morgan",
+        "inducted_as": "Player",
+        "% of Ballots": 81.8,
+        "link": "https://www.baseball-reference.com/players/m/morgajo02.shtml"
+    },
+    "Jim Palmer": {
+        "name": "Jim Palmer",
+        "inducted_as": "Player",
+        "% of Ballots": 92.6,
+        "link": "https://www.baseball-reference.com/players/p/palmeji01.shtml"
+    },
+    "Al Barlick": {
+        "name": "Al Barlick",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/barlial99.shtml"
+    },
+    "Johnny Bench": {
+        "name": "Johnny Bench",
+        "inducted_as": "Player",
+        "% of Ballots": 96.4,
+        "link": "https://www.baseball-reference.com/players/b/benchjo01.shtml"
+    },
+    "Red Schoendienst": {
+        "name": "Red Schoendienst",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/schoere01.shtml"
+    },
+    "Carl Yastrzemski": {
+        "name": "Carl Yastrzemski",
+        "inducted_as": "Player",
+        "% of Ballots": 94.6,
+        "link": "https://www.baseball-reference.com/players/y/yastrca01.shtml"
+    },
+    "Willie Stargell": {
+        "name": "Willie Stargell",
+        "inducted_as": "Player",
+        "% of Ballots": 82.4,
+        "link": "https://www.baseball-reference.com/players/s/stargwi01.shtml"
+    },
+    "Ray Dandridge": {
+        "name": "Ray Dandridge",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/dandrra99.shtml"
+    },
+    "Catfish Hunter": {
+        "name": "Catfish Hunter",
+        "inducted_as": "Player",
+        "% of Ballots": 76.3,
+        "link": "https://www.baseball-reference.com/players/h/hunteca01.shtml"
+    },
+    "Billy Williams": {
+        "name": "Billy Williams",
+        "inducted_as": "Player",
+        "% of Ballots": 85.7,
+        "link": "https://www.baseball-reference.com/players/w/willibi01.shtml"
+    },
+    "Bobby Doerr": {
+        "name": "Bobby Doerr",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/doerrbo01.shtml"
+    },
+    "Ernie Lombardi": {
+        "name": "Ernie Lombardi",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/l/lombaer01.shtml"
+    },
+    "Willie McCovey": {
+        "name": "Willie McCovey",
+        "inducted_as": "Player",
+        "% of Ballots": 81.4,
+        "link": "https://www.baseball-reference.com/players/m/mccovwi01.shtml"
+    },
+    "Lou Brock": {
+        "name": "Lou Brock",
+        "inducted_as": "Player",
+        "% of Ballots": 79.7,
+        "link": "https://www.baseball-reference.com/players/b/brocklo01.shtml"
+    },
+    "Enos Slaughter": {
+        "name": "Enos Slaughter",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/slaugen01.shtml"
+    },
+    "Arky Vaughan": {
+        "name": "Arky Vaughan",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/v/vaughar01.shtml"
+    },
+    "Hoyt Wilhelm": {
+        "name": "Hoyt Wilhelm",
+        "inducted_as": "Player",
+        "% of Ballots": 83.8,
+        "link": "https://www.baseball-reference.com/players/w/wilheho01.shtml"
+    },
+    "Luis Aparicio": {
+        "name": "Luis Aparicio",
+        "inducted_as": "Player",
+        "% of Ballots": 84.6,
+        "link": "https://www.baseball-reference.com/players/a/aparilu01.shtml"
+    },
+    "Don Drysdale": {
+        "name": "Don Drysdale",
+        "inducted_as": "Player",
+        "% of Ballots": 78.4,
+        "link": "https://www.baseball-reference.com/players/d/drysddo01.shtml"
+    },
+    "Rick Ferrell": {
+        "name": "Rick Ferrell",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/f/ferreri01.shtml"
+    },
+    "Harmon Killebrew": {
+        "name": "Harmon Killebrew",
+        "inducted_as": "Player",
+        "% of Ballots": 83.1,
+        "link": "https://www.baseball-reference.com/players/k/killeha01.shtml"
+    },
+    "Pee Wee Reese": {
+        "name": "Pee Wee Reese",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/reesepe01.shtml"
+    },
+    "Walter Alston": {
+        "name": "Walter Alston",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/alstowa01.shtml"
+    },
+    "George Kell": {
+        "name": "George Kell",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/k/kellge01.shtml"
+    },
+    "Juan Marichal": {
+        "name": "Juan Marichal",
+        "inducted_as": "Player",
+        "% of Ballots": 83.7,
+        "link": "https://www.baseball-reference.com/players/m/maricju01.shtml"
+    },
+    "Brooks Robinson": {
+        "name": "Brooks Robinson",
+        "inducted_as": "Player",
+        "% of Ballots": 92.0,
+        "link": "https://www.baseball-reference.com/players/r/robinbr01.shtml"
+    },
+    "Henry Aaron": {
+        "name": "Henry Aaron",
+        "inducted_as": "Player",
+        "% of Ballots": 97.8,
+        "link": "https://www.baseball-reference.com/players/a/aaronha01.shtml"
+    },
+    "Happy Chandler": {
+        "name": "Happy Chandler",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/chandha99.shtml"
+    },
+    "Travis Jackson": {
+        "name": "Travis Jackson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/j/jackstr01.shtml"
+    },
+    "Frank Robinson": {
+        "name": "Frank Robinson",
+        "inducted_as": "Player",
+        "% of Ballots": 89.2,
+        "link": "https://www.baseball-reference.com/players/r/robinfr02.shtml"
+    },
+    "Rube Foster": {
+        "name": "Rube Foster",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/fosteru99.shtml"
+    },
+    "Bob Gibson": {
+        "name": "Bob Gibson",
+        "inducted_as": "Player",
+        "% of Ballots": 84.0,
+        "link": "https://www.baseball-reference.com/players/g/gibsobo01.shtml"
+    },
+    "Johnny Mize": {
+        "name": "Johnny Mize",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/mizejo01.shtml"
+    },
+    "Al Kaline": {
+        "name": "Al Kaline",
+        "inducted_as": "Player",
+        "% of Ballots": 88.3,
+        "link": "https://www.baseball-reference.com/players/k/kalinal01.shtml"
+    },
+    "Chuck Klein": {
+        "name": "Chuck Klein",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/k/kleinch01.shtml"
+    },
+    "Duke Snider": {
+        "name": "Duke Snider",
+        "inducted_as": "Player",
+        "% of Ballots": 86.5,
+        "link": "https://www.baseball-reference.com/players/s/snidedu01.shtml"
+    },
+    "Tom Yawkey": {
+        "name": "Tom Yawkey",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/yawketo99.shtml"
+    },
+    "Warren Giles": {
+        "name": "Warren Giles",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/gileswa99.shtml"
+    },
+    "Willie Mays": {
+        "name": "Willie Mays",
+        "inducted_as": "Player",
+        "% of Ballots": 94.7,
+        "link": "https://www.baseball-reference.com/players/m/mayswi01.shtml"
+    },
+    "Hack Wilson": {
+        "name": "Hack Wilson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wilsoha01.shtml"
+    },
+    "Addie Joss": {
+        "name": "Addie Joss",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/j/jossad01.shtml"
+    },
+    "Larry MacPhail": {
+        "name": "Larry MacPhail",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/macphla99.shtml"
+    },
+    "Eddie Mathews": {
+        "name": "Eddie Mathews",
+        "inducted_as": "Player",
+        "% of Ballots": 79.4,
+        "link": "https://www.baseball-reference.com/players/m/matheed01.shtml"
+    },
+    "Ernie Banks": {
+        "name": "Ernie Banks",
+        "inducted_as": "Player",
+        "% of Ballots": 83.8,
+        "link": "https://www.baseball-reference.com/players/b/bankser01.shtml"
+    },
+    "Martín Dihigo": {
+        "name": "Martín Dihigo",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/dihigma99.shtml"
+    },
+    "John Henry Lloyd": {
+        "name": "John Henry Lloyd",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/l/lloydjo99.shtml"
+    },
+    "Al Lopez": {
+        "name": "Al Lopez",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/l/lopezal01.shtml"
+    },
+    "Amos Rusie": {
+        "name": "Amos Rusie",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/rusieam01.shtml"
+    },
+    "Joe Sewell": {
+        "name": "Joe Sewell",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/seweljo01.shtml"
+    },
+    "Oscar Charleston": {
+        "name": "Oscar Charleston",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/charlos99.shtml"
+    },
+    "Roger Connor": {
+        "name": "Roger Connor",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/connoro01.shtml"
+    },
+    "Cal Hubbard": {
+        "name": "Cal Hubbard",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/hubbaca99.shtml"
+    },
+    "Bob Lemon": {
+        "name": "Bob Lemon",
+        "inducted_as": "Player",
+        "% of Ballots": 78.6,
+        "link": "https://www.baseball-reference.com/players/l/lemonbo01.shtml"
+    },
+    "Freddie Lindstrom": {
+        "name": "Freddie Lindstrom",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/l/lindsfr01.shtml"
+    },
+    "Robin Roberts": {
+        "name": "Robin Roberts",
+        "inducted_as": "Player",
+        "% of Ballots": 86.9,
+        "link": "https://www.baseball-reference.com/players/r/roberro01.shtml"
+    },
+    "Earl Averill": {
+        "name": "Earl Averill",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/a/averiea01.shtml"
+    },
+    "Bucky Harris": {
+        "name": "Bucky Harris",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/harribu01.shtml"
+    },
+    "Billy Herman": {
+        "name": "Billy Herman",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/hermabi01.shtml"
+    },
+    "Judy Johnson": {
+        "name": "Judy Johnson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/j/johnsju99.shtml"
+    },
+    "Ralph Kiner": {
+        "name": "Ralph Kiner",
+        "inducted_as": "Player",
+        "% of Ballots": 75.4,
+        "link": "https://www.baseball-reference.com/players/k/kinerra01.shtml"
+    },
+    "Cool Papa Bell": {
+        "name": "Cool Papa Bell",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/bellco99.shtml"
+    },
+    "Jim Bottomley": {
+        "name": "Jim Bottomley",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/bottoji01.shtml"
+    },
+    "Jocko Conlan": {
+        "name": "Jocko Conlan",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/conlajo01.shtml"
+    },
+    "Whitey Ford": {
+        "name": "Whitey Ford",
+        "inducted_as": "Player",
+        "% of Ballots": 77.8,
+        "link": "https://www.baseball-reference.com/players/f/fordwh01.shtml"
+    },
+    "Mickey Mantle": {
+        "name": "Mickey Mantle",
+        "inducted_as": "Player",
+        "% of Ballots": 88.2,
+        "link": "https://www.baseball-reference.com/players/m/mantlmi01.shtml"
+    },
+    "Sam Thompson": {
+        "name": "Sam Thompson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/t/thompsa01.shtml"
+    },
+    "Roberto Clemente": {
+        "name": "Roberto Clemente",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/clemero01.shtml"
+    },
+    "Billy Evans": {
+        "name": "Billy Evans",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/evansbi99.shtml"
+    },
+    "Monte Irvin": {
+        "name": "Monte Irvin",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/i/irvinmo01.shtml"
+    },
+    "George Kelly": {
+        "name": "George Kelly",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/k/kellyge01.shtml"
+    },
+    "Warren Spahn": {
+        "name": "Warren Spahn",
+        "inducted_as": "Player",
+        "% of Ballots": 83.2,
+        "link": "https://www.baseball-reference.com/players/s/spahnwa01.shtml"
+    },
+    "Mickey Welch": {
+        "name": "Mickey Welch",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/welchmi01.shtml"
+    },
+    "Yogi Berra": {
+        "name": "Yogi Berra",
+        "inducted_as": "Player",
+        "% of Ballots": 85.6,
+        "link": "https://www.baseball-reference.com/players/b/berrayo01.shtml"
+    },
+    "Josh Gibson": {
+        "name": "Josh Gibson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/g/gibsojo99.shtml"
+    },
+    "Lefty Gomez": {
+        "name": "Lefty Gomez",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/g/gomezle01.shtml"
+    },
+    "Will Harridge": {
+        "name": "Will Harridge",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/harriwi99.shtml"
+    },
+    "Sandy Koufax": {
+        "name": "Sandy Koufax",
+        "inducted_as": "Player",
+        "% of Ballots": 86.9,
+        "link": "https://www.baseball-reference.com/players/k/koufasa01.shtml"
+    },
+    "Buck Leonard": {
+        "name": "Buck Leonard",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/l/leonabu99.shtml"
+    },
+    "Early Wynn": {
+        "name": "Early Wynn",
+        "inducted_as": "Player",
+        "% of Ballots": 76.0,
+        "link": "https://www.baseball-reference.com/players/w/wynnea01.shtml"
+    },
+    "Ross Youngs": {
+        "name": "Ross Youngs",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/y/youngro01.shtml"
+    },
+    "Dave Bancroft": {
+        "name": "Dave Bancroft",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/bancrda01.shtml"
+    },
+    "Jake Beckley": {
+        "name": "Jake Beckley",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/becklja01.shtml"
+    },
+    "Chick Hafey": {
+        "name": "Chick Hafey",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/hafeych01.shtml"
+    },
+    "Harry Hooper": {
+        "name": "Harry Hooper",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/hoopeha01.shtml"
+    },
+    "Joe Kelley": {
+        "name": "Joe Kelley",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/k/kellejo01.shtml"
+    },
+    "Rube Marquard": {
+        "name": "Rube Marquard",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/marquru01.shtml"
+    },
+    "Satchel Paige": {
+        "name": "Satchel Paige",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/p/paigesa01.shtml"
+    },
+    "George Weiss": {
+        "name": "George Weiss",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/weissge99.shtml"
+    },
+    "Lou Boudreau": {
+        "name": "Lou Boudreau",
+        "inducted_as": "Player",
+        "% of Ballots": 77.3,
+        "link": "https://www.baseball-reference.com/players/b/boudrlo01.shtml"
+    },
+    "Earle Combs": {
+        "name": "Earle Combs",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/combsea01.shtml"
+    },
+    "Ford Frick": {
+        "name": "Ford Frick",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/frickfo99.shtml"
+    },
+    "Jesse Haines": {
+        "name": "Jesse Haines",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/haineje01.shtml"
+    },
+    "Roy Campanella": {
+        "name": "Roy Campanella",
+        "inducted_as": "Player",
+        "% of Ballots": 79.4,
+        "link": "https://www.baseball-reference.com/players/c/camparo01.shtml"
+    },
+    "Stan Coveleski": {
+        "name": "Stan Coveleski",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/covelst01.shtml"
+    },
+    "Waite Hoyt": {
+        "name": "Waite Hoyt",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/hoytwa01.shtml"
+    },
+    "Stan Musial": {
+        "name": "Stan Musial",
+        "inducted_as": "Player",
+        "% of Ballots": 93.2,
+        "link": "https://www.baseball-reference.com/players/m/musiast01.shtml"
+    },
+    "Kiki Cuyler": {
+        "name": "Kiki Cuyler",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/cuyleki01.shtml"
+    },
+    "Goose Goslin": {
+        "name": "Goose Goslin",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/g/gosligo01.shtml"
+    },
+    "Joe Medwick": {
+        "name": "Joe Medwick",
+        "inducted_as": "Player",
+        "% of Ballots": 84.8,
+        "link": "https://www.baseball-reference.com/players/m/medwijo01.shtml"
+    },
+    "Branch Rickey": {
+        "name": "Branch Rickey",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/rickebr01.shtml"
+    },
+    "Red Ruffing": {
+        "name": "Red Ruffing",
+        "inducted_as": "Player",
+        "% of Ballots": 86.9,
+        "link": "https://www.baseball-reference.com/players/r/ruffire01.shtml"
+    },
+    "Lloyd Waner": {
+        "name": "Lloyd Waner",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wanerll01.shtml"
+    },
+    "Casey Stengel": {
+        "name": "Casey Stengel",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/stengca01.shtml"
+    },
+    "Ted Williams": {
+        "name": "Ted Williams",
+        "inducted_as": "Player",
+        "% of Ballots": 93.4,
+        "link": "https://www.baseball-reference.com/players/w/willite01.shtml"
+    },
+    "Pud Galvin": {
+        "name": "Pud Galvin",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/g/galvipu01.shtml"
+    },
+    "Luke Appling": {
+        "name": "Luke Appling",
+        "inducted_as": "Player",
+        "% of Ballots": 94.0,
+        "link": "https://www.baseball-reference.com/players/a/applilu01.shtml"
+    },
+    "Red Faber": {
+        "name": "Red Faber",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/f/faberre01.shtml"
+    },
+    "Burleigh Grimes": {
+        "name": "Burleigh Grimes",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/g/grimebu01.shtml"
+    },
+    "Miller Huggins": {
+        "name": "Miller Huggins",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/huggimi01.shtml"
+    },
+    "Tim Keefe": {
+        "name": "Tim Keefe",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/k/keefeti01.shtml"
+    },
+    "Heinie Manush": {
+        "name": "Heinie Manush",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/manushe01.shtml"
+    },
+    "John Ward": {
+        "name": "John Ward",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wardjo01.shtml"
+    },
+    "John Clarkson": {
+        "name": "John Clarkson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/clarkjo01.shtml"
+    },
+    "Elmer Flick": {
+        "name": "Elmer Flick",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/f/flickel01.shtml"
+    },
+    "Sam Rice": {
+        "name": "Sam Rice",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/ricesa01.shtml"
+    },
+    "Eppa Rixey": {
+        "name": "Eppa Rixey",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/rixeyep01.shtml"
+    },
+    "Bob Feller": {
+        "name": "Bob Feller",
+        "inducted_as": "Player",
+        "% of Ballots": 93.8,
+        "link": "https://www.baseball-reference.com/players/f/fellebo01.shtml"
+    },
+    "Bill McKechnie": {
+        "name": "Bill McKechnie",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/mckecbi01.shtml"
+    },
+    "Jackie Robinson": {
+        "name": "Jackie Robinson",
+        "inducted_as": "Player",
+        "% of Ballots": 77.5,
+        "link": "https://www.baseball-reference.com/players/r/robinja02.shtml"
+    },
+    "Edd Roush": {
+        "name": "Edd Roush",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/roushed01.shtml"
+    },
+    "Max Carey": {
+        "name": "Max Carey",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/careyma01.shtml"
+    },
+    "Billy Hamilton": {
+        "name": "Billy Hamilton",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/h/hamilbi01.shtml"
+    },
+    "Zack Wheat": {
+        "name": "Zack Wheat",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wheatza01.shtml"
+    },
+    "Sam Crawford": {
+        "name": "Sam Crawford",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/crawfsa01.shtml"
+    },
+    "Joe McCarthy": {
+        "name": "Joe McCarthy",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/mccarjo99.shtml"
+    },
+    "Joe Cronin": {
+        "name": "Joe Cronin",
+        "inducted_as": "Player",
+        "% of Ballots": 78.8,
+        "link": "https://www.baseball-reference.com/players/c/cronijo01.shtml"
+    },
+    "Hank Greenberg": {
+        "name": "Hank Greenberg",
+        "inducted_as": "Player",
+        "% of Ballots": 85.0,
+        "link": "https://www.baseball-reference.com/players/g/greenha01.shtml"
+    },
+    "Home Run Baker": {
+        "name": "Home Run Baker",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/bakerfr01.shtml"
+    },
+    "Joe DiMaggio": {
+        "name": "Joe DiMaggio",
+        "inducted_as": "Player",
+        "% of Ballots": 88.8,
+        "link": "https://www.baseball-reference.com/players/d/dimagjo01.shtml"
+    },
+    "Gabby Hartnett": {
+        "name": "Gabby Hartnett",
+        "inducted_as": "Player",
+        "% of Ballots": 77.7,
+        "link": "https://www.baseball-reference.com/players/h/hartnga01.shtml"
+    },
+    "Ted Lyons": {
+        "name": "Ted Lyons",
+        "inducted_as": "Player",
+        "% of Ballots": 86.5,
+        "link": "https://www.baseball-reference.com/players/l/lyonste01.shtml"
+    },
+    "Ray Schalk": {
+        "name": "Ray Schalk",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/schalra01.shtml"
+    },
+    "Dazzy Vance": {
+        "name": "Dazzy Vance",
+        "inducted_as": "Player",
+        "% of Ballots": 81.7,
+        "link": "https://www.baseball-reference.com/players/v/vanceda01.shtml"
+    },
+    "Bill Dickey": {
+        "name": "Bill Dickey",
+        "inducted_as": "Player",
+        "% of Ballots": 80.2,
+        "link": "https://www.baseball-reference.com/players/d/dickebi01.shtml"
+    },
+    "Rabbit Maranville": {
+        "name": "Rabbit Maranville",
+        "inducted_as": "Player",
+        "% of Ballots": 82.9,
+        "link": "https://www.baseball-reference.com/players/m/maranra01.shtml"
+    },
+    "Bill Terry": {
+        "name": "Bill Terry",
+        "inducted_as": "Player",
+        "% of Ballots": 77.4,
+        "link": "https://www.baseball-reference.com/players/t/terrybi01.shtml"
+    },
+    "Ed Barrow": {
+        "name": "Ed Barrow",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/barroed99.shtml"
+    },
+    "Charles Bender": {
+        "name": "Charles Bender",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/bendech01.shtml"
+    },
+    "Tommy Connolly": {
+        "name": "Tommy Connolly",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/connoto99.shtml"
+    },
+    "Dizzy Dean": {
+        "name": "Dizzy Dean",
+        "inducted_as": "Player",
+        "% of Ballots": 79.2,
+        "link": "https://www.baseball-reference.com/players/d/deandi01.shtml"
+    },
+    "Bill Klem": {
+        "name": "Bill Klem",
+        "inducted_as": "Umpire",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/klembi99.shtml"
+    },
+    "Al Simmons": {
+        "name": "Al Simmons",
+        "inducted_as": "Player",
+        "% of Ballots": 75.4,
+        "link": "https://www.baseball-reference.com/players/s/simmoal01.shtml"
+    },
+    "Bobby Wallace": {
+        "name": "Bobby Wallace",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wallabo01.shtml"
+    },
+    "Harry Wright": {
+        "name": "Harry Wright",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/wrighha01.shtml"
+    },
+    "Harry Heilmann": {
+        "name": "Harry Heilmann",
+        "inducted_as": "Player",
+        "% of Ballots": 86.8,
+        "link": "https://www.baseball-reference.com/players/h/heilmha01.shtml"
+    },
+    "Paul Waner": {
+        "name": "Paul Waner",
+        "inducted_as": "Player",
+        "% of Ballots": 83.3,
+        "link": "https://www.baseball-reference.com/players/w/wanerpa01.shtml"
+    },
+    "Jimmie Foxx": {
+        "name": "Jimmie Foxx",
+        "inducted_as": "Player",
+        "% of Ballots": 79.2,
+        "link": "https://www.baseball-reference.com/players/f/foxxji01.shtml"
+    },
+    "Mel Ott": {
+        "name": "Mel Ott",
+        "inducted_as": "Player",
+        "% of Ballots": 87.2,
+        "link": "https://www.baseball-reference.com/players/o/ottme01.shtml"
+    },
+    "Mordecai Brown": {
+        "name": "Mordecai Brown",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/brownmo01.shtml"
+    },
+    "Charlie Gehringer": {
+        "name": "Charlie Gehringer",
+        "inducted_as": "Player",
+        "% of Ballots": 85.0,
+        "link": "https://www.baseball-reference.com/players/g/gehrich01.shtml"
+    },
+    "Kid Nichols": {
+        "name": "Kid Nichols",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/n/nichoki01.shtml"
+    },
+    "Herb Pennock": {
+        "name": "Herb Pennock",
+        "inducted_as": "Player",
+        "% of Ballots": 77.7,
+        "link": "https://www.baseball-reference.com/players/p/pennohe01.shtml"
+    },
+    "Pie Traynor": {
+        "name": "Pie Traynor",
+        "inducted_as": "Player",
+        "% of Ballots": 76.9,
+        "link": "https://www.baseball-reference.com/players/t/traynpi01.shtml"
+    },
+    "Mickey Cochrane": {
+        "name": "Mickey Cochrane",
+        "inducted_as": "Player",
+        "% of Ballots": 79.5,
+        "link": "https://www.baseball-reference.com/players/c/cochrmi01.shtml"
+    },
+    "Frankie Frisch": {
+        "name": "Frankie Frisch",
+        "inducted_as": "Player",
+        "% of Ballots": 84.5,
+        "link": "https://www.baseball-reference.com/players/f/friscfr01.shtml"
+    },
+    "Lefty Grove": {
+        "name": "Lefty Grove",
+        "inducted_as": "Player",
+        "% of Ballots": 76.4,
+        "link": "https://www.baseball-reference.com/players/g/grovele01.shtml"
+    },
+    "Carl Hubbell": {
+        "name": "Carl Hubbell",
+        "inducted_as": "Player",
+        "% of Ballots": 87.0,
+        "link": "https://www.baseball-reference.com/players/h/hubbeca01.shtml"
+    },
+    "Jesse Burkett": {
+        "name": "Jesse Burkett",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/burkeje01.shtml"
+    },
+    "Frank Chance": {
+        "name": "Frank Chance",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/chancfr01.shtml"
+    },
+    "Jack Chesbro": {
+        "name": "Jack Chesbro",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/chesbja01.shtml"
+    },
+    "Johnny Evers": {
+        "name": "Johnny Evers",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/e/eversjo01.shtml"
+    },
+    "Clark Griffith": {
+        "name": "Clark Griffith",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/g/griffcl01.shtml"
+    },
+    "Tommy McCarthy": {
+        "name": "Tommy McCarthy",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/mccarto01.shtml"
+    },
+    "Joe McGinnity": {
+        "name": "Joe McGinnity",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/m/mcginjo01.shtml"
+    },
+    "Eddie Plank": {
+        "name": "Eddie Plank",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/p/planked01.shtml"
+    },
+    "Joe Tinker": {
+        "name": "Joe Tinker",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/t/tinkejo01.shtml"
+    },
+    "Rube Waddell": {
+        "name": "Rube Waddell",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wadderu01.shtml"
+    },
+    "Ed Walsh": {
+        "name": "Ed Walsh",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/walshed01.shtml"
+    },
+    "Roger Bresnahan": {
+        "name": "Roger Bresnahan",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/bresnro01.shtml"
+    },
+    "Dan Brouthers": {
+        "name": "Dan Brouthers",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/b/broutda01.shtml"
+    },
+    "Fred Clarke": {
+        "name": "Fred Clarke",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/clarkfr01.shtml"
+    },
+    "Jimmy Collins": {
+        "name": "Jimmy Collins",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/colliji01.shtml"
+    },
+    "Ed Delahanty": {
+        "name": "Ed Delahanty",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/delahed01.shtml"
+    },
+    "Hugh Duffy": {
+        "name": "Hugh Duffy",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/d/duffyhu01.shtml"
+    },
+    "Hughie Jennings": {
+        "name": "Hughie Jennings",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/j/jennihu01.shtml"
+    },
+    "King Kelly": {
+        "name": "King Kelly",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/k/kellyki01.shtml"
+    },
+    "Jim O'Rourke": {
+        "name": "Jim O'Rourke",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/o/o'rouji01.shtml"
+    },
+    "Wilbert Robinson": {
+        "name": "Wilbert Robinson",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/robinwi01.shtml"
+    },
+    "Kenesaw Mountain Landis": {
+        "name": "Kenesaw Mountain Landis",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/landike99.shtml"
+    },
+    "Rogers Hornsby": {
+        "name": "Rogers Hornsby",
+        "inducted_as": "Player",
+        "% of Ballots": 78.1,
+        "link": "https://www.baseball-reference.com/players/h/hornsro01.shtml"
+    },
+    "Cap Anson": {
+        "name": "Cap Anson",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/a/ansonca01.shtml"
+    },
+    "Eddie Collins": {
+        "name": "Eddie Collins",
+        "inducted_as": "Player",
+        "% of Ballots": 77.7,
+        "link": "https://www.baseball-reference.com/players/c/collied01.shtml"
+    },
+    "Charlie Comiskey": {
+        "name": "Charlie Comiskey",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/comisch01.shtml"
+    },
+    "Candy Cummings": {
+        "name": "Candy Cummings",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/c/cummica01.shtml"
+    },
+    "Buck Ewing": {
+        "name": "Buck Ewing",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/e/ewingbu01.shtml"
+    },
+    "Lou Gehrig": {
+        "name": "Lou Gehrig",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/g/gehrilo01.shtml"
+    },
+    "Willie Keeler": {
+        "name": "Willie Keeler",
+        "inducted_as": "Player",
+        "% of Ballots": 75.5,
+        "link": "https://www.baseball-reference.com/players/k/keelewi01.shtml"
+    },
+    "Old Hoss Radbourn": {
+        "name": "Old Hoss Radbourn",
+        "inducted_as": "Player",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/r/radboch01.shtml"
+    },
+    "George Sisler": {
+        "name": "George Sisler",
+        "inducted_as": "Player",
+        "% of Ballots": 85.8,
+        "link": "https://www.baseball-reference.com/players/s/sislege01.shtml"
+    },
+    "Al Spalding": {
+        "name": "Al Spalding",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/s/spaldal01.shtml"
+    },
+    "Grover Alexander": {
+        "name": "Grover Alexander",
+        "inducted_as": "Player",
+        "% of Ballots": 80.9,
+        "link": "https://www.baseball-reference.com/players/a/alexape01.shtml"
+    },
+    "Alexander Cartwright": {
+        "name": "Alexander Cartwright",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/cartwal99.shtml"
+    },
+    "Henry Chadwick": {
+        "name": "Henry Chadwick",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/chadwhe99.shtml"
+    },
+    "Morgan Bulkeley": {
+        "name": "Morgan Bulkeley",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/bulkemo99.shtml"
+    },
+    "Ban Johnson": {
+        "name": "Ban Johnson",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/nonmlbpa/johnsba99.shtml"
+    },
+    "Nap Lajoie": {
+        "name": "Nap Lajoie",
+        "inducted_as": "Player",
+        "% of Ballots": 83.6,
+        "link": "https://www.baseball-reference.com/players/l/lajoina01.shtml"
+    },
+    "Connie Mack": {
+        "name": "Connie Mack",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/mackco01.shtml"
+    },
+    "John McGraw": {
+        "name": "John McGraw",
+        "inducted_as": "Manager",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/managers/mcgrajo01.shtml"
+    },
+    "Tris Speaker": {
+        "name": "Tris Speaker",
+        "inducted_as": "Player",
+        "% of Ballots": 82.1,
+        "link": "https://www.baseball-reference.com/players/s/speaktr01.shtml"
+    },
+    "George Wright": {
+        "name": "George Wright",
+        "inducted_as": "Pioneer/Executive",
+        "% of Ballots": null,
+        "link": "https://www.baseball-reference.com/players/w/wrighge01.shtml"
+    },
+    "Cy Young": {
+        "name": "Cy Young",
+        "inducted_as": "Player",
+        "% of Ballots": 76.1,
+        "link": "https://www.baseball-reference.com/players/y/youngcy01.shtml"
+    },
+    "Ty Cobb": {
+        "name": "Ty Cobb",
+        "inducted_as": "Player",
+        "% of Ballots": 98.2,
+        "link": "https://www.baseball-reference.com/players/c/cobbty01.shtml"
+    },
+    "Walter Johnson": {
+        "name": "Walter Johnson",
+        "inducted_as": "Player",
+        "% of Ballots": 83.6,
+        "link": "https://www.baseball-reference.com/players/j/johnswa01.shtml"
+    },
+    "Christy Mathewson": {
+        "name": "Christy Mathewson",
+        "inducted_as": "Player",
+        "% of Ballots": 90.7,
+        "link": "https://www.baseball-reference.com/players/m/mathech01.shtml"
+    },
+    "Babe Ruth": {
+        "name": "Babe Ruth",
+        "inducted_as": "Player",
+        "% of Ballots": 95.1,
+        "link": "https://www.baseball-reference.com/players/r/ruthba01.shtml"
+    },
+    "Honus Wagner": {
+        "name": "Honus Wagner",
+        "inducted_as": "Player",
+        "% of Ballots": 95.1,
+        "link": "https://www.baseball-reference.com/players/w/wagneho01.shtml"
+    }
+}
