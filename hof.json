@@ -1,6 +1,5 @@
 {
     "Dick Allen": {
-        "name": "Dick Allen",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/a/allendi01.shtml",
@@ -10,13 +9,13 @@
         "ab": 6332,
         "ba": 0.292,
         "rbi": 1119,
+        "W": 287,
         "induction": 2025,
         "last_game": 1977,
         "years_of_waiting_to_enter": 48,
         "years_of_experience": 15
     },
     "Dave Parker": {
-        "name": "Dave Parker",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/p/parkeda01.shtml",
@@ -32,7 +31,6 @@
         "years_of_experience": 19
     },
     "CC Sabathia": {
-        "name": "CC Sabathia",
         "inducted_as": "Player",
         "% of Ballots": 86.8,
         "link": "https://www.baseball-reference.com/players/s/sabatc.01.shtml",
@@ -42,13 +40,14 @@
         "ab": 121,
         "ba": 0.207,
         "rbi": 15,
+        "L": 161,
+        "ERA": 3.74,
         "induction": 2025,
         "last_game": 2019,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 19
     },
     "Ichiro Suzuki": {
-        "name": "Ichiro Suzuki",
         "inducted_as": "Player",
         "% of Ballots": 99.7,
         "link": "https://www.baseball-reference.com/players/s/suzukic01.shtml",
@@ -64,7 +63,6 @@
         "years_of_experience": 19
     },
     "Billy Wagner": {
-        "name": "Billy Wagner",
         "inducted_as": "Player",
         "% of Ballots": 82.5,
         "link": "https://www.baseball-reference.com/players/w/wagnebi02.shtml",
@@ -74,13 +72,14 @@
         "ab": 20,
         "ba": 0.1,
         "rbi": 1,
+        "L": 40,
+        "ERA": 2.31,
         "induction": 2025,
         "last_game": 2010,
         "years_of_waiting_to_enter": 15,
         "years_of_experience": 16
     },
     "Adrian Beltré": {
-        "name": "Adrian Beltré",
         "inducted_as": "Player",
         "% of Ballots": 95.1,
         "link": "https://www.baseball-reference.com/players/b/beltrad01.shtml",
@@ -90,13 +89,13 @@
         "ab": 11068,
         "ba": 0.286,
         "rbi": 1707,
+        "W": 114,
         "induction": 2024,
         "last_game": 2018,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 21
     },
     "Todd Helton": {
-        "name": "Todd Helton",
         "inducted_as": "Player",
         "% of Ballots": 79.7,
         "link": "https://www.baseball-reference.com/players/h/heltoto01.shtml",
@@ -112,13 +111,11 @@
         "years_of_experience": 17
     },
     "Jim Leyland": {
-        "name": "Jim Leyland",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/leylaji99.shtml"
     },
     "Joe Mauer": {
-        "name": "Joe Mauer",
         "inducted_as": "Player",
         "% of Ballots": 76.1,
         "link": "https://www.baseball-reference.com/players/m/mauerjo01.shtml",
@@ -134,7 +131,6 @@
         "years_of_experience": 15
     },
     "Fred McGriff": {
-        "name": "Fred McGriff",
         "inducted_as": "Player",
         "% of Ballots": 100.0,
         "link": "https://www.baseball-reference.com/players/m/mcgrifr01.shtml",
@@ -150,7 +146,6 @@
         "years_of_experience": 19
     },
     "Scott Rolen": {
-        "name": "Scott Rolen",
         "inducted_as": "Player",
         "% of Ballots": 76.3,
         "link": "https://www.baseball-reference.com/players/r/rolensc01.shtml",
@@ -166,13 +161,11 @@
         "years_of_experience": 17
     },
     "Bud Fowler": {
-        "name": "Bud Fowler",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/fowlebu99.shtml"
     },
     "Gil Hodges": {
-        "name": "Gil Hodges",
         "inducted_as": "Player",
         "% of Ballots": 75.0,
         "link": "https://www.baseball-reference.com/players/h/hodgegi01.shtml",
@@ -188,7 +181,6 @@
         "years_of_experience": 18
     },
     "Jim Kaat": {
-        "name": "Jim Kaat",
         "inducted_as": "Player",
         "% of Ballots": 75.0,
         "link": "https://www.baseball-reference.com/players/k/kaatji01.shtml",
@@ -198,13 +190,14 @@
         "ab": 1251,
         "ba": 0.185,
         "rbi": 106,
+        "L": 237,
+        "ERA": 3.45,
         "induction": 2022,
         "last_game": 1983,
         "years_of_waiting_to_enter": 39,
         "years_of_experience": 25
     },
     "Minnie Miñoso": {
-        "name": "Minnie Miñoso",
         "inducted_as": "Player",
         "% of Ballots": 87.5,
         "link": "https://www.baseball-reference.com/players/m/minosmi01.shtml",
@@ -220,7 +213,6 @@
         "years_of_experience": 20
     },
     "Buck O'Neil": {
-        "name": "Buck O'Neil",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": 81.3,
         "link": "https://www.baseball-reference.com/players/o/oneilbu01.shtml",
@@ -236,7 +228,6 @@
         "years_of_experience": 10
     },
     "Tony Oliva": {
-        "name": "Tony Oliva",
         "inducted_as": "Player",
         "% of Ballots": 75.0,
         "link": "https://www.baseball-reference.com/players/o/olivato01.shtml",
@@ -252,7 +243,6 @@
         "years_of_experience": 15
     },
     "David Ortiz": {
-        "name": "David Ortiz",
         "inducted_as": "Player",
         "% of Ballots": 77.9,
         "link": "https://www.baseball-reference.com/players/o/ortizda01.shtml",
@@ -268,7 +258,6 @@
         "years_of_experience": 20
     },
     "Derek Jeter": {
-        "name": "Derek Jeter",
         "inducted_as": "Player",
         "% of Ballots": 99.7,
         "link": "https://www.baseball-reference.com/players/j/jeterde01.shtml",
@@ -284,13 +273,11 @@
         "years_of_experience": 20
     },
     "Marvin Miller": {
-        "name": "Marvin Miller",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": 81.3,
         "link": "https://www.baseball-reference.com/nonmlbpa/millema99.shtml"
     },
     "Ted Simmons": {
-        "name": "Ted Simmons",
         "inducted_as": "Player",
         "% of Ballots": 81.3,
         "link": "https://www.baseball-reference.com/players/s/simmote01.shtml",
@@ -306,7 +293,6 @@
         "years_of_experience": 21
     },
     "Larry Walker": {
-        "name": "Larry Walker",
         "inducted_as": "Player",
         "% of Ballots": 76.6,
         "link": "https://www.baseball-reference.com/players/w/walkela01.shtml",
@@ -322,7 +308,6 @@
         "years_of_experience": 17
     },
     "Harold Baines": {
-        "name": "Harold Baines",
         "inducted_as": "Player",
         "% of Ballots": 75.0,
         "link": "https://www.baseball-reference.com/players/b/baineha01.shtml",
@@ -332,13 +317,13 @@
         "ab": 9908,
         "ba": 0.289,
         "rbi": 1628,
+        "W": 50,
         "induction": 2019,
         "last_game": 2001,
         "years_of_waiting_to_enter": 18,
         "years_of_experience": 22
     },
     "Roy Halladay": {
-        "name": "Roy Halladay",
         "inducted_as": "Player",
         "% of Ballots": 85.4,
         "link": "https://www.baseball-reference.com/players/h/hallaro01.shtml",
@@ -348,13 +333,14 @@
         "ab": 275,
         "ba": 0.124,
         "rbi": 12,
+        "L": 105,
+        "ERA": 3.38,
         "induction": 2019,
         "last_game": 2013,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 16
     },
     "Edgar Martínez": {
-        "name": "Edgar Martínez",
         "inducted_as": "Player",
         "% of Ballots": 85.4,
         "link": "https://www.baseball-reference.com/players/m/martied01.shtml",
@@ -370,7 +356,6 @@
         "years_of_experience": 18
     },
     "Mike Mussina": {
-        "name": "Mike Mussina",
         "inducted_as": "Player",
         "% of Ballots": 76.7,
         "link": "https://www.baseball-reference.com/players/m/mussimi01.shtml",
@@ -380,13 +365,14 @@
         "ab": 52,
         "ba": 0.173,
         "rbi": 5,
+        "L": 153,
+        "ERA": 3.68,
         "induction": 2019,
         "last_game": 2008,
         "years_of_waiting_to_enter": 11,
         "years_of_experience": 18
     },
     "Mariano Rivera": {
-        "name": "Mariano Rivera",
         "inducted_as": "Player",
         "% of Ballots": 100.0,
         "link": "https://www.baseball-reference.com/players/r/riverma01.shtml",
@@ -396,13 +382,14 @@
         "ab": 3,
         "ba": 0.0,
         "rbi": 1,
+        "L": 60,
+        "ERA": 2.21,
         "induction": 2019,
         "last_game": 2013,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 19
     },
     "Lee Smith": {
-        "name": "Lee Smith",
         "inducted_as": "Player",
         "% of Ballots": 100.0,
         "link": "https://www.baseball-reference.com/players/s/smithle02.shtml",
@@ -412,13 +399,14 @@
         "ab": 64,
         "ba": 0.047,
         "rbi": 2,
+        "L": 92,
+        "ERA": 3.03,
         "induction": 2019,
         "last_game": 1997,
         "years_of_waiting_to_enter": 22,
         "years_of_experience": 18
     },
     "Vladimir Guerrero": {
-        "name": "Vladimir Guerrero",
         "inducted_as": "Player",
         "% of Ballots": 92.9,
         "link": "https://www.baseball-reference.com/players/g/guerrvl01.shtml",
@@ -434,7 +422,6 @@
         "years_of_experience": 16
     },
     "Trevor Hoffman": {
-        "name": "Trevor Hoffman",
         "inducted_as": "Player",
         "% of Ballots": 79.9,
         "link": "https://www.baseball-reference.com/players/h/hoffmtr01.shtml",
@@ -444,13 +431,14 @@
         "ab": 34,
         "ba": 0.118,
         "rbi": 5,
+        "L": 75,
+        "ERA": 2.87,
         "induction": 2018,
         "last_game": 2010,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 18
     },
     "Chipper Jones": {
-        "name": "Chipper Jones",
         "inducted_as": "Player",
         "% of Ballots": 97.2,
         "link": "https://www.baseball-reference.com/players/j/jonesch06.shtml",
@@ -466,7 +454,6 @@
         "years_of_experience": 19
     },
     "Jack Morris": {
-        "name": "Jack Morris",
         "inducted_as": "Player",
         "% of Ballots": 87.5,
         "link": "https://www.baseball-reference.com/players/m/morrija02.shtml",
@@ -476,13 +463,14 @@
         "ab": 1,
         "ba": 0.0,
         "rbi": 0,
+        "L": 186,
+        "ERA": 3.9,
         "induction": 2018,
         "last_game": 1994,
         "years_of_waiting_to_enter": 24,
         "years_of_experience": 18
     },
     "Jim Thome": {
-        "name": "Jim Thome",
         "inducted_as": "Player",
         "% of Ballots": 89.8,
         "link": "https://www.baseball-reference.com/players/t/thomeji01.shtml",
@@ -498,7 +486,6 @@
         "years_of_experience": 22
     },
     "Alan Trammell": {
-        "name": "Alan Trammell",
         "inducted_as": "Player",
         "% of Ballots": 81.3,
         "link": "https://www.baseball-reference.com/players/t/trammal01.shtml",
@@ -514,7 +501,6 @@
         "years_of_experience": 20
     },
     "Jeff Bagwell": {
-        "name": "Jeff Bagwell",
         "inducted_as": "Player",
         "% of Ballots": 86.2,
         "link": "https://www.baseball-reference.com/players/b/bagweje01.shtml",
@@ -524,13 +510,13 @@
         "ab": 7797,
         "ba": 0.297,
         "rbi": 1529,
+        "W": 145,
         "induction": 2017,
         "last_game": 2005,
         "years_of_waiting_to_enter": 12,
         "years_of_experience": 15
     },
     "Tim Raines": {
-        "name": "Tim Raines",
         "inducted_as": "Player",
         "% of Ballots": 86.0,
         "link": "https://www.baseball-reference.com/players/r/raineti01.shtml",
@@ -546,7 +532,6 @@
         "years_of_experience": 23
     },
     "Iván Rodríguez": {
-        "name": "Iván Rodríguez",
         "inducted_as": "Player",
         "% of Ballots": 76.0,
         "link": "https://www.baseball-reference.com/players/r/rodriiv01.shtml",
@@ -562,19 +547,16 @@
         "years_of_experience": 21
     },
     "John Schuerholz": {
-        "name": "John Schuerholz",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": 100.0,
         "link": "https://www.baseball-reference.com/nonmlbpa/schurjo99.shtml"
     },
     "Bud Selig": {
-        "name": "Bud Selig",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/seligbu99.shtml"
     },
     "Ken Griffey Jr.": {
-        "name": "Ken Griffey Jr.",
         "inducted_as": "Player",
         "% of Ballots": 99.3,
         "link": "https://www.baseball-reference.com/players/g/griffke02.shtml",
@@ -590,7 +572,6 @@
         "years_of_experience": 22
     },
     "Mike Piazza": {
-        "name": "Mike Piazza",
         "inducted_as": "Player",
         "% of Ballots": 83.0,
         "link": "https://www.baseball-reference.com/players/p/piazzmi01.shtml",
@@ -606,7 +587,6 @@
         "years_of_experience": 16
     },
     "Craig Biggio": {
-        "name": "Craig Biggio",
         "inducted_as": "Player",
         "% of Ballots": 82.7,
         "link": "https://www.baseball-reference.com/players/b/biggicr01.shtml",
@@ -616,13 +596,13 @@
         "ab": 10876,
         "ba": 0.281,
         "rbi": 1175,
+        "W": 251,
         "induction": 2015,
         "last_game": 2007,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 20
     },
     "Randy Johnson": {
-        "name": "Randy Johnson",
         "inducted_as": "Player",
         "% of Ballots": 97.3,
         "link": "https://www.baseball-reference.com/players/j/johnsra05.shtml",
@@ -632,13 +612,14 @@
         "ab": 625,
         "ba": 0.125,
         "rbi": 40,
+        "L": 166,
+        "ERA": 3.29,
         "induction": 2015,
         "last_game": 2009,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 22
     },
     "Pedro Martinez": {
-        "name": "Pedro Martinez",
         "inducted_as": "Player",
         "% of Ballots": 91.1,
         "link": "https://www.baseball-reference.com/players/m/martipe02.shtml",
@@ -648,13 +629,14 @@
         "ab": 434,
         "ba": 0.099,
         "rbi": 18,
+        "L": 100,
+        "ERA": 2.93,
         "induction": 2015,
         "last_game": 2009,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 18
     },
     "John Smoltz": {
-        "name": "John Smoltz",
         "inducted_as": "Player",
         "% of Ballots": 82.9,
         "link": "https://www.baseball-reference.com/players/s/smoltjo01.shtml",
@@ -664,13 +646,14 @@
         "ab": 948,
         "ba": 0.159,
         "rbi": 61,
+        "L": 155,
+        "ERA": 3.33,
         "induction": 2015,
         "last_game": 2009,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 21
     },
     "Bobby Cox": {
-        "name": "Bobby Cox",
         "inducted_as": "Manager",
         "% of Ballots": 100.0,
         "link": "https://www.baseball-reference.com/managers/coxbo01.shtml",
@@ -680,13 +663,13 @@
         "ab": 628,
         "ba": 0.225,
         "rbi": 58,
+        "W": 241,
         "induction": 2014,
         "last_game": 1969,
         "years_of_waiting_to_enter": 45,
         "years_of_experience": 2
     },
     "Tom Glavine": {
-        "name": "Tom Glavine",
         "inducted_as": "Player",
         "% of Ballots": 91.9,
         "link": "https://www.baseball-reference.com/players/g/glavito02.shtml",
@@ -696,13 +679,14 @@
         "ab": 1323,
         "ba": 0.186,
         "rbi": 90,
+        "L": 203,
+        "ERA": 3.54,
         "induction": 2014,
         "last_game": 2008,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 22
     },
     "Tony La Russa": {
-        "name": "Tony La Russa",
         "inducted_as": "Manager",
         "% of Ballots": 100.0,
         "link": "https://www.baseball-reference.com/managers/larusto01.shtml",
@@ -718,7 +702,6 @@
         "years_of_experience": 6
     },
     "Greg Maddux": {
-        "name": "Greg Maddux",
         "inducted_as": "Player",
         "% of Ballots": 97.2,
         "link": "https://www.baseball-reference.com/players/m/maddugr01.shtml",
@@ -728,13 +711,14 @@
         "ab": 1591,
         "ba": 0.171,
         "rbi": 84,
+        "L": 227,
+        "ERA": 3.16,
         "induction": 2014,
         "last_game": 2008,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 23
     },
     "Frank Thomas": {
-        "name": "Frank Thomas",
         "inducted_as": "Player",
         "% of Ballots": 83.7,
         "link": "https://www.baseball-reference.com/players/t/thomafr04.shtml",
@@ -750,7 +734,6 @@
         "years_of_experience": 19
     },
     "Joe Torre": {
-        "name": "Joe Torre",
         "inducted_as": "Manager",
         "% of Ballots": 100.0,
         "link": "https://www.baseball-reference.com/players/t/torrejo01.shtml",
@@ -766,7 +749,6 @@
         "years_of_experience": 18
     },
     "Hank O'Day": {
-        "name": "Hank O'Day",
         "inducted_as": "Umpire",
         "% of Ballots": 93.8,
         "link": "https://www.baseball-reference.com/players/o/o'dayha01.shtml",
@@ -776,19 +758,19 @@
         "ab": 817,
         "ba": 0.19,
         "rbi": 46,
+        "L": 110,
+        "ERA": 3.74,
         "induction": 2013,
         "last_game": 1890,
         "years_of_waiting_to_enter": 123,
         "years_of_experience": 7
     },
     "Jacob Ruppert": {
-        "name": "Jacob Ruppert",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": 93.8,
         "link": "https://www.baseball-reference.com/nonmlbpa/ruppeja99.shtml"
     },
     "Deacon White": {
-        "name": "Deacon White",
         "inducted_as": "Player",
         "% of Ballots": 87.5,
         "link": "https://www.baseball-reference.com/players/w/whitede01.shtml",
@@ -804,7 +786,6 @@
         "years_of_experience": 20
     },
     "Barry Larkin": {
-        "name": "Barry Larkin",
         "inducted_as": "Player",
         "% of Ballots": 86.4,
         "link": "https://www.baseball-reference.com/players/l/larkiba01.shtml",
@@ -820,7 +801,6 @@
         "years_of_experience": 19
     },
     "Ron Santo": {
-        "name": "Ron Santo",
         "inducted_as": "Player",
         "% of Ballots": 93.8,
         "link": "https://www.baseball-reference.com/players/s/santoro01.shtml",
@@ -836,7 +816,6 @@
         "years_of_experience": 15
     },
     "Roberto Alomar": {
-        "name": "Roberto Alomar",
         "inducted_as": "Player",
         "% of Ballots": 90.0,
         "link": "https://www.baseball-reference.com/players/a/alomaro01.shtml",
@@ -846,13 +825,13 @@
         "ab": 9073,
         "ba": 0.3,
         "rbi": 1134,
+        "W": 239,
         "induction": 2011,
         "last_game": 2004,
         "years_of_waiting_to_enter": 7,
         "years_of_experience": 17
     },
     "Bert Blyleven": {
-        "name": "Bert Blyleven",
         "inducted_as": "Player",
         "% of Ballots": 79.7,
         "link": "https://www.baseball-reference.com/players/b/blylebe01.shtml",
@@ -862,19 +841,20 @@
         "ab": 451,
         "ba": 0.131,
         "rbi": 25,
+        "L": 250,
+        "ERA": 3.31,
+        "W": 305,
         "induction": 2011,
         "last_game": 1992,
         "years_of_waiting_to_enter": 19,
         "years_of_experience": 22
     },
     "Pat Gillick": {
-        "name": "Pat Gillick",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/gillipa99.shtml"
     },
     "Andre Dawson": {
-        "name": "Andre Dawson",
         "inducted_as": "Player",
         "% of Ballots": 77.9,
         "link": "https://www.baseball-reference.com/players/d/dawsoan01.shtml",
@@ -884,19 +864,18 @@
         "ab": 9927,
         "ba": 0.279,
         "rbi": 1591,
+        "W": 120,
         "induction": 2010,
         "last_game": 1996,
         "years_of_waiting_to_enter": 14,
         "years_of_experience": 21
     },
     "Doug Harvey": {
-        "name": "Doug Harvey",
         "inducted_as": "Umpire",
         "% of Ballots": 93.8,
         "link": "https://www.baseball-reference.com/nonmlbpa/harvedo99.shtml"
     },
     "Whitey Herzog": {
-        "name": "Whitey Herzog",
         "inducted_as": "Manager",
         "% of Ballots": 87.5,
         "link": "https://www.baseball-reference.com/managers/herzowh01.shtml",
@@ -912,7 +891,6 @@
         "years_of_experience": 8
     },
     "Joe Gordon": {
-        "name": "Joe Gordon",
         "inducted_as": "Player",
         "% of Ballots": 83.3,
         "link": "https://www.baseball-reference.com/players/g/gordojo01.shtml",
@@ -928,7 +906,6 @@
         "years_of_experience": 11
     },
     "Rickey Henderson": {
-        "name": "Rickey Henderson",
         "inducted_as": "Player",
         "% of Ballots": 94.8,
         "link": "https://www.baseball-reference.com/players/h/henderi01.shtml",
@@ -944,7 +921,6 @@
         "years_of_experience": 25
     },
     "Jim Rice": {
-        "name": "Jim Rice",
         "inducted_as": "Player",
         "% of Ballots": 76.4,
         "link": "https://www.baseball-reference.com/players/r/riceji01.shtml",
@@ -960,13 +936,11 @@
         "years_of_experience": 16
     },
     "Barney Dreyfuss": {
-        "name": "Barney Dreyfuss",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": 83.3,
         "link": "https://www.baseball-reference.com/nonmlbpa/dreyfba99.shtml"
     },
     "Rich Gossage": {
-        "name": "Rich Gossage",
         "inducted_as": "Player",
         "% of Ballots": 85.8,
         "link": "https://www.baseball-reference.com/players/g/gossari01.shtml",
@@ -976,25 +950,24 @@
         "ab": 85,
         "ba": 0.106,
         "rbi": 2,
+        "L": 107,
+        "ERA": 3.01,
         "induction": 2008,
         "last_game": 1994,
         "years_of_waiting_to_enter": 14,
         "years_of_experience": 22
     },
     "Bowie Kuhn": {
-        "name": "Bowie Kuhn",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/kuhnbo99.shtml"
     },
     "Walter O'Malley": {
-        "name": "Walter O'Malley",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": 75.0,
         "link": "https://www.baseball-reference.com/nonmlbpa/o'malwa99.shtml"
     },
     "Billy Southworth": {
-        "name": "Billy Southworth",
         "inducted_as": "Manager",
         "% of Ballots": 81.3,
         "link": "https://www.baseball-reference.com/players/s/southbi01.shtml",
@@ -1010,7 +983,6 @@
         "years_of_experience": 13
     },
     "Dick Williams": {
-        "name": "Dick Williams",
         "inducted_as": "Manager",
         "% of Ballots": 81.3,
         "link": "https://www.baseball-reference.com/managers/willidi02.shtml",
@@ -1026,7 +998,6 @@
         "years_of_experience": 13
     },
     "Tony Gwynn": {
-        "name": "Tony Gwynn",
         "inducted_as": "Player",
         "% of Ballots": 97.6,
         "link": "https://www.baseball-reference.com/players/g/gwynnto01.shtml",
@@ -1042,7 +1013,6 @@
         "years_of_experience": 20
     },
     "Cal Ripken Jr.": {
-        "name": "Cal Ripken Jr.",
         "inducted_as": "Player",
         "% of Ballots": 98.5,
         "link": "https://www.baseball-reference.com/players/r/ripkeca01.shtml",
@@ -1058,7 +1028,6 @@
         "years_of_experience": 21
     },
     "Ray Brown": {
-        "name": "Ray Brown",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/brownra99.shtml",
@@ -1068,13 +1037,15 @@
         "ab": 1260,
         "ba": 0.266,
         "rbi": 197,
+        "L": 46,
+        "ERA": 3.12,
+        "W": 237,
         "induction": 2006,
         "last_game": 1945,
         "years_of_waiting_to_enter": 61,
         "years_of_experience": 14
     },
     "Willard Brown": {
-        "name": "Willard Brown",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/brownwi02.shtml",
@@ -1084,13 +1055,13 @@
         "ab": 1652,
         "ba": 0.351,
         "rbi": 391,
+        "W": 253,
         "induction": 2006,
         "last_game": 1948,
         "years_of_waiting_to_enter": 58,
         "years_of_experience": 11
     },
     "Andy Cooper": {
-        "name": "Andy Cooper",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/coopean99.shtml",
@@ -1100,19 +1071,20 @@
         "ab": 580,
         "ba": 0.181,
         "rbi": 35,
+        "L": 64,
+        "ERA": 3.58,
+        "W": 124,
         "induction": 2006,
         "last_game": 1939,
         "years_of_waiting_to_enter": 67,
         "years_of_experience": 14
     },
     "Frank Grant": {
-        "name": "Frank Grant",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/grantfr99.shtml"
     },
     "Pete Hill": {
-        "name": "Pete Hill",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/hillpe99.shtml",
@@ -1128,7 +1100,6 @@
         "years_of_experience": 5
     },
     "Biz Mackey": {
-        "name": "Biz Mackey",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/mackebi99.shtml",
@@ -1144,13 +1115,11 @@
         "years_of_experience": 22
     },
     "Effa Manley": {
-        "name": "Effa Manley",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/manleef99.shtml"
     },
     "José Méndez": {
-        "name": "José Méndez",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/mendejo99.shtml",
@@ -1166,19 +1135,16 @@
         "years_of_experience": 7
     },
     "Alex Pompez": {
-        "name": "Alex Pompez",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/pompeal99.shtml"
     },
     "Cum Posey": {
-        "name": "Cum Posey",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/poseycu99.shtml"
     },
     "Louis Santop": {
-        "name": "Louis Santop",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/santolo99.shtml",
@@ -1194,7 +1160,6 @@
         "years_of_experience": 4
     },
     "Bruce Sutter": {
-        "name": "Bruce Sutter",
         "inducted_as": "Player",
         "% of Ballots": 76.9,
         "link": "https://www.baseball-reference.com/players/s/suttebr01.shtml",
@@ -1204,13 +1169,14 @@
         "ab": 102,
         "ba": 0.088,
         "rbi": 6,
+        "L": 71,
+        "ERA": 2.83,
         "induction": 2006,
         "last_game": 1988,
         "years_of_waiting_to_enter": 18,
         "years_of_experience": 12
     },
     "Mule Suttles": {
-        "name": "Mule Suttles",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/suttlmu99.shtml",
@@ -1226,7 +1192,6 @@
         "years_of_experience": 21
     },
     "Ben Taylor": {
-        "name": "Ben Taylor",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/t/taylobe99.shtml",
@@ -1242,7 +1207,6 @@
         "years_of_experience": 10
     },
     "Cristóbal Torriente": {
-        "name": "Cristóbal Torriente",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/t/torricr99.shtml",
@@ -1258,19 +1222,16 @@
         "years_of_experience": 10
     },
     "Sol White": {
-        "name": "Sol White",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/whiteso99.shtml"
     },
     "J.L. Wilkinson": {
-        "name": "J.L. Wilkinson",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/wilkijl99.shtml"
     },
     "Jud Wilson": {
-        "name": "Jud Wilson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wilsoju99.shtml",
@@ -1286,7 +1247,6 @@
         "years_of_experience": 21
     },
     "Wade Boggs": {
-        "name": "Wade Boggs",
         "inducted_as": "Player",
         "% of Ballots": 91.9,
         "link": "https://www.baseball-reference.com/players/b/boggswa01.shtml",
@@ -1296,13 +1256,13 @@
         "ab": 9180,
         "ba": 0.328,
         "rbi": 1014,
+        "W": 189,
         "induction": 2005,
         "last_game": 1999,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 18
     },
     "Ryne Sandberg": {
-        "name": "Ryne Sandberg",
         "inducted_as": "Player",
         "% of Ballots": 76.2,
         "link": "https://www.baseball-reference.com/players/s/sandbry01.shtml",
@@ -1318,7 +1278,6 @@
         "years_of_experience": 16
     },
     "Dennis Eckersley": {
-        "name": "Dennis Eckersley",
         "inducted_as": "Player",
         "% of Ballots": 83.2,
         "link": "https://www.baseball-reference.com/players/e/eckerde01.shtml",
@@ -1328,13 +1287,15 @@
         "ab": 181,
         "ba": 0.133,
         "rbi": 12,
+        "L": 171,
+        "ERA": 3.5,
+        "W": 68,
         "induction": 2004,
         "last_game": 1998,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 24
     },
     "Paul Molitor": {
-        "name": "Paul Molitor",
         "inducted_as": "Player",
         "% of Ballots": 85.2,
         "link": "https://www.baseball-reference.com/players/m/molitpa01.shtml",
@@ -1350,7 +1311,6 @@
         "years_of_experience": 21
     },
     "Gary Carter": {
-        "name": "Gary Carter",
         "inducted_as": "Player",
         "% of Ballots": 78.0,
         "link": "https://www.baseball-reference.com/players/c/cartega01.shtml",
@@ -1360,13 +1320,13 @@
         "ab": 7971,
         "ba": 0.262,
         "rbi": 1225,
+        "W": 342,
         "induction": 2003,
         "last_game": 1992,
         "years_of_waiting_to_enter": 11,
         "years_of_experience": 19
     },
     "Eddie Murray": {
-        "name": "Eddie Murray",
         "inducted_as": "Player",
         "% of Ballots": 85.3,
         "link": "https://www.baseball-reference.com/players/m/murraed02.shtml",
@@ -1382,7 +1342,6 @@
         "years_of_experience": 21
     },
     "Ozzie Smith": {
-        "name": "Ozzie Smith",
         "inducted_as": "Player",
         "% of Ballots": 91.7,
         "link": "https://www.baseball-reference.com/players/s/smithoz01.shtml",
@@ -1398,7 +1357,6 @@
         "years_of_experience": 19
     },
     "Bill Mazeroski": {
-        "name": "Bill Mazeroski",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/mazerbi01.shtml",
@@ -1414,7 +1372,6 @@
         "years_of_experience": 17
     },
     "Kirby Puckett": {
-        "name": "Kirby Puckett",
         "inducted_as": "Player",
         "% of Ballots": 82.1,
         "link": "https://www.baseball-reference.com/players/p/puckeki01.shtml",
@@ -1430,7 +1387,6 @@
         "years_of_experience": 12
     },
     "Hilton Smith": {
-        "name": "Hilton Smith",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/smithhi99.shtml",
@@ -1440,13 +1396,14 @@
         "ab": 517,
         "ba": 0.298,
         "rbi": 91,
+        "L": 38,
+        "ERA": 2.92,
         "induction": 2001,
         "last_game": 1948,
         "years_of_waiting_to_enter": 53,
         "years_of_experience": 13
     },
     "Dave Winfield": {
-        "name": "Dave Winfield",
         "inducted_as": "Player",
         "% of Ballots": 84.5,
         "link": "https://www.baseball-reference.com/players/w/winfida01.shtml",
@@ -1462,7 +1419,6 @@
         "years_of_experience": 22
     },
     "Sparky Anderson": {
-        "name": "Sparky Anderson",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/andersp01.shtml",
@@ -1472,13 +1428,13 @@
         "ab": 477,
         "ba": 0.218,
         "rbi": 34,
+        "W": 224,
         "induction": 2000,
         "last_game": 1959,
         "years_of_waiting_to_enter": 41,
         "years_of_experience": 1
     },
     "Carlton Fisk": {
-        "name": "Carlton Fisk",
         "inducted_as": "Player",
         "% of Ballots": 79.6,
         "link": "https://www.baseball-reference.com/players/f/fiskca01.shtml",
@@ -1488,13 +1444,13 @@
         "ab": 8756,
         "ba": 0.269,
         "rbi": 1330,
+        "W": 307,
         "induction": 2000,
         "last_game": 1993,
         "years_of_waiting_to_enter": 7,
         "years_of_experience": 24
     },
     "Bid McPhee": {
-        "name": "Bid McPhee",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/mcphebi01.shtml",
@@ -1510,7 +1466,6 @@
         "years_of_experience": 18
     },
     "Tony Pérez": {
-        "name": "Tony Pérez",
         "inducted_as": "Player",
         "% of Ballots": 77.2,
         "link": "https://www.baseball-reference.com/players/p/perezto01.shtml",
@@ -1526,7 +1481,6 @@
         "years_of_experience": 23
     },
     "Turkey Stearnes": {
-        "name": "Turkey Stearnes",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/steartu99.shtml",
@@ -1542,7 +1496,6 @@
         "years_of_experience": 18
     },
     "George Brett": {
-        "name": "George Brett",
         "inducted_as": "Player",
         "% of Ballots": 98.2,
         "link": "https://www.baseball-reference.com/players/b/brettge01.shtml",
@@ -1552,13 +1505,13 @@
         "ab": 10349,
         "ba": 0.305,
         "rbi": 1596,
+        "W": 300,
         "induction": 1999,
         "last_game": 1993,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 21
     },
     "Orlando Cepeda": {
-        "name": "Orlando Cepeda",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/cepedor01.shtml",
@@ -1568,19 +1521,18 @@
         "ab": 7927,
         "ba": 0.297,
         "rbi": 1365,
+        "W": 165,
         "induction": 1999,
         "last_game": 1974,
         "years_of_waiting_to_enter": 25,
         "years_of_experience": 17
     },
     "Nestor Chylak": {
-        "name": "Nestor Chylak",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/chylane99.shtml"
     },
     "Nolan Ryan": {
-        "name": "Nolan Ryan",
         "inducted_as": "Player",
         "% of Ballots": 98.8,
         "link": "https://www.baseball-reference.com/players/r/ryanno01.shtml",
@@ -1590,19 +1542,19 @@
         "ab": 852,
         "ba": 0.11,
         "rbi": 36,
+        "L": 292,
+        "ERA": 3.19,
         "induction": 1999,
         "last_game": 1993,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 27
     },
     "Frank Selee": {
-        "name": "Frank Selee",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/seleefr99.shtml"
     },
     "Joe Williams": {
-        "name": "Joe Williams",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/willijo99.shtml",
@@ -1618,7 +1570,6 @@
         "years_of_experience": 4
     },
     "Robin Yount": {
-        "name": "Robin Yount",
         "inducted_as": "Player",
         "% of Ballots": 77.5,
         "link": "https://www.baseball-reference.com/players/y/yountro01.shtml",
@@ -1634,7 +1585,6 @@
         "years_of_experience": 20
     },
     "George Davis": {
-        "name": "George Davis",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/davisge01.shtml",
@@ -1644,13 +1594,13 @@
         "ab": 9045,
         "ba": 0.295,
         "rbi": 1440,
+        "W": 286,
         "induction": 1998,
         "last_game": 1909,
         "years_of_waiting_to_enter": 89,
         "years_of_experience": 20
     },
     "Larry Doby": {
-        "name": "Larry Doby",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/dobyla01.shtml",
@@ -1660,19 +1610,18 @@
         "ab": 5883,
         "ba": 0.288,
         "rbi": 1099,
+        "W": 70,
         "induction": 1998,
         "last_game": 1959,
         "years_of_waiting_to_enter": 39,
         "years_of_experience": 17
     },
     "Lee MacPhail": {
-        "name": "Lee MacPhail",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/macphle99.shtml"
     },
     "Bullet Rogan": {
-        "name": "Bullet Rogan",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/roganbu99.shtml",
@@ -1682,13 +1631,14 @@
         "ab": 2052,
         "ba": 0.338,
         "rbi": 419,
+        "L": 52,
+        "ERA": 2.65,
         "induction": 1998,
         "last_game": 1938,
         "years_of_waiting_to_enter": 60,
         "years_of_experience": 13
     },
     "Don Sutton": {
-        "name": "Don Sutton",
         "inducted_as": "Player",
         "% of Ballots": 81.6,
         "link": "https://www.baseball-reference.com/players/s/suttodo01.shtml",
@@ -1698,13 +1648,14 @@
         "ab": 1354,
         "ba": 0.144,
         "rbi": 64,
+        "L": 256,
+        "ERA": 3.26,
         "induction": 1998,
         "last_game": 1988,
         "years_of_waiting_to_enter": 10,
         "years_of_experience": 23
     },
     "Nellie Fox": {
-        "name": "Nellie Fox",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/f/foxne01.shtml",
@@ -1714,13 +1665,13 @@
         "ab": 9232,
         "ba": 0.288,
         "rbi": 790,
+        "W": 511,
         "induction": 1997,
         "last_game": 1965,
         "years_of_waiting_to_enter": 32,
         "years_of_experience": 19
     },
     "Tommy Lasorda": {
-        "name": "Tommy Lasorda",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/lasorto01.shtml",
@@ -1736,7 +1687,6 @@
         "years_of_experience": 3
     },
     "Phil Niekro": {
-        "name": "Phil Niekro",
         "inducted_as": "Player",
         "% of Ballots": 80.3,
         "link": "https://www.baseball-reference.com/players/n/niekrph01.shtml",
@@ -1746,13 +1696,14 @@
         "ab": 1537,
         "ba": 0.169,
         "rbi": 109,
+        "L": 274,
+        "ERA": 3.35,
         "induction": 1997,
         "last_game": 1987,
         "years_of_waiting_to_enter": 10,
         "years_of_experience": 24
     },
     "Willie Wells": {
-        "name": "Willie Wells",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wellswi99.shtml",
@@ -1768,7 +1719,6 @@
         "years_of_experience": 21
     },
     "Jim Bunning": {
-        "name": "Jim Bunning",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/bunniji01.shtml",
@@ -1778,13 +1728,15 @@
         "ab": 1275,
         "ba": 0.167,
         "rbi": 75,
+        "L": 184,
+        "ERA": 3.27,
+        "W": 224,
         "induction": 1996,
         "last_game": 1971,
         "years_of_waiting_to_enter": 25,
         "years_of_experience": 17
     },
     "Bill Foster": {
-        "name": "Bill Foster",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/f/fostebi99.shtml",
@@ -1794,13 +1746,15 @@
         "ab": 577,
         "ba": 0.218,
         "rbi": 49,
+        "L": 56,
+        "ERA": 2.63,
+        "W": 300,
         "induction": 1996,
         "last_game": 1937,
         "years_of_waiting_to_enter": 59,
         "years_of_experience": 14
     },
     "Ned Hanlon": {
-        "name": "Ned Hanlon",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/hanlone01.shtml",
@@ -1816,13 +1770,11 @@
         "years_of_experience": 13
     },
     "Earl Weaver": {
-        "name": "Earl Weaver",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/weaveea99.shtml"
     },
     "Richie Ashburn": {
-        "name": "Richie Ashburn",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/a/ashburi01.shtml",
@@ -1832,13 +1784,13 @@
         "ab": 8365,
         "ba": 0.308,
         "rbi": 586,
+        "W": 118,
         "induction": 1995,
         "last_game": 1962,
         "years_of_waiting_to_enter": 33,
         "years_of_experience": 15
     },
     "Leon Day": {
-        "name": "Leon Day",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/dayle99.shtml",
@@ -1848,19 +1800,20 @@
         "ab": 619,
         "ba": 0.313,
         "rbi": 83,
+        "L": 22,
+        "ERA": 3.58,
+        "W": 273,
         "induction": 1995,
         "last_game": 1946,
         "years_of_waiting_to_enter": 49,
         "years_of_experience": 10
     },
     "William Hulbert": {
-        "name": "William Hulbert",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/hulbewi99.shtml"
     },
     "Mike Schmidt": {
-        "name": "Mike Schmidt",
         "inducted_as": "Player",
         "% of Ballots": 96.5,
         "link": "https://www.baseball-reference.com/players/s/schmimi01.shtml",
@@ -1876,7 +1829,6 @@
         "years_of_experience": 18
     },
     "Vic Willis": {
-        "name": "Vic Willis",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/willivi01.shtml",
@@ -1886,13 +1838,14 @@
         "ab": 1493,
         "ba": 0.166,
         "rbi": 84,
+        "L": 205,
+        "ERA": 2.63,
         "induction": 1995,
         "last_game": 1910,
         "years_of_waiting_to_enter": 85,
         "years_of_experience": 13
     },
     "Steve Carlton": {
-        "name": "Steve Carlton",
         "inducted_as": "Player",
         "% of Ballots": 95.6,
         "link": "https://www.baseball-reference.com/players/c/carltst01.shtml",
@@ -1902,13 +1855,15 @@
         "ab": 1719,
         "ba": 0.201,
         "rbi": 140,
+        "L": 244,
+        "ERA": 3.22,
+        "W": 283,
         "induction": 1994,
         "last_game": 1988,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 24
     },
     "Leo Durocher": {
-        "name": "Leo Durocher",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/durocle01.shtml",
@@ -1918,13 +1873,13 @@
         "ab": 5350,
         "ba": 0.247,
         "rbi": 567,
+        "W": 251,
         "induction": 1994,
         "last_game": 1945,
         "years_of_waiting_to_enter": 49,
         "years_of_experience": 17
     },
     "Phil Rizzuto": {
-        "name": "Phil Rizzuto",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/rizzuph01.shtml",
@@ -1940,7 +1895,6 @@
         "years_of_experience": 13
     },
     "Reggie Jackson": {
-        "name": "Reggie Jackson",
         "inducted_as": "Player",
         "% of Ballots": 93.6,
         "link": "https://www.baseball-reference.com/players/j/jacksre01.shtml",
@@ -1956,7 +1910,6 @@
         "years_of_experience": 21
     },
     "Rollie Fingers": {
-        "name": "Rollie Fingers",
         "inducted_as": "Player",
         "% of Ballots": 81.2,
         "link": "https://www.baseball-reference.com/players/f/fingero01.shtml",
@@ -1966,19 +1919,20 @@
         "ab": 180,
         "ba": 0.172,
         "rbi": 9,
+        "L": 118,
+        "ERA": 2.9,
+        "W": 164,
         "induction": 1992,
         "last_game": 1985,
         "years_of_waiting_to_enter": 7,
         "years_of_experience": 17
     },
     "Bill McGowan": {
-        "name": "Bill McGowan",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/mcgowbi99.shtml"
     },
     "Hal Newhouser": {
-        "name": "Hal Newhouser",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/n/newhoha01.shtml",
@@ -1988,13 +1942,14 @@
         "ab": 999,
         "ba": 0.201,
         "rbi": 81,
+        "L": 150,
+        "ERA": 3.06,
         "induction": 1992,
         "last_game": 1955,
         "years_of_waiting_to_enter": 37,
         "years_of_experience": 17
     },
     "Tom Seaver": {
-        "name": "Tom Seaver",
         "inducted_as": "Player",
         "% of Ballots": 98.8,
         "link": "https://www.baseball-reference.com/players/s/seaveto01.shtml",
@@ -2004,13 +1959,14 @@
         "ab": 1315,
         "ba": 0.154,
         "rbi": 86,
+        "L": 205,
+        "ERA": 2.86,
         "induction": 1992,
         "last_game": 1986,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 20
     },
     "Rod Carew": {
-        "name": "Rod Carew",
         "inducted_as": "Player",
         "% of Ballots": 90.5,
         "link": "https://www.baseball-reference.com/players/c/carewro01.shtml",
@@ -2020,13 +1976,13 @@
         "ab": 9315,
         "ba": 0.328,
         "rbi": 1015,
+        "W": 417,
         "induction": 1991,
         "last_game": 1985,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 19
     },
     "Fergie Jenkins": {
-        "name": "Fergie Jenkins",
         "inducted_as": "Player",
         "% of Ballots": 75.4,
         "link": "https://www.baseball-reference.com/players/j/jenkife01.shtml",
@@ -2036,13 +1992,14 @@
         "ab": 896,
         "ba": 0.165,
         "rbi": 85,
+        "L": 226,
+        "ERA": 3.34,
         "induction": 1991,
         "last_game": 1983,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 19
     },
     "Tony Lazzeri": {
-        "name": "Tony Lazzeri",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/l/lazzeto01.shtml",
@@ -2058,7 +2015,6 @@
         "years_of_experience": 14
     },
     "Gaylord Perry": {
-        "name": "Gaylord Perry",
         "inducted_as": "Player",
         "% of Ballots": 77.2,
         "link": "https://www.baseball-reference.com/players/p/perryga01.shtml",
@@ -2068,19 +2024,19 @@
         "ab": 1076,
         "ba": 0.131,
         "rbi": 47,
+        "L": 265,
+        "ERA": 3.11,
         "induction": 1991,
         "last_game": 1983,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 22
     },
     "Bill Veeck": {
-        "name": "Bill Veeck",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/veeckbi99.shtml"
     },
     "Joe Morgan": {
-        "name": "Joe Morgan",
         "inducted_as": "Player",
         "% of Ballots": 81.8,
         "link": "https://www.baseball-reference.com/players/m/morgajo02.shtml",
@@ -2096,7 +2052,6 @@
         "years_of_experience": 22
     },
     "Jim Palmer": {
-        "name": "Jim Palmer",
         "inducted_as": "Player",
         "% of Ballots": 92.6,
         "link": "https://www.baseball-reference.com/players/p/palmeji01.shtml",
@@ -2106,19 +2061,19 @@
         "ab": 489,
         "ba": 0.174,
         "rbi": 41,
+        "L": 152,
+        "ERA": 2.86,
         "induction": 1990,
         "last_game": 1984,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 19
     },
     "Al Barlick": {
-        "name": "Al Barlick",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/barlial99.shtml"
     },
     "Johnny Bench": {
-        "name": "Johnny Bench",
         "inducted_as": "Player",
         "% of Ballots": 96.4,
         "link": "https://www.baseball-reference.com/players/b/benchjo01.shtml",
@@ -2128,13 +2083,13 @@
         "ab": 7658,
         "ba": 0.267,
         "rbi": 1376,
+        "W": 236,
         "induction": 1989,
         "last_game": 1983,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 17
     },
     "Red Schoendienst": {
-        "name": "Red Schoendienst",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/schoere01.shtml",
@@ -2150,7 +2105,6 @@
         "years_of_experience": 19
     },
     "Carl Yastrzemski": {
-        "name": "Carl Yastrzemski",
         "inducted_as": "Player",
         "% of Ballots": 94.6,
         "link": "https://www.baseball-reference.com/players/y/yastrca01.shtml",
@@ -2166,7 +2120,6 @@
         "years_of_experience": 23
     },
     "Willie Stargell": {
-        "name": "Willie Stargell",
         "inducted_as": "Player",
         "% of Ballots": 82.4,
         "link": "https://www.baseball-reference.com/players/s/stargwi01.shtml",
@@ -2182,7 +2135,6 @@
         "years_of_experience": 21
     },
     "Ray Dandridge": {
-        "name": "Ray Dandridge",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/dandrra99.shtml",
@@ -2192,13 +2144,13 @@
         "ab": 927,
         "ba": 0.319,
         "rbi": 146,
+        "W": 266,
         "induction": 1987,
         "last_game": 1944,
         "years_of_waiting_to_enter": 43,
         "years_of_experience": 8
     },
     "Catfish Hunter": {
-        "name": "Catfish Hunter",
         "inducted_as": "Player",
         "% of Ballots": 76.3,
         "link": "https://www.baseball-reference.com/players/h/hunteca01.shtml",
@@ -2208,13 +2160,14 @@
         "ab": 658,
         "ba": 0.226,
         "rbi": 51,
+        "L": 166,
+        "ERA": 3.26,
         "induction": 1987,
         "last_game": 1979,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 15
     },
     "Billy Williams": {
-        "name": "Billy Williams",
         "inducted_as": "Player",
         "% of Ballots": 85.7,
         "link": "https://www.baseball-reference.com/players/w/willibi01.shtml",
@@ -2230,7 +2183,6 @@
         "years_of_experience": 18
     },
     "Bobby Doerr": {
-        "name": "Bobby Doerr",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/doerrbo01.shtml",
@@ -2240,13 +2192,13 @@
         "ab": 7093,
         "ba": 0.288,
         "rbi": 1247,
+        "W": 71,
         "induction": 1986,
         "last_game": 1951,
         "years_of_waiting_to_enter": 35,
         "years_of_experience": 14
     },
     "Ernie Lombardi": {
-        "name": "Ernie Lombardi",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/l/lombaer01.shtml",
@@ -2262,7 +2214,6 @@
         "years_of_experience": 17
     },
     "Willie McCovey": {
-        "name": "Willie McCovey",
         "inducted_as": "Player",
         "% of Ballots": 81.4,
         "link": "https://www.baseball-reference.com/players/m/mccovwi01.shtml",
@@ -2278,7 +2229,6 @@
         "years_of_experience": 22
     },
     "Lou Brock": {
-        "name": "Lou Brock",
         "inducted_as": "Player",
         "% of Ballots": 79.7,
         "link": "https://www.baseball-reference.com/players/b/brocklo01.shtml",
@@ -2288,13 +2238,13 @@
         "ab": 10332,
         "ba": 0.293,
         "rbi": 900,
+        "W": 210,
         "induction": 1985,
         "last_game": 1979,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 19
     },
     "Enos Slaughter": {
-        "name": "Enos Slaughter",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/slaugen01.shtml",
@@ -2310,7 +2260,6 @@
         "years_of_experience": 19
     },
     "Arky Vaughan": {
-        "name": "Arky Vaughan",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/v/vaughar01.shtml",
@@ -2326,7 +2275,6 @@
         "years_of_experience": 14
     },
     "Hoyt Wilhelm": {
-        "name": "Hoyt Wilhelm",
         "inducted_as": "Player",
         "% of Ballots": 83.8,
         "link": "https://www.baseball-reference.com/players/w/wilheho01.shtml",
@@ -2336,13 +2284,14 @@
         "ab": 432,
         "ba": 0.088,
         "rbi": 21,
+        "L": 122,
+        "ERA": 2.52,
         "induction": 1985,
         "last_game": 1972,
         "years_of_waiting_to_enter": 13,
         "years_of_experience": 21
     },
     "Luis Aparicio": {
-        "name": "Luis Aparicio",
         "inducted_as": "Player",
         "% of Ballots": 84.6,
         "link": "https://www.baseball-reference.com/players/a/aparilu01.shtml",
@@ -2352,13 +2301,13 @@
         "ab": 10230,
         "ba": 0.262,
         "rbi": 791,
+        "W": 198,
         "induction": 1984,
         "last_game": 1973,
         "years_of_waiting_to_enter": 11,
         "years_of_experience": 18
     },
     "Don Drysdale": {
-        "name": "Don Drysdale",
         "inducted_as": "Player",
         "% of Ballots": 78.4,
         "link": "https://www.baseball-reference.com/players/d/drysddo01.shtml",
@@ -2368,13 +2317,15 @@
         "ab": 1169,
         "ba": 0.186,
         "rbi": 113,
+        "L": 166,
+        "ERA": 2.95,
+        "W": 213,
         "induction": 1984,
         "last_game": 1969,
         "years_of_waiting_to_enter": 15,
         "years_of_experience": 14
     },
     "Rick Ferrell": {
-        "name": "Rick Ferrell",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/f/ferreri01.shtml",
@@ -2384,13 +2335,13 @@
         "ab": 6028,
         "ba": 0.281,
         "rbi": 734,
+        "W": 195,
         "induction": 1984,
         "last_game": 1947,
         "years_of_waiting_to_enter": 37,
         "years_of_experience": 18
     },
     "Harmon Killebrew": {
-        "name": "Harmon Killebrew",
         "inducted_as": "Player",
         "% of Ballots": 83.1,
         "link": "https://www.baseball-reference.com/players/k/killeha01.shtml",
@@ -2406,7 +2357,6 @@
         "years_of_experience": 22
     },
     "Pee Wee Reese": {
-        "name": "Pee Wee Reese",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/reesepe01.shtml",
@@ -2422,7 +2372,6 @@
         "years_of_experience": 16
     },
     "Walter Alston": {
-        "name": "Walter Alston",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/alstowa01.shtml",
@@ -2432,13 +2381,13 @@
         "ab": 1,
         "ba": 0.0,
         "rbi": 0,
+        "W": 119,
         "induction": 1983,
         "last_game": 1936,
         "years_of_waiting_to_enter": 47,
         "years_of_experience": 1
     },
     "George Kell": {
-        "name": "George Kell",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/k/kellge01.shtml",
@@ -2454,7 +2403,6 @@
         "years_of_experience": 15
     },
     "Juan Marichal": {
-        "name": "Juan Marichal",
         "inducted_as": "Player",
         "% of Ballots": 83.7,
         "link": "https://www.baseball-reference.com/players/m/maricju01.shtml",
@@ -2464,13 +2412,14 @@
         "ab": 1221,
         "ba": 0.165,
         "rbi": 75,
+        "L": 142,
+        "ERA": 2.89,
         "induction": 1983,
         "last_game": 1975,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 16
     },
     "Brooks Robinson": {
-        "name": "Brooks Robinson",
         "inducted_as": "Player",
         "% of Ballots": 92.0,
         "link": "https://www.baseball-reference.com/players/r/robinbr01.shtml",
@@ -2486,7 +2435,6 @@
         "years_of_experience": 23
     },
     "Henry Aaron": {
-        "name": "Henry Aaron",
         "inducted_as": "Player",
         "% of Ballots": 97.8,
         "link": "https://www.baseball-reference.com/players/a/aaronha01.shtml",
@@ -2496,19 +2444,18 @@
         "ab": 12364,
         "ba": 0.305,
         "rbi": 2297,
+        "W": 373,
         "induction": 1982,
         "last_game": 1976,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 23
     },
     "Happy Chandler": {
-        "name": "Happy Chandler",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/chandha99.shtml"
     },
     "Travis Jackson": {
-        "name": "Travis Jackson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/j/jackstr01.shtml",
@@ -2524,7 +2471,6 @@
         "years_of_experience": 15
     },
     "Frank Robinson": {
-        "name": "Frank Robinson",
         "inducted_as": "Player",
         "% of Ballots": 89.2,
         "link": "https://www.baseball-reference.com/players/r/robinfr02.shtml",
@@ -2540,13 +2486,11 @@
         "years_of_experience": 21
     },
     "Rube Foster": {
-        "name": "Rube Foster",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/fosteru99.shtml"
     },
     "Bob Gibson": {
-        "name": "Bob Gibson",
         "inducted_as": "Player",
         "% of Ballots": 84.0,
         "link": "https://www.baseball-reference.com/players/g/gibsobo01.shtml",
@@ -2556,13 +2500,14 @@
         "ab": 1328,
         "ba": 0.206,
         "rbi": 144,
+        "L": 174,
+        "ERA": 2.91,
         "induction": 1981,
         "last_game": 1975,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 17
     },
     "Johnny Mize": {
-        "name": "Johnny Mize",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/mizejo01.shtml",
@@ -2578,7 +2523,6 @@
         "years_of_experience": 15
     },
     "Al Kaline": {
-        "name": "Al Kaline",
         "inducted_as": "Player",
         "% of Ballots": 88.3,
         "link": "https://www.baseball-reference.com/players/k/kalinal01.shtml",
@@ -2594,7 +2538,6 @@
         "years_of_experience": 22
     },
     "Chuck Klein": {
-        "name": "Chuck Klein",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/k/kleinch01.shtml",
@@ -2610,7 +2553,6 @@
         "years_of_experience": 17
     },
     "Duke Snider": {
-        "name": "Duke Snider",
         "inducted_as": "Player",
         "% of Ballots": 86.5,
         "link": "https://www.baseball-reference.com/players/s/snidedu01.shtml",
@@ -2626,19 +2568,16 @@
         "years_of_experience": 18
     },
     "Tom Yawkey": {
-        "name": "Tom Yawkey",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/yawketo99.shtml"
     },
     "Warren Giles": {
-        "name": "Warren Giles",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/gileswa99.shtml"
     },
     "Willie Mays": {
-        "name": "Willie Mays",
         "inducted_as": "Player",
         "% of Ballots": 94.7,
         "link": "https://www.baseball-reference.com/players/m/mayswi01.shtml",
@@ -2654,7 +2593,6 @@
         "years_of_experience": 23
     },
     "Hack Wilson": {
-        "name": "Hack Wilson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wilsoha01.shtml",
@@ -2670,7 +2608,6 @@
         "years_of_experience": 12
     },
     "Addie Joss": {
-        "name": "Addie Joss",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/j/jossad01.shtml",
@@ -2680,19 +2617,19 @@
         "ab": 817,
         "ba": 0.144,
         "rbi": 51,
+        "L": 97,
+        "ERA": 1.89,
         "induction": 1978,
         "last_game": 1910,
         "years_of_waiting_to_enter": 68,
         "years_of_experience": 9
     },
     "Larry MacPhail": {
-        "name": "Larry MacPhail",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/macphla99.shtml"
     },
     "Eddie Mathews": {
-        "name": "Eddie Mathews",
         "inducted_as": "Player",
         "% of Ballots": 79.4,
         "link": "https://www.baseball-reference.com/players/m/matheed01.shtml",
@@ -2708,7 +2645,6 @@
         "years_of_experience": 17
     },
     "Ernie Banks": {
-        "name": "Ernie Banks",
         "inducted_as": "Player",
         "% of Ballots": 83.8,
         "link": "https://www.baseball-reference.com/players/b/bankser01.shtml",
@@ -2718,13 +2654,13 @@
         "ab": 9421,
         "ba": 0.274,
         "rbi": 1636,
+        "W": 197,
         "induction": 1977,
         "last_game": 1971,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 19
     },
     "Martín Dihigo": {
-        "name": "Martín Dihigo",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/dihigma99.shtml",
@@ -2734,13 +2670,13 @@
         "ab": 1418,
         "ba": 0.307,
         "rbi": 309,
+        "W": 251,
         "induction": 1977,
         "last_game": 1945,
         "years_of_waiting_to_enter": 32,
         "years_of_experience": 9
     },
     "John Henry Lloyd": {
-        "name": "John Henry Lloyd",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/l/lloydjo99.shtml",
@@ -2756,7 +2692,6 @@
         "years_of_experience": 8
     },
     "Al Lopez": {
-        "name": "Al Lopez",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/l/lopezal01.shtml",
@@ -2772,7 +2707,6 @@
         "years_of_experience": 19
     },
     "Amos Rusie": {
-        "name": "Amos Rusie",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/rusieam01.shtml",
@@ -2782,13 +2716,14 @@
         "ab": 1730,
         "ba": 0.248,
         "rbi": 176,
+        "L": 174,
+        "ERA": 3.07,
         "induction": 1977,
         "last_game": 1901,
         "years_of_waiting_to_enter": 76,
         "years_of_experience": 10
     },
     "Joe Sewell": {
-        "name": "Joe Sewell",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/seweljo01.shtml",
@@ -2804,7 +2739,6 @@
         "years_of_experience": 14
     },
     "Oscar Charleston": {
-        "name": "Oscar Charleston",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/charlos99.shtml",
@@ -2814,13 +2748,13 @@
         "ab": 3317,
         "ba": 0.365,
         "rbi": 853,
+        "W": 260,
         "induction": 1976,
         "last_game": 1941,
         "years_of_waiting_to_enter": 35,
         "years_of_experience": 18
     },
     "Roger Connor": {
-        "name": "Roger Connor",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/connoro01.shtml",
@@ -2830,19 +2764,18 @@
         "ab": 7797,
         "ba": 0.316,
         "rbi": 1323,
+        "W": 73,
         "induction": 1976,
         "last_game": 1897,
         "years_of_waiting_to_enter": 79,
         "years_of_experience": 18
     },
     "Cal Hubbard": {
-        "name": "Cal Hubbard",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/hubbaca99.shtml"
     },
     "Bob Lemon": {
-        "name": "Bob Lemon",
         "inducted_as": "Player",
         "% of Ballots": 78.6,
         "link": "https://www.baseball-reference.com/players/l/lemonbo01.shtml",
@@ -2852,13 +2785,14 @@
         "ab": 1183,
         "ba": 0.232,
         "rbi": 147,
+        "L": 128,
+        "ERA": 3.23,
         "induction": 1976,
         "last_game": 1958,
         "years_of_waiting_to_enter": 18,
         "years_of_experience": 15
     },
     "Freddie Lindstrom": {
-        "name": "Freddie Lindstrom",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/l/lindsfr01.shtml",
@@ -2874,7 +2808,6 @@
         "years_of_experience": 13
     },
     "Robin Roberts": {
-        "name": "Robin Roberts",
         "inducted_as": "Player",
         "% of Ballots": 86.9,
         "link": "https://www.baseball-reference.com/players/r/roberro01.shtml",
@@ -2884,13 +2817,14 @@
         "ab": 1525,
         "ba": 0.167,
         "rbi": 103,
+        "L": 245,
+        "ERA": 3.41,
         "induction": 1976,
         "last_game": 1966,
         "years_of_waiting_to_enter": 10,
         "years_of_experience": 19
     },
     "Earl Averill": {
-        "name": "Earl Averill",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/a/averiea01.shtml",
@@ -2900,13 +2834,13 @@
         "ab": 6353,
         "ba": 0.318,
         "rbi": 1164,
+        "W": 215,
         "induction": 1975,
         "last_game": 1941,
         "years_of_waiting_to_enter": 34,
         "years_of_experience": 13
     },
     "Bucky Harris": {
-        "name": "Bucky Harris",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/harribu01.shtml",
@@ -2922,7 +2856,6 @@
         "years_of_experience": 12
     },
     "Billy Herman": {
-        "name": "Billy Herman",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/hermabi01.shtml",
@@ -2938,7 +2871,6 @@
         "years_of_experience": 15
     },
     "Judy Johnson": {
-        "name": "Judy Johnson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/j/johnsju99.shtml",
@@ -2954,7 +2886,6 @@
         "years_of_experience": 11
     },
     "Ralph Kiner": {
-        "name": "Ralph Kiner",
         "inducted_as": "Player",
         "% of Ballots": 75.4,
         "link": "https://www.baseball-reference.com/players/k/kinerra01.shtml",
@@ -2970,7 +2901,6 @@
         "years_of_experience": 10
     },
     "Cool Papa Bell": {
-        "name": "Cool Papa Bell",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/bellco99.shtml",
@@ -2980,13 +2910,13 @@
         "ab": 4767,
         "ba": 0.325,
         "rbi": 596,
+        "W": 266,
         "induction": 1974,
         "last_game": 1946,
         "years_of_waiting_to_enter": 28,
         "years_of_experience": 21
     },
     "Jim Bottomley": {
-        "name": "Jim Bottomley",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/bottoji01.shtml",
@@ -2996,13 +2926,13 @@
         "ab": 7471,
         "ba": 0.31,
         "rbi": 1422,
+        "W": 124,
         "induction": 1974,
         "last_game": 1937,
         "years_of_waiting_to_enter": 37,
         "years_of_experience": 16
     },
     "Jocko Conlan": {
-        "name": "Jocko Conlan",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/conlajo01.shtml",
@@ -3012,13 +2942,13 @@
         "ab": 365,
         "ba": 0.263,
         "rbi": 31,
+        "W": 318,
         "induction": 1974,
         "last_game": 1935,
         "years_of_waiting_to_enter": 39,
         "years_of_experience": 2
     },
     "Whitey Ford": {
-        "name": "Whitey Ford",
         "inducted_as": "Player",
         "% of Ballots": 77.8,
         "link": "https://www.baseball-reference.com/players/f/fordwh01.shtml",
@@ -3028,13 +2958,15 @@
         "ab": 1023,
         "ba": 0.173,
         "rbi": 69,
+        "L": 106,
+        "ERA": 2.75,
+        "W": 249,
         "induction": 1974,
         "last_game": 1967,
         "years_of_waiting_to_enter": 7,
         "years_of_experience": 16
     },
     "Mickey Mantle": {
-        "name": "Mickey Mantle",
         "inducted_as": "Player",
         "% of Ballots": 88.2,
         "link": "https://www.baseball-reference.com/players/m/mantlmi01.shtml",
@@ -3050,7 +2982,6 @@
         "years_of_experience": 18
     },
     "Sam Thompson": {
-        "name": "Sam Thompson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/t/thompsa01.shtml",
@@ -3066,7 +2997,6 @@
         "years_of_experience": 15
     },
     "Roberto Clemente": {
-        "name": "Roberto Clemente",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/clemero01.shtml",
@@ -3076,19 +3006,18 @@
         "ab": 9454,
         "ba": 0.317,
         "rbi": 1305,
+        "W": 219,
         "induction": 1973,
         "last_game": 1972,
         "years_of_waiting_to_enter": 1,
         "years_of_experience": 18
     },
     "Billy Evans": {
-        "name": "Billy Evans",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/evansbi99.shtml"
     },
     "Monte Irvin": {
-        "name": "Monte Irvin",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/i/irvinmo01.shtml",
@@ -3104,7 +3033,6 @@
         "years_of_experience": 18
     },
     "George Kelly": {
-        "name": "George Kelly",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/k/kellyge01.shtml",
@@ -3120,7 +3048,6 @@
         "years_of_experience": 16
     },
     "Warren Spahn": {
-        "name": "Warren Spahn",
         "inducted_as": "Player",
         "% of Ballots": 83.2,
         "link": "https://www.baseball-reference.com/players/s/spahnwa01.shtml",
@@ -3130,13 +3057,14 @@
         "ab": 1872,
         "ba": 0.194,
         "rbi": 189,
+        "L": 245,
+        "ERA": 3.09,
         "induction": 1973,
         "last_game": 1965,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 21
     },
     "Mickey Welch": {
-        "name": "Mickey Welch",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/welchmi01.shtml",
@@ -3146,13 +3074,14 @@
         "ab": 2201,
         "ba": 0.224,
         "rbi": 202,
+        "L": 210,
+        "ERA": 2.71,
         "induction": 1973,
         "last_game": 1892,
         "years_of_waiting_to_enter": 81,
         "years_of_experience": 13
     },
     "Yogi Berra": {
-        "name": "Yogi Berra",
         "inducted_as": "Player",
         "% of Ballots": 85.6,
         "link": "https://www.baseball-reference.com/players/b/berrayo01.shtml",
@@ -3162,13 +3091,13 @@
         "ab": 7555,
         "ba": 0.285,
         "rbi": 1430,
+        "W": 365,
         "induction": 1972,
         "last_game": 1965,
         "years_of_waiting_to_enter": 7,
         "years_of_experience": 19
     },
     "Josh Gibson": {
-        "name": "Josh Gibson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/g/gibsojo99.shtml",
@@ -3184,7 +3113,6 @@
         "years_of_experience": 14
     },
     "Lefty Gomez": {
-        "name": "Lefty Gomez",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/g/gomezle01.shtml",
@@ -3194,19 +3122,19 @@
         "ab": 904,
         "ba": 0.147,
         "rbi": 58,
+        "L": 102,
+        "ERA": 3.34,
         "induction": 1972,
         "last_game": 1943,
         "years_of_waiting_to_enter": 29,
         "years_of_experience": 14
     },
     "Will Harridge": {
-        "name": "Will Harridge",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/harriwi99.shtml"
     },
     "Sandy Koufax": {
-        "name": "Sandy Koufax",
         "inducted_as": "Player",
         "% of Ballots": 86.9,
         "link": "https://www.baseball-reference.com/players/k/koufasa01.shtml",
@@ -3216,13 +3144,14 @@
         "ab": 776,
         "ba": 0.097,
         "rbi": 28,
+        "L": 87,
+        "ERA": 2.76,
         "induction": 1972,
         "last_game": 1966,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 12
     },
     "Buck Leonard": {
-        "name": "Buck Leonard",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/l/leonabu99.shtml",
@@ -3238,7 +3167,6 @@
         "years_of_experience": 14
     },
     "Early Wynn": {
-        "name": "Early Wynn",
         "inducted_as": "Player",
         "% of Ballots": 76.0,
         "link": "https://www.baseball-reference.com/players/w/wynnea01.shtml",
@@ -3248,13 +3176,14 @@
         "ab": 1704,
         "ba": 0.214,
         "rbi": 173,
+        "L": 244,
+        "ERA": 3.54,
         "induction": 1972,
         "last_game": 1963,
         "years_of_waiting_to_enter": 9,
         "years_of_experience": 23
     },
     "Ross Youngs": {
-        "name": "Ross Youngs",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/y/youngro01.shtml",
@@ -3270,7 +3199,6 @@
         "years_of_experience": 10
     },
     "Dave Bancroft": {
-        "name": "Dave Bancroft",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/bancrda01.shtml",
@@ -3280,13 +3208,13 @@
         "ab": 7182,
         "ba": 0.279,
         "rbi": 591,
+        "W": 209,
         "induction": 1971,
         "last_game": 1930,
         "years_of_waiting_to_enter": 41,
         "years_of_experience": 16
     },
     "Jake Beckley": {
-        "name": "Jake Beckley",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/becklja01.shtml",
@@ -3296,13 +3224,13 @@
         "ab": 9551,
         "ba": 0.308,
         "rbi": 1581,
+        "W": 254,
         "induction": 1971,
         "last_game": 1907,
         "years_of_waiting_to_enter": 64,
         "years_of_experience": 20
     },
     "Chick Hafey": {
-        "name": "Chick Hafey",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/hafeych01.shtml",
@@ -3318,7 +3246,6 @@
         "years_of_experience": 13
     },
     "Harry Hooper": {
-        "name": "Harry Hooper",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/hoopeha01.shtml",
@@ -3334,7 +3261,6 @@
         "years_of_experience": 17
     },
     "Joe Kelley": {
-        "name": "Joe Kelley",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/k/kellejo01.shtml",
@@ -3350,7 +3276,6 @@
         "years_of_experience": 17
     },
     "Rube Marquard": {
-        "name": "Rube Marquard",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/marquru01.shtml",
@@ -3360,13 +3285,14 @@
         "ab": 1107,
         "ba": 0.179,
         "rbi": 66,
+        "L": 177,
+        "ERA": 3.08,
         "induction": 1971,
         "last_game": 1925,
         "years_of_waiting_to_enter": 46,
         "years_of_experience": 18
     },
     "Satchel Paige": {
-        "name": "Satchel Paige",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/p/paigesa01.shtml",
@@ -3376,19 +3302,19 @@
         "ab": 672,
         "ba": 0.204,
         "rbi": 49,
+        "L": 82,
+        "ERA": 2.73,
         "induction": 1971,
         "last_game": 1965,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 22
     },
     "George Weiss": {
-        "name": "George Weiss",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/weissge99.shtml"
     },
     "Lou Boudreau": {
-        "name": "Lou Boudreau",
         "inducted_as": "Player",
         "% of Ballots": 77.3,
         "link": "https://www.baseball-reference.com/players/b/boudrlo01.shtml",
@@ -3398,13 +3324,13 @@
         "ab": 6029,
         "ba": 0.295,
         "rbi": 789,
+        "W": 237,
         "induction": 1970,
         "last_game": 1952,
         "years_of_waiting_to_enter": 18,
         "years_of_experience": 15
     },
     "Earle Combs": {
-        "name": "Earle Combs",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/combsea01.shtml",
@@ -3414,19 +3340,18 @@
         "ab": 5746,
         "ba": 0.325,
         "rbi": 633,
+        "W": 207,
         "induction": 1970,
         "last_game": 1935,
         "years_of_waiting_to_enter": 35,
         "years_of_experience": 12
     },
     "Ford Frick": {
-        "name": "Ford Frick",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/frickfo99.shtml"
     },
     "Jesse Haines": {
-        "name": "Jesse Haines",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/haineje01.shtml",
@@ -3436,13 +3361,14 @@
         "ab": 1124,
         "ba": 0.186,
         "rbi": 79,
+        "L": 158,
+        "ERA": 3.64,
         "induction": 1970,
         "last_game": 1937,
         "years_of_waiting_to_enter": 33,
         "years_of_experience": 19
     },
     "Roy Campanella": {
-        "name": "Roy Campanella",
         "inducted_as": "Player",
         "% of Ballots": 79.4,
         "link": "https://www.baseball-reference.com/players/c/camparo01.shtml",
@@ -3452,13 +3378,13 @@
         "ab": 5030,
         "ba": 0.283,
         "rbi": 1019,
+        "W": 303,
         "induction": 1969,
         "last_game": 1957,
         "years_of_waiting_to_enter": 12,
         "years_of_experience": 18
     },
     "Stan Coveleski": {
-        "name": "Stan Coveleski",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/covelst01.shtml",
@@ -3468,13 +3394,15 @@
         "ab": 1058,
         "ba": 0.159,
         "rbi": 81,
+        "L": 142,
+        "ERA": 2.89,
+        "W": 268,
         "induction": 1969,
         "last_game": 1928,
         "years_of_waiting_to_enter": 41,
         "years_of_experience": 14
     },
     "Waite Hoyt": {
-        "name": "Waite Hoyt",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/hoytwa01.shtml",
@@ -3484,13 +3412,14 @@
         "ab": 1287,
         "ba": 0.198,
         "rbi": 100,
+        "L": 182,
+        "ERA": 3.59,
         "induction": 1969,
         "last_game": 1938,
         "years_of_waiting_to_enter": 31,
         "years_of_experience": 21
     },
     "Stan Musial": {
-        "name": "Stan Musial",
         "inducted_as": "Player",
         "% of Ballots": 93.2,
         "link": "https://www.baseball-reference.com/players/m/musiast01.shtml",
@@ -3506,7 +3435,6 @@
         "years_of_experience": 22
     },
     "Kiki Cuyler": {
-        "name": "Kiki Cuyler",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/cuyleki01.shtml",
@@ -3516,13 +3444,13 @@
         "ab": 7161,
         "ba": 0.321,
         "rbi": 1065,
+        "W": 82,
         "induction": 1968,
         "last_game": 1938,
         "years_of_waiting_to_enter": 30,
         "years_of_experience": 18
     },
     "Goose Goslin": {
-        "name": "Goose Goslin",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/g/gosligo01.shtml",
@@ -3538,7 +3466,6 @@
         "years_of_experience": 18
     },
     "Joe Medwick": {
-        "name": "Joe Medwick",
         "inducted_as": "Player",
         "% of Ballots": 84.8,
         "link": "https://www.baseball-reference.com/players/m/medwijo01.shtml",
@@ -3554,7 +3481,6 @@
         "years_of_experience": 17
     },
     "Branch Rickey": {
-        "name": "Branch Rickey",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/rickebr01.shtml",
@@ -3570,7 +3496,6 @@
         "years_of_experience": 4
     },
     "Red Ruffing": {
-        "name": "Red Ruffing",
         "inducted_as": "Player",
         "% of Ballots": 86.9,
         "link": "https://www.baseball-reference.com/players/r/ruffire01.shtml",
@@ -3580,13 +3505,14 @@
         "ab": 1937,
         "ba": 0.269,
         "rbi": 273,
+        "L": 225,
+        "ERA": 3.8,
         "induction": 1967,
         "last_game": 1947,
         "years_of_waiting_to_enter": 20,
         "years_of_experience": 22
     },
     "Lloyd Waner": {
-        "name": "Lloyd Waner",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wanerll01.shtml",
@@ -3602,7 +3528,6 @@
         "years_of_experience": 18
     },
     "Casey Stengel": {
-        "name": "Casey Stengel",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/stengca01.shtml",
@@ -3618,7 +3543,6 @@
         "years_of_experience": 14
     },
     "Ted Williams": {
-        "name": "Ted Williams",
         "inducted_as": "Player",
         "% of Ballots": 93.4,
         "link": "https://www.baseball-reference.com/players/w/willite01.shtml",
@@ -3634,7 +3558,6 @@
         "years_of_experience": 19
     },
     "Pud Galvin": {
-        "name": "Pud Galvin",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/g/galvipu01.shtml",
@@ -3644,13 +3567,14 @@
         "ab": 2748,
         "ba": 0.201,
         "rbi": 220,
+        "L": 310,
+        "ERA": 2.85,
         "induction": 1965,
         "last_game": 1892,
         "years_of_waiting_to_enter": 73,
         "years_of_experience": 15
     },
     "Luke Appling": {
-        "name": "Luke Appling",
         "inducted_as": "Player",
         "% of Ballots": 94.0,
         "link": "https://www.baseball-reference.com/players/a/applilu01.shtml",
@@ -3660,13 +3584,13 @@
         "ab": 8856,
         "ba": 0.31,
         "rbi": 1116,
+        "W": 328,
         "induction": 1964,
         "last_game": 1950,
         "years_of_waiting_to_enter": 14,
         "years_of_experience": 20
     },
     "Red Faber": {
-        "name": "Red Faber",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/f/faberre01.shtml",
@@ -3676,13 +3600,15 @@
         "ab": 1269,
         "ba": 0.134,
         "rbi": 71,
+        "L": 213,
+        "ERA": 3.15,
+        "W": 193,
         "induction": 1964,
         "last_game": 1933,
         "years_of_waiting_to_enter": 31,
         "years_of_experience": 20
     },
     "Burleigh Grimes": {
-        "name": "Burleigh Grimes",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/g/grimebu01.shtml",
@@ -3692,13 +3618,14 @@
         "ab": 1535,
         "ba": 0.248,
         "rbi": 168,
+        "L": 212,
+        "ERA": 3.53,
         "induction": 1964,
         "last_game": 1934,
         "years_of_waiting_to_enter": 30,
         "years_of_experience": 19
     },
     "Miller Huggins": {
-        "name": "Miller Huggins",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/huggimi01.shtml",
@@ -3714,7 +3641,6 @@
         "years_of_experience": 13
     },
     "Tim Keefe": {
-        "name": "Tim Keefe",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/k/keefeti01.shtml",
@@ -3724,13 +3650,14 @@
         "ab": 2083,
         "ba": 0.187,
         "rbi": 134,
+        "L": 225,
+        "ERA": 2.63,
         "induction": 1964,
         "last_game": 1893,
         "years_of_waiting_to_enter": 71,
         "years_of_experience": 14
     },
     "Heinie Manush": {
-        "name": "Heinie Manush",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/manushe01.shtml",
@@ -3746,7 +3673,6 @@
         "years_of_experience": 17
     },
     "John Ward": {
-        "name": "John Ward",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wardjo01.shtml",
@@ -3756,13 +3682,14 @@
         "ab": 7656,
         "ba": 0.275,
         "rbi": 869,
+        "L": 103,
+        "ERA": 2.1,
         "induction": 1964,
         "last_game": 1894,
         "years_of_waiting_to_enter": 70,
         "years_of_experience": 17
     },
     "John Clarkson": {
-        "name": "John Clarkson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/clarkjo01.shtml",
@@ -3772,13 +3699,15 @@
         "ab": 1974,
         "ba": 0.219,
         "rbi": 232,
+        "L": 178,
+        "ERA": 2.81,
+        "W": 201,
         "induction": 1963,
         "last_game": 1894,
         "years_of_waiting_to_enter": 69,
         "years_of_experience": 12
     },
     "Elmer Flick": {
-        "name": "Elmer Flick",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/f/flickel01.shtml",
@@ -3788,13 +3717,13 @@
         "ab": 5597,
         "ba": 0.313,
         "rbi": 756,
+        "W": 143,
         "induction": 1963,
         "last_game": 1910,
         "years_of_waiting_to_enter": 53,
         "years_of_experience": 13
     },
     "Sam Rice": {
-        "name": "Sam Rice",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/ricesa01.shtml",
@@ -3810,7 +3739,6 @@
         "years_of_experience": 20
     },
     "Eppa Rixey": {
-        "name": "Eppa Rixey",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/rixeyep01.shtml",
@@ -3820,13 +3748,14 @@
         "ab": 1522,
         "ba": 0.191,
         "rbi": 111,
+        "L": 251,
+        "ERA": 3.15,
         "induction": 1963,
         "last_game": 1933,
         "years_of_waiting_to_enter": 30,
         "years_of_experience": 21
     },
     "Bob Feller": {
-        "name": "Bob Feller",
         "inducted_as": "Player",
         "% of Ballots": 93.8,
         "link": "https://www.baseball-reference.com/players/f/fellebo01.shtml",
@@ -3836,13 +3765,15 @@
         "ab": 1282,
         "ba": 0.151,
         "rbi": 99,
+        "L": 162,
+        "ERA": 3.25,
+        "W": 47,
         "induction": 1962,
         "last_game": 1956,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 18
     },
     "Bill McKechnie": {
-        "name": "Bill McKechnie",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/mckecbi01.shtml",
@@ -3858,7 +3789,6 @@
         "years_of_experience": 11
     },
     "Jackie Robinson": {
-        "name": "Jackie Robinson",
         "inducted_as": "Player",
         "% of Ballots": 77.5,
         "link": "https://www.baseball-reference.com/players/r/robinja02.shtml",
@@ -3874,7 +3804,6 @@
         "years_of_experience": 11
     },
     "Edd Roush": {
-        "name": "Edd Roush",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/roushed01.shtml",
@@ -3890,7 +3819,6 @@
         "years_of_experience": 18
     },
     "Max Carey": {
-        "name": "Max Carey",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/careyma01.shtml",
@@ -3900,13 +3828,13 @@
         "ab": 9363,
         "ba": 0.285,
         "rbi": 802,
+        "W": 160,
         "induction": 1961,
         "last_game": 1929,
         "years_of_waiting_to_enter": 32,
         "years_of_experience": 20
     },
     "Billy Hamilton": {
-        "name": "Billy Hamilton",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/h/hamilbi01.shtml",
@@ -3922,7 +3850,6 @@
         "years_of_experience": 14
     },
     "Zack Wheat": {
-        "name": "Zack Wheat",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wheatza01.shtml",
@@ -3938,7 +3865,6 @@
         "years_of_experience": 19
     },
     "Sam Crawford": {
-        "name": "Sam Crawford",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/crawfsa01.shtml",
@@ -3948,19 +3874,18 @@
         "ab": 9570,
         "ba": 0.309,
         "rbi": 1523,
+        "W": 314,
         "induction": 1957,
         "last_game": 1917,
         "years_of_waiting_to_enter": 40,
         "years_of_experience": 19
     },
     "Joe McCarthy": {
-        "name": "Joe McCarthy",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/mccarjo99.shtml"
     },
     "Joe Cronin": {
-        "name": "Joe Cronin",
         "inducted_as": "Player",
         "% of Ballots": 78.8,
         "link": "https://www.baseball-reference.com/players/c/cronijo01.shtml",
@@ -3970,13 +3895,13 @@
         "ab": 7579,
         "ba": 0.301,
         "rbi": 1424,
+        "W": 326,
         "induction": 1956,
         "last_game": 1945,
         "years_of_waiting_to_enter": 11,
         "years_of_experience": 20
     },
     "Hank Greenberg": {
-        "name": "Hank Greenberg",
         "inducted_as": "Player",
         "% of Ballots": 85.0,
         "link": "https://www.baseball-reference.com/players/g/greenha01.shtml",
@@ -3992,7 +3917,6 @@
         "years_of_experience": 13
     },
     "Home Run Baker": {
-        "name": "Home Run Baker",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/bakerfr01.shtml",
@@ -4002,13 +3926,13 @@
         "ab": 5984,
         "ba": 0.307,
         "rbi": 991,
+        "W": 150,
         "induction": 1955,
         "last_game": 1922,
         "years_of_waiting_to_enter": 33,
         "years_of_experience": 13
     },
     "Joe DiMaggio": {
-        "name": "Joe DiMaggio",
         "inducted_as": "Player",
         "% of Ballots": 88.8,
         "link": "https://www.baseball-reference.com/players/d/dimagjo01.shtml",
@@ -4018,13 +3942,13 @@
         "ab": 6821,
         "ba": 0.325,
         "rbi": 1537,
+        "W": 311,
         "induction": 1955,
         "last_game": 1951,
         "years_of_waiting_to_enter": 4,
         "years_of_experience": 13
     },
     "Gabby Hartnett": {
-        "name": "Gabby Hartnett",
         "inducted_as": "Player",
         "% of Ballots": 77.7,
         "link": "https://www.baseball-reference.com/players/h/hartnga01.shtml",
@@ -4040,7 +3964,6 @@
         "years_of_experience": 20
     },
     "Ted Lyons": {
-        "name": "Ted Lyons",
         "inducted_as": "Player",
         "% of Ballots": 86.5,
         "link": "https://www.baseball-reference.com/players/l/lyonste01.shtml",
@@ -4050,13 +3973,14 @@
         "ab": 1563,
         "ba": 0.233,
         "rbi": 149,
+        "L": 230,
+        "ERA": 3.67,
         "induction": 1955,
         "last_game": 1946,
         "years_of_waiting_to_enter": 9,
         "years_of_experience": 21
     },
     "Ray Schalk": {
-        "name": "Ray Schalk",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/schalra01.shtml",
@@ -4072,7 +3996,6 @@
         "years_of_experience": 18
     },
     "Dazzy Vance": {
-        "name": "Dazzy Vance",
         "inducted_as": "Player",
         "% of Ballots": 81.7,
         "link": "https://www.baseball-reference.com/players/v/vanceda01.shtml",
@@ -4082,13 +4005,14 @@
         "ab": 971,
         "ba": 0.15,
         "rbi": 75,
+        "L": 140,
+        "ERA": 3.24,
         "induction": 1955,
         "last_game": 1935,
         "years_of_waiting_to_enter": 20,
         "years_of_experience": 16
     },
     "Bill Dickey": {
-        "name": "Bill Dickey",
         "inducted_as": "Player",
         "% of Ballots": 80.2,
         "link": "https://www.baseball-reference.com/players/d/dickebi01.shtml",
@@ -4098,13 +4022,13 @@
         "ab": 6300,
         "ba": 0.313,
         "rbi": 1209,
+        "W": 324,
         "induction": 1954,
         "last_game": 1946,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 17
     },
     "Rabbit Maranville": {
-        "name": "Rabbit Maranville",
         "inducted_as": "Player",
         "% of Ballots": 82.9,
         "link": "https://www.baseball-reference.com/players/m/maranra01.shtml",
@@ -4120,7 +4044,6 @@
         "years_of_experience": 23
     },
     "Bill Terry": {
-        "name": "Bill Terry",
         "inducted_as": "Player",
         "% of Ballots": 77.4,
         "link": "https://www.baseball-reference.com/players/t/terrybi01.shtml",
@@ -4136,13 +4059,11 @@
         "years_of_experience": 14
     },
     "Ed Barrow": {
-        "name": "Ed Barrow",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/barroed99.shtml"
     },
     "Charles Bender": {
-        "name": "Charles Bender",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/bendech01.shtml",
@@ -4152,19 +4073,20 @@
         "ab": 1147,
         "ba": 0.212,
         "rbi": 116,
+        "L": 127,
+        "ERA": 2.46,
+        "W": 110,
         "induction": 1953,
         "last_game": 1925,
         "years_of_waiting_to_enter": 28,
         "years_of_experience": 16
     },
     "Tommy Connolly": {
-        "name": "Tommy Connolly",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/connoto99.shtml"
     },
     "Dizzy Dean": {
-        "name": "Dizzy Dean",
         "inducted_as": "Player",
         "% of Ballots": 79.2,
         "link": "https://www.baseball-reference.com/players/d/deandi01.shtml",
@@ -4174,19 +4096,20 @@
         "ab": 717,
         "ba": 0.225,
         "rbi": 76,
+        "L": 83,
+        "ERA": 3.02,
+        "W": 246,
         "induction": 1953,
         "last_game": 1947,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 12
     },
     "Bill Klem": {
-        "name": "Bill Klem",
         "inducted_as": "Umpire",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/klembi99.shtml"
     },
     "Al Simmons": {
-        "name": "Al Simmons",
         "inducted_as": "Player",
         "% of Ballots": 75.4,
         "link": "https://www.baseball-reference.com/players/s/simmoal01.shtml",
@@ -4202,7 +4125,6 @@
         "years_of_experience": 20
     },
     "Bobby Wallace": {
-        "name": "Bobby Wallace",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wallabo01.shtml",
@@ -4218,7 +4140,6 @@
         "years_of_experience": 25
     },
     "Harry Wright": {
-        "name": "Harry Wright",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/wrighha01.shtml",
@@ -4234,7 +4155,6 @@
         "years_of_experience": 7
     },
     "Harry Heilmann": {
-        "name": "Harry Heilmann",
         "inducted_as": "Player",
         "% of Ballots": 86.8,
         "link": "https://www.baseball-reference.com/players/h/heilmha01.shtml",
@@ -4250,7 +4170,6 @@
         "years_of_experience": 17
     },
     "Paul Waner": {
-        "name": "Paul Waner",
         "inducted_as": "Player",
         "% of Ballots": 83.3,
         "link": "https://www.baseball-reference.com/players/w/wanerpa01.shtml",
@@ -4266,7 +4185,6 @@
         "years_of_experience": 20
     },
     "Jimmie Foxx": {
-        "name": "Jimmie Foxx",
         "inducted_as": "Player",
         "% of Ballots": 79.2,
         "link": "https://www.baseball-reference.com/players/f/foxxji01.shtml",
@@ -4282,7 +4200,6 @@
         "years_of_experience": 20
     },
     "Mel Ott": {
-        "name": "Mel Ott",
         "inducted_as": "Player",
         "% of Ballots": 87.2,
         "link": "https://www.baseball-reference.com/players/o/ottme01.shtml",
@@ -4298,7 +4215,6 @@
         "years_of_experience": 22
     },
     "Mordecai Brown": {
-        "name": "Mordecai Brown",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/brownmo01.shtml",
@@ -4308,13 +4224,15 @@
         "ab": 1143,
         "ba": 0.206,
         "rbi": 73,
+        "L": 130,
+        "ERA": 2.06,
+        "W": 61,
         "induction": 1949,
         "last_game": 1916,
         "years_of_waiting_to_enter": 33,
         "years_of_experience": 14
     },
     "Charlie Gehringer": {
-        "name": "Charlie Gehringer",
         "inducted_as": "Player",
         "% of Ballots": 85.0,
         "link": "https://www.baseball-reference.com/players/g/gehrich01.shtml",
@@ -4330,7 +4248,6 @@
         "years_of_experience": 19
     },
     "Kid Nichols": {
-        "name": "Kid Nichols",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/n/nichoki01.shtml",
@@ -4340,13 +4257,14 @@
         "ab": 2090,
         "ba": 0.226,
         "rbi": 278,
+        "L": 208,
+        "ERA": 2.96,
         "induction": 1949,
         "last_game": 1906,
         "years_of_waiting_to_enter": 43,
         "years_of_experience": 15
     },
     "Herb Pennock": {
-        "name": "Herb Pennock",
         "inducted_as": "Player",
         "% of Ballots": 77.7,
         "link": "https://www.baseball-reference.com/players/p/pennohe01.shtml",
@@ -4356,13 +4274,14 @@
         "ab": 1214,
         "ba": 0.191,
         "rbi": 103,
+        "L": 162,
+        "ERA": 3.6,
         "induction": 1948,
         "last_game": 1934,
         "years_of_waiting_to_enter": 14,
         "years_of_experience": 22
     },
     "Pie Traynor": {
-        "name": "Pie Traynor",
         "inducted_as": "Player",
         "% of Ballots": 76.9,
         "link": "https://www.baseball-reference.com/players/t/traynpi01.shtml",
@@ -4378,7 +4297,6 @@
         "years_of_experience": 17
     },
     "Mickey Cochrane": {
-        "name": "Mickey Cochrane",
         "inducted_as": "Player",
         "% of Ballots": 79.5,
         "link": "https://www.baseball-reference.com/players/c/cochrmi01.shtml",
@@ -4388,13 +4306,13 @@
         "ab": 5169,
         "ba": 0.32,
         "rbi": 830,
+        "W": 246,
         "induction": 1947,
         "last_game": 1937,
         "years_of_waiting_to_enter": 10,
         "years_of_experience": 13
     },
     "Frankie Frisch": {
-        "name": "Frankie Frisch",
         "inducted_as": "Player",
         "% of Ballots": 84.5,
         "link": "https://www.baseball-reference.com/players/f/friscfr01.shtml",
@@ -4410,7 +4328,6 @@
         "years_of_experience": 19
     },
     "Lefty Grove": {
-        "name": "Lefty Grove",
         "inducted_as": "Player",
         "% of Ballots": 76.4,
         "link": "https://www.baseball-reference.com/players/g/grovele01.shtml",
@@ -4420,13 +4337,14 @@
         "ab": 1369,
         "ba": 0.148,
         "rbi": 121,
+        "L": 141,
+        "ERA": 3.06,
         "induction": 1947,
         "last_game": 1941,
         "years_of_waiting_to_enter": 6,
         "years_of_experience": 17
     },
     "Carl Hubbell": {
-        "name": "Carl Hubbell",
         "inducted_as": "Player",
         "% of Ballots": 87.0,
         "link": "https://www.baseball-reference.com/players/h/hubbeca01.shtml",
@@ -4436,13 +4354,14 @@
         "ab": 1288,
         "ba": 0.191,
         "rbi": 101,
+        "L": 154,
+        "ERA": 2.98,
         "induction": 1947,
         "last_game": 1943,
         "years_of_waiting_to_enter": 4,
         "years_of_experience": 16
     },
     "Jesse Burkett": {
-        "name": "Jesse Burkett",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/burkeje01.shtml",
@@ -4452,13 +4371,13 @@
         "ab": 8426,
         "ba": 0.338,
         "rbi": 952,
+        "W": 284,
         "induction": 1946,
         "last_game": 1905,
         "years_of_waiting_to_enter": 41,
         "years_of_experience": 16
     },
     "Frank Chance": {
-        "name": "Frank Chance",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/chancfr01.shtml",
@@ -4468,13 +4387,13 @@
         "ab": 4299,
         "ba": 0.296,
         "rbi": 596,
+        "W": 207,
         "induction": 1946,
         "last_game": 1914,
         "years_of_waiting_to_enter": 32,
         "years_of_experience": 17
     },
     "Jack Chesbro": {
-        "name": "Jack Chesbro",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/chesbja01.shtml",
@@ -4484,13 +4403,15 @@
         "ab": 1103,
         "ba": 0.197,
         "rbi": 82,
+        "L": 132,
+        "ERA": 2.68,
+        "W": 355,
         "induction": 1946,
         "last_game": 1909,
         "years_of_waiting_to_enter": 37,
         "years_of_experience": 11
     },
     "Johnny Evers": {
-        "name": "Johnny Evers",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/e/eversjo01.shtml",
@@ -4500,13 +4421,13 @@
         "ab": 6137,
         "ba": 0.27,
         "rbi": 536,
+        "W": 324,
         "induction": 1946,
         "last_game": 1929,
         "years_of_waiting_to_enter": 17,
         "years_of_experience": 18
     },
     "Clark Griffith": {
-        "name": "Clark Griffith",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/g/griffcl01.shtml",
@@ -4516,13 +4437,14 @@
         "ab": 1380,
         "ba": 0.233,
         "rbi": 166,
+        "L": 146,
+        "ERA": 3.31,
         "induction": 1946,
         "last_game": 1914,
         "years_of_waiting_to_enter": 32,
         "years_of_experience": 21
     },
     "Tommy McCarthy": {
-        "name": "Tommy McCarthy",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/mccarto01.shtml",
@@ -4538,7 +4460,6 @@
         "years_of_experience": 13
     },
     "Joe McGinnity": {
-        "name": "Joe McGinnity",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/m/mcginjo01.shtml",
@@ -4548,13 +4469,14 @@
         "ab": 1297,
         "ba": 0.194,
         "rbi": 90,
+        "L": 142,
+        "ERA": 2.66,
         "induction": 1946,
         "last_game": 1908,
         "years_of_waiting_to_enter": 38,
         "years_of_experience": 10
     },
     "Eddie Plank": {
-        "name": "Eddie Plank",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/p/planked01.shtml",
@@ -4564,13 +4486,14 @@
         "ab": 1607,
         "ba": 0.206,
         "rbi": 122,
+        "L": 194,
+        "ERA": 2.35,
         "induction": 1946,
         "last_game": 1917,
         "years_of_waiting_to_enter": 29,
         "years_of_experience": 17
     },
     "Joe Tinker": {
-        "name": "Joe Tinker",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/t/tinkejo01.shtml",
@@ -4586,7 +4509,6 @@
         "years_of_experience": 15
     },
     "Rube Waddell": {
-        "name": "Rube Waddell",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wadderu01.shtml",
@@ -4596,13 +4518,14 @@
         "ab": 1066,
         "ba": 0.161,
         "rbi": 83,
+        "L": 143,
+        "ERA": 2.16,
         "induction": 1946,
         "last_game": 1910,
         "years_of_waiting_to_enter": 36,
         "years_of_experience": 13
     },
     "Ed Walsh": {
-        "name": "Ed Walsh",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/walshed01.shtml",
@@ -4612,13 +4535,14 @@
         "ab": 1085,
         "ba": 0.194,
         "rbi": 68,
+        "L": 126,
+        "ERA": 1.82,
         "induction": 1946,
         "last_game": 1917,
         "years_of_waiting_to_enter": 29,
         "years_of_experience": 14
     },
     "Roger Bresnahan": {
-        "name": "Roger Bresnahan",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/bresnro01.shtml",
@@ -4628,13 +4552,13 @@
         "ab": 4481,
         "ba": 0.279,
         "rbi": 530,
+        "W": 270,
         "induction": 1945,
         "last_game": 1915,
         "years_of_waiting_to_enter": 30,
         "years_of_experience": 17
     },
     "Dan Brouthers": {
-        "name": "Dan Brouthers",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/b/broutda01.shtml",
@@ -4644,13 +4568,13 @@
         "ab": 6726,
         "ba": 0.342,
         "rbi": 1301,
+        "W": 203,
         "induction": 1945,
         "last_game": 1904,
         "years_of_waiting_to_enter": 41,
         "years_of_experience": 19
     },
     "Fred Clarke": {
-        "name": "Fred Clarke",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/clarkfr01.shtml",
@@ -4660,13 +4584,13 @@
         "ab": 8584,
         "ba": 0.312,
         "rbi": 1015,
+        "W": 243,
         "induction": 1945,
         "last_game": 1915,
         "years_of_waiting_to_enter": 30,
         "years_of_experience": 21
     },
     "Jimmy Collins": {
-        "name": "Jimmy Collins",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/colliji01.shtml",
@@ -4676,13 +4600,13 @@
         "ab": 6795,
         "ba": 0.294,
         "rbi": 983,
+        "W": 270,
         "induction": 1945,
         "last_game": 1908,
         "years_of_waiting_to_enter": 37,
         "years_of_experience": 14
     },
     "Ed Delahanty": {
-        "name": "Ed Delahanty",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/delahed01.shtml",
@@ -4692,13 +4616,13 @@
         "ab": 7510,
         "ba": 0.346,
         "rbi": 1466,
+        "W": 94,
         "induction": 1945,
         "last_game": 1903,
         "years_of_waiting_to_enter": 42,
         "years_of_experience": 16
     },
     "Hugh Duffy": {
-        "name": "Hugh Duffy",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/d/duffyhu01.shtml",
@@ -4708,13 +4632,13 @@
         "ab": 7044,
         "ba": 0.326,
         "rbi": 1302,
+        "W": 363,
         "induction": 1945,
         "last_game": 1906,
         "years_of_waiting_to_enter": 39,
         "years_of_experience": 17
     },
     "Hughie Jennings": {
-        "name": "Hughie Jennings",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/j/jennihu01.shtml",
@@ -4730,7 +4654,6 @@
         "years_of_experience": 18
     },
     "King Kelly": {
-        "name": "King Kelly",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/k/kellyki01.shtml",
@@ -4746,7 +4669,6 @@
         "years_of_experience": 16
     },
     "Jim O'Rourke": {
-        "name": "Jim O'Rourke",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/o/o'rouji01.shtml",
@@ -4762,7 +4684,6 @@
         "years_of_experience": 23
     },
     "Wilbert Robinson": {
-        "name": "Wilbert Robinson",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/robinwi01.shtml",
@@ -4778,13 +4699,11 @@
         "years_of_experience": 17
     },
     "Kenesaw Mountain Landis": {
-        "name": "Kenesaw Mountain Landis",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/landike99.shtml"
     },
     "Rogers Hornsby": {
-        "name": "Rogers Hornsby",
         "inducted_as": "Player",
         "% of Ballots": 78.1,
         "link": "https://www.baseball-reference.com/players/h/hornsro01.shtml",
@@ -4800,7 +4719,6 @@
         "years_of_experience": 23
     },
     "Cap Anson": {
-        "name": "Cap Anson",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/a/ansonca01.shtml",
@@ -4810,13 +4728,13 @@
         "ab": 10281,
         "ba": 0.334,
         "rbi": 2075,
+        "W": 329,
         "induction": 1939,
         "last_game": 1897,
         "years_of_waiting_to_enter": 42,
         "years_of_experience": 27
     },
     "Eddie Collins": {
-        "name": "Eddie Collins",
         "inducted_as": "Player",
         "% of Ballots": 77.7,
         "link": "https://www.baseball-reference.com/players/c/collied01.shtml",
@@ -4826,13 +4744,13 @@
         "ab": 9949,
         "ba": 0.333,
         "rbi": 1299,
+        "W": 254,
         "induction": 1939,
         "last_game": 1930,
         "years_of_waiting_to_enter": 9,
         "years_of_experience": 25
     },
     "Charlie Comiskey": {
-        "name": "Charlie Comiskey",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/comisch01.shtml",
@@ -4842,13 +4760,13 @@
         "ab": 5796,
         "ba": 0.264,
         "rbi": 883,
+        "W": 362,
         "induction": 1939,
         "last_game": 1894,
         "years_of_waiting_to_enter": 45,
         "years_of_experience": 13
     },
     "Candy Cummings": {
-        "name": "Candy Cummings",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/c/cummica01.shtml",
@@ -4858,13 +4776,15 @@
         "ab": 1068,
         "ba": 0.213,
         "rbi": 107,
+        "L": 94,
+        "ERA": 2.42,
+        "W": 310,
         "induction": 1939,
         "last_game": 1877,
         "years_of_waiting_to_enter": 62,
         "years_of_experience": 6
     },
     "Buck Ewing": {
-        "name": "Buck Ewing",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/e/ewingbu01.shtml",
@@ -4874,13 +4794,13 @@
         "ab": 5363,
         "ba": 0.303,
         "rbi": 883,
+        "W": 197,
         "induction": 1939,
         "last_game": 1897,
         "years_of_waiting_to_enter": 42,
         "years_of_experience": 18
     },
     "Lou Gehrig": {
-        "name": "Lou Gehrig",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/g/gehrilo01.shtml",
@@ -4896,7 +4816,6 @@
         "years_of_experience": 17
     },
     "Willie Keeler": {
-        "name": "Willie Keeler",
         "inducted_as": "Player",
         "% of Ballots": 75.5,
         "link": "https://www.baseball-reference.com/players/k/keelewi01.shtml",
@@ -4912,7 +4831,6 @@
         "years_of_experience": 19
     },
     "Old Hoss Radbourn": {
-        "name": "Old Hoss Radbourn",
         "inducted_as": "Player",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/r/radboch01.shtml",
@@ -4922,13 +4840,14 @@
         "ab": 2487,
         "ba": 0.235,
         "rbi": 259,
+        "L": 194,
+        "ERA": 2.68,
         "induction": 1939,
         "last_game": 1891,
         "years_of_waiting_to_enter": 48,
         "years_of_experience": 12
     },
     "George Sisler": {
-        "name": "George Sisler",
         "inducted_as": "Player",
         "% of Ballots": 85.8,
         "link": "https://www.baseball-reference.com/players/s/sislege01.shtml",
@@ -4944,7 +4863,6 @@
         "years_of_experience": 15
     },
     "Al Spalding": {
-        "name": "Al Spalding",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/s/spaldal01.shtml",
@@ -4954,13 +4872,14 @@
         "ab": 1959,
         "ba": 0.313,
         "rbi": 338,
+        "L": 65,
+        "ERA": 2.13,
         "induction": 1939,
         "last_game": 1878,
         "years_of_waiting_to_enter": 61,
         "years_of_experience": 8
     },
     "Grover Alexander": {
-        "name": "Grover Alexander",
         "inducted_as": "Player",
         "% of Ballots": 80.9,
         "link": "https://www.baseball-reference.com/players/a/alexape01.shtml",
@@ -4970,37 +4889,35 @@
         "ab": 1810,
         "ba": 0.209,
         "rbi": 163,
+        "L": 208,
+        "ERA": 2.56,
+        "W": 212,
         "induction": 1938,
         "last_game": 1930,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 20
     },
     "Alexander Cartwright": {
-        "name": "Alexander Cartwright",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/cartwal99.shtml"
     },
     "Henry Chadwick": {
-        "name": "Henry Chadwick",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/chadwhe99.shtml"
     },
     "Morgan Bulkeley": {
-        "name": "Morgan Bulkeley",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/bulkemo99.shtml"
     },
     "Ban Johnson": {
-        "name": "Ban Johnson",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/nonmlbpa/johnsba99.shtml"
     },
     "Nap Lajoie": {
-        "name": "Nap Lajoie",
         "inducted_as": "Player",
         "% of Ballots": 83.6,
         "link": "https://www.baseball-reference.com/players/l/lajoina01.shtml",
@@ -5016,7 +4933,6 @@
         "years_of_experience": 21
     },
     "Connie Mack": {
-        "name": "Connie Mack",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/mackco01.shtml",
@@ -5032,7 +4948,6 @@
         "years_of_experience": 11
     },
     "John McGraw": {
-        "name": "John McGraw",
         "inducted_as": "Manager",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/managers/mcgrajo01.shtml",
@@ -5048,7 +4963,6 @@
         "years_of_experience": 17
     },
     "Tris Speaker": {
-        "name": "Tris Speaker",
         "inducted_as": "Player",
         "% of Ballots": 82.1,
         "link": "https://www.baseball-reference.com/players/s/speaktr01.shtml",
@@ -5064,7 +4978,6 @@
         "years_of_experience": 22
     },
     "George Wright": {
-        "name": "George Wright",
         "inducted_as": "Pioneer/Executive",
         "% of Ballots": null,
         "link": "https://www.baseball-reference.com/players/w/wrighge01.shtml",
@@ -5080,7 +4993,6 @@
         "years_of_experience": 12
     },
     "Cy Young": {
-        "name": "Cy Young",
         "inducted_as": "Player",
         "% of Ballots": 76.1,
         "link": "https://www.baseball-reference.com/players/y/youngcy01.shtml",
@@ -5090,13 +5002,14 @@
         "ab": 2960,
         "ba": 0.21,
         "rbi": 290,
+        "L": 315,
+        "ERA": 2.63,
         "induction": 1937,
         "last_game": 1911,
         "years_of_waiting_to_enter": 26,
         "years_of_experience": 22
     },
     "Ty Cobb": {
-        "name": "Ty Cobb",
         "inducted_as": "Player",
         "% of Ballots": 98.2,
         "link": "https://www.baseball-reference.com/players/c/cobbty01.shtml",
@@ -5106,13 +5019,13 @@
         "ab": 11440,
         "ba": 0.366,
         "rbi": 1944,
+        "W": 373,
         "induction": 1936,
         "last_game": 1928,
         "years_of_waiting_to_enter": 8,
         "years_of_experience": 24
     },
     "Walter Johnson": {
-        "name": "Walter Johnson",
         "inducted_as": "Player",
         "% of Ballots": 83.6,
         "link": "https://www.baseball-reference.com/players/j/johnswa01.shtml",
@@ -5122,13 +5035,14 @@
         "ab": 2324,
         "ba": 0.235,
         "rbi": 255,
+        "L": 279,
+        "ERA": 2.17,
         "induction": 1936,
         "last_game": 1927,
         "years_of_waiting_to_enter": 9,
         "years_of_experience": 21
     },
     "Christy Mathewson": {
-        "name": "Christy Mathewson",
         "inducted_as": "Player",
         "% of Ballots": 90.7,
         "link": "https://www.baseball-reference.com/players/m/mathech01.shtml",
@@ -5138,13 +5052,14 @@
         "ab": 1687,
         "ba": 0.215,
         "rbi": 167,
+        "L": 188,
+        "ERA": 2.13,
         "induction": 1936,
         "last_game": 1916,
         "years_of_waiting_to_enter": 20,
         "years_of_experience": 17
     },
     "Babe Ruth": {
-        "name": "Babe Ruth",
         "inducted_as": "Player",
         "% of Ballots": 95.1,
         "link": "https://www.baseball-reference.com/players/r/ruthba01.shtml",
@@ -5154,13 +5069,14 @@
         "ab": 8399,
         "ba": 0.342,
         "rbi": 2214,
+        "L": 46,
+        "ERA": 2.28,
         "induction": 1936,
         "last_game": 1935,
         "years_of_waiting_to_enter": 1,
         "years_of_experience": 22
     },
     "Honus Wagner": {
-        "name": "Honus Wagner",
         "inducted_as": "Player",
         "% of Ballots": 95.1,
         "link": "https://www.baseball-reference.com/players/w/wagneho01.shtml",
