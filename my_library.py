@@ -29,7 +29,7 @@ def max_valor(matrix: List[List[int]]) -> List[List[int]]:
   traspuesta = matrix.T
   sumas = []
   for i in range(len(traspuesta)):
-    sumas.append(float(sum(traspuesta[i])))
+    sumas.append(float(sum(list(filter(lambda x: x!= None , traspuesta[i])))))
   maximo = max(sumas)
   return sumas.index(maximo)
 
@@ -38,15 +38,15 @@ def min_valor(matrix: List[List[int]]) -> List[List[int]]:
   traspuesta = matrix.T
   sumas = []
   for i in range(len(traspuesta)):
-    sumas.append(float(sum(traspuesta[i])))
+    sumas.append(float(sum(list(filter(lambda x: x!= None , traspuesta[i])))))
   maximo = min(sumas)
   return sumas.index(maximo)
 
 
-def my_protly(x: List[int], y: List[int], line: str, title: str, eje_x : str, eje_y: str, name_legend: str) -> None:
+def my_protly(x: List[int], y: List[int], line: str, title: str, eje_x : str, eje_y: str, name_legend: str, colors : str= "royalblue") -> None:
   import plotly.graph_objects as go
   fig = go.Figure()
-  fig.add_trace(go.Scatter(x=x, y=y, mode='lines+markers', name= line))
+  fig.add_trace(go.Scatter(x=x, y=y, mode='lines+markers', name= line, line=dict(color=colors)))
   fig.update_layout(
     title=title,
     xaxis_title=eje_x,

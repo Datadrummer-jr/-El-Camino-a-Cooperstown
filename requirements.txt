@@ -1,0 +1,12 @@
+altair
+pandas
+streamlit
+streamlit-navigation-bar
+streamlit-carousel
+pandas
+numpy
+matplotlib
+scikit-learn
+Pillow
+plotly
+selenium

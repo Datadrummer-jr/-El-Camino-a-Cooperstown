@@ -4,6 +4,7 @@ import pandas as pd
 import json 
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
@@ -131,11 +132,11 @@ p_w = best_pitching['w']
 p_l = best_pitching['l']
 p_era = best_pitching['era']
 
-graph_p_war = ml.my_protly(pit_year,p_war, "WAR: Wins above replacement", f"Comportamiento del War por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","Wins above replacement", "Leyenda")
-graph_p_g = ml.my_protly(pit_year,p_g,"G: Jugadas ganadas", f"Comportamiento de las jugadas ganadas por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","Jugadas Ganadas", "Leyenda")
-graph_p_w = ml.my_protly(pit_year,p_w,"W: ", f"Comportamiento del W por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","W", "Leyenda")
-graph_p_l = ml.my_protly(pit_year,p_l,"L: ", f"Comportamiento de las L por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","L", "Leyenda")
-graph_p_era = ml.my_protly(pit_year,p_era,"ERA: earned_run_avg", f"Comportamiento de las earned_run_avg por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","earned_run_avg", "Leyenda")
+graph_p_war = ml.my_protly(pit_year,p_war, "WAR: Wins above replacement", f"Comportamiento del War por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","Wins above replacement", "Leyenda", "red")
+graph_p_g = ml.my_protly(pit_year,p_g,"G: Jugadas ganadas", f"Comportamiento de las jugadas ganadas por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","Jugadas Ganadas", "Leyenda", "red")
+graph_p_w = ml.my_protly(pit_year,p_w,"W: ", f"Comportamiento del W por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","W", "Leyenda", "red")
+graph_p_l = ml.my_protly(pit_year,p_l,"L: ", f"Comportamiento de las L por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","L", "Leyenda", "red")
+graph_p_era = ml.my_protly(pit_year,p_era,"ERA: earned_run_avg", f"Comportamiento de las earned_run_avg por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","earned_run_avg", "Leyenda", "red")
 
 para_pitching = {
    "WAR": graph_p_war,
@@ -145,7 +146,7 @@ para_pitching = {
    "ERA": graph_p_era
 }
 
-mediana_war_p = np.median(list(filter(lambda x: x!= 0, [df_players.T[a]['war'] for a in df_players.T])))
+
 
 def main():
     st.title("Bienvenido a Cooperstown")
@@ -189,8 +190,47 @@ def main():
 
     bp = st.selectbox("Seleccione uno de algunos se los números del mejor pitcher miembro del salón de la fama del baseball:" , list(para_pitching.keys()))
     st.plotly_chart(para_pitching[bp])
-    st.write(len(names_batting))
-    st.write(mediana_war_p)
+    
 if __name__ == "__main__":
     main()
 
+# Variables independientes (2 características)
+X = np.array([
+    [1, 2],
+    [2, 1],
+    [3, 4],
+    [4, 3],
+    [5, 5]
+])
+
+# Variable dependiente
+y = np.array([5, 6, 9, 10, 13])
+
+modelo = LinearRegression()
+modelo.fit(X, y)
+
+st.write("Coeficientes:", modelo.coef_)
+st.write("Intercepto:", modelo.intercept_)
+
+# Nuevos valores de entrada (por ejemplo, 3 datos nuevos)
+nuevos_X = np.array([
+    [1, 3]
+])
+
+# Predicción
+predicciones = modelo.predict(nuevos_X)
+st.write(predicciones)
+
+st.title("Calculadora de Edad")
+
+with st.form("formulario_edad"):
+    anio_actual = st.number_input("Año actual", min_value=1900, max_value=2100, step=1)
+    anio_nacimiento = st.number_input("Año de nacimiento", min_value=1900, max_value=2100, step=1)
+    enviar = st.form_submit_button("Calcular edad")
+
+if enviar:
+    if anio_actual >= anio_nacimiento:
+        edad = anio_actual - anio_nacimiento
+        st.success(f"Tienes {edad} años.")
+    else:
+        st.error("El año de nacimiento no puede ser mayor que el año actual.")
