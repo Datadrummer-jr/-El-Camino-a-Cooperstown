@@ -5,6 +5,7 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
 from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
@@ -14,7 +15,7 @@ from streamlit_carousel import carousel
 logo = Image.open("logo.jpg")
 
 st.set_page_config(
-    page_title="Mi Aplicación",
+    page_title="Bienvenido a Cooperstown",
     page_icon=logo,
     layout="wide"
 )
@@ -41,23 +42,8 @@ categorias = {
     "todos" : df_total
 }
 
-
-d = {'x': [-4,-3,-2,-1, 0, 1, 2,3,4], 'y': [16,9,4,1,0,1, 4,9,16]}
-dfp = pd.DataFrame(data=d)
-pd.DataFrame()
-# Crear gráfico interactivo con Plotly
-#fig = px.line(dfp, x="x", y="y", title="Gráfico Interactivo de p(x)")
-#fog , ax = plt.subplots()
-
-# Mostrar gráfico en Streamlit
-#st.title("Visualización con Plotly en Streamlit")
-#st.pyplot(fog)
-#st.plotly_chart(fig)
-
-
 bat = df_players.T
-names = [i for i in bat[:16]]
-
+names_bat = [i for i in bat[:17]]
 
 names_batting = []
 
@@ -146,7 +132,79 @@ para_pitching = {
    "ERA": graph_p_era
 }
 
+# Nombres de los Pitcher 
 
+names_pit = [name for name in bat[18:].T.dropna().T]
+
+# Variables Independientes para los pitcher
+
+era_pit = []
+war_pit = []
+g_pit = []
+l_pit = []
+w_pit = []
+experience_pit = []
+
+#Variables independientes para los bateadores
+
+war_bat = []
+g_bat = []
+h_bat = []
+hr_bat = []
+ba_bat = []
+ab_bat = []
+rbi_bat = []
+obp_bat = []
+ops_bat = []
+slg_bat = []
+experience_bat = []
+
+#variable dependiente para los pitcher
+
+porcent_pit = []
+
+# Variable dependiente para los bateadores
+
+porcent_bat = []
+
+for numbers_pit in bat[18:].T.dropna().T:
+   era_pit.append(bat[18:].T.dropna().T[numbers_pit].T["era"])
+   g_pit.append(bat[18:].T.dropna().T[numbers_pit].T["g"])
+   war_pit.append(bat[18:].T.dropna().T[numbers_pit].T["war_p"])
+   l_pit.append(bat[18:].T.dropna().T[numbers_pit].T["l"])
+   w_pit.append(bat[18:].T.dropna().T[numbers_pit].T["w"])
+
+for exp in names_pit:
+   experience_pit.append(bat.T.T[exp].T['years_of_experience'])
+   porcent_pit.append(bat.T.T[exp].T['% of Ballots'])
+   
+for numbers in bat[:17].T.dropna().T:
+   war_bat.append(bat[:17].T.dropna().T[numbers].T["war"])
+   g_bat.append(bat[:17].T.dropna().T[numbers].T["g_bat"])
+   h_bat.append(bat[:17].T.dropna().T[numbers].T["h"])
+   hr_bat.append(bat[:17].T.dropna().T[numbers].T["hr"])
+   ab_bat.append(bat[:17].T.dropna().T[numbers].T["ab"])
+   ba_bat.append(bat[:17].T.dropna().T[numbers].T["ba"])
+   rbi_bat.append(bat[:17].T.dropna().T[numbers].T["rbi"])
+   ops_bat.append(bat[:17].T.dropna().T[numbers].T["ops"])
+   obp_bat.append(bat[:17].T.dropna().T[numbers].T["obp"])
+   experience_bat.append(bat[:17].T.dropna().T[numbers].T["years_of_experience"])
+   porcent_bat.append(bat[:17].T.dropna().T[numbers].T["% of Ballots"])
+
+# Entrenamiento del modelo de Regresión Lineal Múltiple para predecir el por ciento de las boletas para los batting
+
+X = np.array([experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,ops_bat,obp_bat]).T
+
+y = np.array(porcent_bat)
+
+Poly = PolynomialFeatures(degree=2)
+Px = Poly.fit_transform(X)
+
+model_bat = LinearRegression()
+model_bat.fit(Px,y)
+#st.write("coeficiente:" , model_bat.score(Px, y))
+
+# Función principal
 
 def main():
     st.title("Bienvenido a Cooperstown")
@@ -190,47 +248,28 @@ def main():
 
     bp = st.selectbox("Seleccione uno de algunos se los números del mejor pitcher miembro del salón de la fama del baseball:" , list(para_pitching.keys()))
     st.plotly_chart(para_pitching[bp])
-    
+
+    st.subheader('Llene el siguiente formulario con el perfil de un para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
+    with st.form("Perfil de jugador"):
+       posicion = st.selectbox('Seleccione la posicón:' , ['pitcher', 'batting'])
+       g_b_form = st.number_input("Jugadas", step=1) 
+       war_b_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
+       h_b_form = st.number_input("Hits", step=1)
+       hr_b_form = st.number_input("Home Runs", step=1)
+       ab_b_form = st.number_input("At Bats", step=1)
+       ba_b_form = st.number_input("Hits / At bats",step=0.001, format="%.3f")
+       rbi_b_form = st.number_input('Runs Batted In',step=1)
+       ops_b_form = st.number_input('onbase plus slugging',step=0.001, format="%.3f")
+       obp_b_form = st.number_input('Onbase perce',step=0.001, format="%.3f")
+       experience_b_form = st.number_input('Experiencia', step=1)
+       send = st.form_submit_button('Predicir por ciento de las boletas')
+    if send:
+       if posicion == "batting":
+          st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))),2)} %")
+       if posicion == "pitching":
+          passs
 if __name__ == "__main__":
     main()
 
-# Variables independientes (2 características)
-X = np.array([
-    [1, 2],
-    [2, 1],
-    [3, 4],
-    [4, 3],
-    [5, 5]
-])
 
-# Variable dependiente
-y = np.array([5, 6, 9, 10, 13])
 
-modelo = LinearRegression()
-modelo.fit(X, y)
-
-st.write("Coeficientes:", modelo.coef_)
-st.write("Intercepto:", modelo.intercept_)
-
-# Nuevos valores de entrada (por ejemplo, 3 datos nuevos)
-nuevos_X = np.array([
-    [1, 3]
-])
-
-# Predicción
-predicciones = modelo.predict(nuevos_X)
-st.write(predicciones)
-
-st.title("Calculadora de Edad")
-
-with st.form("formulario_edad"):
-    anio_actual = st.number_input("Año actual", min_value=1900, max_value=2100, step=1)
-    anio_nacimiento = st.number_input("Año de nacimiento", min_value=1900, max_value=2100, step=1)
-    enviar = st.form_submit_button("Calcular edad")
-
-if enviar:
-    if anio_actual >= anio_nacimiento:
-        edad = anio_actual - anio_nacimiento
-        st.success(f"Tienes {edad} años.")
-    else:
-        st.error("El año de nacimiento no puede ser mayor que el año actual.")

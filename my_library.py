@@ -17,12 +17,6 @@ def you_type(cadena: str):
         return float(cadena)
       else:
         return str(cadena)
-      
-def index_minimo(lista: List[int], origen: List) -> int:
-    origen.append(lista.index(min(lista)))
-
-def index_maximo(lista: List[int], origen: List) -> int:
-    origen.append(lista.index(max(lista)))
 
 def max_valor(matrix: List[List[int]]) -> List[List[int]]:
   matrix = np.array(matrix)
