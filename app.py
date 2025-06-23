@@ -131,19 +131,23 @@ para_pitching = {
    "L": graph_p_l,
    "ERA": graph_p_era
 }
+names_pit = [bat[18:].T.dropna().T]
 
-# Nombres de los Pitcher 
-
-names_pit = [name for name in bat[18:].T.dropna().T]
+columnas_pit = ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf',"% of Ballots"]
+df_pitch = df_players.dropna(subset=columnas_pit)
 
 # Variables Independientes para los pitcher
 
-era_pit = []
-war_pit = []
-g_pit = []
-l_pit = []
-w_pit = []
-experience_pit = []
+era_pit = df_pitch['era'].to_list()
+war_pit =  df_pitch["war_p"].to_list()
+g_pit =  df_pitch["g"].to_list()
+l_pit =  df_pitch["l"].to_list()
+w_pit =  df_pitch["w"].to_list()
+ip_pit =  df_pitch['ip'].to_list()
+bb_pit =  df_pitch['bb'].to_list()
+w_l_pit =  df_pitch['w_l'].to_list()
+gf_pit =  df_pitch['gf'].to_list()
+experience_pit =  df_pitch['years_of_experience'].to_list()
 
 #Variables independientes para los bateadores
 
@@ -160,11 +164,12 @@ experience_bat = [bat[:17].T.dropna().T[numbers].T["years_of_experience"] for nu
 
 #variable dependiente para los pitcher
 
-porcent_pit = []
+porcent_pit =  df_pitch["% of Ballots"].to_list()
 
 # Variable dependiente para los bateadores
 
 porcent_bat = [bat[:17].T.dropna().T[numbers].T["% of Ballots"] for numbers in bat[:17].T.dropna().T]
+
 
 # Entrenamiento del modelo de Regresión Lineal Múltiple para predecir el por ciento de las boletas para los batting
 
@@ -180,8 +185,15 @@ model_bat.fit(Px,y)
 #st.write("coeficiente:" , model_bat.score(Px, y))
 
 
-W = None
+W = np.array([experience_pit,g_pit, gf_pit,war_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]).T
 
+z = np.array(porcent_pit)
+
+Gx = Poly.fit_transform(W)
+
+model_pit = LinearRegression()
+model_pit.fit(Gx,z)
+#st.write("coeficiente:" , model_pit.score(Gx, z))
 
 años = [ind for ind in df_total["induction"]]
 first_year = min(años)
@@ -195,7 +207,15 @@ def main():
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
     "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron estos nuevos miembros y los " \
     "inducidos en años anteriores que los llevaron a ser mibros del dicho salón en que se encuentran jugadores, ejecutivos, managers y árbitros.")
-    st.header("A continuación están los listados con los datos de los miembros actuales del Salón de la Fama del Baseball")
+    st.subheader("Ahora veamos una gráfica con la comparación de la cantidad por cada categoría de miembro de este salón:")
+    categoria = ['Player', 'Managers', 'Pioneer / Executive', 'Umpire']
+    cantidad = [df_players.shape[0], df_managers.shape[0], df_Pioneer_Executive.shape[0], df_umpire.shape[0]]
+    plt.bar(categoria, cantidad, color='skyblue')
+    plt.xlabel('Categorías')
+    plt.ylabel('Cantidad')
+    plt.title("Cantidad por tipo de miembro")
+    st.pyplot(plt)
+    st.header("A continuación están los listados con los datos de los miembros actuales del Salón de la Fama del Baseball para que conozca los datos de estos exponentes del baseball")
     df = st.selectbox("Selecciona la categoría que desee ver", list(categorias.keys()))
     st.dataframe(categorias[df])
     df_ind = pd.DataFrame({
@@ -249,24 +269,39 @@ def main():
     st.plotly_chart(para_pitching[bp])
 
     st.subheader('Llene el siguiente formulario con el perfil de un para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
-    with st.form("Perfil de jugador"):
-       posicion = st.selectbox('Seleccione la posicón:' , ['pitcher', 'batting'])
-       g_b_form = st.number_input("Jugadas", step=1) 
-       war_b_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
-       h_b_form = st.number_input("Hits", step=1)
-       hr_b_form = st.number_input("Home Runs", step=1)
-       ab_b_form = st.number_input("At Bats", step=1)
-       ba_b_form = st.number_input("Hits / At bats",step=0.001, format="%.3f")
-       rbi_b_form = st.number_input('Runs Batted In',step=1)
-       ops_b_form = st.number_input('onbase plus slugging',step=0.001, format="%.3f")
-       obp_b_form = st.number_input('Onbase perce',step=0.001, format="%.3f")
-       experience_b_form = st.number_input('Años de experiencia', step=1)
-       send = st.form_submit_button('Predicir por ciento de las boletas')
+
+    opción = st.selectbox("¿Qué posición eliges?", ["Selecciona...", "Batting", "Pitching"])
+   
+    with st.form("Perfil de Batting"):
+      if opción == "Batting":
+          g_b_form = st.number_input("Jugadas", step=1) 
+          war_b_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
+          h_b_form = st.number_input("Hits", step=1)
+          hr_b_form = st.number_input("Home Runs", step=1)
+          ab_b_form = st.number_input("At Bats", step=1)
+          ba_b_form = st.number_input("Hits / At bats",step=0.001, format="%.3f")
+          rbi_b_form = st.number_input('Runs Batted In',step=1)
+          ops_b_form = st.number_input('onbase plus slugging',step=0.001, format="%.3f")
+          obp_b_form = st.number_input('Onbase perce',step=0.001, format="%.3f")
+          experience_b_form = st.number_input('Años de experiencia', step=1)
+      elif opción == "Pitching":
+         g_p_form = st.number_input("Jugadas", step=1) 
+         war_p_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
+         era_p_form = st.number_input("Earned run avg",step=0.001, format="%.3f" ) 
+         bb_p_form = st.number_input("Bases por bola",step=1)
+         gf_p_form = st.number_input("Jugadas terminadas",step=1)
+         w_p_form = st.number_input("Wins",step=1)
+         l_p_form = st.number_input("Losses",step=1)
+         ip_p_form = st.number_input("Inning Pitching",step=0.001, format="%.3f" )
+         W_L_p_form = st.number_input("Wins - losses Porcetange",step=0.001, format="%.3f" )
+         experience_p_form = st.number_input('Años de experiencia', step=1)
+      send = st.form_submit_button('Predicir por ciento de las boletas para entrar en salón de la fama')
     if send:
-       if posicion == "batting":
+       if opción == "Batting":
           st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))),2)} %")
-       if posicion == "pitching":
-          pass
+       elif opción == "Pitching":
+          st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_pit.predict(Poly.fit_transform(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))),2)} %")
+    st.write('Nota: Para entrar al salón de la fama del baseball se requiere más del 75 % de las boletas.')
 if __name__ == "__main__":
     main()
 
