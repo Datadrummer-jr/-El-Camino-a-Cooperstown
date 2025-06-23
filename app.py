@@ -267,7 +267,7 @@ def main():
        if posicion == "batting":
           st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))),2)} %")
        if posicion == "pitching":
-          passs
+          pass
 if __name__ == "__main__":
     main()
 
