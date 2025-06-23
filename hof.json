@@ -22,7 +22,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Dave Parker": {
         "inducted_as": "Player",
@@ -47,7 +51,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "CC Sabathia": {
         "inducted_as": "Player",
@@ -71,8 +79,12 @@
         "l": 161,
         "w": 251,
         "era": 3.74,
-        "war_p": 62.26,
-        "g": 561
+        "war_p": 61.76,
+        "g": 561,
+        "bb": 1099,
+        "gf": 0,
+        "w_l": 0.609,
+        "ip": 3577.1
     },
     "Ichiro Suzuki": {
         "inducted_as": "Player",
@@ -97,7 +109,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Billy Wagner": {
         "inducted_as": "Player",
@@ -122,7 +138,11 @@
         "w": 47,
         "era": 2.31,
         "war_p": 27.75,
-        "g": 853
+        "g": 853,
+        "bb": 300,
+        "gf": 703,
+        "w_l": 0.54,
+        "ip": 903.0
     },
     "Adrian Beltré": {
         "inducted_as": "Player",
@@ -147,7 +167,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Todd Helton": {
         "inducted_as": "Player",
@@ -172,7 +196,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jim Leyland": {
         "inducted_as": "Manager",
@@ -193,6 +221,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Joe Mauer": {
@@ -218,7 +250,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Fred McGriff": {
         "inducted_as": "Player",
@@ -243,7 +279,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Scott Rolen": {
         "inducted_as": "Player",
@@ -268,7 +308,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bud Fowler": {
         "inducted_as": "Pioneer/Executive",
@@ -289,6 +333,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Gil Hodges": {
@@ -314,7 +362,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jim Kaat": {
         "inducted_as": "Player",
@@ -338,8 +390,12 @@
         "l": 237,
         "w": 283,
         "era": 3.45,
-        "war_p": 50.54,
-        "g": 898
+        "war_p": 45.24,
+        "g": 898,
+        "bb": 1083,
+        "gf": 102,
+        "w_l": 0.544,
+        "ip": 4530.1
     },
     "Minnie Miñoso": {
         "inducted_as": "Player",
@@ -364,7 +420,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Buck O'Neil": {
         "inducted_as": "Pioneer/Executive",
@@ -389,7 +449,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tony Oliva": {
         "inducted_as": "Player",
@@ -414,7 +478,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "David Ortiz": {
         "inducted_as": "Player",
@@ -439,7 +507,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Derek Jeter": {
         "inducted_as": "Player",
@@ -464,7 +536,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Marvin Miller": {
         "inducted_as": "Pioneer/Executive",
@@ -485,6 +561,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Ted Simmons": {
@@ -510,7 +590,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Larry Walker": {
         "inducted_as": "Player",
@@ -535,7 +619,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Harold Baines": {
         "inducted_as": "Player",
@@ -560,7 +648,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Roy Halladay": {
         "inducted_as": "Player",
@@ -584,8 +676,12 @@
         "l": 105,
         "w": 203,
         "era": 3.38,
-        "war_p": 64.28,
-        "g": 416
+        "war_p": 65.38,
+        "g": 416,
+        "bb": 592,
+        "gf": 6,
+        "w_l": 0.659,
+        "ip": 2749.1
     },
     "Edgar Martínez": {
         "inducted_as": "Player",
@@ -610,7 +706,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Mike Mussina": {
         "inducted_as": "Player",
@@ -635,7 +735,11 @@
         "w": 270,
         "era": 3.68,
         "war_p": 82.78,
-        "g": 537
+        "g": 537,
+        "bb": 785,
+        "gf": 0,
+        "w_l": 0.638,
+        "ip": 3562.2
     },
     "Mariano Rivera": {
         "inducted_as": "Player",
@@ -660,7 +764,11 @@
         "w": 82,
         "era": 2.21,
         "war_p": 56.27,
-        "g": 1115
+        "g": 1115,
+        "bb": 286,
+        "gf": 952,
+        "w_l": 0.577,
+        "ip": 1283.2
     },
     "Lee Smith": {
         "inducted_as": "Player",
@@ -684,8 +792,12 @@
         "l": 92,
         "w": 71,
         "era": 3.03,
-        "war_p": 28.83,
-        "g": 1022
+        "war_p": 29.33,
+        "g": 1022,
+        "bb": 486,
+        "gf": 802,
+        "w_l": 0.436,
+        "ip": 1289.1
     },
     "Vladimir Guerrero": {
         "inducted_as": "Player",
@@ -710,7 +822,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Trevor Hoffman": {
         "inducted_as": "Player",
@@ -734,8 +850,12 @@
         "l": 75,
         "w": 61,
         "era": 2.87,
-        "war_p": 27.92,
-        "g": 1035
+        "war_p": 28.12,
+        "g": 1035,
+        "bb": 307,
+        "gf": 856,
+        "w_l": 0.449,
+        "ip": 1089.1
     },
     "Chipper Jones": {
         "inducted_as": "Player",
@@ -760,7 +880,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jack Morris": {
         "inducted_as": "Player",
@@ -784,8 +908,12 @@
         "l": 186,
         "w": 254,
         "era": 3.9,
-        "war_p": 43.51,
-        "g": 549
+        "war_p": 43.61,
+        "g": 549,
+        "bb": 1390,
+        "gf": 10,
+        "w_l": 0.577,
+        "ip": 3824.0
     },
     "Jim Thome": {
         "inducted_as": "Player",
@@ -810,7 +938,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Alan Trammell": {
         "inducted_as": "Player",
@@ -835,7 +967,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jeff Bagwell": {
         "inducted_as": "Player",
@@ -860,7 +996,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tim Raines": {
         "inducted_as": "Player",
@@ -885,7 +1025,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Iván Rodríguez": {
         "inducted_as": "Player",
@@ -910,7 +1054,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "John Schuerholz": {
         "inducted_as": "Pioneer/Executive",
@@ -931,6 +1079,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Bud Selig": {
@@ -952,6 +1104,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Ken Griffey Jr.": {
@@ -977,7 +1133,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Mike Piazza": {
         "inducted_as": "Player",
@@ -1002,7 +1162,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Craig Biggio": {
         "inducted_as": "Player",
@@ -1027,7 +1191,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Randy Johnson": {
         "inducted_as": "Player",
@@ -1051,8 +1219,12 @@
         "l": 166,
         "w": 303,
         "era": 3.29,
-        "war_p": 101.03,
-        "g": 618
+        "war_p": 103.53,
+        "g": 618,
+        "bb": 1497,
+        "gf": 7,
+        "w_l": 0.646,
+        "ip": 4135.1
     },
     "Pedro Martinez": {
         "inducted_as": "Player",
@@ -1076,8 +1248,12 @@
         "l": 100,
         "w": 219,
         "era": 2.93,
-        "war_p": 83.88,
-        "g": 476
+        "war_p": 86.08,
+        "g": 476,
+        "bb": 760,
+        "gf": 23,
+        "w_l": 0.687,
+        "ip": 2827.1
     },
     "John Smoltz": {
         "inducted_as": "Player",
@@ -1101,8 +1277,12 @@
         "l": 155,
         "w": 213,
         "era": 3.33,
-        "war_p": 69.0,
-        "g": 723
+        "war_p": 66.4,
+        "g": 723,
+        "bb": 1010,
+        "gf": 204,
+        "w_l": 0.579,
+        "ip": 3473.0
     },
     "Bobby Cox": {
         "inducted_as": "Manager",
@@ -1127,7 +1307,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tom Glavine": {
         "inducted_as": "Player",
@@ -1151,8 +1335,12 @@
         "l": 203,
         "w": 305,
         "era": 3.54,
-        "war_p": 80.75999999999999,
-        "g": 682
+        "war_p": 73.96,
+        "g": 682,
+        "bb": 1500,
+        "gf": 0,
+        "w_l": 0.6,
+        "ip": 4413.1
     },
     "Tony La Russa": {
         "inducted_as": "Manager",
@@ -1177,7 +1365,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Greg Maddux": {
         "inducted_as": "Player",
@@ -1201,8 +1393,12 @@
         "l": 227,
         "w": 355,
         "era": 3.16,
-        "war_p": 106.59,
-        "g": 744
+        "war_p": 104.79,
+        "g": 744,
+        "bb": 999,
+        "gf": 3,
+        "w_l": 0.61,
+        "ip": 5008.1
     },
     "Frank Thomas": {
         "inducted_as": "Player",
@@ -1227,7 +1423,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Joe Torre": {
         "inducted_as": "Manager",
@@ -1252,7 +1452,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Hank O'Day": {
         "inducted_as": "Umpire",
@@ -1276,8 +1480,12 @@
         "l": 110,
         "w": 73,
         "era": 3.74,
-        "war_p": 6.33,
-        "g": 201
+        "war_p": 8.93,
+        "g": 201,
+        "bb": 578,
+        "gf": 8,
+        "w_l": 0.399,
+        "ip": 1651.1
     },
     "Jacob Ruppert": {
         "inducted_as": "Pioneer/Executive",
@@ -1298,6 +1506,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Deacon White": {
@@ -1323,7 +1535,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Barry Larkin": {
         "inducted_as": "Player",
@@ -1348,7 +1564,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ron Santo": {
         "inducted_as": "Player",
@@ -1373,7 +1593,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Roberto Alomar": {
         "inducted_as": "Player",
@@ -1398,7 +1622,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bert Blyleven": {
         "inducted_as": "Player",
@@ -1422,8 +1650,12 @@
         "l": 250,
         "w": 287,
         "era": 3.31,
-        "war_p": 94.49000000000001,
-        "g": 692
+        "war_p": 96.09,
+        "g": 692,
+        "bb": 1322,
+        "gf": 3,
+        "w_l": 0.534,
+        "ip": 4970.0
     },
     "Pat Gillick": {
         "inducted_as": "Pioneer/Executive",
@@ -1444,6 +1676,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Andre Dawson": {
@@ -1469,7 +1705,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Doug Harvey": {
         "inducted_as": "Umpire",
@@ -1490,6 +1730,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Whitey Herzog": {
@@ -1515,7 +1759,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Joe Gordon": {
         "inducted_as": "Player",
@@ -1540,7 +1788,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Rickey Henderson": {
         "inducted_as": "Player",
@@ -1565,7 +1817,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jim Rice": {
         "inducted_as": "Player",
@@ -1590,7 +1846,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Barney Dreyfuss": {
         "inducted_as": "Pioneer/Executive",
@@ -1611,6 +1871,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Rich Gossage": {
@@ -1635,8 +1899,12 @@
         "l": 107,
         "w": 124,
         "era": 3.01,
-        "war_p": 41.14,
-        "g": 1002
+        "war_p": 41.64,
+        "g": 1002,
+        "bb": 732,
+        "gf": 681,
+        "w_l": 0.537,
+        "ip": 1809.1
     },
     "Bowie Kuhn": {
         "inducted_as": "Pioneer/Executive",
@@ -1657,6 +1925,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Walter O'Malley": {
@@ -1678,6 +1950,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Billy Southworth": {
@@ -1703,7 +1979,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Dick Williams": {
         "inducted_as": "Manager",
@@ -1728,7 +2008,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tony Gwynn": {
         "inducted_as": "Player",
@@ -1753,7 +2037,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Cal Ripken Jr.": {
         "inducted_as": "Player",
@@ -1778,7 +2066,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ray Brown": {
         "inducted_as": "Player",
@@ -1802,8 +2094,12 @@
         "l": 46,
         "w": 119,
         "era": 3.12,
-        "war_p": 38.19,
-        "g": 216
+        "war_p": 31.69,
+        "g": 216,
+        "bb": 415,
+        "gf": 35,
+        "w_l": 0.721,
+        "ip": 1480.2
     },
     "Willard Brown": {
         "inducted_as": "Player",
@@ -1828,7 +2124,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Andy Cooper": {
         "inducted_as": "Player",
@@ -1852,8 +2152,12 @@
         "l": 64,
         "w": 118,
         "era": 3.58,
-        "war_p": 25.92,
-        "g": 288
+        "war_p": 26.62,
+        "g": 288,
+        "bb": 357,
+        "gf": 44,
+        "w_l": 0.648,
+        "ip": 1603.1
     },
     "Frank Grant": {
         "inducted_as": "Pioneer/Executive",
@@ -1874,6 +2178,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Pete Hill": {
@@ -1899,7 +2207,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Biz Mackey": {
         "inducted_as": "Player",
@@ -1924,7 +2236,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Effa Manley": {
         "inducted_as": "Pioneer/Executive",
@@ -1945,6 +2261,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "José Méndez": {
@@ -1970,7 +2290,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Alex Pompez": {
         "inducted_as": "Pioneer/Executive",
@@ -1991,6 +2315,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Cum Posey": {
@@ -2012,6 +2340,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Louis Santop": {
@@ -2037,7 +2369,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bruce Sutter": {
         "inducted_as": "Player",
@@ -2061,8 +2397,12 @@
         "l": 71,
         "w": 68,
         "era": 2.83,
-        "war_p": 24.03,
-        "g": 661
+        "war_p": 24.43,
+        "g": 661,
+        "bb": 309,
+        "gf": 512,
+        "w_l": 0.489,
+        "ip": 1042.0
     },
     "Mule Suttles": {
         "inducted_as": "Player",
@@ -2087,7 +2427,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ben Taylor": {
         "inducted_as": "Player",
@@ -2112,7 +2456,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Cristóbal Torriente": {
         "inducted_as": "Player",
@@ -2137,7 +2485,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Sol White": {
         "inducted_as": "Pioneer/Executive",
@@ -2158,6 +2510,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "J.L. Wilkinson": {
@@ -2179,6 +2535,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Jud Wilson": {
@@ -2204,7 +2564,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Wade Boggs": {
         "inducted_as": "Player",
@@ -2229,7 +2593,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ryne Sandberg": {
         "inducted_as": "Player",
@@ -2254,7 +2622,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Dennis Eckersley": {
         "inducted_as": "Player",
@@ -2278,8 +2650,12 @@
         "l": 171,
         "w": 197,
         "era": 3.5,
-        "war_p": 62.029999999999994,
-        "g": 1071
+        "war_p": 62.23,
+        "g": 1071,
+        "bb": 738,
+        "gf": 577,
+        "w_l": 0.535,
+        "ip": 3285.2
     },
     "Paul Molitor": {
         "inducted_as": "Player",
@@ -2304,7 +2680,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Gary Carter": {
         "inducted_as": "Player",
@@ -2329,7 +2709,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Eddie Murray": {
         "inducted_as": "Player",
@@ -2354,7 +2738,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ozzie Smith": {
         "inducted_as": "Player",
@@ -2379,7 +2767,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bill Mazeroski": {
         "inducted_as": "Player",
@@ -2404,7 +2796,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Kirby Puckett": {
         "inducted_as": "Player",
@@ -2429,7 +2825,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Hilton Smith": {
         "inducted_as": "Player",
@@ -2453,8 +2853,12 @@
         "l": 38,
         "w": 70,
         "era": 2.92,
-        "war_p": 23.5,
-        "g": 162
+        "war_p": 19.4,
+        "g": 162,
+        "bb": 187,
+        "gf": 40,
+        "w_l": 0.648,
+        "ip": 943.0
     },
     "Dave Winfield": {
         "inducted_as": "Player",
@@ -2479,7 +2883,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Sparky Anderson": {
         "inducted_as": "Manager",
@@ -2504,7 +2912,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Carlton Fisk": {
         "inducted_as": "Player",
@@ -2529,7 +2941,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bid McPhee": {
         "inducted_as": "Player",
@@ -2554,7 +2970,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tony Pérez": {
         "inducted_as": "Player",
@@ -2579,7 +2999,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Turkey Stearnes": {
         "inducted_as": "Player",
@@ -2604,7 +3028,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "George Brett": {
         "inducted_as": "Player",
@@ -2629,7 +3057,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Orlando Cepeda": {
         "inducted_as": "Player",
@@ -2654,7 +3086,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Nestor Chylak": {
         "inducted_as": "Umpire",
@@ -2675,6 +3111,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Nolan Ryan": {
@@ -2699,8 +3139,12 @@
         "l": 292,
         "w": 324,
         "era": 3.19,
-        "war_p": 81.3,
-        "g": 807
+        "war_p": 83.6,
+        "g": 807,
+        "bb": 2795,
+        "gf": 13,
+        "w_l": 0.526,
+        "ip": 5386.0
     },
     "Frank Selee": {
         "inducted_as": "Manager",
@@ -2721,6 +3165,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Joe Williams": {
@@ -2746,7 +3194,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Robin Yount": {
         "inducted_as": "Player",
@@ -2771,7 +3223,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "George Davis": {
         "inducted_as": "Player",
@@ -2796,7 +3252,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Larry Doby": {
         "inducted_as": "Player",
@@ -2821,7 +3281,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Lee MacPhail": {
         "inducted_as": "Pioneer/Executive",
@@ -2842,6 +3306,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Bullet Rogan": {
@@ -2866,8 +3334,12 @@
         "l": 52,
         "w": 120,
         "era": 2.65,
-        "war_p": 61.24,
-        "g": 214
+        "war_p": 37.84,
+        "g": 214,
+        "bb": 405,
+        "gf": 18,
+        "w_l": 0.698,
+        "ip": 1500.0
     },
     "Don Sutton": {
         "inducted_as": "Player",
@@ -2891,8 +3363,12 @@
         "l": 256,
         "w": 324,
         "era": 3.26,
-        "war_p": 66.68,
-        "g": 774
+        "war_p": 68.28,
+        "g": 774,
+        "bb": 1343,
+        "gf": 12,
+        "w_l": 0.559,
+        "ip": 5282.1
     },
     "Nellie Fox": {
         "inducted_as": "Player",
@@ -2917,7 +3393,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tommy Lasorda": {
         "inducted_as": "Manager",
@@ -2942,7 +3422,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Phil Niekro": {
         "inducted_as": "Player",
@@ -2966,8 +3450,12 @@
         "l": 274,
         "w": 318,
         "era": 3.35,
-        "war_p": 95.87,
-        "g": 864
+        "war_p": 96.97,
+        "g": 864,
+        "bb": 1809,
+        "gf": 83,
+        "w_l": 0.537,
+        "ip": 5404.0
     },
     "Willie Wells": {
         "inducted_as": "Player",
@@ -2992,7 +3480,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jim Bunning": {
         "inducted_as": "Player",
@@ -3016,8 +3508,12 @@
         "l": 184,
         "w": 224,
         "era": 3.27,
-        "war_p": 59.43,
-        "g": 591
+        "war_p": 60.33,
+        "g": 591,
+        "bb": 1000,
+        "gf": 39,
+        "w_l": 0.549,
+        "ip": 3760.1
     },
     "Bill Foster": {
         "inducted_as": "Player",
@@ -3041,8 +3537,12 @@
         "l": 56,
         "w": 110,
         "era": 2.63,
-        "war_p": 46.98,
-        "g": 238
+        "war_p": 45.58,
+        "g": 238,
+        "bb": 477,
+        "gf": 13,
+        "w_l": 0.663,
+        "ip": 1499.2
     },
     "Ned Hanlon": {
         "inducted_as": "Manager",
@@ -3067,7 +3567,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Earl Weaver": {
         "inducted_as": "Manager",
@@ -3088,6 +3592,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Richie Ashburn": {
@@ -3113,7 +3621,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Leon Day": {
         "inducted_as": "Player",
@@ -3137,8 +3649,12 @@
         "l": 22,
         "w": 50,
         "era": 3.58,
-        "war_p": 18.36,
-        "g": 92
+        "war_p": 14.36,
+        "g": 92,
+        "bb": 241,
+        "gf": 2,
+        "w_l": 0.694,
+        "ip": 616.1
     },
     "William Hulbert": {
         "inducted_as": "Pioneer/Executive",
@@ -3159,6 +3675,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Mike Schmidt": {
@@ -3184,7 +3704,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Vic Willis": {
         "inducted_as": "Player",
@@ -3208,8 +3732,12 @@
         "l": 205,
         "w": 249,
         "era": 2.63,
-        "war_p": 63.1,
-        "g": 513
+        "war_p": 67.0,
+        "g": 513,
+        "bb": 1212,
+        "gf": 41,
+        "w_l": 0.548,
+        "ip": 3996.0
     },
     "Steve Carlton": {
         "inducted_as": "Player",
@@ -3233,8 +3761,12 @@
         "l": 244,
         "w": 329,
         "era": 3.22,
-        "war_p": 90.22999999999999,
-        "g": 741
+        "war_p": 84.13,
+        "g": 741,
+        "bb": 1833,
+        "gf": 13,
+        "w_l": 0.574,
+        "ip": 5217.2
     },
     "Leo Durocher": {
         "inducted_as": "Manager",
@@ -3259,7 +3791,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Phil Rizzuto": {
         "inducted_as": "Player",
@@ -3284,7 +3820,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Reggie Jackson": {
         "inducted_as": "Player",
@@ -3309,7 +3849,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Rollie Fingers": {
         "inducted_as": "Player",
@@ -3333,8 +3877,12 @@
         "l": 118,
         "w": 114,
         "era": 2.9,
-        "war_p": 25.59,
-        "g": 944
+        "war_p": 24.99,
+        "g": 944,
+        "bb": 492,
+        "gf": 709,
+        "w_l": 0.491,
+        "ip": 1701.1
     },
     "Bill McGowan": {
         "inducted_as": "Umpire",
@@ -3355,6 +3903,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Hal Newhouser": {
@@ -3379,8 +3931,12 @@
         "l": 150,
         "w": 207,
         "era": 3.06,
-        "war_p": 62.77,
-        "g": 488
+        "war_p": 60.07,
+        "g": 488,
+        "bb": 1249,
+        "gf": 79,
+        "w_l": 0.58,
+        "ip": 2993.0
     },
     "Tom Seaver": {
         "inducted_as": "Player",
@@ -3404,8 +3960,12 @@
         "l": 205,
         "w": 311,
         "era": 2.86,
-        "war_p": 109.97,
-        "g": 656
+        "war_p": 106.07,
+        "g": 656,
+        "bb": 1390,
+        "gf": 6,
+        "w_l": 0.603,
+        "ip": 4783.0
     },
     "Rod Carew": {
         "inducted_as": "Player",
@@ -3430,7 +3990,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Fergie Jenkins": {
         "inducted_as": "Player",
@@ -3454,8 +4018,12 @@
         "l": 226,
         "w": 284,
         "era": 3.34,
-        "war_p": 84.16,
-        "g": 664
+        "war_p": 82.16,
+        "g": 664,
+        "bb": 997,
+        "gf": 37,
+        "w_l": 0.557,
+        "ip": 4500.2
     },
     "Tony Lazzeri": {
         "inducted_as": "Player",
@@ -3480,7 +4048,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Gaylord Perry": {
         "inducted_as": "Player",
@@ -3504,8 +4076,12 @@
         "l": 265,
         "w": 314,
         "era": 3.11,
-        "war_p": 90.02,
-        "g": 777
+        "war_p": 93.02,
+        "g": 777,
+        "bb": 1379,
+        "gf": 33,
+        "w_l": 0.542,
+        "ip": 5350.0
     },
     "Bill Veeck": {
         "inducted_as": "Pioneer/Executive",
@@ -3526,6 +4102,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Joe Morgan": {
@@ -3551,7 +4131,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jim Palmer": {
         "inducted_as": "Player",
@@ -3575,8 +4159,12 @@
         "l": 152,
         "w": 268,
         "era": 2.86,
-        "war_p": 68.45,
-        "g": 558
+        "war_p": 67.55,
+        "g": 558,
+        "bb": 1311,
+        "gf": 15,
+        "w_l": 0.638,
+        "ip": 3948.0
     },
     "Al Barlick": {
         "inducted_as": "Umpire",
@@ -3597,6 +4185,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Johnny Bench": {
@@ -3622,7 +4214,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Red Schoendienst": {
         "inducted_as": "Player",
@@ -3647,7 +4243,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Carl Yastrzemski": {
         "inducted_as": "Player",
@@ -3672,7 +4272,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Willie Stargell": {
         "inducted_as": "Player",
@@ -3697,7 +4301,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ray Dandridge": {
         "inducted_as": "Player",
@@ -3722,7 +4330,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Catfish Hunter": {
         "inducted_as": "Player",
@@ -3746,8 +4358,12 @@
         "l": 166,
         "w": 224,
         "era": 3.26,
-        "war_p": 40.910000000000004,
-        "g": 500
+        "war_p": 36.31,
+        "g": 500,
+        "bb": 954,
+        "gf": 6,
+        "w_l": 0.574,
+        "ip": 3449.1
     },
     "Billy Williams": {
         "inducted_as": "Player",
@@ -3772,7 +4388,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bobby Doerr": {
         "inducted_as": "Player",
@@ -3797,7 +4417,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ernie Lombardi": {
         "inducted_as": "Player",
@@ -3822,7 +4446,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Willie McCovey": {
         "inducted_as": "Player",
@@ -3847,7 +4475,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Lou Brock": {
         "inducted_as": "Player",
@@ -3872,7 +4504,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Enos Slaughter": {
         "inducted_as": "Player",
@@ -3897,7 +4533,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Arky Vaughan": {
         "inducted_as": "Player",
@@ -3922,7 +4562,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Hoyt Wilhelm": {
         "inducted_as": "Player",
@@ -3946,8 +4590,12 @@
         "l": 122,
         "w": 143,
         "era": 2.52,
-        "war_p": 46.83,
-        "g": 1070
+        "war_p": 49.73,
+        "g": 1070,
+        "bb": 778,
+        "gf": 651,
+        "w_l": 0.54,
+        "ip": 2254.1
     },
     "Luis Aparicio": {
         "inducted_as": "Player",
@@ -3972,7 +4620,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Don Drysdale": {
         "inducted_as": "Player",
@@ -3996,8 +4648,12 @@
         "l": 166,
         "w": 209,
         "era": 2.95,
-        "war_p": 67.15,
-        "g": 518
+        "war_p": 61.35,
+        "g": 518,
+        "bb": 855,
+        "gf": 34,
+        "w_l": 0.557,
+        "ip": 3432.0
     },
     "Rick Ferrell": {
         "inducted_as": "Player",
@@ -4022,7 +4678,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Harmon Killebrew": {
         "inducted_as": "Player",
@@ -4047,7 +4707,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Pee Wee Reese": {
         "inducted_as": "Player",
@@ -4072,7 +4736,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Walter Alston": {
         "inducted_as": "Manager",
@@ -4097,7 +4765,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "George Kell": {
         "inducted_as": "Player",
@@ -4122,7 +4794,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Juan Marichal": {
         "inducted_as": "Player",
@@ -4146,8 +4822,12 @@
         "l": 142,
         "w": 243,
         "era": 2.89,
-        "war_p": 62.78,
-        "g": 471
+        "war_p": 61.78,
+        "g": 471,
+        "bb": 709,
+        "gf": 11,
+        "w_l": 0.631,
+        "ip": 3507.0
     },
     "Brooks Robinson": {
         "inducted_as": "Player",
@@ -4172,7 +4852,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Henry Aaron": {
         "inducted_as": "Player",
@@ -4197,7 +4881,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Happy Chandler": {
         "inducted_as": "Pioneer/Executive",
@@ -4218,6 +4906,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Travis Jackson": {
@@ -4243,7 +4935,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Frank Robinson": {
         "inducted_as": "Player",
@@ -4268,7 +4964,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Rube Foster": {
         "inducted_as": "Pioneer/Executive",
@@ -4289,6 +4989,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Bob Gibson": {
@@ -4313,8 +5017,12 @@
         "l": 174,
         "w": 251,
         "era": 2.91,
-        "war_p": 89.16,
-        "g": 528
+        "war_p": 81.66,
+        "g": 528,
+        "bb": 1336,
+        "gf": 21,
+        "w_l": 0.591,
+        "ip": 3884.1
     },
     "Johnny Mize": {
         "inducted_as": "Player",
@@ -4339,7 +5047,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Al Kaline": {
         "inducted_as": "Player",
@@ -4364,7 +5076,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Chuck Klein": {
         "inducted_as": "Player",
@@ -4389,7 +5105,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Duke Snider": {
         "inducted_as": "Player",
@@ -4414,7 +5134,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tom Yawkey": {
         "inducted_as": "Pioneer/Executive",
@@ -4435,6 +5159,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Warren Giles": {
@@ -4456,6 +5184,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Willie Mays": {
@@ -4481,7 +5213,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Hack Wilson": {
         "inducted_as": "Player",
@@ -4506,7 +5242,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Addie Joss": {
         "inducted_as": "Player",
@@ -4530,8 +5270,12 @@
         "l": 97,
         "w": 160,
         "era": 1.89,
-        "war_p": 45.370000000000005,
-        "g": 286
+        "war_p": 47.67,
+        "g": 286,
+        "bb": 364,
+        "gf": 22,
+        "w_l": 0.623,
+        "ip": 2327.0
     },
     "Larry MacPhail": {
         "inducted_as": "Pioneer/Executive",
@@ -4552,6 +5296,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Eddie Mathews": {
@@ -4577,7 +5325,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ernie Banks": {
         "inducted_as": "Player",
@@ -4602,7 +5354,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Martín Dihigo": {
         "inducted_as": "Player",
@@ -4627,7 +5383,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "John Henry Lloyd": {
         "inducted_as": "Player",
@@ -4652,7 +5412,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Al Lopez": {
         "inducted_as": "Manager",
@@ -4677,7 +5441,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Amos Rusie": {
         "inducted_as": "Player",
@@ -4701,8 +5469,12 @@
         "l": 174,
         "w": 246,
         "era": 3.07,
-        "war_p": 65.80999999999999,
-        "g": 463
+        "war_p": 65.21,
+        "g": 463,
+        "bb": 1707,
+        "gf": 35,
+        "w_l": 0.586,
+        "ip": 3778.2
     },
     "Joe Sewell": {
         "inducted_as": "Player",
@@ -4727,7 +5499,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Oscar Charleston": {
         "inducted_as": "Player",
@@ -4752,7 +5528,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Roger Connor": {
         "inducted_as": "Player",
@@ -4777,7 +5557,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Cal Hubbard": {
         "inducted_as": "Umpire",
@@ -4798,6 +5582,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Bob Lemon": {
@@ -4822,8 +5610,12 @@
         "l": 128,
         "w": 207,
         "era": 3.23,
-        "war_p": 48.239999999999995,
-        "g": 460
+        "war_p": 37.54,
+        "g": 460,
+        "bb": 1251,
+        "gf": 73,
+        "w_l": 0.618,
+        "ip": 2850.0
     },
     "Freddie Lindstrom": {
         "inducted_as": "Player",
@@ -4848,7 +5640,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Robin Roberts": {
         "inducted_as": "Player",
@@ -4872,8 +5668,12 @@
         "l": 245,
         "w": 286,
         "era": 3.41,
-        "war_p": 86.16,
-        "g": 676
+        "war_p": 83.06,
+        "g": 676,
+        "bb": 902,
+        "gf": 49,
+        "w_l": 0.539,
+        "ip": 4688.2
     },
     "Earl Averill": {
         "inducted_as": "Player",
@@ -4898,7 +5698,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bucky Harris": {
         "inducted_as": "Manager",
@@ -4923,7 +5727,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Billy Herman": {
         "inducted_as": "Player",
@@ -4948,7 +5756,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Judy Johnson": {
         "inducted_as": "Player",
@@ -4973,7 +5785,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ralph Kiner": {
         "inducted_as": "Player",
@@ -4998,7 +5814,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Cool Papa Bell": {
         "inducted_as": "Player",
@@ -5023,7 +5843,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jim Bottomley": {
         "inducted_as": "Player",
@@ -5048,7 +5872,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jocko Conlan": {
         "inducted_as": "Umpire",
@@ -5073,7 +5901,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Whitey Ford": {
         "inducted_as": "Player",
@@ -5097,8 +5929,12 @@
         "l": 106,
         "w": 236,
         "era": 2.75,
-        "war_p": 57.0,
-        "g": 498
+        "war_p": 53.5,
+        "g": 498,
+        "bb": 1086,
+        "gf": 35,
+        "w_l": 0.69,
+        "ip": 3170.1
     },
     "Mickey Mantle": {
         "inducted_as": "Player",
@@ -5123,7 +5959,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Sam Thompson": {
         "inducted_as": "Player",
@@ -5148,7 +5988,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Roberto Clemente": {
         "inducted_as": "Player",
@@ -5173,7 +6017,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Billy Evans": {
         "inducted_as": "Umpire",
@@ -5194,6 +6042,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Monte Irvin": {
@@ -5219,7 +6071,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "George Kelly": {
         "inducted_as": "Player",
@@ -5244,7 +6100,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Warren Spahn": {
         "inducted_as": "Player",
@@ -5268,8 +6128,12 @@
         "l": 245,
         "w": 363,
         "era": 3.09,
-        "war_p": 100.14999999999999,
-        "g": 750
+        "war_p": 92.55,
+        "g": 750,
+        "bb": 1434,
+        "gf": 67,
+        "w_l": 0.597,
+        "ip": 5243.2
     },
     "Mickey Welch": {
         "inducted_as": "Player",
@@ -5293,8 +6157,12 @@
         "l": 210,
         "w": 307,
         "era": 2.71,
-        "war_p": 62.31,
-        "g": 565
+        "war_p": 63.11,
+        "g": 565,
+        "bb": 1297,
+        "gf": 16,
+        "w_l": 0.594,
+        "ip": 4802.0
     },
     "Yogi Berra": {
         "inducted_as": "Player",
@@ -5319,7 +6187,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Josh Gibson": {
         "inducted_as": "Player",
@@ -5344,7 +6216,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Lefty Gomez": {
         "inducted_as": "Player",
@@ -5368,8 +6244,12 @@
         "l": 102,
         "w": 189,
         "era": 3.34,
-        "war_p": 38.71,
-        "g": 368
+        "war_p": 43.21,
+        "g": 368,
+        "bb": 1095,
+        "gf": 31,
+        "w_l": 0.649,
+        "ip": 2503.0
     },
     "Will Harridge": {
         "inducted_as": "Pioneer/Executive",
@@ -5390,6 +6270,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Sandy Koufax": {
@@ -5414,8 +6298,12 @@
         "l": 87,
         "w": 165,
         "era": 2.76,
-        "war_p": 48.879999999999995,
-        "g": 397
+        "war_p": 53.08,
+        "g": 397,
+        "bb": 817,
+        "gf": 44,
+        "w_l": 0.655,
+        "ip": 2324.1
     },
     "Buck Leonard": {
         "inducted_as": "Player",
@@ -5440,7 +6328,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Early Wynn": {
         "inducted_as": "Player",
@@ -5464,8 +6356,12 @@
         "l": 244,
         "w": 300,
         "era": 3.54,
-        "war_p": 60.949999999999996,
-        "g": 691
+        "war_p": 51.55,
+        "g": 691,
+        "bb": 1775,
+        "gf": 67,
+        "w_l": 0.551,
+        "ip": 4564.0
     },
     "Ross Youngs": {
         "inducted_as": "Player",
@@ -5490,7 +6386,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Dave Bancroft": {
         "inducted_as": "Player",
@@ -5515,7 +6415,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jake Beckley": {
         "inducted_as": "Player",
@@ -5540,7 +6444,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Chick Hafey": {
         "inducted_as": "Player",
@@ -5565,7 +6473,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Harry Hooper": {
         "inducted_as": "Player",
@@ -5590,7 +6502,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Joe Kelley": {
         "inducted_as": "Player",
@@ -5615,7 +6531,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Rube Marquard": {
         "inducted_as": "Player",
@@ -5639,8 +6559,12 @@
         "l": 177,
         "w": 201,
         "era": 3.08,
-        "war_p": 32.42,
-        "g": 536
+        "war_p": 34.72,
+        "g": 536,
+        "bb": 858,
+        "gf": 82,
+        "w_l": 0.532,
+        "ip": 3306.2
     },
     "Satchel Paige": {
         "inducted_as": "Player",
@@ -5665,7 +6589,11 @@
         "w": 124,
         "era": 2.73,
         "war_p": 46.91,
-        "g": 403
+        "g": 403,
+        "bb": 463,
+        "gf": 114,
+        "w_l": 0.602,
+        "ip": 1751.2
     },
     "George Weiss": {
         "inducted_as": "Pioneer/Executive",
@@ -5686,6 +6614,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Lou Boudreau": {
@@ -5711,7 +6643,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Earle Combs": {
         "inducted_as": "Player",
@@ -5736,7 +6672,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ford Frick": {
         "inducted_as": "Pioneer/Executive",
@@ -5757,6 +6697,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Jesse Haines": {
@@ -5781,8 +6725,12 @@
         "l": 158,
         "w": 210,
         "era": 3.64,
-        "war_p": 32.74,
-        "g": 555
+        "war_p": 35.74,
+        "g": 555,
+        "bb": 871,
+        "gf": 96,
+        "w_l": 0.571,
+        "ip": 3208.2
     },
     "Roy Campanella": {
         "inducted_as": "Player",
@@ -5807,7 +6755,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Stan Coveleski": {
         "inducted_as": "Player",
@@ -5831,8 +6783,12 @@
         "l": 142,
         "w": 215,
         "era": 2.89,
-        "war_p": 61.91,
-        "g": 450
+        "war_p": 66.91,
+        "g": 450,
+        "bb": 802,
+        "gf": 52,
+        "w_l": 0.602,
+        "ip": 3082.0
     },
     "Waite Hoyt": {
         "inducted_as": "Player",
@@ -5856,8 +6812,12 @@
         "l": 182,
         "w": 237,
         "era": 3.59,
-        "war_p": 52.34,
-        "g": 674
+        "war_p": 54.14,
+        "g": 674,
+        "bb": 1003,
+        "gf": 172,
+        "w_l": 0.566,
+        "ip": 3762.1
     },
     "Stan Musial": {
         "inducted_as": "Player",
@@ -5882,7 +6842,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Kiki Cuyler": {
         "inducted_as": "Player",
@@ -5907,7 +6871,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Goose Goslin": {
         "inducted_as": "Player",
@@ -5932,7 +6900,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Joe Medwick": {
         "inducted_as": "Player",
@@ -5957,7 +6929,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Branch Rickey": {
         "inducted_as": "Pioneer/Executive",
@@ -5982,7 +6958,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Red Ruffing": {
         "inducted_as": "Player",
@@ -6006,8 +6986,12 @@
         "l": 225,
         "w": 273,
         "era": 3.8,
-        "war_p": 68.54,
-        "g": 624
+        "war_p": 55.34,
+        "g": 624,
+        "bb": 1541,
+        "gf": 69,
+        "w_l": 0.548,
+        "ip": 4344.0
     },
     "Lloyd Waner": {
         "inducted_as": "Player",
@@ -6032,7 +7016,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Casey Stengel": {
         "inducted_as": "Manager",
@@ -6057,7 +7045,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ted Williams": {
         "inducted_as": "Player",
@@ -6082,7 +7074,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Pud Galvin": {
         "inducted_as": "Player",
@@ -6106,8 +7102,12 @@
         "l": 310,
         "w": 365,
         "era": 2.85,
-        "war_p": 73.45,
-        "g": 705
+        "war_p": 83.25,
+        "g": 705,
+        "bb": 745,
+        "gf": 19,
+        "w_l": 0.541,
+        "ip": 6003.1
     },
     "Luke Appling": {
         "inducted_as": "Player",
@@ -6132,7 +7132,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Red Faber": {
         "inducted_as": "Player",
@@ -6156,8 +7160,12 @@
         "l": 213,
         "w": 254,
         "era": 3.15,
-        "war_p": 63.79,
-        "g": 669
+        "war_p": 67.39,
+        "g": 669,
+        "bb": 1213,
+        "gf": 134,
+        "w_l": 0.544,
+        "ip": 4086.2
     },
     "Burleigh Grimes": {
         "inducted_as": "Player",
@@ -6181,8 +7189,12 @@
         "l": 212,
         "w": 270,
         "era": 3.53,
-        "war_p": 52.900000000000006,
-        "g": 616
+        "war_p": 46.7,
+        "g": 616,
+        "bb": 1295,
+        "gf": 95,
+        "w_l": 0.56,
+        "ip": 4180.0
     },
     "Miller Huggins": {
         "inducted_as": "Manager",
@@ -6207,7 +7219,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tim Keefe": {
         "inducted_as": "Player",
@@ -6231,8 +7247,12 @@
         "l": 225,
         "w": 342,
         "era": 2.63,
-        "war_p": 86.84,
-        "g": 600
+        "war_p": 89.14,
+        "g": 600,
+        "bb": 1233,
+        "gf": 7,
+        "w_l": 0.603,
+        "ip": 5049.2
     },
     "Heinie Manush": {
         "inducted_as": "Player",
@@ -6257,7 +7277,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "John Ward": {
         "inducted_as": "Player",
@@ -6281,8 +7305,12 @@
         "l": 103,
         "w": 164,
         "era": 2.1,
-        "war_p": 62.36,
-        "g": 293
+        "war_p": 28.06,
+        "g": 293,
+        "bb": 253,
+        "gf": 32,
+        "w_l": 0.614,
+        "ip": 2469.2
     },
     "John Clarkson": {
         "inducted_as": "Player",
@@ -6306,8 +7334,12 @@
         "l": 178,
         "w": 328,
         "era": 2.81,
-        "war_p": 83.18,
-        "g": 531
+        "war_p": 84.98,
+        "g": 531,
+        "bb": 1191,
+        "gf": 12,
+        "w_l": 0.648,
+        "ip": 4536.1
     },
     "Elmer Flick": {
         "inducted_as": "Player",
@@ -6332,7 +7364,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Sam Rice": {
         "inducted_as": "Player",
@@ -6357,7 +7393,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Eppa Rixey": {
         "inducted_as": "Player",
@@ -6381,8 +7421,12 @@
         "l": 251,
         "w": 266,
         "era": 3.15,
-        "war_p": 55.93,
-        "g": 692
+        "war_p": 57.33,
+        "g": 692,
+        "bb": 1082,
+        "gf": 99,
+        "w_l": 0.515,
+        "ip": 4494.2
     },
     "Bob Feller": {
         "inducted_as": "Player",
@@ -6406,8 +7450,12 @@
         "l": 162,
         "w": 266,
         "era": 3.25,
-        "war_p": 63.400000000000006,
-        "g": 570
+        "war_p": 65.2,
+        "g": 570,
+        "bb": 1764,
+        "gf": 52,
+        "w_l": 0.621,
+        "ip": 3827.0
     },
     "Bill McKechnie": {
         "inducted_as": "Manager",
@@ -6432,7 +7480,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jackie Robinson": {
         "inducted_as": "Player",
@@ -6457,7 +7509,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Edd Roush": {
         "inducted_as": "Player",
@@ -6482,7 +7538,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Max Carey": {
         "inducted_as": "Player",
@@ -6507,7 +7567,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Billy Hamilton": {
         "inducted_as": "Player",
@@ -6532,7 +7596,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Zack Wheat": {
         "inducted_as": "Player",
@@ -6557,7 +7625,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Sam Crawford": {
         "inducted_as": "Player",
@@ -6582,7 +7654,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Joe McCarthy": {
         "inducted_as": "Manager",
@@ -6603,6 +7679,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Joe Cronin": {
@@ -6628,7 +7708,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Hank Greenberg": {
         "inducted_as": "Player",
@@ -6653,7 +7737,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Home Run Baker": {
         "inducted_as": "Player",
@@ -6678,7 +7766,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Joe DiMaggio": {
         "inducted_as": "Player",
@@ -6703,7 +7795,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Gabby Hartnett": {
         "inducted_as": "Player",
@@ -6728,7 +7824,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ted Lyons": {
         "inducted_as": "Player",
@@ -6752,8 +7852,12 @@
         "l": 230,
         "w": 260,
         "era": 3.67,
-        "war_p": 70.67,
-        "g": 594
+        "war_p": 66.77,
+        "g": 594,
+        "bb": 1121,
+        "gf": 91,
+        "w_l": 0.531,
+        "ip": 4161.0
     },
     "Ray Schalk": {
         "inducted_as": "Player",
@@ -6778,7 +7882,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Dazzy Vance": {
         "inducted_as": "Player",
@@ -6802,8 +7910,12 @@
         "l": 140,
         "w": 197,
         "era": 3.24,
-        "war_p": 60.339999999999996,
-        "g": 442
+        "war_p": 62.94,
+        "g": 442,
+        "bb": 840,
+        "gf": 52,
+        "w_l": 0.585,
+        "ip": 2966.2
     },
     "Bill Dickey": {
         "inducted_as": "Player",
@@ -6828,7 +7940,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Rabbit Maranville": {
         "inducted_as": "Player",
@@ -6853,7 +7969,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bill Terry": {
         "inducted_as": "Player",
@@ -6878,7 +7998,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ed Barrow": {
         "inducted_as": "Pioneer/Executive",
@@ -6899,6 +8023,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Charles Bender": {
@@ -6923,8 +8051,12 @@
         "l": 127,
         "w": 212,
         "era": 2.46,
-        "war_p": 47.82,
-        "g": 459
+        "war_p": 42.62,
+        "g": 459,
+        "bb": 712,
+        "gf": 112,
+        "w_l": 0.625,
+        "ip": 3017.0
     },
     "Tommy Connolly": {
         "inducted_as": "Umpire",
@@ -6945,6 +8077,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Dizzy Dean": {
@@ -6969,8 +8105,12 @@
         "l": 83,
         "w": 150,
         "era": 3.02,
-        "war_p": 46.209999999999994,
-        "g": 317
+        "war_p": 43.91,
+        "g": 317,
+        "bb": 453,
+        "gf": 77,
+        "w_l": 0.644,
+        "ip": 1967.1
     },
     "Bill Klem": {
         "inducted_as": "Umpire",
@@ -6991,6 +8131,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Al Simmons": {
@@ -7016,7 +8160,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Bobby Wallace": {
         "inducted_as": "Player",
@@ -7041,7 +8189,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Harry Wright": {
         "inducted_as": "Pioneer/Executive",
@@ -7066,7 +8218,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Harry Heilmann": {
         "inducted_as": "Player",
@@ -7091,7 +8247,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Paul Waner": {
         "inducted_as": "Player",
@@ -7116,7 +8276,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jimmie Foxx": {
         "inducted_as": "Player",
@@ -7141,7 +8305,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Mel Ott": {
         "inducted_as": "Player",
@@ -7166,7 +8334,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Mordecai Brown": {
         "inducted_as": "Player",
@@ -7190,8 +8362,12 @@
         "l": 130,
         "w": 239,
         "era": 2.06,
-        "war_p": 58.02,
-        "g": 481
+        "war_p": 56.92,
+        "g": 481,
+        "bb": 673,
+        "gf": 138,
+        "w_l": 0.648,
+        "ip": 3172.1
     },
     "Charlie Gehringer": {
         "inducted_as": "Player",
@@ -7216,7 +8392,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Kid Nichols": {
         "inducted_as": "Player",
@@ -7240,8 +8420,12 @@
         "l": 208,
         "w": 362,
         "era": 2.96,
-        "war_p": 116.30999999999999,
-        "g": 621
+        "war_p": 116.71,
+        "g": 621,
+        "bb": 1272,
+        "gf": 56,
+        "w_l": 0.635,
+        "ip": 5067.1
     },
     "Herb Pennock": {
         "inducted_as": "Player",
@@ -7265,8 +8449,12 @@
         "l": 162,
         "w": 241,
         "era": 3.6,
-        "war_p": 44.98,
-        "g": 617
+        "war_p": 44.18,
+        "g": 617,
+        "bb": 916,
+        "gf": 135,
+        "w_l": 0.598,
+        "ip": 3571.2
     },
     "Pie Traynor": {
         "inducted_as": "Player",
@@ -7291,7 +8479,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Mickey Cochrane": {
         "inducted_as": "Player",
@@ -7316,7 +8508,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Frankie Frisch": {
         "inducted_as": "Player",
@@ -7341,7 +8537,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Lefty Grove": {
         "inducted_as": "Player",
@@ -7365,8 +8565,12 @@
         "l": 141,
         "w": 300,
         "era": 3.06,
-        "war_p": 106.74,
-        "g": 616
+        "war_p": 113.24,
+        "g": 616,
+        "bb": 1187,
+        "gf": 123,
+        "w_l": 0.68,
+        "ip": 3940.2
     },
     "Carl Hubbell": {
         "inducted_as": "Player",
@@ -7390,8 +8594,12 @@
         "l": 154,
         "w": 253,
         "era": 2.98,
-        "war_p": 68.42999999999999,
-        "g": 535
+        "war_p": 68.83,
+        "g": 535,
+        "bb": 725,
+        "gf": 82,
+        "w_l": 0.622,
+        "ip": 3590.1
     },
     "Jesse Burkett": {
         "inducted_as": "Player",
@@ -7416,7 +8624,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Frank Chance": {
         "inducted_as": "Player",
@@ -7441,7 +8653,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jack Chesbro": {
         "inducted_as": "Player",
@@ -7465,8 +8681,12 @@
         "l": 132,
         "w": 198,
         "era": 2.68,
-        "war_p": 42.67,
-        "g": 392
+        "war_p": 42.47,
+        "g": 392,
+        "bb": 690,
+        "gf": 52,
+        "w_l": 0.6,
+        "ip": 2896.2
     },
     "Johnny Evers": {
         "inducted_as": "Player",
@@ -7491,7 +8711,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Clark Griffith": {
         "inducted_as": "Pioneer/Executive",
@@ -7515,8 +8739,12 @@
         "l": 146,
         "w": 237,
         "era": 3.31,
-        "war_p": 63.78,
-        "g": 453
+        "war_p": 59.88,
+        "g": 453,
+        "bb": 774,
+        "gf": 78,
+        "w_l": 0.619,
+        "ip": 3385.2
     },
     "Tommy McCarthy": {
         "inducted_as": "Player",
@@ -7541,7 +8769,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Joe McGinnity": {
         "inducted_as": "Player",
@@ -7565,8 +8797,12 @@
         "l": 142,
         "w": 246,
         "era": 2.66,
-        "war_p": 59.01,
-        "g": 465
+        "war_p": 61.91,
+        "g": 465,
+        "bb": 812,
+        "gf": 73,
+        "w_l": 0.634,
+        "ip": 3441.1
     },
     "Eddie Plank": {
         "inducted_as": "Player",
@@ -7590,8 +8826,12 @@
         "l": 194,
         "w": 326,
         "era": 2.35,
-        "war_p": 91.27,
-        "g": 623
+        "war_p": 87.97,
+        "g": 623,
+        "bb": 1072,
+        "gf": 77,
+        "w_l": 0.627,
+        "ip": 4495.2
     },
     "Joe Tinker": {
         "inducted_as": "Player",
@@ -7616,7 +8856,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Rube Waddell": {
         "inducted_as": "Player",
@@ -7640,8 +8884,12 @@
         "l": 143,
         "w": 193,
         "era": 2.16,
-        "war_p": 58.36,
-        "g": 407
+        "war_p": 60.86,
+        "g": 407,
+        "bb": 803,
+        "gf": 54,
+        "w_l": 0.574,
+        "ip": 2961.1
     },
     "Ed Walsh": {
         "inducted_as": "Player",
@@ -7665,8 +8913,12 @@
         "l": 126,
         "w": 195,
         "era": 1.82,
-        "war_p": 66.52,
-        "g": 430
+        "war_p": 64.42,
+        "g": 430,
+        "bb": 617,
+        "gf": 105,
+        "w_l": 0.607,
+        "ip": 2964.1
     },
     "Roger Bresnahan": {
         "inducted_as": "Player",
@@ -7691,7 +8943,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Dan Brouthers": {
         "inducted_as": "Player",
@@ -7716,7 +8972,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Fred Clarke": {
         "inducted_as": "Player",
@@ -7741,7 +9001,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jimmy Collins": {
         "inducted_as": "Player",
@@ -7766,7 +9030,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Ed Delahanty": {
         "inducted_as": "Player",
@@ -7791,7 +9059,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Hugh Duffy": {
         "inducted_as": "Player",
@@ -7816,7 +9088,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Hughie Jennings": {
         "inducted_as": "Player",
@@ -7841,7 +9117,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "King Kelly": {
         "inducted_as": "Player",
@@ -7866,7 +9146,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Jim O'Rourke": {
         "inducted_as": "Player",
@@ -7891,7 +9175,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Wilbert Robinson": {
         "inducted_as": "Manager",
@@ -7916,7 +9204,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Kenesaw Mountain Landis": {
         "inducted_as": "Pioneer/Executive",
@@ -7937,6 +9229,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Rogers Hornsby": {
@@ -7962,7 +9258,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Cap Anson": {
         "inducted_as": "Player",
@@ -7987,7 +9287,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Eddie Collins": {
         "inducted_as": "Player",
@@ -8012,7 +9316,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Charlie Comiskey": {
         "inducted_as": "Pioneer/Executive",
@@ -8037,7 +9345,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Candy Cummings": {
         "inducted_as": "Pioneer/Executive",
@@ -8061,8 +9373,12 @@
         "l": 94,
         "w": 145,
         "era": 2.42,
-        "war_p": 36.49,
-        "g": 242
+        "war_p": 38.59,
+        "g": 242,
+        "bb": 113,
+        "gf": 2,
+        "w_l": 0.607,
+        "ip": 2149.2
     },
     "Buck Ewing": {
         "inducted_as": "Player",
@@ -8087,7 +9403,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Lou Gehrig": {
         "inducted_as": "Player",
@@ -8112,7 +9432,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Willie Keeler": {
         "inducted_as": "Player",
@@ -8137,7 +9461,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Old Hoss Radbourn": {
         "inducted_as": "Player",
@@ -8161,8 +9489,12 @@
         "l": 194,
         "w": 310,
         "era": 2.68,
-        "war_p": 75.4,
-        "g": 527
+        "war_p": 73.2,
+        "g": 527,
+        "bb": 875,
+        "gf": 24,
+        "w_l": 0.615,
+        "ip": 4527.1
     },
     "George Sisler": {
         "inducted_as": "Player",
@@ -8187,7 +9519,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Al Spalding": {
         "inducted_as": "Pioneer/Executive",
@@ -8211,8 +9547,12 @@
         "l": 65,
         "w": 251,
         "era": 2.13,
-        "war_p": 60.169999999999995,
-        "g": 347
+        "war_p": 53.37,
+        "g": 347,
+        "bb": 164,
+        "gf": 31,
+        "w_l": 0.794,
+        "ip": 2886.1
     },
     "Grover Alexander": {
         "inducted_as": "Player",
@@ -8236,8 +9576,12 @@
         "l": 208,
         "w": 373,
         "era": 2.56,
-        "war_p": 119.74,
-        "g": 696
+        "war_p": 116.64,
+        "g": 696,
+        "bb": 951,
+        "gf": 81,
+        "w_l": 0.642,
+        "ip": 5190.0
     },
     "Alexander Cartwright": {
         "inducted_as": "Pioneer/Executive",
@@ -8258,6 +9602,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Henry Chadwick": {
@@ -8279,6 +9627,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Morgan Bulkeley": {
@@ -8300,6 +9652,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Ban Johnson": {
@@ -8321,6 +9677,10 @@
         "war_p": null,
         "era": null,
         "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null,
         "years_of_experience": null
     },
     "Nap Lajoie": {
@@ -8346,7 +9706,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Connie Mack": {
         "inducted_as": "Manager",
@@ -8371,7 +9735,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "John McGraw": {
         "inducted_as": "Manager",
@@ -8396,7 +9764,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Tris Speaker": {
         "inducted_as": "Player",
@@ -8421,7 +9793,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "George Wright": {
         "inducted_as": "Pioneer/Executive",
@@ -8446,7 +9822,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Cy Young": {
         "inducted_as": "Player",
@@ -8470,8 +9850,12 @@
         "l": 315,
         "w": 511,
         "era": 2.63,
-        "war_p": 163.55,
-        "g": 906
+        "war_p": 165.55,
+        "g": 906,
+        "bb": 1217,
+        "gf": 84,
+        "w_l": 0.619,
+        "ip": 7356.0
     },
     "Ty Cobb": {
         "inducted_as": "Player",
@@ -8496,7 +9880,11 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     },
     "Walter Johnson": {
         "inducted_as": "Player",
@@ -8520,8 +9908,12 @@
         "l": 279,
         "w": 417,
         "era": 2.17,
-        "war_p": 167.78,
-        "g": 802
+        "war_p": 155.08,
+        "g": 802,
+        "bb": 1363,
+        "gf": 127,
+        "w_l": 0.599,
+        "ip": 5914.1
     },
     "Christy Mathewson": {
         "inducted_as": "Player",
@@ -8545,8 +9937,12 @@
         "l": 188,
         "w": 373,
         "era": 2.13,
-        "war_p": 106.67,
-        "g": 636
+        "war_p": 100.47,
+        "g": 636,
+        "bb": 848,
+        "gf": 73,
+        "w_l": 0.665,
+        "ip": 4788.2
     },
     "Babe Ruth": {
         "inducted_as": "Player",
@@ -8570,8 +9966,12 @@
         "l": 46,
         "w": 94,
         "era": 2.28,
-        "war_p": 182.56,
-        "g": 163
+        "war_p": 20.36,
+        "g": 163,
+        "bb": 441,
+        "gf": 12,
+        "w_l": 0.671,
+        "ip": 1221.1
     },
     "Honus Wagner": {
         "inducted_as": "Player",
@@ -8596,6 +9996,10 @@
         "l": null,
         "war_p": null,
         "era": null,
-        "g": null
+        "g": null,
+        "bb": null,
+        "w_l": null,
+        "ip": null,
+        "gf": null
     }
 }

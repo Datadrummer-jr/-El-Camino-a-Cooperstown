@@ -147,17 +147,16 @@ experience_pit = []
 
 #Variables independientes para los bateadores
 
-war_bat = []
-g_bat = []
-h_bat = []
-hr_bat = []
-ba_bat = []
-ab_bat = []
-rbi_bat = []
-obp_bat = []
-ops_bat = []
-slg_bat = []
-experience_bat = []
+war_bat = [ bat[:17].T.dropna().T[numbers].T["war"] for numbers in bat[:17].T.dropna().T]
+g_bat = [ bat[:17].T.dropna().T[numbers].T["g_bat"] for numbers in bat[:17].T.dropna().T]
+h_bat = [bat[:17].T.dropna().T[numbers].T["h"] for numbers in bat[:17].T.dropna().T]
+hr_bat = [bat[:17].T.dropna().T[numbers].T["hr"] for numbers in bat[:17].T.dropna().T]
+ba_bat = [bat[:17].T.dropna().T[numbers].T["ba"] for numbers in bat[:17].T.dropna().T]
+ab_bat = [ bat[:17].T.dropna().T[numbers].T["ab"] for numbers in bat[:17].T.dropna().T]
+rbi_bat = [bat[:17].T.dropna().T[numbers].T["rbi"] for numbers in bat[:17].T.dropna().T]
+obp_bat = [bat[:17].T.dropna().T[numbers].T["obp"] for numbers in bat[:17].T.dropna().T]
+ops_bat = [bat[:17].T.dropna().T[numbers].T["ops"] for numbers in bat[:17].T.dropna().T]
+experience_bat = [bat[:17].T.dropna().T[numbers].T["years_of_experience"] for numbers in bat[:17].T.dropna().T]
 
 #variable dependiente para los pitcher
 
@@ -165,31 +164,7 @@ porcent_pit = []
 
 # Variable dependiente para los bateadores
 
-porcent_bat = []
-
-for numbers_pit in bat[18:].T.dropna().T:
-   era_pit.append(bat[18:].T.dropna().T[numbers_pit].T["era"])
-   g_pit.append(bat[18:].T.dropna().T[numbers_pit].T["g"])
-   war_pit.append(bat[18:].T.dropna().T[numbers_pit].T["war_p"])
-   l_pit.append(bat[18:].T.dropna().T[numbers_pit].T["l"])
-   w_pit.append(bat[18:].T.dropna().T[numbers_pit].T["w"])
-
-for exp in names_pit:
-   experience_pit.append(bat.T.T[exp].T['years_of_experience'])
-   porcent_pit.append(bat.T.T[exp].T['% of Ballots'])
-   
-for numbers in bat[:17].T.dropna().T:
-   war_bat.append(bat[:17].T.dropna().T[numbers].T["war"])
-   g_bat.append(bat[:17].T.dropna().T[numbers].T["g_bat"])
-   h_bat.append(bat[:17].T.dropna().T[numbers].T["h"])
-   hr_bat.append(bat[:17].T.dropna().T[numbers].T["hr"])
-   ab_bat.append(bat[:17].T.dropna().T[numbers].T["ab"])
-   ba_bat.append(bat[:17].T.dropna().T[numbers].T["ba"])
-   rbi_bat.append(bat[:17].T.dropna().T[numbers].T["rbi"])
-   ops_bat.append(bat[:17].T.dropna().T[numbers].T["ops"])
-   obp_bat.append(bat[:17].T.dropna().T[numbers].T["obp"])
-   experience_bat.append(bat[:17].T.dropna().T[numbers].T["years_of_experience"])
-   porcent_bat.append(bat[:17].T.dropna().T[numbers].T["% of Ballots"])
+porcent_bat = [bat[:17].T.dropna().T[numbers].T["% of Ballots"] for numbers in bat[:17].T.dropna().T]
 
 # Entrenamiento del modelo de Regresión Lineal Múltiple para predecir el por ciento de las boletas para los batting
 
@@ -204,6 +179,15 @@ model_bat = LinearRegression()
 model_bat.fit(Px,y)
 #st.write("coeficiente:" , model_bat.score(Px, y))
 
+
+W = None
+
+
+años = [ind for ind in df_total["induction"]]
+first_year = min(años)
+last_year = max(años)
+count_for_year = [años.count(unico) for unico in list(range(first_year, last_year + 1))]
+
 # Función principal
 
 def main():
@@ -214,6 +198,21 @@ def main():
     st.header("A continuación están los listados con los datos de los miembros actuales del Salón de la Fama del Baseball")
     df = st.selectbox("Selecciona la categoría que desee ver", list(categorias.keys()))
     st.dataframe(categorias[df])
+    df_ind = pd.DataFrame({
+    "Año": list(range(first_year, last_year + 1)),
+    "Count": count_for_year
+     })
+
+    fig = px.line(df_ind, x="Año", y="Count", markers=True,
+              title="Cantidad de inducciones por año",
+              labels={"Count": "Cantidad de inducciones", "Año": "Año"},
+              color_discrete_sequence=["green"])
+
+    fig.update_traces(mode="lines+markers", hovertemplate="Año: %{x}<br>Valor: %{y:.2f}")
+    fig.update_layout(hovermode="x unified")
+
+    st.plotly_chart(fig)
+
     st.subheader("¿ Se ha preguntado cual es bateador miembro del salón de la fama del baseball con los mejores números?")
     img1 = Image.open("Hank_Aaron_1960.png")
     img2 = Image.open("Hank_Aaron_1974.jpg")
@@ -261,15 +260,14 @@ def main():
        rbi_b_form = st.number_input('Runs Batted In',step=1)
        ops_b_form = st.number_input('onbase plus slugging',step=0.001, format="%.3f")
        obp_b_form = st.number_input('Onbase perce',step=0.001, format="%.3f")
-       experience_b_form = st.number_input('Experiencia', step=1)
+       experience_b_form = st.number_input('Años de experiencia', step=1)
        send = st.form_submit_button('Predicir por ciento de las boletas')
     if send:
        if posicion == "batting":
           st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))),2)} %")
        if posicion == "pitching":
-          passs
+          pass
 if __name__ == "__main__":
     main()
-
 
 
