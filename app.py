@@ -8,11 +8,6 @@ from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 import my_library as ml
-import ipyvizzu
-from ipyvizzu import Chart, Data, Config, Style, DisplayTarget
-from streamlit.components.v1 import html
-#from streamlit_carousel import carousel
-#from streamlit_navigation_bar import st_navbar
 
 logo = Image.open("logo.jpg")
 
