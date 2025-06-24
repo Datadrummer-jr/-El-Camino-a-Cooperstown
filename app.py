@@ -8,11 +8,7 @@ from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 import my_library as ml
-import ipyvizzu
-from ipyvizzu import Chart, Data, Config, Style, DisplayTarget
-from streamlit.components.v1 import html
-#from streamlit_carousel import carousel
-#from streamlit_navigation_bar import st_navbar
+
 
 logo = Image.open("logo.jpg")
 
@@ -99,7 +95,7 @@ b_g = best_batting['g']
 graph_b_war = ml.my_protly(bat_year,b_war,"WAR: Wins above replacement", f"Comportamiento del WAR por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Wins above replacement", "Leyenda")
 graph_b_g = ml.my_protly(bat_year,b_g,"G: Jugadas ganadas", f"Comportamiento de las jugadas ganadas por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Jugadas Ganadas", "Leyenda")
 graph_b_h = ml.my_protly(bat_year,b_h,"H: Hits", f"Comportamiento de los Hits por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Hits", "Leyenda")
-graph_b_hr = ml.my_protly(bat_year,b_hr,"HR: Home Runs", f"Comportamiento de los Home Runs por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Hmo Runs", "Leyenda")
+graph_b_hr = ml.my_protly(bat_year,b_hr,"HR: Home Runs", f"Comportamiento de los Home Runs por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Home Runs", "Leyenda")
 graph_b_ab = ml.my_protly(bat_year,b_ab,"AB: At bats", f"Comportamiento de los AB por año de {names_batting[ml.max_valor(batting)]} según datos","Año","At bats", "Leyenda")
 graph_b_ba = ml.my_protly(bat_year,b_ba,"BA: Hits / At bats", f"Comportamiento de los Hits / At bats por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Hits / At bats", "Leyenda")
 
@@ -233,9 +229,9 @@ def main():
     "Año": list(range(first_year, last_year + 1)),
     "Count": count_for_year
      })
-    st.write('Empezando a hacer un poco de historia cada año son muchos los que entrar al salón de la fama desde las pimeras /' \
-    'inducciones en 1936 donde las cantidades de inducciones occilaban cada año,/' \
-    ' aunque en la década de 1940 a 1960 hubieron'\
+    st.write('Empezando a hacer un poco de historia cada año son muchos los que entrar al salón de la fama desde las pimeras ' \
+    'inducciones en 1936 donde las cantidades de inducciones oscilaban cada año,' \
+    ' aunque en el perídodo de 1940 a 1960 hubieron'\
     '/ cinco años en la cantidad de inductos fue nula, en 1988 se otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
     ' desde 1988 a causa de pandemia del Covid-19 que asechaba desde a finales de 2019 por lo no hubieron juego de beisbol en 2020.'\
     'Como no todo es triste, en 2006 hubo un pico en gráfica, fueron 12 fueros exaltados por el presidente del salón de la fama ese año, en los que se encuentran ' \
