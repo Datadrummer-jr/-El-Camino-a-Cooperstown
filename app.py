@@ -231,8 +231,8 @@ def main():
      })
     st.write('Empezando a hacer un poco de historia cada año son muchos los que entrar al salón de la fama desde las pimeras ' \
     'inducciones en 1936 donde las cantidades de inducciones oscilaban cada año,' \
-    ' aunque en el período de 1940 a 1960 hubieron'\
-    '/ cinco años en la cantidad de inductos fue nula, en 1988 se otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
+    ' aunque en el perídodo de 1940 a 1960 hubieron'\
+    ' cinco años en la cantidad de inductos fue nula, en 1988 se otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
     ' desde 1988 a causa de pandemia del Covid-19 que asechaba desde a finales de 2019 por lo no hubieron juego de beisbol en 2020.'\
     'Como no todo es triste, en 2006 hubo un pico en gráfica, fueron 12 fueros exaltados por el presidente del salón de la fama ese año, en los que se encuentran ' \
     'los cubanos José Méndez y Cristóbal Torriente, '\
