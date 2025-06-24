@@ -1,16 +1,18 @@
 import streamlit as st
-from streamlit_navigation_bar import st_navbar
 import pandas as pd
 import json 
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 import my_library as ml
-from streamlit_carousel import carousel
+import ipyvizzu
+from ipyvizzu import Chart, Data, Config, Style, DisplayTarget
+from streamlit.components.v1 import html
+#from streamlit_carousel import carousel
+#from streamlit_navigation_bar import st_navbar
 
 logo = Image.open("logo.jpg")
 
@@ -136,6 +138,9 @@ names_pit = [bat[18:].T.dropna().T]
 columnas_pit = ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf',"% of Ballots"]
 df_pitch = df_players.dropna(subset=columnas_pit)
 
+columnas_bat = ['years_of_experience', "% of Ballots", "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops" ]
+df_batt = df_players.dropna(subset=columnas_bat)
+
 # Variables Independientes para los pitcher
 
 era_pit = df_pitch['era'].to_list()
@@ -151,16 +156,16 @@ experience_pit =  df_pitch['years_of_experience'].to_list()
 
 #Variables independientes para los bateadores
 
-war_bat = [ bat[:17].T.dropna().T[numbers].T["war"] for numbers in bat[:17].T.dropna().T]
-g_bat = [ bat[:17].T.dropna().T[numbers].T["g_bat"] for numbers in bat[:17].T.dropna().T]
-h_bat = [bat[:17].T.dropna().T[numbers].T["h"] for numbers in bat[:17].T.dropna().T]
-hr_bat = [bat[:17].T.dropna().T[numbers].T["hr"] for numbers in bat[:17].T.dropna().T]
-ba_bat = [bat[:17].T.dropna().T[numbers].T["ba"] for numbers in bat[:17].T.dropna().T]
-ab_bat = [ bat[:17].T.dropna().T[numbers].T["ab"] for numbers in bat[:17].T.dropna().T]
-rbi_bat = [bat[:17].T.dropna().T[numbers].T["rbi"] for numbers in bat[:17].T.dropna().T]
-obp_bat = [bat[:17].T.dropna().T[numbers].T["obp"] for numbers in bat[:17].T.dropna().T]
-ops_bat = [bat[:17].T.dropna().T[numbers].T["ops"] for numbers in bat[:17].T.dropna().T]
-experience_bat = [bat[:17].T.dropna().T[numbers].T["years_of_experience"] for numbers in bat[:17].T.dropna().T]
+war_bat = df_batt["war"].to_list()
+g_bat = df_batt["g_bat"].to_list()
+h_bat = df_batt["h"].to_list()
+hr_bat = df_batt["hr"].to_list()
+ba_bat = df_batt["ba"].to_list()
+ab_bat = df_batt["ab"].to_list()
+rbi_bat = df_batt["rbi"].to_list()
+obp_bat = df_batt["obp"].to_list()
+ops_bat = df_batt["ops"].to_list()
+experience_bat = df_batt["years_of_experience"].to_list()
 
 #variable dependiente para los pitcher
 
@@ -168,7 +173,7 @@ porcent_pit =  df_pitch["% of Ballots"].to_list()
 
 # Variable dependiente para los bateadores
 
-porcent_bat = [bat[:17].T.dropna().T[numbers].T["% of Ballots"] for numbers in bat[:17].T.dropna().T]
+porcent_bat = df_batt["% of Ballots"].to_list()
 
 
 # Entrenamiento del modelo de Regresión Lineal Múltiple para predecir el por ciento de las boletas para los batting
@@ -207,22 +212,35 @@ def main():
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
     "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron estos nuevos miembros y los " \
     "inducidos en años anteriores que los llevaron a ser mibros del dicho salón en que se encuentran jugadores, ejecutivos, managers y árbitros.")
-    st.subheader("Ahora veamos una gráfica con la comparación de la cantidad por cada categoría de miembro de este salón:")
-    categoria = ['Player', 'Managers', 'Pioneer / Executive', 'Umpire']
-    cantidad = [df_players.shape[0], df_managers.shape[0], df_Pioneer_Executive.shape[0], df_umpire.shape[0]]
-    plt.bar(categoria, cantidad, color='skyblue')
-    plt.xlabel('Categorías')
-    plt.ylabel('Cantidad')
-    plt.title("Cantidad por tipo de miembro")
-    st.pyplot(plt)
-    st.header("A continuación están los listados con los datos de los miembros actuales del Salón de la Fama del Baseball para que conozca los datos de estos exponentes del baseball")
+
+    st.header("A continuación están los listados con los datos de los miembros actuales del Salón de la Fama del Baseball para que conozca los datos de estos exponentes del baseball para que los analice si desea.")
     df = st.selectbox("Selecciona la categoría que desee ver", list(categorias.keys()))
     st.dataframe(categorias[df])
+
+    st.subheader("Ahora veamos una gráfica con la comparación de la cantidad por cada categoría de miembro de este salón donde se apreciar que los jugadores se llevan todo en la escena como los protagonistas de cada juego:")
+    categoria = ['Player', 'Managers', 'Pioneer / Executive', 'Umpire']
+    cantidad = [df_players.shape[0], df_managers.shape[0], df_Pioneer_Executive.shape[0], df_umpire.shape[0]]
+    df_type = pd.DataFrame(
+       {
+          'Categoría': categoria,
+          'Cantidad': cantidad
+       }
+    )
+    count_type = px.bar(df_type, x='Categoría', y='Cantidad',color= "Categoría", color_discrete_sequence=[ '#33FF57','#FF5733', '#33C1FF', '#9D33FF'],  title='Cantidad por tipo de miembro')
+    st.plotly_chart(count_type)
+
     df_ind = pd.DataFrame({
     "Año": list(range(first_year, last_year + 1)),
     "Count": count_for_year
      })
-
+    st.write('Empezando a hacer un poco de historia cada año son muchos los que entrar al salón de la fama desde las pimeras /' \
+    'inducciones en 1936 donde las cantidades de inducciones occilaban cada año,/' \
+    ' aunque en la década de 1940 a 1960 hubieron'\
+    '/ cinco años en la cantidad de inductos fue nula, en 1988 se otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
+    ' desde 1988 a causa de pandemia del Covid-19 que asechaba desde a finales de 2019 por lo no hubieron juego de beisbol en 2020.'\
+    'Como no todo es triste, en 2006 hubo un pico en gráfica, fueron 12 fueros exaltados por el presidente del salón de la fama ese año, en los que se encuentran ' \
+    'los cubanos José Méndez y Cristóbal Torriente, '\
+    'la mayor cantidad desde sus inicios. Y que les muestro la evidencia:')
     fig = px.line(df_ind, x="Año", y="Count", markers=True,
               title="Cantidad de inducciones por año",
               labels={"Count": "Cantidad de inducciones", "Año": "Año"},
@@ -270,7 +288,7 @@ def main():
 
     st.subheader('Llene el siguiente formulario con el perfil de un para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
 
-    opción = st.selectbox("¿Qué posición eliges?", ["Selecciona...", "Batting", "Pitching"])
+    opción = st.selectbox("¿Qué posición eliges?", ["Seleccione una posición...", "Batting", "Pitching"])
    
     with st.form("Perfil de Batting"):
       if opción == "Batting":
@@ -295,14 +313,14 @@ def main():
          ip_p_form = st.number_input("Inning Pitching",step=0.001, format="%.3f" )
          W_L_p_form = st.number_input("Wins - losses Porcetange",step=0.001, format="%.3f" )
          experience_p_form = st.number_input('Años de experiencia', step=1)
-      send = st.form_submit_button('Predicir por ciento de las boletas para entrar en salón de la fama')
+      send = st.form_submit_button('Predicir por ciento de los votos de las papeletas para ser exaltado')
     if send:
        if opción == "Batting":
           st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))),2)} %")
        elif opción == "Pitching":
-          st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_pit.predict(Poly.fit_transform(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))),2)} %")
-    st.write('Nota: Para entrar al salón de la fama del baseball se requiere más del 75 % de las boletas.')
-if __name__ == "__main__":
-    main()
+          st.write(f"Se predice que según tus datos aportados el por ciento de los votos sería de un {round((float(model_pit.predict(Poly.fit_transform(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))),2)} %")
+    st.write('Nota: Para entrar al salón de la fama del baseball se requiere al menos el 75 % de votos de las papeletas.')
 
+if __name__ == "__main__":
+   main()
 
