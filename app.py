@@ -6,9 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from PIL import Image
 import plotly.express as px
-import plotly.graph_objects as go
 import my_library as ml
-
 
 logo = Image.open("logo.jpg")
 
@@ -76,6 +74,7 @@ for nombre in df_players.T:
     names_batting.append(nombre)
 
 pitching = [w_p, war_pp, l_p, era_p, g_p]
+
 
 with open("best_batting.json") as f:
     best_batting = json.load(f)
@@ -203,7 +202,7 @@ count_for_year = [años.count(unico) for unico in list(range(first_year, last_ye
 
 # Función principal
 
-def main():
+def main() -> None:
     st.title("Bienvenido a Cooperstown")
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
     "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron estos nuevos miembros y los " \
@@ -232,7 +231,7 @@ def main():
     st.write('Empezando a hacer un poco de historia cada año son muchos los que entrar al salón de la fama desde las pimeras ' \
     'inducciones en 1936 donde las cantidades de inducciones oscilaban cada año,' \
     ' aunque en el perídodo de 1940 a 1960 hubieron'\
-    '/ cinco años en la cantidad de inductos fue nula, en 1988 se otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
+    ' cinco años en la cantidad de inductos fue nula, en 1988 se otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
     ' desde 1988 a causa de pandemia del Covid-19 que asechaba desde a finales de 2019 por lo no hubieron juego de beisbol en 2020.'\
     'Como no todo es triste, en 2006 hubo un pico en gráfica, fueron 12 fueros exaltados por el presidente del salón de la fama ese año, en los que se encuentran ' \
     'los cubanos José Méndez y Cristóbal Torriente, '\
@@ -282,12 +281,12 @@ def main():
     bp = st.selectbox("Seleccione uno de algunos se los números del mejor pitcher miembro del salón de la fama del baseball:" , list(para_pitching.keys()))
     st.plotly_chart(para_pitching[bp])
 
-    st.subheader('Llene el siguiente formulario con el perfil de un para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
-
+    st.subheader('Llene el siguiente formulario con el perfil de jugador para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
+    st.write('Nota: Para entrar al salón de la fama del baseball se requiere al menos el 75 % de votos de las papeletas.')
     opción = st.selectbox("¿Qué posición eliges?", ["Seleccione una posición...", "Batting", "Pitching"])
-   
+    
     with st.form("Perfil de Batting"):
-      if opción == "Batting":
+        if opción == "Batting":
           g_b_form = st.number_input("Jugadas", step=1) 
           war_b_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
           h_b_form = st.number_input("Hits", step=1)
@@ -298,7 +297,7 @@ def main():
           ops_b_form = st.number_input('onbase plus slugging',step=0.001, format="%.3f")
           obp_b_form = st.number_input('Onbase perce',step=0.001, format="%.3f")
           experience_b_form = st.number_input('Años de experiencia', step=1)
-      elif opción == "Pitching":
+        elif opción == "Pitching":
          g_p_form = st.number_input("Jugadas", step=1) 
          war_p_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
          era_p_form = st.number_input("Earned run avg",step=0.001, format="%.3f" ) 
@@ -309,14 +308,28 @@ def main():
          ip_p_form = st.number_input("Inning Pitching",step=0.001, format="%.3f" )
          W_L_p_form = st.number_input("Wins - losses Porcetange",step=0.001, format="%.3f" )
          experience_p_form = st.number_input('Años de experiencia', step=1)
-      send = st.form_submit_button('Predicir por ciento de los votos de las papeletas para ser exaltado')
+        send = st.form_submit_button('Predicir por ciento de los votos de las papeletas para ser exaltado')
     if send:
        if opción == "Batting":
-          st.write(f"Se predice que según tus datos aportados las bolates serían de un {round((float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))),2)} %")
+          porcent_b = float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))
+          if porcent_b >= 75:
+           st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_b,2)} %, por lo que podría entrar en el salón de la fama de béisbol.")
+          else:
+             st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_b,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
        elif opción == "Pitching":
-          st.write(f"Se predice que según tus datos aportados el por ciento de los votos sería de un {round((float(model_pit.predict(Poly.fit_transform(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))),2)} %")
-    st.write('Nota: Para entrar al salón de la fama del baseball se requiere al menos el 75 % de votos de las papeletas.')
+          porcent_p = float(model_pit.predict(Poly.fit_transform(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))
+          if porcent_p >= 75:
+            st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo que podría entrar en el salón de la fama de béisbol.")
+          else:
+             st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")     
+    st.write("coeficiente:" , model_bat.score(Px, y))  
+    st.write("coeficiente:" , model_pit.score(Gx, z))
 
 if __name__ == "__main__":
    main()
+
+
+
+
+
 
