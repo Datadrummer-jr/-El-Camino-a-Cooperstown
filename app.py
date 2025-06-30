@@ -322,8 +322,6 @@ def main() -> None:
             st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo que podría entrar en el salón de la fama de béisbol.")
           else:
              st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")     
-    st.write("coeficiente:" , model_bat.score(Px, y))  
-    st.write("coeficiente:" , model_pit.score(Gx, z))
 
 if __name__ == "__main__":
    main()
