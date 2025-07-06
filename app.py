@@ -4,8 +4,11 @@ import json
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.preprocessing import MinMaxScaler
 from PIL import Image
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 import my_library as ml
 
 logo = Image.open("logo.jpg")
@@ -82,52 +85,6 @@ with open("best_batting.json") as f:
 with open("best_pitching.json") as g:
     best_pitching = json.load(g)
 
-bat_year = [ y for y in range(first[ml.max_valor(batting)],last[ml.max_valor(batting)] +1 )]
-
-b_war = best_batting['war']
-b_h = best_batting['h']
-b_hr = best_batting['hr']
-b_ba = best_batting['ba']
-b_ab = best_batting['ab']
-b_g = best_batting['g']
-
-graph_b_war = ml.my_protly(bat_year,b_war,"WAR: Wins above replacement", f"Comportamiento del WAR por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Wins above replacement", "Leyenda")
-graph_b_g = ml.my_protly(bat_year,b_g,"G: Jugadas ganadas", f"Comportamiento de las jugadas ganadas por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Jugadas Ganadas", "Leyenda")
-graph_b_h = ml.my_protly(bat_year,b_h,"H: Hits", f"Comportamiento de los Hits por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Hits", "Leyenda")
-graph_b_hr = ml.my_protly(bat_year,b_hr,"HR: Home Runs", f"Comportamiento de los Home Runs por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Home Runs", "Leyenda")
-graph_b_ab = ml.my_protly(bat_year,b_ab,"AB: At bats", f"Comportamiento de los AB por año de {names_batting[ml.max_valor(batting)]} según datos","Año","At bats", "Leyenda")
-graph_b_ba = ml.my_protly(bat_year,b_ba,"BA: Hits / At bats", f"Comportamiento de los Hits / At bats por año de {names_batting[ml.max_valor(batting)]} según datos","Año","Hits / At bats", "Leyenda")
-
-para_batting = {
-   "WAR": graph_b_war,
-   "G": graph_b_g,
-   "H": graph_b_h,
-   "HR": graph_b_hr,
-   "AB": graph_b_ab,
-   "BA": graph_b_ba
-}
-
-pit_year = [z for z in range(first[ml.max_valor(pitching)],last[ml.max_valor(pitching)] +1 )]
-
-p_war = best_pitching['war']
-p_g = best_pitching['g']
-p_w = best_pitching['w']
-p_l = best_pitching['l']
-p_era = best_pitching['era']
-
-graph_p_war = ml.my_protly(pit_year,p_war, "WAR: Wins above replacement", f"Comportamiento del War por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","Wins above replacement", "Leyenda", "red")
-graph_p_g = ml.my_protly(pit_year,p_g,"G: Jugadas ganadas", f"Comportamiento de las jugadas ganadas por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","Jugadas Ganadas", "Leyenda", "red")
-graph_p_w = ml.my_protly(pit_year,p_w,"W: ", f"Comportamiento del W por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","W", "Leyenda", "red")
-graph_p_l = ml.my_protly(pit_year,p_l,"L: ", f"Comportamiento de las L por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","L", "Leyenda", "red")
-graph_p_era = ml.my_protly(pit_year,p_era,"ERA: earned_run_avg", f"Comportamiento de las earned_run_avg por año de {names_batting[ml.max_valor(pitching)]} según datos","Año","earned_run_avg", "Leyenda", "red")
-
-para_pitching = {
-   "WAR": graph_p_war,
-   "G": graph_p_g,
-   "W": graph_p_w,
-   "L": graph_p_l,
-   "ERA": graph_p_era
-}
 names_pit = [bat[18:].T.dropna().T]
 
 columnas_pit = ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf',"% of Ballots"]
@@ -182,7 +139,7 @@ Px = Poly.fit_transform(X)
 
 model_bat = LinearRegression()
 model_bat.fit(Px,y)
-#st.write("coeficiente:" , model_bat.score(Px, y))
+#st.write("coeficiente:" , model_bat.score(Px, y))s
 
 
 W = np.array([experience_pit,g_pit, gf_pit,war_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]).T
@@ -200,6 +157,162 @@ first_year = min(años)
 last_year = max(años)
 count_for_year = [años.count(unico) for unico in list(range(first_year, last_year + 1))]
 
+# MEJORES PITCHER Y BATEADORES #
+ 
+columnas_pitcher= ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf']
+df_pitcher = df_players.dropna(subset=columnas_pitcher)
+
+names_pitcher= df_pitcher.index.to_list()
+era_pitcher= df_pitcher['era'].to_list()
+war_pitcher=  df_pitcher["war_p"].to_list()
+g_pitcher=  df_pitcher["g"].to_list()
+l_pitcher=  df_pitcher["l"].to_list()
+w_pitcher=  df_pitcher["w"].to_list()
+ip_pitcher=  df_pitcher['ip'].to_list()
+bb_pitcher=  df_pitcher['bb'].to_list()
+w_l_pitcher=  df_pitcher['w_l'].to_list()
+gf_pitcher=  df_pitcher['gf'].to_list()
+experience_pitcher=  df_pitcher['years_of_experience'].to_list()
+link_p = df_pitcher["link"].to_list()
+inicio_p = df_pitcher["first_game"].to_list()
+final_p = df_pitcher["last_game"].to_list()
+seasons_p = ml.range_in_lists(inicio_p,final_p)
+
+
+columnas_batting= ['years_of_experience', "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops" ]
+df_batting= df_players.dropna(subset=columnas_batting)
+
+name_batting= df_batting.index.to_list()
+war_batting= df_batting["war"].to_list()
+h_batting= df_batting["h"].to_list()
+hr_batting= df_batting["hr"].to_list()
+ba_batting= df_batting["ba"].to_list()
+ab_batting= df_batting["ab"].to_list()
+rbi_batting= df_batting["rbi"].to_list()
+obp_batting= df_batting["obp"].to_list()
+ops_batting= df_batting["ops"].to_list()
+experience_batting= df_batting["years_of_experience"].to_list()
+link_b = df_batting["link"].to_list()
+inicio_b = df_batting["first_game"].to_list()
+final_b = df_batting["last_game"].to_list()
+seasons_b = ml.range_in_lists(inicio_b,final_b)
+
+df_player_batting= pd.DataFrame({
+    "Jugador": name_batting,
+    "WAR": war_batting,
+    "HR": hr_batting,
+    "BA": ba_batting,
+    "OPS": ops_batting,
+    "OBP": obp_batting,
+    "RBI": rbi_batting,
+    "H": h_batting,
+    "Seasons": experience_batting
+})
+
+# Crear métricas por temporada
+df_player_batting["HR_temp"] = df_player_batting["HR"] / df_player_batting["Seasons"]
+df_player_batting["WAR_temp"] = df_player_batting["WAR"] / df_player_batting["Seasons"]
+df_player_batting["RBI_temp"] = df_player_batting["RBI"] / df_player_batting["Seasons"]
+df_player_batting["H_temp"] = df_player_batting["H"] / df_player_batting["Seasons"]
+
+# Seleccionar métricas a normalizar
+metricas_batting= ["HR_temp", "WAR_temp", "RBI_temp", "H_temp", "BA", "OPS", "OBP"]
+
+# Normalizar con Min-Max (puedes probar StandardScaler o RobustScaler también)
+scaler_batting= MinMaxScaler()
+df_bat_norm = df_player_batting.copy()
+df_bat_norm[metricas_batting] = scaler_batting.fit_transform(df_player_batting[metricas_batting])
+
+# Calcular Score para Batting
+df_bat_norm["Score"] = (
+    0.4 * df_bat_norm["WAR_temp"] +
+    0.2 * df_bat_norm["HR_temp"] +
+    0.1 * df_bat_norm["RBI_temp"] +
+    0.1 * df_bat_norm["OPS"] +
+    0.1 * df_bat_norm["OBP"] +
+    0.1 * df_bat_norm["BA"]
+)
+
+# Ranking para Batting
+ranking_batting= df_bat_norm.sort_values("Score", ascending=False)
+
+df_player_pitcher= pd.DataFrame({
+    "Jugador": names_pitcher,
+    "WAR": war_pitcher,
+    "ERA": era_pitcher,
+    "BB": bb_pitcher,
+    "IP": ip_pitcher,
+    "Seasons": experience_pitcher
+})
+
+df_player_pitcher["WAR_temp"] = df_player_pitcher["WAR"] / df_player_pitcher["Seasons"]
+df_player_pitcher["ERA_temp"] = df_player_pitcher["ERA"] / df_player_pitcher["Seasons"]
+df_player_pitcher["BB_temp"] = df_player_pitcher["BB"] / df_player_pitcher["Seasons"]
+df_player_pitcher["IP_temp"] = df_player_pitcher["IP"] / df_player_pitcher["Seasons"]
+
+metricas_pitcher= ["WAR_temp", "ERA_temp","BB_temp","IP_temp"]
+
+scaler_pitcher= MinMaxScaler()
+df_pit_norm = df_player_pitcher.copy()
+df_pit_norm[metricas_pitcher] = scaler_pitcher.fit_transform(df_pit_norm[metricas_pitcher])
+
+df_pit_norm["Score"] = (
+    0.2 * df_pit_norm["WAR_temp"] +
+    0.1 * df_pit_norm["BB_temp"] +
+    0.3 * df_pit_norm["ERA_temp"] +
+    0.4 * df_pit_norm["IP_temp"]
+)
+
+ranking_pitcher= df_pit_norm.sort_values("Score",ascending=False)
+
+
+#st.plotly_chart(ml.doble_y_protly(best_seasons_b[0],[war_seasons_b[int(ranking_batting.index.to_list()[0])][:len(best_seasons_b[0])],media_best_war_for_year], ['war', 'media'],['green','red'],'Grafica de war del mejor batt vs media de war','año', 'cantidad','legenda'))
+bat_year = [ y for y in range(first[ml.max_valor(batting)],last[ml.max_valor(batting)] +1 )]
+
+b_war = best_batting['war']
+b_h = best_batting['h']
+b_hr = best_batting['hr']
+b_ba = best_batting['ba']
+b_ab = best_batting['ab']
+b_g = best_batting['g']
+
+graph_b_war = ml.my_protly(bat_year,b_war,"WAR: Wins above replacement", f"Comportamiento del WAR por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Wins above replacement", "Leyenda")
+graph_b_g = ml.my_protly(bat_year,b_g,"G: Jugadas ganadas", f"Comportamiento de las jugadas ganadas por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Jugadas Ganadas", "Leyenda")
+graph_b_h = ml.my_protly(bat_year,b_h,"H: Hits", f"Comportamiento de los Hits por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Hits", "Leyenda")
+graph_b_hr = ml.my_protly(bat_year,b_hr,"HR: Home Runs", f"Comportamiento de los Home Runs por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Home Runs", "Leyenda")
+graph_b_ab = ml.my_protly(bat_year,b_ab,"AB: At bats", f"Comportamiento de los AB por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","At bats", "Leyenda")
+graph_b_ba = ml.my_protly(bat_year,b_ba,"BA: Hits / At bats", f"Comportamiento de los Hits / At bats por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Hits / At bats", "Leyenda")
+
+para_batting = {
+   "WAR": graph_b_war,
+   "G": graph_b_g,
+   "H": graph_b_h,
+   "HR": graph_b_hr,
+   "AB": graph_b_ab,
+   "BA": graph_b_ba
+}
+
+pit_year = [z for z in range(first[ml.max_valor(pitching)],last[ml.max_valor(pitching)] +1 )]
+
+p_war = best_pitching['war']
+p_g = best_pitching['g']
+p_w = best_pitching['w']
+p_l = best_pitching['l']
+p_era = best_pitching['era']
+
+graph_p_war = ml.my_protly(pit_year,p_war, "WAR: Wins Above Replacement", f"Comportamiento del War por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","Wins above replacement", "Leyenda", "red")
+graph_p_g = ml.my_protly(pit_year,p_g,"G: Jugadas Ganadas", f"Comportamiento de las jugadas ganadas por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","Jugadas Ganadas", "Leyenda", "red")
+graph_p_w = ml.my_protly(pit_year,p_w,"W: ", f"Comportamiento del W por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","W", "Leyenda", "red")
+graph_p_l = ml.my_protly(pit_year,p_l,"L: ", f"Comportamiento de las L por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","L", "Leyenda", "red")
+graph_p_era = ml.my_protly(pit_year,p_era,"ERA: earned_run_avg", f"Comportamiento de las Earned Run Avg por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","Earned Run Avg", "Leyenda", "red")
+
+para_pitching = {
+   "WAR": graph_p_war,
+   "G": graph_p_g,
+   "W": graph_p_w,
+   "L": graph_p_l,
+   "ERA": graph_p_era
+}
 # Función principal
 
 def main() -> None:
@@ -228,14 +341,14 @@ def main() -> None:
     "Año": list(range(first_year, last_year + 1)),
     "Count": count_for_year
      })
-    st.write('Empezando a hacer un poco de historia cada año son muchos los que entrar al salón de la fama desde las pimeras ' \
-    'inducciones en 1936 donde las cantidades de inducciones oscilaban cada año,' \
-    ' aunque en el perídodo de 1940 a 1960 hubieron'\
-    ' cinco años en la cantidad de inductos fue nula, en 1988 se otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
-    ' desde 1988 a causa de pandemia del Covid-19 que asechaba desde a finales de 2019 por lo no hubieron juego de beisbol en 2020.'\
-    'Como no todo es triste, en 2006 hubo un pico en gráfica, fueron 12 fueros exaltados por el presidente del salón de la fama ese año, en los que se encuentran ' \
+    st.write('Empezando a hacer un poco de historia cada año son muchos los que han logrado entrar al salón de la fama del béisbol desde las pimeras ' \
+    f'inducciones en 1936 hasta alcanzar la cifra de {len(df_total["link"].to_list())} inductos en el año actual, desde  las cantidades de inducciones oscilan cada año exceptuando algunas temporadas en que se han mantenido estables,' \
+    ' en el perídodo de 1940 a 1960 hubieron'\
+    ' cinco años en la cantidad de inductos fue nula, en 1988 se unió otro año a la lista y en 2021 se vuelve a repetir lo que no sucedía'\
+    ' desde 1988 a causa de pandemia del Covid-19 que asechaba desde a finales de 2019 por lo no hubieron casi juegos de beisbol en 2020.'\
+    'Como no todo es triste y , en 2006 hubo un pico en gráfica, fueron 12 fueros exaltados por el presidente del salón de la fama ese año, en los que se encuentran ' \
     'los cubanos José Méndez y Cristóbal Torriente, '\
-    'la mayor cantidad desde sus inicios. Y que les muestro la evidencia:')
+    'la mayor cantidad desde sus inicios, por lo que aunque hubieron altas y bajas no se ha dejado marchitar la pasión por el béisbol. Y que les muestro la evidencia:')
     fig = px.line(df_ind, x="Año", y="Count", markers=True,
               title="Cantidad de inducciones por año",
               labels={"Count": "Cantidad de inducciones", "Año": "Año"},
@@ -245,6 +358,36 @@ def main() -> None:
     fig.update_layout(hovermode="x unified")
 
     st.plotly_chart(fig)
+
+    # Aspirantes a Entrar en El Salón de la Fama :
+
+    aspirantes_hof = ml.read_json("aspirantes_a_hof.json")
+
+    aspirantes_for_year = [ len(aspirantes_hof[str(i)]) for i in range(1936, 2026)]
+
+    df_aspirantes = pd.DataFrame(
+       {
+          "año": list(range(first_year, last_year + 1)),
+          "cantidad": aspirantes_for_year
+       }
+    )
+
+    fig_asp= px.line(df_aspirantes, x="año", y="cantidad", markers=True,
+              title="Aspirantes a entrar al salón de la fama del béisbol por año",
+              labels={"cantidad": "Cantidad", "Año": "Año"},
+              color_discrete_sequence=["#9D33FF"])
+
+    fig_asp.update_traces(mode="lines+markers", hovertemplate="Año: %{x}<br>Cantidad: %{y:.2f}")
+    fig_asp.update_layout(hovermode="x unified")
+    st.plotly_chart(fig_asp)
+
+    total = sum(aspirantes_for_year)
+    inductos = len(df_total['link'].to_list())
+    porciento = (inductos * 100) / total
+    
+    st.write(f"Si observó detenidamente pudo observar que todos los aspirantes no han tenido la misma suerte ya que solamente el {round(porciento,2)} % de los estado inscritos para las votaciones o provenientes de otras vías han logrado entrar. Pero lo que tienen que estar ¡ Alertas ! los fanes del béisbol"\
+    " ya que las cifras se mantenían mayormente desde los 50  hasta superar la cifra de los 100 aspirantes en varios años, pero principalmente desde los años 60, específicamente después del año 1967 las cifras no volvieron a alcanzar de la cifra de 80 candidatos, ni hablar de después de 40 años en que la cifras no han vuelto a rozar los 50" \
+    ", lo ya ha demostrado la falta interés por el deporte, con las nuevas tecnologías. Por lo que si la situación sigue así la cantidad de candidatos a postularse y la cantiddad de peloteros que logren entrar puede ir de mal en peor en los próximos años")
 
     st.subheader("¿ Se ha preguntado cual es bateador miembro del salón de la fama del baseball con los mejores números?")
     img1 = Image.open("Hank_Aaron_1960.png")
@@ -326,8 +469,24 @@ def main() -> None:
 if __name__ == "__main__":
    main()
 
+# Crear figura con 1 fila y 2 columnas
+fig = make_subplots(rows=1, cols=2)
 
+# Gráfica 1
+fig.add_trace(
+    go.Scatter(x=[1, 2, 3], y=[10, 20, 30], name="Gráfico A"),
+    row=1, col=1
+)
 
+# Gráfica 2
+fig.add_trace(
+    go.Bar(x=["A", "B", "C"], y=[5, 15, 25], name="Gráfico B"),
+    row=1, col=2
+)
+
+# Mostrar figura
+fig.update_layout(title_text="Dos gráficas lado a lado")
+st.plotly_chart(fig)
 
 
 
