@@ -469,24 +469,3 @@ def main() -> None:
 if __name__ == "__main__":
    main()
 
-# Crear figura con 1 fila y 2 columnas
-fig = make_subplots(rows=1, cols=2)
-
-# Gráfica 1
-fig.add_trace(
-    go.Scatter(x=[1, 2, 3], y=[10, 20, 30], name="Gráfico A"),
-    row=1, col=1
-)
-
-# Gráfica 2
-fig.add_trace(
-    go.Bar(x=["A", "B", "C"], y=[5, 15, 25], name="Gráfico B"),
-    row=1, col=2
-)
-
-# Mostrar figura
-fig.update_layout(title_text="Dos gráficas lado a lado")
-st.plotly_chart(fig)
-
-
-
