@@ -3,6 +3,8 @@ from typing import List, Tuple
 import numpy as np
 import plotly.graph_objects as go
 import json
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
 
 def you_type(cadena: str):
   n = len(cadena)
@@ -108,3 +110,12 @@ def read_json(file: str):
   with open(file) as rj:
     datos = json.load(rj)
   return datos
+
+
+def coeficiente(ind: List[List[int]], dep: List[int], grade : int=1) -> float:
+  model = LinearRegression()
+  poly = PolynomialFeatures(degree=grade)
+  px = poly.fit_transform(np.array(ind).T)
+  model.fit(px,np.array(dep))
+  coef = model.score(px,dep)
+  return coef

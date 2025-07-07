@@ -10,6 +10,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import my_library as ml
+from st_aggrid import AgGrid
+from st_btn_select import st_btn_select
 
 logo = Image.open("logo.jpg")
 
@@ -139,7 +141,7 @@ Px = Poly.fit_transform(X)
 
 model_bat = LinearRegression()
 model_bat.fit(Px,y)
-#st.write("coeficiente:" , model_bat.score(Px, y))s
+#st.write("coeficiente:" , model_bat.score(Px, y))
 
 
 W = np.array([experience_pit,g_pit, gf_pit,war_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]).T
@@ -151,6 +153,14 @@ Gx = Poly.fit_transform(W)
 model_pit = LinearRegression()
 model_pit.fit(Gx,z)
 #st.write("coeficiente:" , model_pit.score(Gx, z))
+
+parametros_bat = [experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,ops_bat,obp_bat]
+parametros_pit = [experience_pit,g_pit,war_pit,gf_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]
+
+coefientes_bat = list(map(lambda x: (ml.coeficiente([x],y,2)*100), parametros_bat))
+coefientes_pit = list(map(lambda y: (ml.coeficiente([y],z,2)*100), parametros_pit))
+
+# Cantidad de inducciones por año
 
 años = [ind for ind in df_total["induction"]]
 first_year = min(años)
@@ -313,13 +323,27 @@ para_pitching = {
    "L": graph_p_l,
    "ERA": graph_p_era
 }
+
+#Análisis de los Pitchers
+
+pitchers = df_total.dropna(subset=["g"])['inducted_as'].to_list()
+porcents = df_total.dropna(subset=["g",'% of Ballots']).sort_values(by='% of Ballots',ascending=False).index
+
+pitch_players = pitchers.count('Player')
+pitch_manager = pitchers.count('Manager')
+pitch_executive = pitchers.count('Pioneer/Executive')
+pitch_umpire = pitchers.count('Umpire')
+
 # Función principal
 
 def main() -> None:
     st.title("Bienvenido a Cooperstown")
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
-    "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron estos nuevos miembros y los " \
-    "inducidos en años anteriores que los llevaron a ser mibros del dicho salón en que se encuentran jugadores, ejecutivos, managers y árbitros.")
+    "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron" \
+    " estos nuevos miembros y los inducidos en años anteriores que los llevaron a ser miembros del dicho salón en que se encuentran " \
+    "jugadores, ejecutivos, managers y árbitros. Por lo que a continuación van a conocer los criterios para ser elegibles para en trar a" \
+    " Cooperstown, los casos de éxitos que han hecho historia y detalles interesantes que sólo se llegan a conocer a travéz de los datos, " \
+    "para que si usted es pelotero se embulle a alcanzar y superar los criterios de selección que se exige para ser exaltado en New York.")
 
     st.header("A continuación están los listados con los datos de los miembros actuales del Salón de la Fama del Baseball para que conozca los datos de estos exponentes del baseball para que los analice si desea.")
     df = st.selectbox("Selecciona la categoría que desee ver", list(categorias.keys()))
@@ -385,9 +409,54 @@ def main() -> None:
     inductos = len(df_total['link'].to_list())
     porciento = (inductos * 100) / total
     
-    st.write(f"Si observó detenidamente pudo observar que todos los aspirantes no han tenido la misma suerte ya que solamente el {round(porciento,2)} % de los estado inscritos para las votaciones o provenientes de otras vías han logrado entrar. Pero lo que tienen que estar ¡ Alertas ! los fanes del béisbol"\
-    " ya que las cifras se mantenían mayormente desde los 50  hasta superar la cifra de los 100 aspirantes en varios años, pero principalmente desde los años 60, específicamente después del año 1967 las cifras no volvieron a alcanzar de la cifra de 80 candidatos, ni hablar de después de 40 años en que la cifras no han vuelto a rozar los 50" \
-    ", lo ya ha demostrado la falta interés por el deporte, con las nuevas tecnologías. Por lo que si la situación sigue así la cantidad de candidatos a postularse y la cantiddad de peloteros que logren entrar puede ir de mal en peor en los próximos años")
+    st.write("Si observó detenidamente pudo observar que todos los aspirantes no han tenido la misma suerte ya que solamente el " \
+    f"{round(porciento,2)} % de los que han provenido Asociación de Escritores de Béisbol de América (BBWAA), o por el Comité de Veteranos "\
+    "han logrado entrar. Pero lo que tienen que estar ¡ Alertas ! los fanes del béisbol ya que desde los inicios del salón las cifras se " \
+    "mantenían mayormente desde los 50  hasta superar la cifra de los 100 aspirantes en varios años, pero principalmente desde los años 60, " \
+    "específicamente después del año 1967 las cifras no volvieron a alcanzar de la cifra de 80 candidatos, ni hablar después de 40 años en" \
+    " que la cifras no han vuelto a rozar ni los 50, lo ya ha demostrado la falta interés por el deporte y la disminución de la calidad de " \
+    "estos, con las nuevas tecnologías.Por lo que si la situación sigue así la cantidad de candidatos a postularse y la cantiddad de " \
+    "peloteros que logren entrar puede ir de mal en peor en los próximos años")
+    
+    st.subheader("Si los que han logrado ser miembros son tan pocos, ¿ Cuáles son los criterios de selección para entrar a dicho salón ?")
+    
+    st.write('Para elegir jugadores que son aptos existen varios criterios de elegebilidad, como haber estado retirado por más de cinco ' \
+    'años, participación en más de 10 temporadas de las grandes ligas, tener una conducta ejemplar, tener buenos números, haber recibido ' \
+    'al menos el 75 % por la Asociación de Escritores de Béisbol de América (BBWAA) y si no es elegido por esta vía puede ser considerado ' \
+    'por el Cómite de Veteranos si tiene mucha experiencia, es decir bastantes años de retiros. En caso de los Mánagers, ejecutivos y ' \
+    'arbitros anteriormente mensionados puede ser elegidos si tienen un impacto significativo en el béisbol en toda su carrera.')
+
+    st.subheader("Entonces hablando del pollo del arroz con pollo 'los números', ¿cuáles contribuyen en más para ser elegidos y cuáles " \
+    "menos?")
+
+    st.markdown("##### Comparación del aporte de cada parámetro de rendimiento para ayudan a alcanzar el 75 % de las boletas para los bateadores y los pitcher: ")
+   
+    bvsp = make_subplots(rows=1, cols=2,subplot_titles=["Influencia de cada parámetro en los bateadores",'Influencia de cada parámetro en los pitchers'])
+    bvsp.add_trace(
+    go.Bar(
+    x= coefientes_bat,
+    y=['Experiencia','Jugadas','WAR', 'Hits', 'HR', 'AB', 'BA', 'RBI', 'OPS', 'OBP' ],
+    orientation='h'
+    ),row=1, col=1)
+
+    bvsp.add_trace(
+    go.Bar(
+    x= coefientes_pit,
+    y=['Experiencia','Jugadas','WAR', 'Juegos terminados', 'ERA', 'Losses', 'Bases por bolas', 'Wines', 'W-%-L', 'Inning Pitching' ],
+    orientation='h'
+    )   ,row=1,col=2)
+    bvsp.update_layout(showlegend=False)
+    st.plotly_chart(bvsp)
+
+    st.write("Como acabó de ver, ahora se dividió al grupo de  los jugadores entre bateadores y lanzadores, los números de los pitchers " \
+    "tienden a contribuir mejor a un mayor por ciento en las votaciones, y esto se de debe a la integridad de los pitchers ya que en el" \
+    f" salón son miembros {len(pitchers)} pitchers, de ellos {pitch_players} jugadores, {pitch_executive} ejecutivos, {pitch_umpire} "\
+    f"arbitros y {pitch_manager} managers. Por lo que al ser la cantidad de de pitchers en la categoría de jugadores altísima representando"\
+    f" {round((pitch_players*100)/ len(pitchers),2)} % de los pichers miembros y el "\
+    f"{round((pitch_players*100)/len(df_total["link"].to_list()),2)} % de total "\
+    "de miembros y hasta el 2025 el total de lanzadores también ejercieron en alguna etapa de su carrera la función de bateadores, lo que" \
+    " resalta una calidad superior, por lo que si desea ser elegido , es mejor que haga de todo en vez de establecers en una sóla área del " \
+    "béisbol.")
 
     st.subheader("¿ Se ha preguntado cual es bateador miembro del salón de la fama del baseball con los mejores números?")
     img1 = Image.open("Hank_Aaron_1960.png")
@@ -423,6 +492,8 @@ def main() -> None:
 
     bp = st.selectbox("Seleccione uno de algunos se los números del mejor pitcher miembro del salón de la fama del baseball:" , list(para_pitching.keys()))
     st.plotly_chart(para_pitching[bp])
+    
+   
 
     st.subheader('Llene el siguiente formulario con el perfil de jugador para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
     st.write('Nota: Para entrar al salón de la fama del baseball se requiere al menos el 75 % de votos de las papeletas.')
@@ -468,25 +539,3 @@ def main() -> None:
 
 if __name__ == "__main__":
    main()
-
-# Crear figura con 1 fila y 2 columnas
-fig = make_subplots(rows=1, cols=2)
-
-# Gráfica 1
-fig.add_trace(
-    go.Scatter(x=[1, 2, 3], y=[10, 20, 30], name="Gráfico A"),
-    row=1, col=1
-)
-
-# Gráfica 2
-fig.add_trace(
-    go.Bar(x=["A", "B", "C"], y=[5, 15, 25], name="Gráfico B"),
-    row=1, col=2
-)
-
-# Mostrar figura
-fig.update_layout(title_text="Dos gráficas lado a lado")
-st.plotly_chart(fig)
-
-
-
