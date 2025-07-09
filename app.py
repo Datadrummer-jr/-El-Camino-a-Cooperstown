@@ -10,8 +10,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import my_library as ml
-from st_aggrid import AgGrid
-from st_btn_select import st_btn_select
 
 logo = Image.open("logo.jpg")
 
@@ -24,6 +22,10 @@ st.set_page_config(
 df = pd.read_json("hof.json")
 
 pd.set_option("display.max_rows", None)
+
+st.sidebar.title('Navegación')
+
+page = st.sidebar.selectbox('Selecciona una página: ', ['Bienvenido a Cooperstown', 'Pon a Prueba tus números'])
 
 df_total = df.T
 
@@ -189,7 +191,7 @@ final_p = df_pitcher["last_game"].to_list()
 seasons_p = ml.range_in_lists(inicio_p,final_p)
 
 
-columnas_batting= ['years_of_experience', "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops" ]
+columnas_batting= ['years_of_experience', "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops"]
 df_batting= df_players.dropna(subset=columnas_batting)
 
 name_batting= df_batting.index.to_list()
@@ -209,7 +211,7 @@ seasons_b = ml.range_in_lists(inicio_b,final_b)
 
 df_player_batting= pd.DataFrame({
     "Jugador": name_batting,
-    "WAR": war_batting,
+    "WAR_Batting": war_batting,
     "HR": hr_batting,
     "BA": ba_batting,
     "OPS": ops_batting,
@@ -221,7 +223,7 @@ df_player_batting= pd.DataFrame({
 
 # Crear métricas por temporada
 df_player_batting["HR_temp"] = df_player_batting["HR"] / df_player_batting["Seasons"]
-df_player_batting["WAR_temp"] = df_player_batting["WAR"] / df_player_batting["Seasons"]
+df_player_batting["WAR_temp"] = df_player_batting["WAR_Batting"] / df_player_batting["Seasons"]
 df_player_batting["RBI_temp"] = df_player_batting["RBI"] / df_player_batting["Seasons"]
 df_player_batting["H_temp"] = df_player_batting["H"] / df_player_batting["Seasons"]
 
@@ -248,14 +250,14 @@ ranking_batting= df_bat_norm.sort_values("Score", ascending=False)
 
 df_player_pitcher= pd.DataFrame({
     "Jugador": names_pitcher,
-    "WAR": war_pitcher,
+    "WAR_Pitching": war_pitcher,
     "ERA": era_pitcher,
     "BB": bb_pitcher,
     "IP": ip_pitcher,
     "Seasons": experience_pitcher
 })
 
-df_player_pitcher["WAR_temp"] = df_player_pitcher["WAR"] / df_player_pitcher["Seasons"]
+df_player_pitcher["WAR_temp"] = df_player_pitcher["WAR_Pitching"] / df_player_pitcher["Seasons"]
 df_player_pitcher["ERA_temp"] = df_player_pitcher["ERA"] / df_player_pitcher["Seasons"]
 df_player_pitcher["BB_temp"] = df_player_pitcher["BB"] / df_player_pitcher["Seasons"]
 df_player_pitcher["IP_temp"] = df_player_pitcher["IP"] / df_player_pitcher["Seasons"]
@@ -326,6 +328,7 @@ para_pitching = {
 
 #Análisis de los Pitchers
 
+df_pitchers = df_players.dropna(subset=["g"])
 pitchers = df_total.dropna(subset=["g"])['inducted_as'].to_list()
 porcents = df_total.dropna(subset=["g",'% of Ballots']).sort_values(by='% of Ballots',ascending=False).index
 
@@ -387,6 +390,15 @@ def main() -> None:
 
     aspirantes_hof = ml.read_json("aspirantes_a_hof.json")
 
+    aspirantes = []
+
+    for i in range(1936, 2026):
+       aspirantes.extend(ml.read_json("aspirantes_a_hof.json")[f'{i}'])
+
+    aspirantes_unicos = set(aspirantes)
+    
+    aspireantes_reiterados = [ i for i in aspirantes_unicos if aspirantes.count(i) > 1]
+       
     aspirantes_for_year = [ len(aspirantes_hof[str(i)]) for i in range(1936, 2026)]
 
     df_aspirantes = pd.DataFrame(
@@ -395,6 +407,8 @@ def main() -> None:
           "cantidad": aspirantes_for_year
        }
     )
+    
+    st.write(ml.coeficiente([list(range(first_year, last_year + 1))], aspirantes_for_year))
 
     fig_asp= px.line(df_aspirantes, x="año", y="cantidad", markers=True,
               title="Aspirantes a entrar al salón de la fama del béisbol por año",
@@ -416,7 +430,7 @@ def main() -> None:
     "específicamente después del año 1967 las cifras no volvieron a alcanzar de la cifra de 80 candidatos, ni hablar después de 40 años en" \
     " que la cifras no han vuelto a rozar ni los 50, lo ya ha demostrado la falta interés por el deporte y la disminución de la calidad de " \
     "estos, con las nuevas tecnologías.Por lo que si la situación sigue así la cantidad de candidatos a postularse y la cantiddad de " \
-    "peloteros que logren entrar puede ir de mal en peor en los próximos años")
+    "peloteros que logren entrar puede ir de mal en peor en los próximos años. ")
     
     st.subheader("Si los que han logrado ser miembros son tan pocos, ¿ Cuáles son los criterios de selección para entrar a dicho salón ?")
     
@@ -424,7 +438,9 @@ def main() -> None:
     'años, participación en más de 10 temporadas de las grandes ligas, tener una conducta ejemplar, tener buenos números, haber recibido ' \
     'al menos el 75 % por la Asociación de Escritores de Béisbol de América (BBWAA) y si no es elegido por esta vía puede ser considerado ' \
     'por el Cómite de Veteranos si tiene mucha experiencia, es decir bastantes años de retiros. En caso de los Mánagers, ejecutivos y ' \
-    'arbitros anteriormente mensionados puede ser elegidos si tienen un impacto significativo en el béisbol en toda su carrera.')
+    'arbitros anteriormente mensionados puede ser elegidos si tienen un impacto significativo en el béisbol en toda su carrera. Aunque no hay que tener miedo ya que ' \
+    f' desde los inicios del salón de un total de {len(aspirantes)} aspirantes {len(aspireantes_reiterados)} han intentado entrar más de una vez pues los criterios de selección '\
+    'son muy estrictos. ')
 
     st.subheader("Entonces hablando del pollo del arroz con pollo 'los números', ¿cuáles contribuyen en más para ser elegidos y cuáles " \
     "menos?")
@@ -449,52 +465,137 @@ def main() -> None:
     st.plotly_chart(bvsp)
 
     st.write("Como acabó de ver, ahora se dividió al grupo de  los jugadores entre bateadores y lanzadores, los números de los pitchers " \
-    "tienden a contribuir mejor a un mayor por ciento en las votaciones, y esto se de debe a la integridad de los pitchers ya que en el" \
+    "tienden a contribuir mejor a un mayor por ciento en las votaciones, y esto se de debe aparentemente a la integridad de los pitchers ya que en el" \
     f" salón son miembros {len(pitchers)} pitchers, de ellos {pitch_players} jugadores, {pitch_executive} ejecutivos, {pitch_umpire} "\
     f"arbitros y {pitch_manager} managers. Por lo que al ser la cantidad de de pitchers en la categoría de jugadores altísima representando"\
     f" {round((pitch_players*100)/ len(pitchers),2)} % de los pichers miembros y el "\
-    f"{round((pitch_players*100)/len(df_total["link"].to_list()),2)} % de total "\
+    f"{round((pitch_players*100)/len(df_total['link'].to_list()),2)} % de total "\
     "de miembros y hasta el 2025 el total de lanzadores también ejercieron en alguna etapa de su carrera la función de bateadores, lo que" \
-    " resalta una calidad superior, por lo que si desea ser elegido , es mejor que haga de todo en vez de establecers en una sóla área del " \
+    " resalta una calidad superior, por lo que si desea ser elegido podría parecer que es mejor que haga de todo en vez de establecerse en una sóla área del " \
     "béisbol.")
 
-    st.subheader("¿ Se ha preguntado cual es bateador miembro del salón de la fama del baseball con los mejores números?")
-    img1 = Image.open("Hank_Aaron_1960.png")
-    img2 = Image.open("Hank_Aaron_1974.jpg")
-    img3 = Image.open("HankAaronHallofFamePlaque.jpg")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-      st.image(img1, caption="Henry Aaron en 1960", width= 250)
-
-    with col2:
-      st.image(img2, caption="Henry Aaron en 1974", width=300)
-
-    with col3:
-      st.image(img3, caption="tarja de Henry Aaron", width= 300)
+    df_war_vs_games = df_players.copy()
     
-    bb = st.selectbox("Seleccione uno de algunos de los números del mejor bateador a lo largo de su carrera que desee ver:" , list(para_batting.keys()))
-    st.plotly_chart(para_batting[bb])
+    df_war_vs_games['Total_de_Juegos'] = df_war_vs_games[['g_bat','g']].sum(axis=1,skipna=True)
+    df_war_vs_games['Total_de_WAR'] = df_war_vs_games[['war','war_p']].sum(axis=1,skipna=True)
 
-    st.subheader("¿Y entonces que sucederá con los pitcher?" )
+    df_demora = df_war_vs_games.copy().dropna(subset=['years_of_waiting_to_enter'])
 
-    img4 = Image.open("Cy_Young.jpg")
-    img5 = Image.open("Cy_Young_by_Conlon,_1911-crop.jpg")
-    img6 = Image.open("Cy_Young_HOF_plaque.jpg")
-
-    col4, col5, col6 = st.columns(3)
-
-    with col4:
-       st.image(img4, "Cy Young joven",width=300)
-    with col5:
-       st.image(img5, "Cy Young en 1911", width=300)
-    with col6:
-       st.image(img6, "Placa de Cy Young", width=300)
-
-    bp = st.selectbox("Seleccione uno de algunos se los números del mejor pitcher miembro del salón de la fama del baseball:" , list(para_pitching.keys()))
-    st.plotly_chart(para_pitching[bp])
+    df_demora_vs_games = pd.DataFrame({
+       'Jugador': df_demora.index.to_list(),
+       'WAR': df_demora['Total_de_WAR'].to_list(),
+       'Demora': df_demora['years_of_waiting_to_enter'].to_list(),
+       "induction": df_demora['induction'].to_list()
+    })
     
+    df_war_manager = df_managers.copy()
+
+    df_war_manager['Total_de_Juegos'] = df_war_vs_games[['g_bat','g']].sum(axis=1,skipna=True)
+    df_war_manager['Total_de_WAR'] = df_war_vs_games[['war','war_p']].sum(axis=1,skipna=True)
+
+    #st.write(ml.coeficiente([df_war_manager['Total_de_Juegos'].to_list()], df_war_manager['Total_de_WAR'],8))
+
+    war_b = df_war_vs_games.dropna(subset=['war'])['war'].to_list()
+    war_p = df_war_vs_games.dropna(subset=['war_p'])['war_p'].to_list()
+
+    g_b = df_war_vs_games.dropna(subset=['g_bat'])['g_bat'].to_list()
+    g_p = df_war_vs_games.dropna(subset=['g'])['g'].to_list()
+     
+    coeficientes_b = np.polyfit(g_b, war_b, deg=5)
+    fx = np.poly1d(coeficientes_b)
+    eje_x_b = np.linspace(min(g_b), max(g_b), 1000)
+    eje_y_b = fx(eje_x_b)
+
+    coeficientes_p = np.polyfit(g_p, war_p, deg=5)
+    gx = np.poly1d(coeficientes_p)
+    eje_x_p = np.linspace(min(g_p), max(g_p), 1000)
+    eje_y_p = gx(eje_x_p)
+
+    gvsw = go.Figure()
+
+    gvsw.add_trace(go.Scatter(
+    x=g_b, y=war_b,
+    mode="markers",
+    name="Batting",
+    marker=dict(color="royalblue")
+    ))
+
+    gvsw.add_trace(go.Scatter(
+    x=g_p, y=war_p,
+    mode="markers",
+    name="Pitcher",
+    marker=dict(color="red")
+    ))
+    
+    gvsw.add_trace(go.Scatter(
+    x=eje_x_b, y=eje_y_b,
+    mode="lines",
+    name="Curva Ajuste para los battings",
+    line=dict(color="firebrick", width=3)
+    ))
+    
+    gvsw.add_trace(go.Scatter(
+    x=eje_x_p, y=eje_y_p,
+    mode="lines",
+    name="Curva Ajuste para los pitchers",
+    line=dict(color="blue", width=3)
+    ))
+
+    gvsw.update_layout(
+    title="¿ Entonces será cierto que un lanzador contribuyen más a la victoria de su equipo que un bateador ?",
+    xaxis_title="Games",
+    yaxis_title="Wins Above Replacement",
+    template="plotly_dark",      
+    font=dict(family="Arial", size=14),
+    hovermode="x unified"
+    )
+    st.plotly_chart(gvsw)
+
+    st.image(Image.open('flecha_roja.png'), width=300)
+    st.subheader('¡NO!')
+    st.write('Los bateadores tienen una mayor tendencia a mayor tendencia a aportar más victorias a su equipo según la cantidad de juegos jugados que los pitchers, ' \
+    'aunque estos últimos tiendan a ocupar una mejor posición en el ranking debido a que también jan ejercido como ' \
+    'bateadores a los largo de su carrera. De los cuales han salido las primeras estrellas de la historia del béisbol ' \
+    'miembros del salón de la fama que permanecen los Top 10 de los mejores bateadores y  mejores lanzadores.')
+    
+    st.subheader("¿ Quiénes son los peloteros más éxitosos inductos en el salón de la fama ?")
    
+    col_num, col_porcent = st.columns(2)
 
+    with col_num:
+       st.subheader('Según números')
+       col_bat, col_pit = st.columns(2)
+       with col_bat:
+          st.subheader('Top 10 de los Batt')
+          st.dataframe(pd.DataFrame({'Jugador': ranking_batting['Jugador'].to_list(), 'Score': ranking_batting['Score'].to_list()}).head(10).style.background_gradient(cmap="Blues"))
+       with col_pit:
+          st.subheader('Top 10 de los Pitch')
+          st.dataframe(pd.DataFrame({'Jugador': ranking_pitcher['Jugador'].to_list(), 'Score': ranking_pitcher['Score'].to_list()}).head(10).style.background_gradient(cmap="Greens"))
+
+    with col_porcent:
+       st.subheader('Según Votos')
+       col_bat, col_pit = st.columns(2)
+       with col_bat:
+          st.subheader('Top 10 de los Batt')
+          df_percent_bat = df_players.dropna(subset=['g_bat','% of Ballots']).sort_values(by='% of Ballots',ascending=False)
+          st.dataframe(pd.DataFrame({'Jugador': df_percent_bat.index.to_list(), 'Percent':  df_percent_bat['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Oranges"))
+       with col_pit:
+          st.subheader('Top 10 de los Pitch')
+          df_percent_pit = df_players.dropna(subset=['g','% of Ballots']).sort_values(by='% of Ballots',ascending=False)
+          st.dataframe(pd.DataFrame({'Jugador': df_percent_pit.index.to_list(), 'Percent':  df_percent_pit['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Purples"))
+    
+    st.subheader('¿ Cuál es el futuro del salón de la fama del béisbol de Cooperstown ? ')
+    
+    st.write(' El futuro del salón de la fama es incierto y impredecible ya que los datos muestran un decrecimiento de la cantida de aspirantes y en las tasas de acertación en el salón de la fama.' \
+    ' Lo que se hace un llamado a no dejar morir el beísbol en que varios paises principalmente de latinoamerica ha ' \
+    'llegado a ser deporte nacional. Si es pelotero o aficionado a dicho deporte entrene para llegar ha dicho salón de la fama, para lo cual debe jugar bastantes juegos para aportar más a la victoria a su equipo ' \
+    ', además de que debe priorizar las bases por bolas, hits y bastantes juegos terminados sin ser reemplazado para tener más oprtunidades de destacar , ya que estos son los parámetros que hasta ahora ' \
+    'más contribuyen a un mayor suerte en las votaciones. En cuanto a las principales figuras del baseball, el' \
+    ' salón de la fama más que darle reconcimiento por sus números y hábilidades, hace que sus nombres brillen eternamente ' \
+    'en los salones del salón de la fama siendo orgullo para futuros amantes del baseball, desde niños hasta ancianos arrepentidos por lo que un día pudieron hacer y no hicieron.')
+
+def data_product():
+    st.title('Pon tus números a prueba, ¿ Te embullas ?')
     st.subheader('Llene el siguiente formulario con el perfil de jugador para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
     st.write('Nota: Para entrar al salón de la fama del baseball se requiere al menos el 75 % de votos de las papeletas.')
     opción = st.selectbox("¿Qué posición eliges?", ["Seleccione una posición...", "Batting", "Pitching"])
@@ -535,11 +636,12 @@ def main() -> None:
           if porcent_p >= 75:
             st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo que podría entrar en el salón de la fama de béisbol.")
           else:
-             st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")     
+             st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
 
-if __name__ == "__main__":
+if page:
+  if page == 'Bienvenido a Cooperstown':
    main()
-<<<<<<< HEAD
-=======
 
->>>>>>> 105c497bb4c87f68180d9cad37e805955cf703c1
+if page:
+  if page == 'Pon a Prueba tus números':
+   data_product()
