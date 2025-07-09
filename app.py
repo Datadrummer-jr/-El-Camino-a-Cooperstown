@@ -23,10 +23,6 @@ df = pd.read_json("hof.json")
 
 pd.set_option("display.max_rows", None)
 
-st.sidebar.title('Navegación')
-
-page = st.sidebar.selectbox('Selecciona una página: ', ['Bienvenido a Cooperstown', 'Pon a Prueba tus números'])
-
 df_total = df.T
 
 df_players = df.T[~df.T["inducted_as"].isin(["Manager", "Pioneer/Executive", "Umpire"])]
@@ -81,13 +77,6 @@ for nombre in df_players.T:
     names_batting.append(nombre)
 
 pitching = [w_p, war_pp, l_p, era_p, g_p]
-
-
-with open("best_batting.json") as f:
-    best_batting = json.load(f)
-
-with open("best_pitching.json") as g:
-    best_pitching = json.load(g)
 
 names_pit = [bat[18:].T.dropna().T]
 
@@ -280,51 +269,6 @@ ranking_pitcher= df_pit_norm.sort_values("Score",ascending=False)
 
 #st.plotly_chart(ml.doble_y_protly(best_seasons_b[0],[war_seasons_b[int(ranking_batting.index.to_list()[0])][:len(best_seasons_b[0])],media_best_war_for_year], ['war', 'media'],['green','red'],'Grafica de war del mejor batt vs media de war','año', 'cantidad','legenda'))
 bat_year = [ y for y in range(first[ml.max_valor(batting)],last[ml.max_valor(batting)] +1 )]
-
-b_war = best_batting['war']
-b_h = best_batting['h']
-b_hr = best_batting['hr']
-b_ba = best_batting['ba']
-b_ab = best_batting['ab']
-b_g = best_batting['g']
-
-graph_b_war = ml.my_protly(bat_year,b_war,"WAR: Wins above replacement", f"Comportamiento del WAR por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Wins above replacement", "Leyenda")
-graph_b_g = ml.my_protly(bat_year,b_g,"G: Jugadas ganadas", f"Comportamiento de las jugadas ganadas por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Jugadas Ganadas", "Leyenda")
-graph_b_h = ml.my_protly(bat_year,b_h,"H: Hits", f"Comportamiento de los Hits por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Hits", "Leyenda")
-graph_b_hr = ml.my_protly(bat_year,b_hr,"HR: Home Runs", f"Comportamiento de los Home Runs por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Home Runs", "Leyenda")
-graph_b_ab = ml.my_protly(bat_year,b_ab,"AB: At bats", f"Comportamiento de los AB por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","At bats", "Leyenda")
-graph_b_ba = ml.my_protly(bat_year,b_ba,"BA: Hits / At bats", f"Comportamiento de los Hits / At bats por año de {name_batting[ranking_batting.index.to_list()[0]]} según datos","Año","Hits / At bats", "Leyenda")
-
-para_batting = {
-   "WAR": graph_b_war,
-   "G": graph_b_g,
-   "H": graph_b_h,
-   "HR": graph_b_hr,
-   "AB": graph_b_ab,
-   "BA": graph_b_ba
-}
-
-pit_year = [z for z in range(first[ml.max_valor(pitching)],last[ml.max_valor(pitching)] +1 )]
-
-p_war = best_pitching['war']
-p_g = best_pitching['g']
-p_w = best_pitching['w']
-p_l = best_pitching['l']
-p_era = best_pitching['era']
-
-graph_p_war = ml.my_protly(pit_year,p_war, "WAR: Wins Above Replacement", f"Comportamiento del War por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","Wins above replacement", "Leyenda", "red")
-graph_p_g = ml.my_protly(pit_year,p_g,"G: Jugadas Ganadas", f"Comportamiento de las jugadas ganadas por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","Jugadas Ganadas", "Leyenda", "red")
-graph_p_w = ml.my_protly(pit_year,p_w,"W: ", f"Comportamiento del W por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","W", "Leyenda", "red")
-graph_p_l = ml.my_protly(pit_year,p_l,"L: ", f"Comportamiento de las L por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","L", "Leyenda", "red")
-graph_p_era = ml.my_protly(pit_year,p_era,"ERA: earned_run_avg", f"Comportamiento de las Earned Run Avg por año de {names_pitcher[ranking_pitcher.index.to_list()[0]]} según datos","Año","Earned Run Avg", "Leyenda", "red")
-
-para_pitching = {
-   "WAR": graph_p_war,
-   "G": graph_p_g,
-   "W": graph_p_w,
-   "L": graph_p_l,
-   "ERA": graph_p_era
-}
 
 #Análisis de los Pitchers
 
@@ -638,10 +582,13 @@ def data_product():
           else:
              st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
 
-if page:
-  if page == 'Bienvenido a Cooperstown':
+st.sidebar.title('Navegación')
+
+page = st.sidebar.selectbox('Selecciona una página: ', ['Bienvenido a Cooperstown', 'Pon a Prueba tus números'])
+
+
+if page == 'Bienvenido a Cooperstown':
    main()
 
-if page:
-  if page == 'Pon a Prueba tus números':
+if page == 'Pon a Prueba tus números':
    data_product()
