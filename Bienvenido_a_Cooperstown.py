@@ -9,7 +9,7 @@ from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import my_library as ml
+from my_library import my_library as ml
 
 logo = Image.open("logo.jpg")
 
@@ -80,17 +80,23 @@ pitching = [w_p, war_pp, l_p, era_p, g_p]
 
 names_pit = [bat[18:].T.dropna().T]
 
-columnas_pit = ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf',"% of Ballots"]
+columnas_pit = ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf',"% of Ballots", "war"]
 df_pitch = df_players.dropna(subset=columnas_pit)
+
+df_pitch['Total_de_Juegos'] = df_pitch[['g','g_bat']].sum(axis=1,skipna=True)
+df_pitch['Total_de_WAR'] = df_pitch[['war','war_p']].sum(axis=1,skipna=True)
 
 columnas_bat = ['years_of_experience', "% of Ballots", "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops" ]
 df_batt = df_players.dropna(subset=columnas_bat)
 
+df_batt['Total_de_Juegos'] = df_batt[['g','g_bat']].sum(axis=1,skipna=True)
+df_batt['Total_de_WAR'] = df_batt[['war','war_p']].sum(axis=1,skipna=True)
+
 # Variables Independientes para los pitcher
 
 era_pit = df_pitch['era'].to_list()
-war_pit =  df_pitch["war_p"].to_list()
-g_pit =  df_pitch["g"].to_list()
+war_pit =  df_pitch["Total_de_WAR"].to_list()
+g_pit =  df_pitch["Total_de_Juegos"].to_list()
 l_pit =  df_pitch["l"].to_list()
 w_pit =  df_pitch["w"].to_list()
 ip_pit =  df_pitch['ip'].to_list()
@@ -110,15 +116,18 @@ ab_bat = df_batt["ab"].to_list()
 rbi_bat = df_batt["rbi"].to_list()
 obp_bat = df_batt["obp"].to_list()
 ops_bat = df_batt["ops"].to_list()
+slg_bat = df_batt["slg"].to_list()
 experience_bat = df_batt["years_of_experience"].to_list()
 
-#variable dependiente para los pitcher
+#variables dependiente para los pitcher
 
 porcent_pit =  df_pitch["% of Ballots"].to_list()
+demora_pit =  df_pitch["years_of_waiting_to_enter"].to_list()
 
-# Variable dependiente para los bateadores
+# Variables dependiente para los bateadores
 
 porcent_bat = df_batt["% of Ballots"].to_list()
+demora_bat = df_batt["years_of_waiting_to_enter"].to_list()
 
 
 # Entrenamiento del modelo de Regresión Lineal Múltiple para predecir el por ciento de las boletas para los batting
@@ -128,22 +137,27 @@ X = np.array([experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,o
 y = np.array(porcent_bat)
 
 Poly = PolynomialFeatures(degree=2)
+
 Px = Poly.fit_transform(X)
 
 model_bat = LinearRegression()
 model_bat.fit(Px,y)
-#st.write("coeficiente:" , model_bat.score(Px, y))
-
 
 W = np.array([experience_pit,g_pit, gf_pit,war_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]).T
 
 z = np.array(porcent_pit)
 
-Gx = Poly.fit_transform(W)
-
 model_pit = LinearRegression()
-model_pit.fit(Gx,z)
-#st.write("coeficiente:" , model_pit.score(Gx, z))
+model_pit.fit(W,z)
+
+# Entrenamiento del modelo de Regresión Lineal Múltiple para predecir la demora desde el retiro hasta la inducción para los batting
+
+model_demora_bat = LinearRegression()
+model_demora_bat.fit(Px, np.array(demora_bat))
+
+model_demora_pit = LinearRegression()
+model_demora_pit.fit(W, np.array(demora_pit))
+
 
 parametros_bat = [experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,ops_bat,obp_bat]
 parametros_pit = [experience_pit,g_pit,war_pit,gf_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]
@@ -259,15 +273,13 @@ df_pit_norm[metricas_pitcher] = scaler_pitcher.fit_transform(df_pit_norm[metrica
 
 df_pit_norm["Score"] = (
     0.2 * df_pit_norm["WAR_temp"] +
-    0.1 * df_pit_norm["BB_temp"] +
+    0.2 * df_pit_norm["BB_temp"] +
     0.3 * df_pit_norm["ERA_temp"] +
     0.4 * df_pit_norm["IP_temp"]
 )
 
 ranking_pitcher= df_pit_norm.sort_values("Score",ascending=False)
 
-
-#st.plotly_chart(ml.doble_y_protly(best_seasons_b[0],[war_seasons_b[int(ranking_batting.index.to_list()[0])][:len(best_seasons_b[0])],media_best_war_for_year], ['war', 'media'],['green','red'],'Grafica de war del mejor batt vs media de war','año', 'cantidad','legenda'))
 bat_year = [ y for y in range(first[ml.max_valor(batting)],last[ml.max_valor(batting)] +1 )]
 
 #Análisis de los Pitchers
@@ -280,6 +292,42 @@ pitch_players = pitchers.count('Player')
 pitch_manager = pitchers.count('Manager')
 pitch_executive = pitchers.count('Pioneer/Executive')
 pitch_umpire = pitchers.count('Umpire')
+
+df_players_ambos = df_players.copy().dropna(subset=['g', 'g_bat','w', 'war_p', '% of Ballots', 'years_of_waiting_to_enter'])
+
+df_players_ambos['Total_de_Juegos'] = df_players_ambos[['g_bat','g']].sum(axis=1,skipna=True)
+df_players_ambos['Total_de_WAR'] = df_players_ambos[['war','war_p']].sum(axis=1,skipna=True)
+
+game_ambos = df_players_ambos['Total_de_Juegos'].to_list()
+war_ambos = df_players_ambos['Total_de_WAR']
+experience_ambos = df_players_ambos['years_of_experience']
+ab_ambos = df_players_ambos['ab']
+ba_ambos = df_players_ambos['ba']
+h_ambos = df_players_ambos['h']
+hr_ambos = df_players_ambos['hr']
+bb_ambos = df_players_ambos['bb']
+rbi_ambos = df_players_ambos['rbi']
+obp_ambos = df_players_ambos['obp']
+ops_ambos = df_players_ambos['ops']
+era_ambos = df_players_ambos['era']
+gf_ambos = df_players_ambos['gf']
+l_ambos = df_players_ambos['l']
+w_ambos = df_players_ambos['w']
+w_l_ambos = df_players_ambos['w_l']
+ip_ambos = df_players_ambos['ip']
+percent_ambos = df_players_ambos['% of Ballots']
+demora_ambos = df_players_ambos['years_of_waiting_to_enter']
+
+aspirantes_hof = ml.read_json("aspirantes_a_hof.json")
+
+aspirantes = []
+
+for i in range(1936, 2026):
+   aspirantes.extend(ml.read_json("aspirantes_a_hof.json")[f'{i}'])
+
+intentos_ambos = list(map(lambda x : aspirantes.count(x), df_players_ambos.index.to_list()))
+
+#st.write(ml.coeficiente([war_ambos, experience_ambos, intentos_ambos],percent_ambos,3))
 
 # Función principal
 
@@ -295,8 +343,7 @@ def main() -> None:
     st.header("A continuación están los listados con los datos de los miembros actuales del Salón de la Fama del Baseball para que conozca los datos de estos exponentes del baseball para que los analice si desea.")
     df = st.selectbox("Selecciona la categoría que desee ver", list(categorias.keys()))
     st.dataframe(categorias[df])
-
-    st.subheader("Ahora veamos una gráfica con la comparación de la cantidad por cada categoría de miembro de este salón donde se apreciar que los jugadores se llevan todo en la escena como los protagonistas de cada juego:")
+    
     categoria = ['Player', 'Managers', 'Pioneer / Executive', 'Umpire']
     cantidad = [df_players.shape[0], df_managers.shape[0], df_Pioneer_Executive.shape[0], df_umpire.shape[0]]
     df_type = pd.DataFrame(
@@ -305,7 +352,18 @@ def main() -> None:
           'Cantidad': cantidad
        }
     )
-    count_type = px.bar(df_type, x='Categoría', y='Cantidad',color= "Categoría", color_discrete_sequence=[ '#33FF57','#FF5733', '#33C1FF', '#9D33FF'],  title='Cantidad por tipo de miembro')
+    count_type = px.pie(df_type, names='Categoría', values='Cantidad',color= "Categoría", color_discrete_sequence=[ '#33FF57','#FF5733', '#33C1FF', '#9D33FF'],  title='¿ Qué categoría tiene la mayor cantidad de miembros ?')
+    count_type.update_layout(
+    width=700,     # Aumenta el ancho
+    height=600     # Aumenta la altura
+    )
+
+    count_type.update_traces(
+    textinfo='label+percent',
+    textposition='inside',
+    pull=[0, 0, 0.05, 0],  # Opcional: resaltar una porción
+    marker=dict(line=dict(color='white', width=2))
+    )
     st.plotly_chart(count_type)
 
     df_ind = pd.DataFrame({
@@ -330,6 +388,7 @@ def main() -> None:
 
     st.plotly_chart(fig)
 
+    st.subheader('¿ Son muchos los que han aspirado a entrar ?')
     # Aspirantes a Entrar en El Salón de la Fama :
 
     aspirantes_hof = ml.read_json("aspirantes_a_hof.json")
@@ -341,6 +400,7 @@ def main() -> None:
 
     aspirantes_unicos = set(aspirantes)
     
+    
     aspireantes_reiterados = [ i for i in aspirantes_unicos if aspirantes.count(i) > 1]
        
     aspirantes_for_year = [ len(aspirantes_hof[str(i)]) for i in range(1936, 2026)]
@@ -351,8 +411,6 @@ def main() -> None:
           "cantidad": aspirantes_for_year
        }
     )
-    
-    st.write(ml.coeficiente([list(range(first_year, last_year + 1))], aspirantes_for_year))
 
     fig_asp= px.line(df_aspirantes, x="año", y="cantidad", markers=True,
               title="Aspirantes a entrar al salón de la fama del béisbol por año",
@@ -363,9 +421,8 @@ def main() -> None:
     fig_asp.update_layout(hovermode="x unified")
     st.plotly_chart(fig_asp)
 
-    total = sum(aspirantes_for_year)
     inductos = len(df_total['link'].to_list())
-    porciento = (inductos * 100) / total
+    porciento = (inductos * 100) / len(aspirantes_unicos)
     
     st.write("Si observó detenidamente pudo observar que todos los aspirantes no han tenido la misma suerte ya que solamente el " \
     f"{round(porciento,2)} % de los que han provenido Asociación de Escritores de Béisbol de América (BBWAA), o por el Comité de Veteranos "\
@@ -378,13 +435,23 @@ def main() -> None:
     
     st.subheader("Si los que han logrado ser miembros son tan pocos, ¿ Cuáles son los criterios de selección para entrar a dicho salón ?")
     
+    demora = df_total.copy().dropna(subset=['years_of_waiting_to_enter'])['years_of_waiting_to_enter'].to_list()
+
     st.write('Para elegir jugadores que son aptos existen varios criterios de elegebilidad, como haber estado retirado por más de cinco ' \
     'años, participación en más de 10 temporadas de las grandes ligas, tener una conducta ejemplar, tener buenos números, haber recibido ' \
-    'al menos el 75 % por la Asociación de Escritores de Béisbol de América (BBWAA) y si no es elegido por esta vía puede ser considerado ' \
+    'al menos el 75 % de los votos de las papeletas por la Asociación de Escritores de Béisbol de América (BBWAA) y si no es elegido por esta vía puede ser considerado ' \
     'por el Cómite de Veteranos si tiene mucha experiencia, es decir bastantes años de retiros. En caso de los Mánagers, ejecutivos y ' \
     'arbitros anteriormente mensionados puede ser elegidos si tienen un impacto significativo en el béisbol en toda su carrera. Aunque no hay que tener miedo ya que ' \
-    f' desde los inicios del salón de un total de {len(aspirantes)} aspirantes {len(aspireantes_reiterados)} han intentado entrar más de una vez pues los criterios de selección '\
+    f' desde los inicios del salón de un total de {len(aspirantes_unicos)} aspirantes {len(aspireantes_reiterados)} han intentado entrar más de una vez y los '\
+    f' que han podido entrar han tardado desde {min(demora)} años hasta {max(demora)} años en entrar pues los criterios de selección '\
     'son muy estrictos. ')
+
+    years_demora = df_total.copy().dropna(subset=['years_of_waiting_to_enter'])['induction'].to_list()
+
+    df_demora = pd.DataFrame({'Año' : years_demora , "Demora": demora})
+    
+    fig = px.scatter(df_demora, x= 'Año', y= 'Demora', title= 'Tiempo que han tardado en entrar los miembros actuales de salón de la fama del baseball. ', color_discrete_sequence=["#FF33BB"])
+    st.plotly_chart(fig)
 
     st.subheader("Entonces hablando del pollo del arroz con pollo 'los números', ¿cuáles contribuyen en más para ser elegidos y cuáles " \
     "menos?")
@@ -411,8 +478,7 @@ def main() -> None:
     st.write("Como acabó de ver, ahora se dividió al grupo de  los jugadores entre bateadores y lanzadores, los números de los pitchers " \
     "tienden a contribuir mejor a un mayor por ciento en las votaciones, y esto se de debe aparentemente a la integridad de los pitchers ya que en el" \
     f" salón son miembros {len(pitchers)} pitchers, de ellos {pitch_players} jugadores, {pitch_executive} ejecutivos, {pitch_umpire} "\
-    f"arbitros y {pitch_manager} managers. Por lo que al ser la cantidad de de pitchers en la categoría de jugadores altísima representando"\
-    f" {round((pitch_players*100)/ len(pitchers),2)} % de los pichers miembros y el "\
+    f"arbitros y {pitch_manager} managers. Por lo que al ser la cantidad de de pitchers en la categoría de jugadores altísima representando el "\
     f"{round((pitch_players*100)/len(df_total['link'].to_list()),2)} % de total "\
     "de miembros y hasta el 2025 el total de lanzadores también ejercieron en alguna etapa de su carrera la función de bateadores, lo que" \
     " resalta una calidad superior, por lo que si desea ser elegido podría parecer que es mejor que haga de todo en vez de establecerse en una sóla área del " \
@@ -431,13 +497,6 @@ def main() -> None:
        'Demora': df_demora['years_of_waiting_to_enter'].to_list(),
        "induction": df_demora['induction'].to_list()
     })
-    
-    df_war_manager = df_managers.copy()
-
-    df_war_manager['Total_de_Juegos'] = df_war_vs_games[['g_bat','g']].sum(axis=1,skipna=True)
-    df_war_manager['Total_de_WAR'] = df_war_vs_games[['war','war_p']].sum(axis=1,skipna=True)
-
-    #st.write(ml.coeficiente([df_war_manager['Total_de_Juegos'].to_list()], df_war_manager['Total_de_WAR'],8))
 
     war_b = df_war_vs_games.dropna(subset=['war'])['war'].to_list()
     war_p = df_war_vs_games.dropna(subset=['war_p'])['war_p'].to_list()
@@ -486,7 +545,7 @@ def main() -> None:
     ))
 
     gvsw.update_layout(
-    title="¿ Entonces será cierto que un lanzador contribuyen más a la victoria de su equipo que un bateador ?",
+    title="¿ Entonces áser cierto que un lanzador contribuyen más a la victoria de su equipo que un bateador ?",
     xaxis_title="Games",
     yaxis_title="Wins Above Replacement",
     template="plotly_dark",      
@@ -538,57 +597,47 @@ def main() -> None:
     ' salón de la fama más que darle reconcimiento por sus números y hábilidades, hace que sus nombres brillen eternamente ' \
     'en los salones del salón de la fama siendo orgullo para futuros amantes del baseball, desde niños hasta ancianos arrepentidos por lo que un día pudieron hacer y no hicieron.')
 
-def data_product():
-    st.title('Pon tus números a prueba, ¿ Te embullas ?')
-    st.subheader('Llene el siguiente formulario con el perfil de jugador para que vea si tiene posibilidades de entrar en el salón de la fama de Cooperstown a partir de los datos ingresados:')
-    st.write('Nota: Para entrar al salón de la fama del baseball se requiere al menos el 75 % de votos de las papeletas.')
-    opción = st.selectbox("¿Qué posición eliges?", ["Seleccione una posición...", "Batting", "Pitching"])
-    
-    with st.form("Perfil de Batting"):
-        if opción == "Batting":
-          g_b_form = st.number_input("Jugadas", step=1) 
-          war_b_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
-          h_b_form = st.number_input("Hits", step=1)
-          hr_b_form = st.number_input("Home Runs", step=1)
-          ab_b_form = st.number_input("At Bats", step=1)
-          ba_b_form = st.number_input("Hits / At bats",step=0.001, format="%.3f")
-          rbi_b_form = st.number_input('Runs Batted In',step=1)
-          ops_b_form = st.number_input('onbase plus slugging',step=0.001, format="%.3f")
-          obp_b_form = st.number_input('Onbase perce',step=0.001, format="%.3f")
-          experience_b_form = st.number_input('Años de experiencia', step=1)
-        elif opción == "Pitching":
-         g_p_form = st.number_input("Jugadas", step=1) 
-         war_p_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
-         era_p_form = st.number_input("Earned run avg",step=0.001, format="%.3f" ) 
-         bb_p_form = st.number_input("Bases por bola",step=1)
-         gf_p_form = st.number_input("Jugadas terminadas",step=1)
-         w_p_form = st.number_input("Wins",step=1)
-         l_p_form = st.number_input("Losses",step=1)
-         ip_p_form = st.number_input("Inning Pitching",step=0.001, format="%.3f" )
-         W_L_p_form = st.number_input("Wins - losses Porcetange",step=0.001, format="%.3f" )
-         experience_p_form = st.number_input('Años de experiencia', step=1)
-        send = st.form_submit_button('Predicir por ciento de los votos de las papeletas para ser exaltado')
-    if send:
-       if opción == "Batting":
-          porcent_b = float(model_bat.predict(Poly.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form]]))))
-          if porcent_b >= 75:
-           st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_b,2)} %, por lo que podría entrar en el salón de la fama de béisbol.")
-          else:
-             st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_b,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
-       elif opción == "Pitching":
-          porcent_p = float(model_pit.predict(Poly.fit_transform(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))
-          if porcent_p >= 75:
-            st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo que podría entrar en el salón de la fama de béisbol.")
-          else:
-             st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
+if __name__ == "__main__":
+    main()
 
-st.sidebar.title('Navegación')
+import plotly.graph_objects as go
 
-page = st.sidebar.selectbox('Selecciona una página: ', ['Bienvenido a Cooperstown', 'Pon a Prueba tus números'])
+# Categorías
+categorías = ['A', 'B', 'C', 'D']
 
+# Valores totales de cada barra
+valores_total = [100, 80, 120, 90]
 
-if page == 'Bienvenido a Cooperstown':
-   main()
+# Porcentaje a resaltar (30%)
+porcentaje_resaltado = 0.3
 
-if page == 'Pon a Prueba tus números':
-   data_product()
+# Cálculo de valores resaltados y restantes
+valores_resaltados = [v * porcentaje_resaltado for v in valores_total]
+valores_restantes = [v - r for v, r in zip(valores_total, valores_resaltados)]
+
+fig = go.Figure()
+
+# Parte resaltada (30%) en color destacado
+fig.add_trace(go.Bar(
+    x=categorías,
+    y=valores_resaltados,
+    name='Resaltado 30%',
+    marker_color='crimson',
+))
+
+# Parte restante (70%) en color neutro
+fig.add_trace(go.Bar(
+    x=categorías,
+    y=valores_restantes,
+    name='Resto',
+    marker_color='lightslategray',
+))
+
+fig.update_layout(
+    title='Porcentaje destacado en cada barra',
+    barmode='stack',
+    yaxis_title='Valor',
+    xaxis_title='Categorías',
+    legend_title='Segmentos'
+)
+
