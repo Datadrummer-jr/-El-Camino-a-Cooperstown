@@ -332,7 +332,7 @@ intentos_ambos = list(map(lambda x : aspirantes.count(x), df_players_ambos.index
 # Función principal
 
 def main() -> None:
-    st.title("Bienvenido a Cooperstown")
+    st.title("Camino a Cooperstown")
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
     "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron" \
     " estos nuevos miembros y los inducidos en años anteriores que los llevaron a ser miembros del dicho salón en que se encuentran " \
