@@ -1,7 +1,15 @@
 [theme]
+<<<<<<< HEAD
+primaryColor = "#A04000"              # Marrón cobrizo oscuro
+backgroundColor = "#1C1C1C"           # Negro deportivo (fondo principal)
+secondaryBackgroundColor = "#2C3E50"  # Azul grisáceo (paneles, sidebar)
+textColor = "#F0F3F4"                 # Gris claro (texto legible sobre fondo oscuro)
+font = "sans serif"
+=======
 primaryColor = "#D35400"
 backgroundColor = "#F5F5F5"
 secondaryBackgroundColor = "#FFFFFF"
 textColor = "#1C1C1C"
 font = "sans serif"
 
+>>>>>>> 3183870ea78b56b416168501318fb373fa51a5ca
