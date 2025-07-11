@@ -9,8 +9,7 @@ logo = Image.open("logo.jpg")
 st.set_page_config(
     page_title="Bienvenido a Cooperstown",
     page_icon=logo,
-    layout="wide"
-)
+    layout="wide")
 
 def main():
     st.title('Pon tus números a prueba, ¿ Te embullas ?')
@@ -59,3 +58,4 @@ def main():
              st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
 
 if __name__ == "__main__":
+    main()
