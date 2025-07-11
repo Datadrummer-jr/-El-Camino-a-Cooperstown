@@ -584,21 +584,24 @@ def main() -> None:
     'bateadores a los largo de su carrera. De los cuales han salido las primeras estrellas de la historia del béisbol ' \
     'miembros del salón de la fama que permanecen los Top 10 de los mejores bateadores y  mejores lanzadores.')
     
-    st.subheader("¿ Quiénes son los peloteros más éxitosos inductos en el salón de la fama ?")
+    st.subheader("¿ Quiénes son los peloteros más éxitosos y peores inductos en el salón de la fama ?")
    
-    col_num, col_porcent = st.columns(2)
+    condición = st.selectbox("Selecciona las condiciones: ", ['Mejores', 'Peores'])
+    
+    if condición == 'Mejores':
+     col_num, col_porcent = st.columns(2)
 
-    with col_num:
+     with col_num:
        st.subheader('Según números')
        col_bat, col_pit = st.columns(2)
        with col_bat:
           st.subheader('Top 10 de los Batt')
-          st.dataframe(pd.DataFrame({'Jugador': ranking_batting['Jugador'].to_list(), 'Score': ranking_batting['Score'].to_list()}).head(10).style.background_gradient(cmap="Blues"))
+          st.dataframe(pd.DataFrame({'Jugador': df_bat_norm.sort_values(by="Score", ascending=False)['Jugador'].to_list(), 'Score': df_bat_norm.sort_values(by="Score", ascending=False)['Score'].to_list()}).head(10).style.background_gradient(cmap="Blues"))
        with col_pit:
           st.subheader('Top 10 de los Pitch')
-          st.dataframe(pd.DataFrame({'Jugador': ranking_pitcher['Jugador'].to_list(), 'Score': ranking_pitcher['Score'].to_list()}).head(10).style.background_gradient(cmap="Greens"))
+          st.dataframe(pd.DataFrame({'Jugador': df_bat_norm.sort_values(by="Score", ascending=False)['Jugador'].to_list(), 'Score': df_bat_norm.sort_values(by="Score", ascending=False)['Score'].to_list()}).head(10).style.background_gradient(cmap="Greens"))
 
-    with col_porcent:
+     with col_porcent:
        st.subheader('Según Votos')
        col_bat, col_pit = st.columns(2)
        with col_bat:
@@ -609,7 +612,32 @@ def main() -> None:
           st.subheader('Top 10 de los Pitch')
           df_percent_pit = df_players.dropna(subset=['g','% of Ballots']).sort_values(by='% of Ballots',ascending=False)
           st.dataframe(pd.DataFrame({'Jugador': df_percent_pit.index.to_list(), 'Percent':  df_percent_pit['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Purples"))
+   
+    if condición == 'Peores':
+      col_num, col_porcent = st.columns(2)
+      with col_num:
+       st.subheader('Según números')
+       col_bat, col_pit = st.columns(2)
+       with col_bat:
+          st.subheader('Top 10 de los Batt')
+          st.dataframe(pd.DataFrame({'Jugador': df_bat_norm.sort_values(by="Score")['Jugador'].to_list(), 'Score': df_bat_norm.sort_values("Score")['Score'].to_list()}).head(10).style.background_gradient(cmap="Blues"))
+       with col_pit:
+          st.subheader('Top 10 de los Pitch')
+          st.dataframe(pd.DataFrame({'Jugador': df_bat_norm.sort_values(by="Score")['Jugador'].to_list(), 'Score': df_bat_norm.sort_values("Score")['Score'].to_list()}).head(10).style.background_gradient(cmap="Greens"))
 
+      with col_porcent:
+       st.subheader('Según Votos')
+       col_bat, col_pit = st.columns(2)
+       with col_bat:
+          st.subheader('Top 10 de los Batt')
+          df_percent_bat = df_players.dropna(subset=['g_bat','% of Ballots']).sort_values(by='% of Ballots')
+          st.dataframe(pd.DataFrame({'Jugador': df_percent_bat.index.to_list(), 'Percent':  df_percent_bat['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Oranges"))
+       with col_pit:
+          st.subheader('Top 10 de los Pitch')
+          df_percent_pit = df_players.dropna(subset=['g','% of Ballots']).sort_values(by='% of Ballots')
+          st.dataframe(pd.DataFrame({'Jugador': df_percent_pit.index.to_list(), 'Percent':  df_percent_pit['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Purples"))
+   
+       
     st.subheader('¿ Cuántos jugadores hubieran podido entrar por Votación con al menos el  75 % y han sufrido de injusticia ?')
     
     df_p_sin_votos = df_players[df_players['% of Ballots'].isna()].dropna(subset=["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf'])
