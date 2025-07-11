@@ -1,10 +1,10 @@
 import streamlit as st
+from PIL import Image
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import MinMaxScaler
-from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -333,7 +333,7 @@ intentos_ambos = list(map(lambda x : aspirantes.count(x), df_players_ambos.index
 def main() -> None:
     st.title("Camino a Cooperstown")
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
-    "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron" \
+    "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora los voy a sumergir en un análisis sobre los registros que alcanzaron" \
     " estos nuevos miembros y los inducidos en años anteriores que los llevaron a ser miembros del dicho salón en que se encuentran " \
     "jugadores, ejecutivos, managers y árbitros. Por lo que a continuación van a conocer los criterios para ser elegibles para en trar a" \
     " Cooperstown, los casos de éxitos que han hecho historia y detalles interesantes que sólo se llegan a conocer a travéz de los datos, " \
