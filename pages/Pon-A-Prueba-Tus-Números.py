@@ -1,4 +1,3 @@
-
 import Camino_a_Cooperstown as app
 import streamlit as st
 import numpy as np
