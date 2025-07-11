@@ -520,12 +520,6 @@ def main() -> None:
 
     df_demora = df_war_vs_games.copy().dropna(subset=['years_of_waiting_to_enter'])
 
-    df_demora_vs_games = pd.DataFrame({
-       'Jugador': df_demora.index.to_list(),
-       'WAR': df_demora['Total_de_WAR'].to_list(),
-       'Demora': df_demora['years_of_waiting_to_enter'].to_list(),
-       "induction": df_demora['induction'].to_list()
-    })
 
     war_b = df_war_vs_games.dropna(subset=['war'])['war'].to_list()
     war_p = df_war_vs_games.dropna(subset=['war_p'])['war_p'].to_list()
@@ -616,16 +610,8 @@ def main() -> None:
           df_percent_pit = df_players.dropna(subset=['g','% of Ballots']).sort_values(by='% of Ballots',ascending=False)
           st.dataframe(pd.DataFrame({'Jugador': df_percent_pit.index.to_list(), 'Percent':  df_percent_pit['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Purples"))
 
-    #st.subheader('¿ Cuántos jugadores hubieran podido entrar por Votación con al menos el  75 % y han sufrido de injusticia ?')
+    st.subheader('¿ Cuántos jugadores hubieran podido entrar por Votación con al menos el  75 % y han sufrido de injusticia ?')
     
-    aspirantes_sin_votos = df_total[df_total['% of Ballots'].isna()]
-    
-    index_for_year = []
-
-    #for i in range(first_year,last_year+1):
-       #index_for_year.append(list(filter(lambda x: x == i,  aspirantes_sin_votos["induction"].to_list())))
-
-
     df_p_sin_votos = df_players[df_players['% of Ballots'].isna()].dropna(subset=["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf'])
     
     df_b_sin_votos = df_players[df_players['% of Ballots'].isna()].dropna(subset=['years_of_experience', "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops"])
@@ -658,7 +644,28 @@ def main() -> None:
     ops_b_votos = df_b_sin_votos["ops"].to_list()
     slg_b_votos = df_b_sin_votos["slg"].to_list()
     experience_b_votos = df_b_sin_votos["years_of_experience"].to_list()
-             
+
+    cantidad_b = len (experience_b_votos)
+    cantidad_p = len(experience_p_votos)
+
+    pitcher_actos = 0
+    batting_actos = 0
+
+   
+    for p in range(cantidad_p):
+       percent_p = model_pit.predict(np.array([[experience_p_votos[p], g_p_votos[p],gf_p_votos[p],war_p_votos[p],era_p_votos[p], l_p_votos[p], bb_p_votos[p], w_p_votos[p], w_l_p_votos[p], ip_p_votos[p]]]))
+       if percent_p >= 75:
+          pitcher_actos += 1
+
+    for b in range(cantidad_b):
+       percent_b = model_bat.predict(Poly.fit_transform(np.array([[experience_b_votos[b], g_b_votos[b],war_b_votos[b],h_b_votos[b],hr_b_votos[b],ab_b_votos[b],ba_b_votos[b],rbi_b_votos[b],ops_b_votos[b],obp_b_votos[b]]])))
+       if percent_b >= 75:
+          batting_actos += 1
+
+    df_inj = pd.DataFrame({'Categoría': ['Pitchers', 'Battings'], 'Cantidad': [pitcher_actos, batting_actos]})
+    fig_inj = px.bar(df_inj, x='Categoría', y='Cantidad', title='Cantidad de lanzadoresy bateadores que puediero haber alcanzado el 75 % de los votos')
+    st.plotly_chart(fig_inj)
+
     st.subheader('¿ Cuál es el futuro del salón de la fama del béisbol de Cooperstown ? ')
     
     st.write(' El futuro del salón de la fama es incierto y impredecible ya que los datos muestran un decrecimiento de la cantida de aspirantes y en las tasas de acertación en el salón de la fama.' \
@@ -668,18 +675,7 @@ def main() -> None:
     'más contribuyen a un mayor suerte en las votaciones. En cuanto a las principales figuras del baseball, el' \
     ' salón de la fama más que darle reconcimiento por sus números y hábilidades, hace que sus nombres brillen eternamente ' \
     'en los salones del salón de la fama siendo orgullo para futuros amantes del baseball, desde niños hasta ancianos arrepentidos por lo que un día pudieron hacer y no hicieron.')
-    votos = df_players.dropna(subset=['% of Ballots'])
-    list_votos = votos['% of Ballots'].to_list()
-    cient_percent = len(list(filter(lambda x : x == 100, list_votos)))
-    noventa_percent = len(list(filter(lambda x : x >= 90 and x < 100, list_votos)))
-    ochenta_percent = len(list(filter(lambda x : x >= 80 and x < 90, list_votos)))
-    setenta_percent = len(list(filter(lambda x : x >= 75 and x < 80, list_votos)))
-    
-    df_votos =pd.DataFrame({
-       'rango': ['100','90', '80', '75'],
-       'count': [cient_percent, noventa_percent, ochenta_percent, setenta_percent]
-    })
-    
+   
 if __name__ == "__main__":
     main()
 
