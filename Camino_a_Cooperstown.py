@@ -1329,4 +1329,4 @@ fig.update_layout(
     legend_title='Segmentos'
 )
 
->>>>>>> 6f3041f0d5f6f83e6e090750a69fe2c21e0976d4
+
