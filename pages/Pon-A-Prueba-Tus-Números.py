@@ -59,27 +59,3 @@ def main():
              st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
 
 if __name__ == "__main__":
-
-          g_b_form = st.number_input("Jugadas", step=1) 
-          war_b_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
-          h_b_form = st.number_input("Hits", step=1)
-          hr_b_form = st.number_input("Home Runs", step=1)
-          ab_b_form = st.number_input("At Bats", step=1)
-          ba_b_form = st.number_input("Hits / At bats",step=0.001, format="%.3f")
-          rbi_b_form = st.number_input('Runs Batted In',step=1)
-          ops_b_form = st.number_input('onbase plus slugging',step=0.001, format="%.3f")
-          obp_b_form = st.number_input('Onbase perce',step=0.001, format="%.3f")
-          experience_b_form = st.number_input('Años de experiencia', step=1)
-        elif opción == "Pitching":
-         g_p_form = st.number_input("Jugadas", step=1) 
-         war_p_form = st.number_input("Wins above replacement",step=0.001, format="%.3f")
-         era_p_form = st.number_input("Earned run avg",step=0.001, format="%.3f" ) 
-         bb_p_form = st.number_input("Bases por bola",step=1)
-         gf_p_form = st.number_input("Jugadas terminadas",step=1)
-         w_p_form = st.number_input("Wins",step=1)
-         l_p_form = st.number_input("Losses",step=1)
-         ip_p_form = st.number_input("Inning Pitching",step=0.001, format="%.3f" )
-         W_
-             st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
-
-if __name__ == "__main__":
