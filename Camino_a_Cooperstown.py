@@ -663,7 +663,7 @@ def main() -> None:
           batting_actos += 1
 
     df_inj = pd.DataFrame({'Categoría': ['Pitchers', 'Battings'], 'Cantidad': [pitcher_actos, batting_actos]})
-    fig_inj = px.bar(df_inj, x='Categoría', y='Cantidad', title='Cantidad de lanzadoresy bateadores que puediero haber alcanzado el 75 % de los votos')
+    fig_inj = px.bar(df_inj, x='Categoría', y='Cantidad',color_discrete_sequence=["#E77B32", "#E77B32"], title='Cantidad de lanzadoresy bateadores que puediero haber alcanzado el 75 % de los votos')
     st.plotly_chart(fig_inj)
 
     st.subheader('¿ Cuál es el futuro del salón de la fama del béisbol de Cooperstown ? ')
