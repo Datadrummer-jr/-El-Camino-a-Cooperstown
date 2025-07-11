@@ -15,8 +15,7 @@ logo = Image.open("logo.jpg")
 st.set_page_config(
     page_title="Bienvenido a Cooperstown",
     page_icon=logo,
-    layout="wide"
-)
+    layout="wide")
 
 df = pd.read_json("hof.json")
 
@@ -57,20 +56,15 @@ ops = df_players["ops"].tolist()
 slg = df_players["slg"].tolist()
 first = df_players["first_game"].tolist()
 last = df_players["last_game"].tolist()
-
-
 w_p = df_players["w"].tolist()
 war_pp = df_players["war_p"].tolist()
 l_p = df_players["l"].tolist()
 era_p = df_players["era"].tolist()
 g_p = df_players["g"].tolist()
 
-
 batting = [war, h,hr,ba,ab,rbi,obp,ops,slg]
-
  
 new_df = df_players.shape[1]
-
 
 for nombre in df_players.T:
     names_batting.append(nombre)
@@ -157,7 +151,6 @@ model_demora_bat.fit(Px, np.array(demora_bat))
 model_demora_pit = LinearRegression()
 model_demora_pit.fit(W, np.array(demora_pit))
 
-
 parametros_bat = [experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,ops_bat,obp_bat]
 parametros_pit = [experience_pit,g_pit,war_pit,gf_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]
 
@@ -191,7 +184,6 @@ link_p = df_pitcher["link"].to_list()
 inicio_p = df_pitcher["first_game"].to_list()
 final_p = df_pitcher["last_game"].to_list()
 seasons_p = ml.range_in_lists(inicio_p,final_p)
-
 
 columnas_batting= ['years_of_experience', "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops"]
 df_batting= df_players.dropna(subset=columnas_batting)
@@ -232,7 +224,7 @@ df_player_batting["H_temp"] = df_player_batting["H"] / df_player_batting["Season
 # Seleccionar métricas a normalizar
 metricas_batting= ["HR_temp", "WAR_temp", "RBI_temp", "H_temp", "BA", "OPS", "OBP"]
 
-# Normalizar con Min-Max (puedes probar StandardScaler o RobustScaler también)
+# Normalizar con Min-Max 
 scaler_batting= MinMaxScaler()
 df_bat_norm = df_player_batting.copy()
 df_bat_norm[metricas_batting] = scaler_batting.fit_transform(df_player_batting[metricas_batting])
@@ -326,8 +318,6 @@ for i in range(1936, 2026):
 
 intentos_ambos = list(map(lambda x : aspirantes.count(x), df_players_ambos.index.to_list()))
 
-#st.write(ml.coeficiente([war_ambos, experience_ambos, intentos_ambos],percent_ambos,3))
-
 # Función principal
 
 def main() -> None:
@@ -378,14 +368,14 @@ def main() -> None:
     with col_type:
        count_type = px.pie(df_type, names='Categoría', values='Cantidad',color= "Categoría", color_discrete_sequence=[ '#33FF57','#FF5733', '#33C1FF', '#9D33FF'],  title='¿ Qué categoría tiene la mayor cantidad de miembros ?')
        count_type.update_layout(
-       width=500,     # Aumenta el ancho
-       height=500     # Aumenta la altura
+       width=500,     
+       height=500     
        )
 
        count_type.update_traces(
        textinfo='label+percent',
        textposition='inside',
-       pull=[0, 0, 0.05, 0],  # Opcional: resaltar una porción
+       pull=[0, 0, 0.05, 0], 
        marker=dict(line=dict(color='white', width=2))
        )
        st.plotly_chart(count_type)
@@ -417,8 +407,9 @@ def main() -> None:
 
     st.plotly_chart(fig)
 
-    st.subheader('¿ Son muchos los que han aspirado a entrar ?')
     # Aspirantes a Entrar en El Salón de la Fama :
+
+    st.subheader('¿ Son muchos los que han aspirado a entrar ?')
 
     aspirantes_hof = ml.read_json("aspirantes_a_hof.json")
 
@@ -474,13 +465,6 @@ def main() -> None:
     f' desde los inicios del salón de un total de {len(aspirantes_unicos)} aspirantes {len(aspireantes_reiterados)} han intentado entrar más de una vez y los '\
     f' que han podido entrar han tardado desde {min(demora)} años hasta {max(demora)} años en entrar pues los criterios de selección '\
     'son muy estrictos. ')
-
-    years_demora = df_total.copy().dropna(subset=['years_of_waiting_to_enter'])['induction'].to_list()
-
-    df_demora = pd.DataFrame({'Año' : years_demora , "Demora": demora})
-    
-    fig = px.scatter(df_demora, x= 'Año', y= 'Demora', title= 'Tiempo que han tardado en entrar los miembros actuales de salón de la fama del baseball. ', color_discrete_sequence=["#FF33BB"])
-    #st.plotly_chart(fig)
 
     st.subheader("Entonces hablando del pollo del arroz con pollo 'los números', ¿cuáles contribuyen en más para ser elegidos y cuáles " \
     "menos?")
@@ -679,7 +663,6 @@ def main() -> None:
     pitcher_actos = 0
     batting_actos = 0
 
-   
     for p in range(cantidad_p):
        percent_p = model_pit.predict(np.array([[experience_p_votos[p], g_p_votos[p],gf_p_votos[p],war_p_votos[p],era_p_votos[p], l_p_votos[p], bb_p_votos[p], w_p_votos[p], w_l_p_votos[p], ip_p_votos[p]]]))
        if percent_p >= 75:
@@ -695,7 +678,6 @@ def main() -> None:
     st.plotly_chart(fig_inj)
 
     st.subheader('¿ Cuál es el futuro del salón de la fama del béisbol de Cooperstown ? ')
-    
     st.write(' El futuro del salón de la fama es incierto y impredecible ya que los datos muestran un decrecimiento de la cantida de aspirantes y en las tasas de acertación en el salón de la fama.' \
     ' Lo que se hace un llamado a no dejar morir el beísbol en que varios paises principalmente de latinoamerica ha ' \
     'llegado a ser deporte nacional. Si es pelotero o aficionado a dicho deporte entrene para llegar ha dicho salón de la fama, para lo cual debe jugar bastantes juegos para aportar más a la victoria a su equipo ' \
