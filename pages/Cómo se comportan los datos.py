@@ -75,7 +75,7 @@ df_countries = load_country_data(country_file_path)
 df = pd.merge(df_hof, df_countries, left_on='Name', right_on='name', how='left')
 df.drop(columns=['name'], inplace=True, errors='ignore')
 
-st.title("⚾ Dashboard Extendido del Salón de la Fama del Béisbol (Plotly)")
+st.title(title)
 st.markdown("Explora en profundidad las estadísticas de los jugadores y managers con **más de 10 gráficos interactivos**, incluyendo **análisis por nacionalidad**.")
 
 # Sidebar para filtros
