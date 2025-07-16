@@ -1,10 +1,10 @@
 import streamlit as st
+from PIL import Image
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.preprocessing import MinMaxScaler
-from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -12,11 +12,12 @@ from my_library import my_library as ml
 
 logo = Image.open("logo.jpg")
 
+title="Camino a Cooperstown"
+
 st.set_page_config(
-    page_title="Bienvenido a Cooperstown",
+    page_title=title,
     page_icon=logo,
-    layout="wide"
-)
+    layout="wide")
 
 df = pd.read_json("hof.json")
 
@@ -32,6 +33,8 @@ df_Pioneer_Executive =  df.T[~df.T["inducted_as"].isin(["Player", "Manager", "Um
 
 df_umpire = df.T[~df.T["inducted_as"].isin(["Player", "Manager", "Pioneer/Executive"])]
 
+df_batting = df_players.copy()
+
 categorias = {
     "Jugadores": df_players,
     "Managers": df_managers,
@@ -40,56 +43,37 @@ categorias = {
     "todos" : df_total
 }
 
-bat = df_players.T
-names_bat = [i for i in bat[:17]]
+df_players_copy = df_players.copy()
 
-names_batting = []
+df_players_copy['Total_de_Juegos'] = df_players_copy[['g','g_bat']].sum(axis=1,skipna=True)
+df_players_copy['Total_de_WAR'] = df_players_copy[['war','war_p']].sum(axis=1,skipna=True)
 
-link = df_players["link"].tolist()
-war = df_players["war"].tolist()
-ab = df_players["ab"].tolist()
-h = df_players["h"].tolist()
-hr = df_players["hr"].tolist()
-ba = df_players["ba"].tolist()
-rbi = df_players["rbi"].tolist()
-obp = df_players["obp"].tolist()
-ops = df_players["ops"].tolist()
-slg = df_players["slg"].tolist()
-first = df_players["first_game"].tolist()
-last = df_players["last_game"].tolist()
+batt = df_players_copy.dropna(subset=['% of Ballots','years_of_experience'])
+df_batt = batt[batt['g'].isna()]
 
+df_batting = df_players_copy[df_players_copy["g"].isna()]
+df_ambos = df_players_copy.dropna(subset=['g','g_bat'])
 
-w_p = df_players["w"].tolist()
-war_pp = df_players["war_p"].tolist()
-l_p = df_players["l"].tolist()
-era_p = df_players["era"].tolist()
-g_p = df_players["g"].tolist()
+ind_batt = df_batt[['years_of_experience','g_bat','war', 'h','hr','ab','ba','ops','obp','rbi','slg']]
+dep_batt = df_batt['% of Ballots']
+    
+Gx = PolynomialFeatures(degree=2)
+bx = Gx.fit_transform(ind_batt)
+model_batting = LinearRegression()
+model_batting.fit(bx,dep_batt)
 
+ind_test = df_ambos[[ 'years_of_experience','g_bat','war', 'h','hr','ab','ba','ops','obp','rbi', 'slg']]
 
-batting = [war, h,hr,ba,ab,rbi,obp,ops,slg]
+df_ambos['% of Ballots as Batting Predicho'] = model_batting.predict(Gx.fit_transform(df_ambos[ind_test.columns]))
 
- 
-new_df = df_players.shape[1]
-
-
-for nombre in df_players.T:
-    names_batting.append(nombre)
-
-pitching = [w_p, war_pp, l_p, era_p, g_p]
-
-names_pit = [bat[18:].T.dropna().T]
+df_batting = pd.concat([df_ambos[df_ambos['% of Ballots as Batting Predicho'] >= 75], df_batting],axis=0)
+df_pitching = df_ambos[df_ambos['% of Ballots as Batting Predicho'] < 75]
 
 columnas_pit = ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf',"% of Ballots"]
-df_pitch = df_players.dropna(subset=columnas_pit)
+df_pitch = df_pitching.dropna(subset=columnas_pit)
 
-df_pitch['Total_de_Juegos'] = df_pitch[['g','g_bat']].sum(axis=1,skipna=True)
-df_pitch['Total_de_WAR'] = df_pitch[['war','war_p']].sum(axis=1,skipna=True)
-
-columnas_bat = ['years_of_experience', "% of Ballots", "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops" ]
-df_batt = df_players.dropna(subset=columnas_bat)
-
-df_batt['Total_de_Juegos'] = df_batt[['g','g_bat']].sum(axis=1,skipna=True)
-df_batt['Total_de_WAR'] = df_batt[['war','war_p']].sum(axis=1,skipna=True)
+columnas_bat = ['years_of_experience', "% of Ballots", "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops",'slg' ]
+df_batt = df_batting.dropna(subset=columnas_bat)
 
 # Variables Independientes para los pitcher
 
@@ -128,16 +112,15 @@ demora_pit =  df_pitch["years_of_waiting_to_enter"].to_list()
 porcent_bat = df_batt["% of Ballots"].to_list()
 demora_bat = df_batt["years_of_waiting_to_enter"].to_list()
 
-
 # Entrenamiento del modelo de Regresión Lineal Múltiple para predecir el por ciento de las boletas para los batting
 
-X = np.array([experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,ops_bat,obp_bat]).T
+X = np.array([experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,ops_bat,obp_bat,slg_bat]).T
 
 y = np.array(porcent_bat)
 
-Poly = PolynomialFeatures(degree=2)
+Poly_bat = PolynomialFeatures(degree=4)
 
-Px = Poly.fit_transform(X)
+Px = Poly_bat.fit_transform(X)
 
 model_bat = LinearRegression()
 model_bat.fit(Px,y)
@@ -146,8 +129,9 @@ W = np.array([experience_pit,g_pit, gf_pit,war_pit,era_pit,l_pit,bb_pit,w_pit,w_
 
 z = np.array(porcent_pit)
 
+Poly_pitch = PolynomialFeatures(degree=2)
 model_pit = LinearRegression()
-model_pit.fit(W,z)
+model_pit.fit(Poly_pitch.fit_transform(W),z)
 
 # Entrenamiento del modelo de Regresión Lineal Múltiple para predecir la demora desde el retiro hasta la inducción para los batting
 
@@ -156,7 +140,6 @@ model_demora_bat.fit(Px, np.array(demora_bat))
 
 model_demora_pit = LinearRegression()
 model_demora_pit.fit(W, np.array(demora_pit))
-
 
 parametros_bat = [experience_bat,g_bat, war_bat,h_bat,hr_bat,ab_bat,ba_bat,rbi_bat,ops_bat,obp_bat]
 parametros_pit = [experience_pit,g_pit,war_pit,gf_pit,era_pit,l_pit,bb_pit,w_pit,w_l_pit,ip_pit]
@@ -172,32 +155,26 @@ last_year = max(años)
 count_for_year = [años.count(unico) for unico in list(range(first_year, last_year + 1))]
 
 # MEJORES PITCHER Y BATEADORES #
- 
-columnas_pitcher= ["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf']
-df_pitcher = df_players.dropna(subset=columnas_pitcher)
 
-names_pitcher= df_pitcher.index.to_list()
-era_pitcher= df_pitcher['era'].to_list()
-war_pitcher=  df_pitcher["war_p"].to_list()
-g_pitcher=  df_pitcher["g"].to_list()
-l_pitcher=  df_pitcher["l"].to_list()
-w_pitcher=  df_pitcher["w"].to_list()
-ip_pitcher=  df_pitcher['ip'].to_list()
-bb_pitcher=  df_pitcher['bb'].to_list()
-w_l_pitcher=  df_pitcher['w_l'].to_list()
-gf_pitcher=  df_pitcher['gf'].to_list()
-experience_pitcher=  df_pitcher['years_of_experience'].to_list()
-link_p = df_pitcher["link"].to_list()
-inicio_p = df_pitcher["first_game"].to_list()
-final_p = df_pitcher["last_game"].to_list()
+names_pitcher= df_pitching.index.to_list()
+era_pitcher= df_pitching['era'].to_list()
+war_pitcher=  df_pitching["war_p"].to_list()
+g_pitcher=  df_pitching["g"].to_list()
+l_pitcher=  df_pitching["l"].to_list()
+w_pitcher=  df_pitching["w"].to_list()
+ip_pitcher=  df_pitching['ip'].to_list()
+bb_pitcher=  df_pitching['bb'].to_list()
+w_l_pitcher=  df_pitching['w_l'].to_list()
+gf_pitcher=  df_pitching['gf'].to_list()
+experience_pitcher=  df_pitching['years_of_experience'].to_list()
+link_p = df_pitching["link"].to_list()
+inicio_p = df_pitching["first_game"].to_list()
+final_p = df_pitching["last_game"].to_list()
 seasons_p = ml.range_in_lists(inicio_p,final_p)
-
-
-columnas_batting= ['years_of_experience', "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops"]
-df_batting= df_players.dropna(subset=columnas_batting)
 
 name_batting= df_batting.index.to_list()
 war_batting= df_batting["war"].to_list()
+g_batting = df_batting["g_bat"].to_list()
 h_batting= df_batting["h"].to_list()
 hr_batting= df_batting["hr"].to_list()
 ba_batting= df_batting["ba"].to_list()
@@ -211,7 +188,7 @@ inicio_b = df_batting["first_game"].to_list()
 final_b = df_batting["last_game"].to_list()
 seasons_b = ml.range_in_lists(inicio_b,final_b)
 
-df_player_batting= pd.DataFrame({
+df_batting_score= pd.DataFrame({
     "Jugador": name_batting,
     "WAR_Batting": war_batting,
     "HR": hr_batting,
@@ -220,28 +197,31 @@ df_player_batting= pd.DataFrame({
     "OBP": obp_batting,
     "RBI": rbi_batting,
     "H": h_batting,
+    'G': g_batting,
     "Seasons": experience_batting
 })
 
 # Crear métricas por temporada
-df_player_batting["HR_temp"] = df_player_batting["HR"] / df_player_batting["Seasons"]
-df_player_batting["WAR_temp"] = df_player_batting["WAR_Batting"] / df_player_batting["Seasons"]
-df_player_batting["RBI_temp"] = df_player_batting["RBI"] / df_player_batting["Seasons"]
-df_player_batting["H_temp"] = df_player_batting["H"] / df_player_batting["Seasons"]
+df_batting_score["HR_temp"] = df_batting_score["HR"] / df_batting_score["Seasons"]
+df_batting_score["WAR_temp"] = df_batting_score["WAR_Batting"] / df_batting_score["Seasons"]
+df_batting_score["RBI_temp"] = df_batting_score["RBI"] / df_batting_score["Seasons"]
+df_batting_score["H_temp"] = df_batting_score["H"] / df_batting_score["Seasons"]
+df_batting_score["G_temp"] = df_batting_score["G"] / df_batting_score["Seasons"]
 
 # Seleccionar métricas a normalizar
-metricas_batting= ["HR_temp", "WAR_temp", "RBI_temp", "H_temp", "BA", "OPS", "OBP"]
+metricas_batting= ["HR_temp", "WAR_temp",'G_temp',"RBI_temp", "H_temp", "BA", "OPS", "OBP"]
 
-# Normalizar con Min-Max (puedes probar StandardScaler o RobustScaler también)
+# Normalizar con Min-Max 
 scaler_batting= MinMaxScaler()
-df_bat_norm = df_player_batting.copy()
-df_bat_norm[metricas_batting] = scaler_batting.fit_transform(df_player_batting[metricas_batting])
+df_bat_norm = df_batting_score.copy()
+df_bat_norm[metricas_batting] = scaler_batting.fit_transform(df_batting_score[metricas_batting])
 
 # Calcular Score para Batting
 df_bat_norm["Score"] = (
     0.4 * df_bat_norm["WAR_temp"] +
-    0.2 * df_bat_norm["HR_temp"] +
+    0.1 * df_bat_norm["HR_temp"] +
     0.1 * df_bat_norm["RBI_temp"] +
+    0.2 * df_bat_norm["G_temp"]+
     0.1 * df_bat_norm["OPS"] +
     0.1 * df_bat_norm["OBP"] +
     0.1 * df_bat_norm["BA"]
@@ -256,34 +236,42 @@ df_player_pitcher= pd.DataFrame({
     "ERA": era_pitcher,
     "BB": bb_pitcher,
     "IP": ip_pitcher,
+    'G': g_pitcher,
+    'W-L' : w_l_pitcher,
+    'W': w_pitcher,
+    'L': l_pitcher,
+    'GF': gf_pitcher,
     "Seasons": experience_pitcher
 })
 
 df_player_pitcher["WAR_temp"] = df_player_pitcher["WAR_Pitching"] / df_player_pitcher["Seasons"]
-df_player_pitcher["ERA_temp"] = df_player_pitcher["ERA"] / df_player_pitcher["Seasons"]
+df_player_pitcher["G_temp"] = df_player_pitcher["G"] / df_player_pitcher["Seasons"]
 df_player_pitcher["BB_temp"] = df_player_pitcher["BB"] / df_player_pitcher["Seasons"]
 df_player_pitcher["IP_temp"] = df_player_pitcher["IP"] / df_player_pitcher["Seasons"]
+df_player_pitcher["W_temp"] = df_player_pitcher["W"] / df_player_pitcher["Seasons"]
+df_player_pitcher["L_temp"] = df_player_pitcher["L"] / df_player_pitcher["Seasons"]
+df_player_pitcher["GF_temp"] = df_player_pitcher["GF"] / df_player_pitcher["Seasons"]
 
-metricas_pitcher= ["WAR_temp", "ERA_temp","BB_temp","IP_temp"]
+metricas_pitcher= ["WAR_temp",'G_temp', "ERA","BB_temp","IP_temp",'W-L','W_temp','L_temp','GF_temp']
 
 scaler_pitcher= MinMaxScaler()
 df_pit_norm = df_player_pitcher.copy()
 df_pit_norm[metricas_pitcher] = scaler_pitcher.fit_transform(df_pit_norm[metricas_pitcher])
 
 df_pit_norm["Score"] = (
-    0.2 * df_pit_norm["WAR_temp"] +
-    0.2 * df_pit_norm["BB_temp"] +
-    0.3 * df_pit_norm["ERA_temp"] +
-    0.4 * df_pit_norm["IP_temp"]
+    0.3 * df_pit_norm["WAR_temp"] +
+    0.2 * df_pit_norm['G_temp'] +
+    0.1 * df_pit_norm["BB_temp"] +
+    0.4 *df_pit_norm["IP_temp"]+
+    0.2 *df_pit_norm['W-L'] +
+    0.1 *df_pit_norm['GF_temp']
 )
 
 ranking_pitcher= df_pit_norm.sort_values("Score",ascending=False)
 
-bat_year = [ y for y in range(first[ml.max_valor(batting)],last[ml.max_valor(batting)] +1 )]
-
 #Análisis de los Pitchers
 
-df_pitchers = df_players.dropna(subset=["g"])
+df_pitchings = df_players.dropna(subset=["g"])
 pitchers = df_total.dropna(subset=["g"])['inducted_as'].to_list()
 porcents = df_total.dropna(subset=["g",'% of Ballots']).sort_values(by='% of Ballots',ascending=False).index
 
@@ -326,14 +314,12 @@ for i in range(1936, 2026):
 
 intentos_ambos = list(map(lambda x : aspirantes.count(x), df_players_ambos.index.to_list()))
 
-#st.write(ml.coeficiente([war_ambos, experience_ambos, intentos_ambos],percent_ambos,3))
-
 # Función principal
 
 def main() -> None:
-    st.title("Camino a Cooperstown")
+    st.title(title)
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
-    "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora s voy a sumergir en un análisis sobre los registros que alcanzaron" \
+    "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora los voy a sumergir en un análisis sobre los registros que alcanzaron" \
     " estos nuevos miembros y los inducidos en años anteriores que los llevaron a ser miembros del dicho salón en que se encuentran " \
     "jugadores, ejecutivos, managers y árbitros. Por lo que a continuación van a conocer los criterios para ser elegibles para en trar a" \
     " Cooperstown, los casos de éxitos que han hecho historia y detalles interesantes que sólo se llegan a conocer a travéz de los datos, " \
@@ -378,14 +364,14 @@ def main() -> None:
     with col_type:
        count_type = px.pie(df_type, names='Categoría', values='Cantidad',color= "Categoría", color_discrete_sequence=[ '#33FF57','#FF5733', '#33C1FF', '#9D33FF'],  title='¿ Qué categoría tiene la mayor cantidad de miembros ?')
        count_type.update_layout(
-       width=500,     # Aumenta el ancho
-       height=500     # Aumenta la altura
+       width=500,     
+       height=500     
        )
 
        count_type.update_traces(
        textinfo='label+percent',
        textposition='inside',
-       pull=[0, 0, 0.05, 0],  # Opcional: resaltar una porción
+       pull=[0, 0, 0.05, 0], 
        marker=dict(line=dict(color='white', width=2))
        )
        st.plotly_chart(count_type)
@@ -417,8 +403,9 @@ def main() -> None:
 
     st.plotly_chart(fig)
 
-    st.subheader('¿ Son muchos los que han aspirado a entrar ?')
     # Aspirantes a Entrar en El Salón de la Fama :
+
+    st.subheader('¿ Son muchos los que han aspirado a entrar ?')
 
     aspirantes_hof = ml.read_json("aspirantes_a_hof.json")
 
@@ -475,13 +462,6 @@ def main() -> None:
     f' que han podido entrar han tardado desde {min(demora)} años hasta {max(demora)} años en entrar pues los criterios de selección '\
     'son muy estrictos. ')
 
-    years_demora = df_total.copy().dropna(subset=['years_of_waiting_to_enter'])['induction'].to_list()
-
-    df_demora = pd.DataFrame({'Año' : years_demora , "Demora": demora})
-    
-    fig = px.scatter(df_demora, x= 'Año', y= 'Demora', title= 'Tiempo que han tardado en entrar los miembros actuales de salón de la fama del baseball. ', color_discrete_sequence=["#FF33BB"])
-    #st.plotly_chart(fig)
-
     st.subheader("Entonces hablando del pollo del arroz con pollo 'los números', ¿cuáles contribuyen en más para ser elegidos y cuáles " \
     "menos?")
 
@@ -520,12 +500,6 @@ def main() -> None:
 
     df_demora = df_war_vs_games.copy().dropna(subset=['years_of_waiting_to_enter'])
 
-    df_demora_vs_games = pd.DataFrame({
-       'Jugador': df_demora.index.to_list(),
-       'WAR': df_demora['Total_de_WAR'].to_list(),
-       'Demora': df_demora['years_of_waiting_to_enter'].to_list(),
-       "induction": df_demora['induction'].to_list()
-    })
 
     war_b = df_war_vs_games.dropna(subset=['war'])['war'].to_list()
     war_p = df_war_vs_games.dropna(subset=['war_p'])['war_p'].to_list()
@@ -574,7 +548,7 @@ def main() -> None:
     ))
 
     gvsw.update_layout(
-    title="¿ Entonces áser cierto que un lanzador contribuyen más a la victoria de su equipo que un bateador ?",
+    title="¿ Entonces será cierto que un lanzador contribuyen más a la victoria de su equipo que un bateador ?",
     xaxis_title="Games",
     yaxis_title="Wins Above Replacement",
     template="plotly_dark",      
@@ -590,51 +564,65 @@ def main() -> None:
     'bateadores a los largo de su carrera. De los cuales han salido las primeras estrellas de la historia del béisbol ' \
     'miembros del salón de la fama que permanecen los Top 10 de los mejores bateadores y  mejores lanzadores.')
     
-    st.subheader("¿ Quiénes son los peloteros más éxitosos inductos en el salón de la fama ?")
+    st.subheader("¿ Quiénes son los peloteros más éxitosos y peores inductos en el salón de la fama ?")
    
-    col_num, col_porcent = st.columns(2)
+    condición = st.selectbox("Selecciona las condiciones: ", ['Mejores', 'Peores'])
+    
+    if condición == 'Mejores':
+     col_num, col_porcent = st.columns(2)
 
-    with col_num:
+     with col_num:
        st.subheader('Según números')
        col_bat, col_pit = st.columns(2)
        with col_bat:
           st.subheader('Top 10 de los Batt')
-          st.dataframe(pd.DataFrame({'Jugador': ranking_batting['Jugador'].to_list(), 'Score': ranking_batting['Score'].to_list()}).head(10).style.background_gradient(cmap="Blues"))
+          st.dataframe(pd.DataFrame({'Jugador': df_bat_norm.sort_values(by="Score", ascending=False)['Jugador'].to_list(), 'Score': df_bat_norm.sort_values(by="Score", ascending=False)['Score'].to_list()}).head(10).style.background_gradient(cmap="Blues"))
        with col_pit:
           st.subheader('Top 10 de los Pitch')
-          st.dataframe(pd.DataFrame({'Jugador': ranking_pitcher['Jugador'].to_list(), 'Score': ranking_pitcher['Score'].to_list()}).head(10).style.background_gradient(cmap="Greens"))
+          st.dataframe(pd.DataFrame({'Jugador': df_pit_norm.sort_values(by="Score", ascending=False)['Jugador'].to_list(), 'Score': df_pit_norm.sort_values(by="Score", ascending=False)['Score'].to_list()}).head(10).style.background_gradient(cmap="Greens"))
 
-    with col_porcent:
+     with col_porcent:
        st.subheader('Según Votos')
        col_bat, col_pit = st.columns(2)
        with col_bat:
           st.subheader('Top 10 de los Batt')
-          df_percent_bat = df_players.dropna(subset=['g_bat','% of Ballots']).sort_values(by='% of Ballots',ascending=False)
+          df_percent_bat = df_batting.dropna(subset=['% of Ballots']).sort_values(by='% of Ballots',ascending=False)
           st.dataframe(pd.DataFrame({'Jugador': df_percent_bat.index.to_list(), 'Percent':  df_percent_bat['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Oranges"))
        with col_pit:
           st.subheader('Top 10 de los Pitch')
-          df_percent_pit = df_players.dropna(subset=['g','% of Ballots']).sort_values(by='% of Ballots',ascending=False)
+          df_percent_pit = df_pitching.dropna(subset=['g','% of Ballots']).sort_values(by='% of Ballots',ascending=False)
           st.dataframe(pd.DataFrame({'Jugador': df_percent_pit.index.to_list(), 'Percent':  df_percent_pit['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Purples"))
+   
+    if condición == 'Peores':
+      col_num, col_porcent = st.columns(2)
+      with col_num:
+       st.subheader('Según números')
+       col_bat, col_pit = st.columns(2)
+       with col_bat:
+          st.subheader('Top 10 de los Batt')
+          st.dataframe(pd.DataFrame({'Jugador': df_bat_norm.sort_values(by="Score")['Jugador'].to_list(), 'Score': df_bat_norm.sort_values("Score")['Score'].to_list()}).head(10).style.background_gradient(cmap="Blues"))
+       with col_pit:
+          st.subheader('Top 10 de los Pitch')
+          st.dataframe(pd.DataFrame({'Jugador': df_pit_norm.sort_values(by="Score")['Jugador'].to_list(), 'Score': df_pit_norm.sort_values("Score")['Score'].to_list()}).head(10).style.background_gradient(cmap="Greens"))
 
-    #st.subheader('¿ Cuántos jugadores hubieran podido entrar por Votación con al menos el  75 % y han sufrido de injusticia ?')
+      with col_porcent:
+       st.subheader('Según Votos')
+       col_bat, col_pit = st.columns(2)
+       with col_bat:
+          st.subheader('Top 10 de los Batt')
+          df_percent_bat = df_batting.dropna(subset=['g_bat','% of Ballots']).sort_values(by='% of Ballots')
+          st.dataframe(pd.DataFrame({'Jugador': df_percent_bat.index.to_list(), 'Percent':  df_percent_bat['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Oranges"))
+       with col_pit:
+          st.subheader('Top 10 de los Pitch')
+          df_percent_pit = df_pitching.dropna(subset=['g','% of Ballots']).sort_values(by='% of Ballots')
+          st.dataframe(pd.DataFrame({'Jugador': df_percent_pit.index.to_list(), 'Percent':  df_percent_pit['% of Ballots'].to_list()}).head(10).style.background_gradient(cmap="Purples"))
+   
+       
+    st.subheader('¿ Cuántos jugadores hubieran podido entrar por Votación con al menos el  75 % y han sufrido de injusticia ?')
     
-    aspirantes_sin_votos = df_total[df_total['% of Ballots'].isna()]
+    df_p_sin_votos = df_pitching[df_pitching['% of Ballots'].isna()]
     
-    index_for_year = []
-
-    #for i in range(first_year,last_year+1):
-       #index_for_year.append(list(filter(lambda x: x == i,  aspirantes_sin_votos["induction"].to_list())))
-
-
-    df_p_sin_votos = df_players[df_players['% of Ballots'].isna()].dropna(subset=["era", "war_p","g" ,"l","w",'ip','bb','w_l','years_of_experience','gf'])
-    
-    df_b_sin_votos = df_players[df_players['% of Ballots'].isna()].dropna(subset=['years_of_experience', "war", "g_bat", "h", "hr", "ba","ab" ,"rbi","obp","ops"])
-
-    df_p_sin_votos['Total_de_Juegos'] =  df_p_sin_votos[['g','g_bat']].sum(axis=1,skipna=True)
-    df_p_sin_votos['Total_de_WAR'] =  df_p_sin_votos[['war','war_p']].sum(axis=1,skipna=True)    
-
-    df_b_sin_votos['Total_de_Juegos'] =  df_b_sin_votos[['g','g_bat']].sum(axis=1,skipna=True)
-    df_b_sin_votos['Total_de_WAR'] =  df_b_sin_votos[['war','war_p']].sum(axis=1,skipna=True)
+    df_b_sin_votos = df_batting[df_batting['% of Ballots'].isna()]
 
     era_p_votos = df_p_sin_votos['era'].to_list()
     war_p_votos =  df_p_sin_votos["Total_de_WAR"].to_list()
@@ -658,9 +646,28 @@ def main() -> None:
     ops_b_votos = df_b_sin_votos["ops"].to_list()
     slg_b_votos = df_b_sin_votos["slg"].to_list()
     experience_b_votos = df_b_sin_votos["years_of_experience"].to_list()
-             
+
+    cantidad_b = len (experience_b_votos)
+    cantidad_p = len(experience_p_votos)
+
+    pitcher_actos = 0
+    batting_actos = 0
+
+    for p in range(cantidad_p):
+       percent_p = model_pit.predict(Poly_pitch.fit_transform(np.array([[experience_p_votos[p], g_p_votos[p],gf_p_votos[p],war_p_votos[p],era_p_votos[p], l_p_votos[p], bb_p_votos[p], w_p_votos[p], w_l_p_votos[p], ip_p_votos[p]]])))
+       if percent_p >= 75:
+          pitcher_actos += 1
+
+    for b in range(cantidad_b):
+       percent_b = model_bat.predict(Poly_bat.fit_transform(np.array([[experience_b_votos[b], g_b_votos[b],war_b_votos[b],h_b_votos[b],hr_b_votos[b],ab_b_votos[b],ba_b_votos[b],rbi_b_votos[b],ops_b_votos[b],obp_b_votos[b], slg_b_votos[b]]])))
+       if percent_b >= 75:
+          batting_actos += 1
+
+    df_inj = pd.DataFrame({'Categoría': ['Pitchers', 'Battings'], 'Cantidad': [pitcher_actos, batting_actos]})
+    fig_inj = px.bar(df_inj, x='Categoría', y='Cantidad',color_discrete_sequence=["#E77B32", "#E77B32"], title='Cantidad de lanzadoresy bateadores que puediero haber alcanzado el 75 % de los votos')
+    st.plotly_chart(fig_inj)
+
     st.subheader('¿ Cuál es el futuro del salón de la fama del béisbol de Cooperstown ? ')
-    
     st.write(' El futuro del salón de la fama es incierto y impredecible ya que los datos muestran un decrecimiento de la cantida de aspirantes y en las tasas de acertación en el salón de la fama.' \
     ' Lo que se hace un llamado a no dejar morir el beísbol en que varios paises principalmente de latinoamerica ha ' \
     'llegado a ser deporte nacional. Si es pelotero o aficionado a dicho deporte entrene para llegar ha dicho salón de la fama, para lo cual debe jugar bastantes juegos para aportar más a la victoria a su equipo ' \
@@ -668,18 +675,9 @@ def main() -> None:
     'más contribuyen a un mayor suerte en las votaciones. En cuanto a las principales figuras del baseball, el' \
     ' salón de la fama más que darle reconcimiento por sus números y hábilidades, hace que sus nombres brillen eternamente ' \
     'en los salones del salón de la fama siendo orgullo para futuros amantes del baseball, desde niños hasta ancianos arrepentidos por lo que un día pudieron hacer y no hicieron.')
-    votos = df_players.dropna(subset=['% of Ballots'])
-    list_votos = votos['% of Ballots'].to_list()
-    cient_percent = len(list(filter(lambda x : x == 100, list_votos)))
-    noventa_percent = len(list(filter(lambda x : x >= 90 and x < 100, list_votos)))
-    ochenta_percent = len(list(filter(lambda x : x >= 80 and x < 90, list_votos)))
-    setenta_percent = len(list(filter(lambda x : x >= 75 and x < 80, list_votos)))
-    
-    df_votos =pd.DataFrame({
-       'rango': ['100','90', '80', '75'],
-       'count': [cient_percent, noventa_percent, ochenta_percent, setenta_percent]
-    })
-    
+
 if __name__ == "__main__":
     main()
+
+
 
