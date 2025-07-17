@@ -5,7 +5,35 @@ import pandas as pd
 import time
 from PIL import Image
 
-logo = Image.open("logo.jpg")
+st.markdown("""
+    <style>
+    .stButton>button {
+        background-color: #1E88E5;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Segoe UI', sans-serif;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.1s ease;
+    }
+
+    .stButton>button:hover {
+        background-color: #1565C0;
+        transform: scale(1.02);
+    }
+
+    .stButton>button:active {
+        background-color: #0D47A1;
+        transform: scale(0.98);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
+logo = Image.open("imagenes/logo.jpg")
 
 title="¿ Cuánto sabes de béisbol ?"
 

@@ -4,7 +4,7 @@ import pandas as pd
 from my_library import my_library as ml
 import plotly.express as px
 
-logo = Image.open("logo.jpg")
+logo = Image.open("imagenes/logo.jpg")
 
 title = "¿Cómo se comportan los datos?"
 
