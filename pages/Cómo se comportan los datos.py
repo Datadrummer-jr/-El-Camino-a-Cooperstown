@@ -28,14 +28,14 @@ st.sidebar.header("Filtros y Opciones")
 
 player_names = df["Name"].unique().tolist()
 selected_players = st.sidebar.multiselect(
-    "filtrar por jugador:",
+    "Selecciona Jugadores/Managers:",
     player_names,
     default=player_names 
 )
 
 inducted_as_options = df["inducted_as"].unique().tolist()
 selected_inducted_as = st.sidebar.multiselect(
-    "Filtrar por categoría:",
+    "Filtrar por Inducción como:",
     inducted_as_options,
     default=inducted_as_options
 )

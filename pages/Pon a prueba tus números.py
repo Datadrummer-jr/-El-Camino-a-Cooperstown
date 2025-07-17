@@ -31,7 +31,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-logo = Image.open("imagenes/logo.jpg")
+logo = Image.open("logo.jpg")
 
 st.set_page_config(
     page_title="Pon Tus Números A Cooperstown",
