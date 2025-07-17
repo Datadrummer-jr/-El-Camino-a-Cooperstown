@@ -1,0 +1,1406 @@
+{
+    "0": {
+        "name": "Dick Allen",
+        "country": "USA"
+    },
+    "1": {
+        "name": "Dave Parker",
+        "country": "USA"
+    },
+    "2": {
+        "name": "CC Sabathia",
+        "country": "USA"
+    },
+    "3": {
+        "name": "Ichiro Suzuki",
+        "country": "Japan"
+    },
+    "4": {
+        "name": "Billy Wagner",
+        "country": "USA"
+    },
+    "5": {
+        "name": "Adrian Beltré",
+        "country": "Dominican Republic"
+    },
+    "6": {
+        "name": "Todd Helton",
+        "country": "USA"
+    },
+    "7": {
+        "name": "Jim Leyland",
+        "country": "USA"
+    },
+    "8": {
+        "name": "Joe Mauer",
+        "country": "USA"
+    },
+    "9": {
+        "name": "Fred McGriff",
+        "country": "USA"
+    },
+    "10": {
+        "name": "Scott Rolen",
+        "country": "USA"
+    },
+    "11": {
+        "name": "Bud Fowler",
+        "country": "USA"
+    },
+    "12": {
+        "name": "Gil Hodges",
+        "country": "USA"
+    },
+    "13": {
+        "name": "Jim Kaat",
+        "country": "USA"
+    },
+    "14": {
+        "name": "Minnie Miñoso",
+        "country": "Cuba"
+    },
+    "15": {
+        "name": "Buck O'Neil",
+        "country": "USA"
+    },
+    "16": {
+        "name": "Tony Oliva",
+        "country": "Cuba"
+    },
+    "17": {
+        "name": "David Ortiz",
+        "country": "Dominican Republic"
+    },
+    "18": {
+        "name": "Derek Jeter",
+        "country": "USA"
+    },
+    "19": {
+        "name": "Marvin Miller",
+        "country": "USA"
+    },
+    "20": {
+        "name": "Ted Simmons",
+        "country": "USA"
+    },
+    "21": {
+        "name": "Larry Walker",
+        "country": "Canada"
+    },
+    "22": {
+        "name": "Harold Baines",
+        "country": "USA"
+    },
+    "23": {
+        "name": "Roy Halladay",
+        "country": "USA"
+    },
+    "24": {
+        "name": "Edgar Martínez",
+        "country": "USA"
+    },
+    "25": {
+        "name": "Mike Mussina",
+        "country": "USA"
+    },
+    "26": {
+        "name": "Mariano Rivera",
+        "country": "Panama"
+    },
+    "27": {
+        "name": "Lee Smith",
+        "country": "USA"
+    },
+    "28": {
+        "name": "Vladimir Guerrero",
+        "country": "Dominican Republic"
+    },
+    "29": {
+        "name": "Trevor Hoffman",
+        "country": "USA"
+    },
+    "30": {
+        "name": "Chipper Jones",
+        "country": "USA"
+    },
+    "31": {
+        "name": "Jack Morris",
+        "country": "USA"
+    },
+    "32": {
+        "name": "Jim Thome",
+        "country": "USA"
+    },
+    "33": {
+        "name": "Alan Trammell",
+        "country": "USA"
+    },
+    "34": {
+        "name": "Jeff Bagwell",
+        "country": "USA"
+    },
+    "35": {
+        "name": "Tim Raines",
+        "country": "USA"
+    },
+    "36": {
+        "name": "Iván Rodríguez",
+        "country": "Puerto Rico"
+    },
+    "37": {
+        "name": "John Schuerholz",
+        "country": "USA"
+    },
+    "38": {
+        "name": "Bud Selig",
+        "country": "USA"
+    },
+    "39": {
+        "name": "Ken Griffey Jr.",
+        "country": "USA"
+    },
+    "40": {
+        "name": "Mike Piazza",
+        "country": "USA"
+    },
+    "41": {
+        "name": "Craig Biggio",
+        "country": "USA"
+    },
+    "42": {
+        "name": "Randy Johnson",
+        "country": "USA"
+    },
+    "43": {
+        "name": "Pedro Martinez",
+        "country": "Dominican Republic"
+    },
+    "44": {
+        "name": "John Smoltz",
+        "country": "USA"
+    },
+    "45": {
+        "name": "Bobby Cox",
+        "country": "USA"
+    },
+    "46": {
+        "name": "Tom Glavine",
+        "country": "USA"
+    },
+    "47": {
+        "name": "Tony La Russa",
+        "country": "USA"
+    },
+    "48": {
+        "name": "Greg Maddux",
+        "country": "USA"
+    },
+    "49": {
+        "name": "Frank Thomas",
+        "country": "USA"
+    },
+    "50": {
+        "name": "Joe Torre",
+        "country": "USA"
+    },
+    "51": {
+        "name": "Hank O'Day",
+        "country": "USA"
+    },
+    "52": {
+        "name": "Jacob Ruppert",
+        "country": "USA"
+    },
+    "53": {
+        "name": "Deacon White",
+        "country": "USA"
+    },
+    "54": {
+        "name": "Barry Larkin",
+        "country": "USA"
+    },
+    "55": {
+        "name": "Ron Santo",
+        "country": "USA"
+    },
+    "56": {
+        "name": "Roberto Alomar",
+        "country": "Puerto Rico"
+    },
+    "57": {
+        "name": "Bert Blyleven",
+        "country": "Netherlands"
+    },
+    "58": {
+        "name": "Pat Gillick",
+        "country": "USA"
+    },
+    "59": {
+        "name": "Andre Dawson",
+        "country": "USA"
+    },
+    "60": {
+        "name": "Doug Harvey",
+        "country": "USA"
+    },
+    "61": {
+        "name": "Whitey Herzog",
+        "country": "USA"
+    },
+    "62": {
+        "name": "Joe Gordon",
+        "country": "USA"
+    },
+    "63": {
+        "name": "Rickey Henderson",
+        "country": "USA"
+    },
+    "64": {
+        "name": "Jim Rice",
+        "country": "USA"
+    },
+    "65": {
+        "name": "Barney Dreyfuss",
+        "country": "Germany"
+    },
+    "66": {
+        "name": "Rich Gossage",
+        "country": "USA"
+    },
+    "67": {
+        "name": "Bowie Kuhn",
+        "country": "USA"
+    },
+    "68": {
+        "name": "Walter O'Malley",
+        "country": "USA"
+    },
+    "69": {
+        "name": "Billy Southworth",
+        "country": "USA"
+    },
+    "70": {
+        "name": "Dick Williams",
+        "country": "USA"
+    },
+    "71": {
+        "name": "Tony Gwynn",
+        "country": "USA"
+    },
+    "72": {
+        "name": "Cal Ripken Jr.",
+        "country": "USA"
+    },
+    "73": {
+        "name": "Ray Brown",
+        "country": "USA"
+    },
+    "74": {
+        "name": "Willard Brown",
+        "country": "USA"
+    },
+    "75": {
+        "name": "Andy Cooper",
+        "country": "USA"
+    },
+    "76": {
+        "name": "Frank Grant",
+        "country": "USA"
+    },
+    "77": {
+        "name": "Pete Hill",
+        "country": "USA"
+    },
+    "78": {
+        "name": "Biz Mackey",
+        "country": "USA"
+    },
+    "79": {
+        "name": "Effa Manley",
+        "country": "USA"
+    },
+    "80": {
+        "name": "José Méndez",
+        "country": "Cuba"
+    },
+    "81": {
+        "name": "Alex Pompez",
+        "country": "USA"
+    },
+    "82": {
+        "name": "Cum Posey",
+        "country": "USA"
+    },
+    "83": {
+        "name": "Louis Santop",
+        "country": "USA"
+    },
+    "84": {
+        "name": "Bruce Sutter",
+        "country": "USA"
+    },
+    "85": {
+        "name": "Mule Suttles",
+        "country": "USA"
+    },
+    "86": {
+        "name": "Ben Taylor",
+        "country": "USA"
+    },
+    "87": {
+        "name": "Cristóbal Torriente",
+        "country": "Cuba"
+    },
+    "88": {
+        "name": "Sol White",
+        "country": "USA"
+    },
+    "89": {
+        "name": "J.L. Wilkinson",
+        "country": "USA"
+    },
+    "90": {
+        "name": "Jud Wilson",
+        "country": "USA"
+    },
+    "91": {
+        "name": "Wade Boggs",
+        "country": "USA"
+    },
+    "92": {
+        "name": "Ryne Sandberg",
+        "country": "USA"
+    },
+    "93": {
+        "name": "Dennis Eckersley",
+        "country": "USA"
+    },
+    "94": {
+        "name": "Paul Molitor",
+        "country": "USA"
+    },
+    "95": {
+        "name": "Gary Carter",
+        "country": "USA"
+    },
+    "96": {
+        "name": "Eddie Murray",
+        "country": "USA"
+    },
+    "97": {
+        "name": "Ozzie Smith",
+        "country": "USA"
+    },
+    "98": {
+        "name": "Bill Mazeroski",
+        "country": "USA"
+    },
+    "99": {
+        "name": "Kirby Puckett",
+        "country": "USA"
+    },
+    "100": {
+        "name": "Hilton Smith",
+        "country": "USA"
+    },
+    "101": {
+        "name": "Dave Winfield",
+        "country": "USA"
+    },
+    "102": {
+        "name": "Sparky Anderson",
+        "country": "USA"
+    },
+    "103": {
+        "name": "Carlton Fisk",
+        "country": "USA"
+    },
+    "104": {
+        "name": "Bid McPhee",
+        "country": "USA"
+    },
+    "105": {
+        "name": "Tony Pérez",
+        "country": "Cuba"
+    },
+    "106": {
+        "name": "Turkey Stearnes",
+        "country": "USA"
+    },
+    "107": {
+        "name": "George Brett",
+        "country": "USA"
+    },
+    "108": {
+        "name": "Orlando Cepeda",
+        "country": "Puerto Rico"
+    },
+    "109": {
+        "name": "Nestor Chylak",
+        "country": "USA"
+    },
+    "110": {
+        "name": "Nolan Ryan",
+        "country": "USA"
+    },
+    "111": {
+        "name": "Frank Selee",
+        "country": "USA"
+    },
+    "112": {
+        "name": "Joe Williams",
+        "country": "USA"
+    },
+    "113": {
+        "name": "Robin Yount",
+        "country": "USA"
+    },
+    "114": {
+        "name": "George Davis",
+        "country": "USA"
+    },
+    "115": {
+        "name": "Larry Doby",
+        "country": "USA"
+    },
+    "116": {
+        "name": "Lee MacPhail",
+        "country": "USA"
+    },
+    "117": {
+        "name": "Bullet Rogan",
+        "country": "USA"
+    },
+    "118": {
+        "name": "Don Sutton",
+        "country": "USA"
+    },
+    "119": {
+        "name": "Nellie Fox",
+        "country": "USA"
+    },
+    "120": {
+        "name": "Tommy Lasorda",
+        "country": "USA"
+    },
+    "121": {
+        "name": "Phil Niekro",
+        "country": "USA"
+    },
+    "122": {
+        "name": "Willie Wells",
+        "country": "USA"
+    },
+    "123": {
+        "name": "Jim Bunning",
+        "country": "USA"
+    },
+    "124": {
+        "name": "Bill Foster",
+        "country": "USA"
+    },
+    "125": {
+        "name": "Ned Hanlon",
+        "country": "USA"
+    },
+    "126": {
+        "name": "Earl Weaver",
+        "country": "USA"
+    },
+    "127": {
+        "name": "Richie Ashburn",
+        "country": "USA"
+    },
+    "128": {
+        "name": "Leon Day",
+        "country": "USA"
+    },
+    "129": {
+        "name": "William Hulbert",
+        "country": "USA"
+    },
+    "130": {
+        "name": "Mike Schmidt",
+        "country": "USA"
+    },
+    "131": {
+        "name": "Vic Willis",
+        "country": "USA"
+    },
+    "132": {
+        "name": "Steve Carlton",
+        "country": "USA"
+    },
+    "133": {
+        "name": "Leo Durocher",
+        "country": "USA"
+    },
+    "134": {
+        "name": "Phil Rizzuto",
+        "country": "USA"
+    },
+    "135": {
+        "name": "Reggie Jackson",
+        "country": "USA"
+    },
+    "136": {
+        "name": "Rollie Fingers",
+        "country": "USA"
+    },
+    "137": {
+        "name": "Bill McGowan",
+        "country": "USA"
+    },
+    "138": {
+        "name": "Hal Newhouser",
+        "country": "USA"
+    },
+    "139": {
+        "name": "Tom Seaver",
+        "country": "USA"
+    },
+    "140": {
+        "name": "Rod Carew",
+        "country": "Panama"
+    },
+    "141": {
+        "name": "Fergie Jenkins",
+        "country": "Canada"
+    },
+    "142": {
+        "name": "Tony Lazzeri",
+        "country": "USA"
+    },
+    "143": {
+        "name": "Gaylord Perry",
+        "country": "USA"
+    },
+    "144": {
+        "name": "Bill Veeck",
+        "country": "USA"
+    },
+    "145": {
+        "name": "Joe Morgan",
+        "country": "USA"
+    },
+    "146": {
+        "name": "Jim Palmer",
+        "country": "USA"
+    },
+    "147": {
+        "name": "Al Barlick",
+        "country": "USA"
+    },
+    "148": {
+        "name": "Johnny Bench",
+        "country": "USA"
+    },
+    "149": {
+        "name": "Red Schoendienst",
+        "country": "USA"
+    },
+    "150": {
+        "name": "Carl Yastrzemski",
+        "country": "USA"
+    },
+    "151": {
+        "name": "Willie Stargell",
+        "country": "USA"
+    },
+    "152": {
+        "name": "Ray Dandridge",
+        "country": "USA"
+    },
+    "153": {
+        "name": "Catfish Hunter",
+        "country": "USA"
+    },
+    "154": {
+        "name": "Billy Williams",
+        "country": "USA"
+    },
+    "155": {
+        "name": "Bobby Doerr",
+        "country": "USA"
+    },
+    "156": {
+        "name": "Ernie Lombardi",
+        "country": "USA"
+    },
+    "157": {
+        "name": "Willie McCovey",
+        "country": "USA"
+    },
+    "158": {
+        "name": "Lou Brock",
+        "country": "USA"
+    },
+    "159": {
+        "name": "Enos Slaughter",
+        "country": "USA"
+    },
+    "160": {
+        "name": "Arky Vaughan",
+        "country": "USA"
+    },
+    "161": {
+        "name": "Hoyt Wilhelm",
+        "country": "USA"
+    },
+    "162": {
+        "name": "Luis Aparicio",
+        "country": "Venezuela"
+    },
+    "163": {
+        "name": "Don Drysdale",
+        "country": "USA"
+    },
+    "164": {
+        "name": "Rick Ferrell",
+        "country": "USA"
+    },
+    "165": {
+        "name": "Harmon Killebrew",
+        "country": "USA"
+    },
+    "166": {
+        "name": "Pee Wee Reese",
+        "country": "USA"
+    },
+    "167": {
+        "name": "Walter Alston",
+        "country": "USA"
+    },
+    "168": {
+        "name": "George Kell",
+        "country": "USA"
+    },
+    "169": {
+        "name": "Juan Marichal",
+        "country": "Dominican Republic"
+    },
+    "170": {
+        "name": "Brooks Robinson",
+        "country": "USA"
+    },
+    "171": {
+        "name": "Henry Aaron",
+        "country": "USA"
+    },
+    "172": {
+        "name": "Happy Chandler",
+        "country": "USA"
+    },
+    "173": {
+        "name": "Travis Jackson",
+        "country": "USA"
+    },
+    "174": {
+        "name": "Frank Robinson",
+        "country": "USA"
+    },
+    "175": {
+        "name": "Rube Foster",
+        "country": "USA"
+    },
+    "176": {
+        "name": "Bob Gibson",
+        "country": "USA"
+    },
+    "177": {
+        "name": "Johnny Mize",
+        "country": "USA"
+    },
+    "178": {
+        "name": "Al Kaline",
+        "country": "USA"
+    },
+    "179": {
+        "name": "Chuck Klein",
+        "country": "USA"
+    },
+    "180": {
+        "name": "Duke Snider",
+        "country": "USA"
+    },
+    "181": {
+        "name": "Tom Yawkey",
+        "country": "USA"
+    },
+    "182": {
+        "name": "Warren Giles",
+        "country": "USA"
+    },
+    "183": {
+        "name": "Willie Mays",
+        "country": "USA"
+    },
+    "184": {
+        "name": "Hack Wilson",
+        "country": "USA"
+    },
+    "185": {
+        "name": "Addie Joss",
+        "country": "USA"
+    },
+    "186": {
+        "name": "Larry MacPhail",
+        "country": "USA"
+    },
+    "187": {
+        "name": "Eddie Mathews",
+        "country": "USA"
+    },
+    "188": {
+        "name": "Ernie Banks",
+        "country": "USA"
+    },
+    "189": {
+        "name": "Martín Dihigo",
+        "country": "Cuba"
+    },
+    "190": {
+        "name": "John Henry Lloyd",
+        "country": "USA"
+    },
+    "191": {
+        "name": "Al Lopez",
+        "country": "USA"
+    },
+    "192": {
+        "name": "Amos Rusie",
+        "country": "USA"
+    },
+    "193": {
+        "name": "Joe Sewell",
+        "country": "USA"
+    },
+    "194": {
+        "name": "Oscar Charleston",
+        "country": "USA"
+    },
+    "195": {
+        "name": "Roger Connor",
+        "country": "USA"
+    },
+    "196": {
+        "name": "Cal Hubbard",
+        "country": "USA"
+    },
+    "197": {
+        "name": "Bob Lemon",
+        "country": "USA"
+    },
+    "198": {
+        "name": "Freddie Lindstrom",
+        "country": "USA"
+    },
+    "199": {
+        "name": "Robin Roberts",
+        "country": "USA"
+    },
+    "200": {
+        "name": "Earl Averill",
+        "country": "USA"
+    },
+    "201": {
+        "name": "Bucky Harris",
+        "country": "USA"
+    },
+    "202": {
+        "name": "Billy Herman",
+        "country": "USA"
+    },
+    "203": {
+        "name": "Judy Johnson",
+        "country": "USA"
+    },
+    "204": {
+        "name": "Ralph Kiner",
+        "country": "USA"
+    },
+    "205": {
+        "name": "Cool Papa Bell",
+        "country": "USA"
+    },
+    "206": {
+        "name": "Jim Bottomley",
+        "country": "USA"
+    },
+    "207": {
+        "name": "Jocko Conlan",
+        "country": "USA"
+    },
+    "208": {
+        "name": "Whitey Ford",
+        "country": "USA"
+    },
+    "209": {
+        "name": "Mickey Mantle",
+        "country": "USA"
+    },
+    "210": {
+        "name": "Sam Thompson",
+        "country": "USA"
+    },
+    "211": {
+        "name": "Roberto Clemente",
+        "country": "Puerto Rico"
+    },
+    "212": {
+        "name": "Billy Evans",
+        "country": "USA"
+    },
+    "213": {
+        "name": "Monte Irvin",
+        "country": "USA"
+    },
+    "214": {
+        "name": "George Kelly",
+        "country": "USA"
+    },
+    "215": {
+        "name": "Warren Spahn",
+        "country": "USA"
+    },
+    "216": {
+        "name": "Mickey Welch",
+        "country": "USA"
+    },
+    "217": {
+        "name": "Yogi Berra",
+        "country": "USA"
+    },
+    "218": {
+        "name": "Josh Gibson",
+        "country": "USA"
+    },
+    "219": {
+        "name": "Lefty Gomez",
+        "country": "USA"
+    },
+    "220": {
+        "name": "Will Harridge",
+        "country": "USA"
+    },
+    "221": {
+        "name": "Sandy Koufax",
+        "country": "USA"
+    },
+    "222": {
+        "name": "Buck Leonard",
+        "country": "USA"
+    },
+    "223": {
+        "name": "Early Wynn",
+        "country": "USA"
+    },
+    "224": {
+        "name": "Ross Youngs",
+        "country": "USA"
+    },
+    "225": {
+        "name": "Dave Bancroft",
+        "country": "USA"
+    },
+    "226": {
+        "name": "Jake Beckley",
+        "country": "USA"
+    },
+    "227": {
+        "name": "Chick Hafey",
+        "country": "USA"
+    },
+    "228": {
+        "name": "Harry Hooper",
+        "country": "USA"
+    },
+    "229": {
+        "name": "Joe Kelley",
+        "country": "USA"
+    },
+    "230": {
+        "name": "Rube Marquard",
+        "country": "USA"
+    },
+    "231": {
+        "name": "Satchel Paige",
+        "country": "USA"
+    },
+    "232": {
+        "name": "George Weiss",
+        "country": "USA"
+    },
+    "233": {
+        "name": "Lou Boudreau",
+        "country": "USA"
+    },
+    "234": {
+        "name": "Earle Combs",
+        "country": "USA"
+    },
+    "235": {
+        "name": "Ford Frick",
+        "country": "USA"
+    },
+    "236": {
+        "name": "Jesse Haines",
+        "country": "USA"
+    },
+    "237": {
+        "name": "Roy Campanella",
+        "country": "USA"
+    },
+    "238": {
+        "name": "Stan Coveleski",
+        "country": "USA"
+    },
+    "239": {
+        "name": "Waite Hoyt",
+        "country": "USA"
+    },
+    "240": {
+        "name": "Stan Musial",
+        "country": "USA"
+    },
+    "241": {
+        "name": "Kiki Cuyler",
+        "country": "USA"
+    },
+    "242": {
+        "name": "Goose Goslin",
+        "country": "USA"
+    },
+    "243": {
+        "name": "Joe Medwick",
+        "country": "USA"
+    },
+    "244": {
+        "name": "Branch Rickey",
+        "country": "USA"
+    },
+    "245": {
+        "name": "Red Ruffing",
+        "country": "USA"
+    },
+    "246": {
+        "name": "Lloyd Waner",
+        "country": "USA"
+    },
+    "247": {
+        "name": "Casey Stengel",
+        "country": "USA"
+    },
+    "248": {
+        "name": "Ted Williams",
+        "country": "USA"
+    },
+    "249": {
+        "name": "Pud Galvin",
+        "country": "USA"
+    },
+    "250": {
+        "name": "Luke Appling",
+        "country": "USA"
+    },
+    "251": {
+        "name": "Red Faber",
+        "country": "USA"
+    },
+    "252": {
+        "name": "Burleigh Grimes",
+        "country": "USA"
+    },
+    "253": {
+        "name": "Miller Huggins",
+        "country": "USA"
+    },
+    "254": {
+        "name": "Tim Keefe",
+        "country": "USA"
+    },
+    "255": {
+        "name": "Heinie Manush",
+        "country": "USA"
+    },
+    "256": {
+        "name": "John Ward",
+        "country": "USA"
+    },
+    "257": {
+        "name": "John Clarkson",
+        "country": "USA"
+    },
+    "258": {
+        "name": "Elmer Flick",
+        "country": "USA"
+    },
+    "259": {
+        "name": "Sam Rice",
+        "country": "USA"
+    },
+    "260": {
+        "name": "Eppa Rixey",
+        "country": "USA"
+    },
+    "261": {
+        "name": "Bob Feller",
+        "country": "USA"
+    },
+    "262": {
+        "name": "Bill McKechnie",
+        "country": "USA"
+    },
+    "263": {
+        "name": "Jackie Robinson",
+        "country": "USA"
+    },
+    "264": {
+        "name": "Edd Roush",
+        "country": "USA"
+    },
+    "265": {
+        "name": "Max Carey",
+        "country": "USA"
+    },
+    "266": {
+        "name": "Billy Hamilton",
+        "country": "USA"
+    },
+    "267": {
+        "name": "Zack Wheat",
+        "country": "USA"
+    },
+    "268": {
+        "name": "Sam Crawford",
+        "country": "USA"
+    },
+    "269": {
+        "name": "Joe McCarthy",
+        "country": "USA"
+    },
+    "270": {
+        "name": "Joe Cronin",
+        "country": "USA"
+    },
+    "271": {
+        "name": "Hank Greenberg",
+        "country": "USA"
+    },
+    "272": {
+        "name": "Home Run Baker",
+        "country": "USA"
+    },
+    "273": {
+        "name": "Joe DiMaggio",
+        "country": "USA"
+    },
+    "274": {
+        "name": "Gabby Hartnett",
+        "country": "USA"
+    },
+    "275": {
+        "name": "Ted Lyons",
+        "country": "USA"
+    },
+    "276": {
+        "name": "Ray Schalk",
+        "country": "USA"
+    },
+    "277": {
+        "name": "Dazzy Vance",
+        "country": "USA"
+    },
+    "278": {
+        "name": "Bill Dickey",
+        "country": "USA"
+    },
+    "279": {
+        "name": "Rabbit Maranville",
+        "country": "USA"
+    },
+    "280": {
+        "name": "Bill Terry",
+        "country": "USA"
+    },
+    "281": {
+        "name": "Ed Barrow",
+        "country": "USA"
+    },
+    "282": {
+        "name": "Charles Bender",
+        "country": "USA"
+    },
+    "283": {
+        "name": "Tommy Connolly",
+        "country": "USA"
+    },
+    "284": {
+        "name": "Dizzy Dean",
+        "country": "USA"
+    },
+    "285": {
+        "name": "Bill Klem",
+        "country": "USA"
+    },
+    "286": {
+        "name": "Al Simmons",
+        "country": "USA"
+    },
+    "287": {
+        "name": "Bobby Wallace",
+        "country": "USA"
+    },
+    "288": {
+        "name": "Harry Wright",
+        "country": "England"
+    },
+    "289": {
+        "name": "Harry Heilmann",
+        "country": "USA"
+    },
+    "290": {
+        "name": "Paul Waner",
+        "country": "USA"
+    },
+    "291": {
+        "name": "Jimmie Foxx",
+        "country": "USA"
+    },
+    "292": {
+        "name": "Mel Ott",
+        "country": "USA"
+    },
+    "293": {
+        "name": "Mordecai Brown",
+        "country": "USA"
+    },
+    "294": {
+        "name": "Charlie Gehringer",
+        "country": "USA"
+    },
+    "295": {
+        "name": "Kid Nichols",
+        "country": "USA"
+    },
+    "296": {
+        "name": "Herb Pennock",
+        "country": "USA"
+    },
+    "297": {
+        "name": "Pie Traynor",
+        "country": "USA"
+    },
+    "298": {
+        "name": "Mickey Cochrane",
+        "country": "USA"
+    },
+    "299": {
+        "name": "Frankie Frisch",
+        "country": "USA"
+    },
+    "300": {
+        "name": "Lefty Grove",
+        "country": "USA"
+    },
+    "301": {
+        "name": "Carl Hubbell",
+        "country": "USA"
+    },
+    "302": {
+        "name": "Jesse Burkett",
+        "country": "USA"
+    },
+    "303": {
+        "name": "Frank Chance",
+        "country": "USA"
+    },
+    "304": {
+        "name": "Jack Chesbro",
+        "country": "USA"
+    },
+    "305": {
+        "name": "Johnny Evers",
+        "country": "USA"
+    },
+    "306": {
+        "name": "Clark Griffith",
+        "country": "USA"
+    },
+    "307": {
+        "name": "Tommy McCarthy",
+        "country": "USA"
+    },
+    "308": {
+        "name": "Joe McGinnity",
+        "country": "USA"
+    },
+    "309": {
+        "name": "Eddie Plank",
+        "country": "USA"
+    },
+    "310": {
+        "name": "Joe Tinker",
+        "country": "USA"
+    },
+    "311": {
+        "name": "Rube Waddell",
+        "country": "USA"
+    },
+    "312": {
+        "name": "Ed Walsh",
+        "country": "USA"
+    },
+    "313": {
+        "name": "Roger Bresnahan",
+        "country": "USA"
+    },
+    "314": {
+        "name": "Dan Brouthers",
+        "country": "USA"
+    },
+    "315": {
+        "name": "Fred Clarke",
+        "country": "USA"
+    },
+    "316": {
+        "name": "Jimmy Collins",
+        "country": "USA"
+    },
+    "317": {
+        "name": "Ed Delahanty",
+        "country": "USA"
+    },
+    "318": {
+        "name": "Hugh Duffy",
+        "country": "USA"
+    },
+    "319": {
+        "name": "Hughie Jennings",
+        "country": "USA"
+    },
+    "320": {
+        "name": "King Kelly",
+        "country": "USA"
+    },
+    "321": {
+        "name": "Jim O'Rourke",
+        "country": "USA"
+    },
+    "322": {
+        "name": "Wilbert Robinson",
+        "country": "USA"
+    },
+    "323": {
+        "name": "Kenesaw Mountain Landis",
+        "country": "USA"
+    },
+    "324": {
+        "name": "Rogers Hornsby",
+        "country": "USA"
+    },
+    "325": {
+        "name": "Cap Anson",
+        "country": "USA"
+    },
+    "326": {
+        "name": "Eddie Collins",
+        "country": "USA"
+    },
+    "327": {
+        "name": "Charlie Comiskey",
+        "country": "USA"
+    },
+    "328": {
+        "name": "Candy Cummings",
+        "country": "USA"
+    },
+    "329": {
+        "name": "Buck Ewing",
+        "country": "USA"
+    },
+    "330": {
+        "name": "Lou Gehrig",
+        "country": "USA"
+    },
+    "331": {
+        "name": "Willie Keeler",
+        "country": "USA"
+    },
+    "332": {
+        "name": "Old Hoss Radbourn",
+        "country": "USA"
+    },
+    "333": {
+        "name": "George Sisler",
+        "country": "USA"
+    },
+    "334": {
+        "name": "Al Spalding",
+        "country": "USA"
+    },
+    "335": {
+        "name": "Grover Alexander",
+        "country": "USA"
+    },
+    "336": {
+        "name": "Alexander Cartwright",
+        "country": "USA"
+    },
+    "337": {
+        "name": "Henry Chadwick",
+        "country": "England"
+    },
+    "338": {
+        "name": "Morgan Bulkeley",
+        "country": "USA"
+    },
+    "339": {
+        "name": "Ban Johnson",
+        "country": "USA"
+    },
+    "340": {
+        "name": "Nap Lajoie",
+        "country": "USA"
+    },
+    "341": {
+        "name": "Connie Mack",
+        "country": "USA"
+    },
+    "342": {
+        "name": "John McGraw",
+        "country": "USA"
+    },
+    "343": {
+        "name": "Tris Speaker",
+        "country": "USA"
+    },
+    "344": {
+        "name": "George Wright",
+        "country": "USA"
+    },
+    "345": {
+        "name": "Cy Young",
+        "country": "USA"
+    },
+    "346": {
+        "name": "Ty Cobb",
+        "country": "USA"
+    },
+    "347": {
+        "name": "Walter Johnson",
+        "country": "USA"
+    },
+    "348": {
+        "name": "Christy Mathewson",
+        "country": "USA"
+    },
+    "349": {
+        "name": "Babe Ruth",
+        "country": "USA"
+    },
+    "350": {
+        "name": "Honus Wagner",
+        "country": "USA"
+    }
+}
