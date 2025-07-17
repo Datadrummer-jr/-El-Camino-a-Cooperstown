@@ -28,7 +28,7 @@ st.sidebar.header("Filtros y Opciones")
 
 player_names = df["Name"].unique().tolist()
 selected_players = st.sidebar.multiselect(
-    "Selecciona los jugadores:",
+    "filtrar por jugador:",
     player_names,
     default=player_names 
 )
