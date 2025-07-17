@@ -10,11 +10,11 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from my_library import my_library as ml
 
-logo = Image.open("imagenes/logo.jpg")
-salón = Image.open('imagenes/Salón.jpg')
-placas = Image.open('imagenes/Placas.jpg')
-Babe_Ruth = Image.open('imagenes/Babe_Ruth_1922.jpeg')
-Mariano_Rivera = Image.open('imagenes/Mariano_Rivera.jpeg')
+logo = Image.open("logo.jpg")
+salón = Image.open('Salón.jpg')
+placas = Image.open('Placas.jpg')
+Babe_Ruth = Image.open('Babe_Ruth_1922.jpeg')
+Mariano_Rivera = Image.open('Mariano_Rivera.jpeg')
 
 title="Camino a Cooperstown"
 
