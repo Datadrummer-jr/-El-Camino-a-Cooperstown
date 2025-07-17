@@ -66,11 +66,8 @@ else:
     st.warning("No hay datos que coincidan con los filtros seleccionados.")
     st.stop() 
 
-# Sección de Visualizaciones
-st.header("Visualizaciones Interactivas")
-
-# Porcentaje de Balotas al Ser Inducido
-st.subheader("Porcentaje de Balotas al Ser Inducido")
+# Porcentaje de boletas al Ser Inducido
+st.subheader("Porcentaje de boletas al Ser Inducido")
 players_for_ballots = filtered_df[
     (filtered_df["inducted_as"] == "Player") & 
     (filtered_df["% of Ballots"].notna())
@@ -78,9 +75,10 @@ players_for_ballots = filtered_df[
 if not players_for_ballots.empty:
     fig1 = px.bar(
         players_for_ballots, x="Name", y="% of Ballots", 
-        title="Top 20 de Porcentaje de Balotas para la Inducción",
-        labels={"Name": "Jugador", "% of Ballots": "% de Balotas"},
-        hover_data={"% of Ballots": ":.1f"}
+        title="Top 20 de Porcentaje de boletas para la Inducción",
+        labels={"Name": "Jugador", "% of Ballots": "% de boletas"},
+        hover_data={"% of Ballots": ":.1f"},
+        color_discrete_sequence=[ '#33FF57']
     )
     fig1.update_layout(xaxis_tickangle=-45)
     st.plotly_chart(fig1, use_container_width=True)
@@ -97,7 +95,8 @@ if not war_df.empty:
         war_df, x="Name", y="war", 
         title="Top 20 de WAR (Victorias por Encima del Reemplazo)",
         labels={"Name": "Jugador", "war": "WAR"},
-        hover_data={"war": ":.1f", "inducted_as": True}
+        hover_data={"war": ":.1f", "inducted_as": True},
+        color_discrete_sequence=[ "#FFF533"]
     )
     fig2.update_layout(xaxis_tickangle=-45)
     st.plotly_chart(fig2, use_container_width=True)
@@ -117,7 +116,8 @@ if not batters_hr_df.empty:
         batters_hr_df, x="Name", y="hr", 
         title="Top 20 de Home Runs",
         labels={"Name": "Jugador", "hr": "Home Runs"},
-        hover_data={"hr": True, "years_of_experience": True}
+        hover_data={"hr": True, "years_of_experience": True},
+        color_discrete_sequence=[ "#133AC5"]
     )
     fig3.update_layout(xaxis_tickangle=-45)
     st.plotly_chart(fig3, use_container_width=True)
@@ -137,7 +137,8 @@ if not batters_ba_df.empty:
         batters_ba_df, x="Name", y="ba", 
         title="Top 20 de Promedio de Bateo",
         labels={"Name": "Jugador", "ba": "Promedio de Bateo"},
-        hover_data={"ba": ":.3f", "h": True, "ab": True}
+        hover_data={"ba": ":.3f", "h": True, "ab": True},
+        color_discrete_sequence=[ "#33EBFF"]
     )
     fig4.update_layout(xaxis_tickangle=-45)
     st.plotly_chart(fig4, use_container_width=True)
@@ -177,7 +178,8 @@ if not pitchers_w_df.empty:
         pitchers_w_df, x="Name", y="w", 
         title="Top 20 de Victorias para Lanzadores",
         labels={"Name": "Lanzador", "w": "Victorias"},
-        hover_data={"w": True, "l": True, "w_l": ":.3f"}
+        hover_data={"w": True, "l": True, "w_l": ":.3f"},
+        color_discrete_sequence=[ "#A733FF"]
     )
     fig6.update_layout(xaxis_tickangle=-45)
     st.plotly_chart(fig6, use_container_width=True)
@@ -312,7 +314,7 @@ if len(selected_players) == 1:
         st.write(f"**Años de Espera para Entrar:** {int(player_detail['years_of_waiting_to_enter']) if pd.notna(player_detail['years_of_waiting_to_enter']) else 'N/A'}")
         st.write(f"**Años de Experiencia:** {int(player_detail['years_of_experience']) if pd.notna(player_detail['years_of_experience']) else 'N/A'}")
         if pd.notna(player_detail.get('% of Ballots')):
-            st.write(f"**% de Balotas:** {player_detail['% of Ballots']:.1f}%")
+            st.write(f"**% de boletas:** {player_detail['% of Ballots']:.1f}%")
         if player_detail.get('link'):
             st.markdown(f"**Más info:** [Baseball-Reference]({player_detail['link']})")
         if pd.notna(player_detail.get('country')):
@@ -322,7 +324,7 @@ if len(selected_players) == 1:
     with col2:
         st.subheader("Estadísticas de Bateo")
         if pd.notna(player_detail.get('g_bat')):
-            st.write(f"**Juegos (Bat):** {int(player_detail['g_bat'])}")
+            st.write(f"**Juegos (Bateo):** {int(player_detail['g_bat'])}")
         if pd.notna(player_detail.get('h')):
             st.write(f"**Hits (H):** {int(player_detail['h'])}")
         if pd.notna(player_detail.get('hr')):
@@ -340,7 +342,7 @@ if len(selected_players) == 1:
         if pd.notna(player_detail.get('ops')):
             st.write(f"**OPS:** {player_detail['ops']:.3f}")
         if pd.notna(player_detail.get('war')):
-            st.write(f"**WAR (Total):** {player_detail['war']:.1f}")
+            st.write(f"**WAR (Bateo):** {player_detail['war']:.1f}")
 
     # Estadísticas de Pitcheo (si aplica)
     if pd.notna(player_detail.get('w')) or pd.notna(player_detail.get('era')):
@@ -354,7 +356,7 @@ if len(selected_players) == 1:
         if pd.notna(player_detail.get('war_p')):
             st.write(f"**WAR (Pitcheo):** {player_detail['war_p']:.2f}")
         if pd.notna(player_detail.get('g')):
-            st.write(f"**Juegos (Pitch):** {int(player_detail['g'])}")
+            st.write(f"**Juegos (Pitcheo):** {int(player_detail['g'])}")
         if pd.notna(player_detail.get('ip')):
             st.write(f"**Entradas Lanzadas (IP):** {player_detail['ip']:.1f}")
         if pd.notna(player_detail.get('bb')):

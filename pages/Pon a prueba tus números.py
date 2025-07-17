@@ -72,14 +72,14 @@ def main():
     if send:
        if opción == "Batting":
           porcent_b = float(app.model_bat.predict(app.Poly_bat.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form,slg_b_form]]))))
-          demora_b = float(app.model_demora_bat.predict(app.Poly_bat.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form, slg_b_form]]))))
+          demora_b = abs(float(app.model_demora_bat.predict(app.Poly_bat.fit_transform(np.array([[experience_b_form,g_b_form,war_b_form,h_b_form,hr_b_form,ab_b_form,ba_b_form,rbi_b_form,ops_b_form,obp_b_form, slg_b_form]])))))
           if porcent_b >= 75:
            st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_b,2)} %, por lo que podría entrar en el salón de la fama de béisbol y tardaría aproximadamente {int(demora_b)} años en entrar después de su retiro.")
           else:
              st.error(f"Lo siento, se predice que según tus datos aportados las boletas serían de un {round(porcent_b,2)} %, por lo no podría entrar en el salón de la fama de béisbol.")
        elif opción == "Pitching":
           porcent_p = float(app.model_pit.predict(app.Poly_pitch.fit_transform(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))
-          demora_p = float(app.model_demora_pit.predict(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]])))
+          demora_p = abs(float(app.model_demora_pit.predict(np.array([[experience_p_form,g_p_form,gf_p_form,war_p_form,era_p_form,l_p_form,bb_p_form,w_p_form,W_L_p_form,ip_p_form]]))))
           if porcent_p >= 75:
             st.success(f"¡Muchas Felicidades! Se predice que según tus datos aportados las boletas serían de un {round(porcent_p,2)} %, por lo que podría entrar en el salón de la fama de béisbol y tardaría aproximadamente {int(demora_p)} años en entrar.")
           else:
