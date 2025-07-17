@@ -28,7 +28,7 @@ st.sidebar.header("Filtros y Opciones")
 
 player_names = df["Name"].unique().tolist()
 selected_players = st.sidebar.multiselect(
-    "Filtrar Jugador:",
+    "filtrar por jugador:",
     player_names,
     default=player_names 
 )
@@ -70,7 +70,7 @@ else:
 st.header("Visualizaciones Interactivas")
 
 # Porcentaje de Balotas al Ser Inducido
-st.subheader("1. Porcentaje de Balotas al Ser Inducido")
+st.subheader("Porcentaje de Balotas al Ser Inducido")
 players_for_ballots = filtered_df[
     (filtered_df["inducted_as"] == "Player") & 
     (filtered_df["% of Ballots"].notna())
@@ -90,7 +90,7 @@ else:
 st.markdown("---")
 
 # Gráfico 2: WAR (Victorias por Encima del Reemplazo)
-st.subheader("2. WAR (Victorias por Encima del Reemplazo)")
+st.subheader("WAR (Victorias por Encima del Reemplazo)")
 war_df = filtered_df[filtered_df["war"].notna()].sort_values(by="war", ascending=False).head(20)
 if not war_df.empty:
     fig2 = px.bar(
@@ -107,7 +107,7 @@ else:
 st.markdown("---")
 
 # Gráfico 3: Home Runs (HR) para bateadores
-st.subheader("3. Home Runs (HR) para Jugadores")
+st.subheader("Home Runs (HR) para Jugadores")
 batters_hr_df = filtered_df[
     (filtered_df["inducted_as"] == "Player") & 
     (filtered_df["hr"].notna())
@@ -126,8 +126,8 @@ else:
 
 st.markdown("---")
 
-# Gráfico 4: Promedio de Bateo (BA) para bateadores
-st.subheader("4. Promedio de Bateo (BA) para Jugadores")
+# Promedio de Bateo (BA) para bateadores
+st.subheader("Promedio de Bateo (BA) para Jugadores")
 batters_ba_df = filtered_df[
     (filtered_df["inducted_as"] == "Player") & 
     (filtered_df["ba"].notna())
@@ -147,7 +147,7 @@ else:
 st.markdown("---")
 
 # Gráfico 5: ERA para Lanzadores
-st.subheader("5. Promedio de Carreras Limpias (ERA) para Lanzadores")
+st.subheader("Promedio de Carreras Limpias (ERA) para Lanzadores")
 pitchers_era_df = filtered_df[
     (filtered_df["inducted_as"] == "Player") & 
     (filtered_df["era"].notna())
@@ -167,7 +167,7 @@ else:
 st.markdown("---")
 
 # Gráfico 6: Victorias (W) para Lanzadores
-st.subheader("6. Victorias (W) para Lanzadores")
+st.subheader("Victorias (W) para Lanzadores")
 pitchers_w_df = filtered_df[
     (filtered_df["inducted_as"] == "Player") & 
     (filtered_df["w"].notna())
@@ -187,7 +187,7 @@ else:
 st.markdown("---")
 
 # Gráfico 7: Relación WAR vs. HR (Scatter plot)
-st.subheader("7. Relación entre WAR y Home Runs")
+st.subheader("Relación entre WAR y Home Runs")
 
 # Filtrar WAR para asegurar que no sean negativos o nulos antes de usar en 'size'
 war_hr_df = filtered_df[
@@ -210,7 +210,7 @@ else:
 st.markdown("---")
 
 # Gráfico 8: Relación ERA vs. W (Scatter plot para lanzadores)
-st.subheader("8. Relación entre ERA y Victorias para Lanzadores")
+st.subheader("Relación entre ERA y Victorias para Lanzadores")
 era_w_df = filtered_df[
     (filtered_df["inducted_as"] == "Player") & 
     (filtered_df["era"].notna()) & 
@@ -232,7 +232,7 @@ else:
 st.markdown("---")
 
 # Años de Experiencia
-st.subheader("9. Distribución de Años de Experiencia")
+st.subheader("Distribución de Años de Experiencia")
 exp_df = filtered_df[
     (filtered_df["years_of_experience"].notna()) & 
     (filtered_df["inducted_as"] == "Player")
@@ -252,7 +252,7 @@ else:
 st.markdown("---")
 
 # Promedio de Bateo (BA) vs. Promedio de Embasado (OBP)
-st.subheader("10. Promedio de Bateo (BA) vs. Promedio de Embasado (OBP)")
+st.subheader("Promedio de Bateo (BA) vs. Promedio de Embasado (OBP)")
 
 # Filtrar OPS para asegurar que no sean negativos o nulos antes de usar en 'size'
 ba_obp_df = filtered_df[
@@ -276,7 +276,7 @@ else:
 st.markdown("---")
 
 # Distribución por Nacionalidad
-st.subheader("11. Distribución de Miembros por Nacionalidad")
+st.subheader("Distribución de Miembros por Nacionalidad")
 country_counts = filtered_df['country'].value_counts().reset_index()
 country_counts.columns = ['Country', 'Count']
 
