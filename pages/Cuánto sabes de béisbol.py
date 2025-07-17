@@ -33,7 +33,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-logo = Image.open("logo.jpg")
+logo = Image.open("imagenes/logo.jpg")
 
 title="¿ Cuánto sabes de béisbol ?"
 
