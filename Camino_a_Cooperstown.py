@@ -10,7 +10,11 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from my_library import my_library as ml
 
-logo = Image.open("logo.jpg")
+logo = Image.open("imagenes/logo.jpg")
+salón = Image.open('imagenes/Salón.jpg')
+placas = Image.open('imagenes/Placas.jpg')
+Babe_Ruth = Image.open('imagenes/Babe_Ruth_1922.jpeg')
+Mariano_Rivera = Image.open('imagenes/Mariano_Rivera.jpeg')
 
 title="Camino a Cooperstown"
 
@@ -318,6 +322,7 @@ intentos_ambos = list(map(lambda x : aspirantes.count(x), df_players_ambos.index
 
 def main() -> None:
     st.title(title)
+    st.image(salón)
     st.write("Ya falta poco para el anuncio oficial por el presidente del Salón de la Fama del Baseball de Cooperstown de los " \
     "nuevos miembros del 2025 el próximo 27 de julio. Por lo que ahora los voy a sumergir en un análisis sobre los registros que alcanzaron" \
     " estos nuevos miembros y los inducidos en años anteriores que los llevaron a ser miembros del dicho salón en que se encuentran " \
@@ -557,7 +562,7 @@ def main() -> None:
     )
     st.plotly_chart(gvsw)
 
-    st.image(Image.open('flecha_roja.png'), width=300)
+    st.image(Image.open('imagenes/flecha_roja.png'), width=300)
     st.subheader('¡NO!')
     st.write('Los bateadores tienen una mayor tendencia a mayor tendencia a aportar más victorias a su equipo según la cantidad de juegos jugados que los pitchers, ' \
     'aunque estos últimos tiendan a ocupar una mejor posición en el ranking debido a que también jan ejercido como ' \
@@ -565,7 +570,14 @@ def main() -> None:
     'miembros del salón de la fama que permanecen los Top 10 de los mejores bateadores y  mejores lanzadores.')
     
     st.subheader("¿ Quiénes son los peloteros más éxitosos y peores inductos en el salón de la fama ?")
-   
+    image1, image2, image3 = st.columns(3)
+    with image1:
+     st.image(placas,caption='Placas de los mejores', width=200)
+    with image2:
+       st.image(Babe_Ruth, caption='Babe Ruth' ,width=200)
+    with image3:
+       st.image(Mariano_Rivera, caption='Mariano Rivera', width=200) 
+       
     condición = st.selectbox("Selecciona las condiciones: ", ['Mejores', 'Peores'])
     
     if condición == 'Mejores':
