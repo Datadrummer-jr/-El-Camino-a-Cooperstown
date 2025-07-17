@@ -5,6 +5,59 @@ import plotly.graph_objects as go
 import json
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+from pandas.core.generic import NDFrame
+import pandas as pd
+import streamlit as st
+
+@st.cache_data
+def load_hof_data(file_path):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        st.error(f"Error: El archivo '{file_path}' no se encontró. Asegúrate de que esté en la misma carpeta.")
+        st.stop()
+    except json.JSONDecodeError:
+        st.error(f"Error: No se pudo decodificar el JSON de '{file_path}'. Verifica su formato.")
+        st.stop()
+    
+    records = []
+    for player_name, player_data in data.items():
+        record = {"Name": player_name}
+        record.update(player_data)
+        records.append(record)
+    
+    df = pd.DataFrame(records)
+    
+    numeric_cols = [
+        "% of Ballots", "induction", "first_game", "last_game", 
+        "years_of_waiting_to_enter", "years_of_experience", "war", 
+        "g_bat", "h", "hr", "ab", "ba", "rbi", "obp", "ops", "slg",
+        "l", "w", "era", "war_p", "g", "bb", "gf", "w_l", "ip"
+    ]
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+            
+    return df
+
+# Función para cargar los datos de países 
+@st.cache_data
+def load_country_data(file_path):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        st.warning(f"Advertencia: El archivo de países '{file_path}' no se encontró. El análisis por nacionalidad no estará disponible.")
+        return pd.DataFrame(columns=["name", "country"]) 
+    except json.JSONDecodeError:
+        st.error(f"Error: No se pudo decodificar el JSON de países de '{file_path}'. Verifica su formato.")
+        st.stop()
+    
+    # Convertir el JSON a una lista de diccionarios para el DataFrame
+    country_records = [value for key, value in data.items()]
+    df_countries = pd.DataFrame(country_records)
+    return df_countries
 
 def you_type(cadena: str):
   n = len(cadena)
@@ -111,7 +164,6 @@ def read_json(file: str):
     datos = json.load(rj)
   return datos
 
-
 def coeficiente(ind: List[List[int]], dep: List[int], grade : int=1) -> float:
   model = LinearRegression()
   poly = PolynomialFeatures(degree=grade)
@@ -119,3 +171,18 @@ def coeficiente(ind: List[List[int]], dep: List[int], grade : int=1) -> float:
   model.fit(px,np.array(dep))
   coef = model.score(px,dep)
   return coef
+
+def df_dropna_condition(df: NDFrame, by = None, condition = None):
+    names_cols = df.T.index.to_list()
+    matrix_col = [ df[cols].to_list() for cols in names_cols]
+    try:
+      col_object = df[by].to_list()
+      válidos = list(filter(condition, col_object))
+      indices = [col_object.index(i) for i in válidos]
+      for i in range(len(matrix_col)):
+        for j in indices:
+          matrix_col[i][j] = None
+    except KeyError:
+      pass
+    return pd.DataFrame(np.array(matrix_col).T, columns=names_cols).dropna()
+ 
