@@ -4,7 +4,7 @@ import pandas as pd
 from my_library import my_library as ml
 import plotly.express as px
 
-logo = Image.open("imagenes/logo.jpg")
+logo = Image.open("logo.jpg")
 
 title = "¿Cómo se comportan los datos?"
 
@@ -28,14 +28,14 @@ st.sidebar.header("Filtros y Opciones")
 
 player_names = df["Name"].unique().tolist()
 selected_players = st.sidebar.multiselect(
-    "Selecciona Jugadores/Managers:",
+    "Selecciona los jugadores:",
     player_names,
     default=player_names 
 )
 
 inducted_as_options = df["inducted_as"].unique().tolist()
 selected_inducted_as = st.sidebar.multiselect(
-    "Filtrar por Inducción como:",
+    "Filtrar por categoría:",
     inducted_as_options,
     default=inducted_as_options
 )
