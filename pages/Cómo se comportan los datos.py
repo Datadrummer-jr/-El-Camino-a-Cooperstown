@@ -3,6 +3,7 @@ from PIL import Image
 import pandas as pd
 from my_library import my_library as ml
 import plotly.express as px
+import Camino_a_Cooperstown as app
 
 logo = Image.open("imagenes/logo.jpg")
 
@@ -14,6 +15,8 @@ st.set_page_config(
     layout="wide") 
 
 df_hof = ml.load_hof_data('hof.json')
+df_hof['war_total'] = df_hof[['war','war_p']].sum(axis=1, skipna=True)
+
 df_countries = ml.load_country_data('nationality.json')
 
 # Fusionar los DataFrames
@@ -262,7 +265,8 @@ ba_obp_df = filtered_df[
     (filtered_df["ba"].notna()) & 
     (filtered_df["obp"].notna()) &
     (filtered_df["ops"].notna()) &
-    (filtered_df["ops"] >= 0) 
+    (filtered_df["ops"] >= 0)
+
 ]
 if not ba_obp_df.empty:
     fig10 = px.scatter(
@@ -298,6 +302,27 @@ else:
 
 st.markdown("---")
 
+percent_war = filtered_df[
+    (filtered_df["inducted_as"] == 'Player') &
+    (filtered_df['war_total'].notna()) &
+    (filtered_df['war_total'] >= 0) &
+    (filtered_df["% of Ballots"].notna())
+]
+
+if not percent_war.empty:
+    fig_per_war  = px.scatter(
+        percent_war, x='war_total', y= '% of Ballots', 
+        color='Name', 
+        size = '% of Ballots',
+        title='WAR vs Por ciento de las boletas',
+        labels={'war_total': 'Wins Above Replacement', '% of Ballots': 'Por ciento de las boletas'},
+        hover_data={"Name": True, "war_total": True, '% of Ballots': ":.1f", "years_of_experience": True}
+        )
+    st.plotly_chart(fig_per_war,use_container_width=True)
+else:
+    st.info("No hay datos de nacionalidad para mostrar con los filtros actuales. Asegúrate de que el archivo 'deportistas_paises.json' exista y los nombres de los jugadores coincidan.")
+
+st.markdown('---')
 # Información detallada del jugador seleccionado
 if len(selected_players) == 1:
     st.header(f"Detalles de {selected_players[0]}")
