@@ -80,7 +80,7 @@ if not players_for_ballots.empty:
         players_for_ballots, x="Name", y="% of Ballots", 
         title="Top 20 de Porcentaje de Balotas para la Inducción",
         labels={"Name": "Jugador", "% of Ballots": "% de Balotas"},
-        hover_data={"% of Ballots": ":.1f",color, color_discrete_sequence=["#DC143C"]
+        hover_data={"% of Ballots": ":.1f"}
     )
     fig1.update_layout(xaxis_tickangle=-45)
     st.plotly_chart(fig1, use_container_width=True)
