@@ -3,8 +3,18 @@ from my_library import my_library as ml
 import random
 import pandas as pd
 import time
+from PIL import Image
 
-# --- Constantes del juego ---
+logo = Image.open("logo.jpg")
+
+title="¿ Cuánto sabes de béisbol ?"
+
+st.set_page_config(
+    page_title=title,
+    page_icon=logo,
+    layout="wide")
+
+# Puntuacione del juego
 MAX_QUESTIONS = 10
 WINNING_SCORE = 6
 
@@ -47,8 +57,8 @@ def get_quiz_question(player_name, player_info):
     
     # Añadir preguntas de lanzador solo si el jugador tiene estadísticas de pitcheo válidas
     if pd.notna(player_info.get('w')) and pd.notna(player_info.get('era')):
-        question_types.append("¿Cuántos juegos ganó (W) **{player_name}** como lanzador?")
-        question_types.append("¿Cuál fue el promedio de carreras limpias (ERA) de **{player_name}**?")
+        question_types.append(f"¿Cuántos juegos ganó (W) {player_name} como lanzador?")
+        question_types.append(f"¿Cuál fue el promedio de carreras limpias (ERA) de {player_name} ?")
 
     question_template = random.choice(question_types)
     question = question_template.format(player_name=player_name)
@@ -120,7 +130,6 @@ def generate_nationality_options(correct_nat, df_nat, num_options):
         options.update(random.sample(available_options, num_options))
     return list(options)
 
-# --- Lógica del juego y estado de la sesión ---
 if 'score' not in st.session_state:
     st.session_state.score = 0
 if 'question_count' not in st.session_state:
@@ -178,16 +187,16 @@ def check_answer(selected_option):
     
     st.rerun()
 
-# --- Interfaz de Streamlit ---
-st.title("⚾ Juego de Preguntas de Béisbol ⚾")
+def main():
+ st.title(title)
 
-if not st.session_state.game_started:
+ if not st.session_state.game_started:
     st.write(f"¡Pon a prueba tus conocimientos sobre el Salón de la Fama! Responde {WINNING_SCORE} de {MAX_QUESTIONS} preguntas para ganar.")
     st.markdown("---")
     if st.button("🚀 Empezar Juego", use_container_width=True):
         start_new_game()
         st.rerun()
-elif st.session_state.game_over:
+ elif st.session_state.game_over:
     st.subheader("¡Juego Terminado!")
     st.write(f"### Tu puntuación final es: **{st.session_state.score} / {MAX_QUESTIONS}**")
     
@@ -195,10 +204,10 @@ elif st.session_state.game_over:
         st.balloons()
         st.success(f"🎉 ¡Felicidades! Has ganado. Conseguiste {st.session_state.score} respuestas correctas.")
     else:
-        st.error(f"😞 No alcanzaste la puntuación mínima. Necesitabas {WINNING_SCORE} aciertos.")
+        st.error(f"😞 No alcanzaste la puntuación mínima. Necesitabas como mínimo {WINNING_SCORE} preguntas correctas.")
     
     st.button("Jugar de Nuevo", on_click=start_new_game, use_container_width=True)
-else:
+ else:
     st.markdown(f"**Pregunta {st.session_state.question_count + 1} de {MAX_QUESTIONS}**")
     st.progress((st.session_state.question_count) / MAX_QUESTIONS)
     st.markdown(f"**Puntuación actual: {st.session_state.score}**")
@@ -216,5 +225,8 @@ else:
         st.warning("Cargando pregunta...")
         st.button("Generar Nueva Pregunta", on_click=generate_new_question)
 
-st.markdown("---")
-st.write("¡Gracias por jugar!")
+ st.markdown("---")
+ st.write("¡Gracias por jugar!")
+
+if __name__ == "__main__":
+    main()
